@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="udtjava">
+    <description>Java UDT protocol implementation v0.5</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/udt-java-0.5-SNAPSHOT-all/udt-java-0.5-SNAPSHOT.jar" classification="jar">
+      <namespace name="udt">
+        <type name="udt.CongestionControl" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.UDPEndPoint$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTClient" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.ClientSession" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.packets.Shutdown" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.UDTOutputStream" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.ClientSession" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="udt.UDTSession" classification="extends" />
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.packets.ConnectionHandshake" classification="uses" />
+            <depends-on name="udt.CongestionControl" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.packets.Shutdown" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.util.SequenceNumber" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTInputStream$AppData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTReceiver" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.receiver.ReceiverLossList" classification="uses" />
+            <depends-on name="udt.receiver.AckHistoryWindow" classification="uses" />
+            <depends-on name="udt.receiver.PacketHistoryWindow" classification="uses" />
+            <depends-on name="udt.receiver.PacketPairWindow" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.util.MeanValue" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket" classification="uses" />
+            <depends-on name="udt.receiver.ReceiverLossListEntry" classification="uses" />
+            <depends-on name="udt.receiver.AckHistoryEntry" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+            <depends-on name="udt.packets.DataPacket" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgment2" classification="uses" />
+            <depends-on name="udt.packets.NegativeAcknowledgement" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgement" classification="uses" />
+            <depends-on name="udt.packets.KeepAlive" classification="uses" />
+            <depends-on name="udt.packets.Shutdown" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.UDTReceiver$1" classification="uses" />
+            <depends-on name="udt.util.UDTThreadFactory" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.util.SequenceNumber" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.ServerSession" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="udt.UDTSession" classification="extends" />
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.packets.ConnectionHandshake" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.CongestionControl" classification="uses" />
+            <depends-on name="udt.packets.KeepAlive" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.packets.Shutdown" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTReceiver$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.CongestionControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTOutputStream" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTPacket" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="udt.UDTSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTSender$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="udt.UDTSender" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTInputStream" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.util.ReceiveBuffer" classification="uses" />
+            <depends-on name="udt.UDTInputStream$AppData" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTSession" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.CongestionControl" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.UDTCongestionControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTSender" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.sender.SenderLossList" classification="uses" />
+            <depends-on name="udt.packets.DataPacket" classification="uses" />
+            <depends-on name="udt.util.MeanValue" classification="uses" />
+            <depends-on name="udt.util.MeanThroughput" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgement" classification="uses" />
+            <depends-on name="udt.packets.NegativeAcknowledgement" classification="uses" />
+            <depends-on name="udt.CongestionControl" classification="uses" />
+            <depends-on name="udt.packets.KeepAlive" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgment2" classification="uses" />
+            <depends-on name="udt.UDTClient" classification="uses" />
+            <depends-on name="udt.UDTSender$1" classification="uses" />
+            <depends-on name="udt.util.UDTThreadFactory" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.util.SequenceNumber" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTServerSocket" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.UDTClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTCongestionControl" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="udt.CongestionControl" classification="implements" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDTSocket" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.UDTOutputStream" classification="uses" />
+            <depends-on name="udt.packets.DataPacket" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.UDPEndPoint" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.ClientSession" classification="uses" />
+            <depends-on name="udt.UDPEndPoint$1" classification="uses" />
+            <depends-on name="udt.util.UDTThreadFactory" classification="uses" />
+            <depends-on name="udt.packets.PacketFactory" classification="uses" />
+            <depends-on name="udt.ServerSession" classification="uses" />
+            <depends-on name="udt.packets.ConnectionHandshake" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.util">
+        <type name="udt.util.CircularArray" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.util.MeanThroughput" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.MeanValue" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="udt.util.MeanValue" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.SendFile$RequestRunner" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.UDTOutputStream" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+            <depends-on name="udt.util.SendFile" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+            <depends-on name="udt.UDTSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.UDTStatistics" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.util.MeanValue" classification="uses" />
+            <depends-on name="udt.util.StatisticsHistoryEntry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.StatisticsHistoryEntry" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.MeanValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.UDTThreadFactory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.util.SequenceNumber" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.util.Application" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.util.SendFile" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="udt.util.Application" classification="extends" />
+            <depends-on name="udt.UDTServerSocket" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.util.SendFile$RequestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.ReceiveFile" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="udt.util.Application" classification="extends" />
+            <depends-on name="udt.UDTClient" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.UDTOutputStream" classification="uses" />
+            <depends-on name="udt.UDTReceiver" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.ReceiveBuffer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="udt.UDTInputStream$AppData" classification="uses" />
+            <depends-on name="udt.util.SequenceNumber" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.util.Util" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.receiver">
+        <type name="udt.receiver.AckHistoryWindow" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.util.CircularArray" classification="extends" />
+            <depends-on name="udt.receiver.AckHistoryEntry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.receiver.ReceiverLossList" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.receiver.ReceiverLossListEntry" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.receiver.PacketPairWindow" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.CircularArray" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="udt.receiver.AckHistoryEntry" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.receiver.PacketHistoryWindow" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.CircularArray" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="udt.receiver.ReceiverLossListEntry" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="udt.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.sender">
+        <type name="udt.sender.SenderLossList" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.cc">
+        <type name="udt.cc.SimpleTCP" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.UDTCongestionControl" classification="extends" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.unicore">
+        <type name="udt.unicore.FufexReceive" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="udt.UDTClient" classification="uses" />
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.UDTInputStream" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.unicore.FufexSend" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="udt.UDTServerSocket" classification="uses" />
+            <depends-on name="udt.UDTSocket" classification="uses" />
+            <depends-on name="udt.UDTOutputStream" classification="uses" />
+            <depends-on name="udt.UDPEndPoint" classification="uses" />
+            <depends-on name="udt.util.Util" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.util.UDTStatistics" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="udt.packets">
+        <type name="udt.packets.UserDefined" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.ControlPacket$ControlPacketType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="udt.packets.ControlPacket" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.ControlInformation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.NegativeAcknowledgement" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.DataPacket" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="udt.UDTPacket" classification="implements" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.Shutdown" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.KeepAlive" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.ControlPacket" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="udt.UDTPacket" classification="implements" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.PacketFactory" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="udt.UDTPacket" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket" classification="uses" />
+            <depends-on name="udt.packets.DataPacket" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.ConnectionHandshake" classification="uses" />
+            <depends-on name="udt.packets.KeepAlive" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgement" classification="uses" />
+            <depends-on name="udt.packets.NegativeAcknowledgement" classification="uses" />
+            <depends-on name="udt.packets.Shutdown" classification="uses" />
+            <depends-on name="udt.packets.Acknowledgment2" classification="uses" />
+            <depends-on name="udt.packets.MessageDropRequest" classification="uses" />
+            <depends-on name="udt.packets.UserDefined" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.Acknowledgement" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.MessageDropRequest" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.PacketUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.packets.Destination" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="udt.packets.Acknowledgment2" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="udt.packets.ConnectionHandshake" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="udt.packets.ControlPacket" classification="extends" />
+            <depends-on name="udt.UDTSession" classification="uses" />
+            <depends-on name="udt.packets.ControlPacket$ControlPacketType" classification="uses" />
+            <depends-on name="udt.packets.PacketUtil" classification="uses" />
+            <depends-on name="udt.packets.Destination" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

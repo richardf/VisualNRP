@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jxlscore">
+  	<description>JXLS Core Package v1.0</description>
+    <container name="C:/Users/Marcio Barros/Desktop/jxls-core-1.0-RC-2.jar" classification="jar">
+      <namespace name="net.sf.jxls.controller">
+        <type name="net.sf.jxls.controller.SheetCellFinder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.SheetTransformationController" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.SheetTransformationControllerImpl" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="implements" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.util.TagBodyHelper" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaController" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ShiftTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.DuplicateTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.DuplicateTransformationByColumns" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.RemoveTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.WorkbookCellFinder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.WorkbookCellFinderImpl" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.controller.WorkbookCellFinder" classification="implements" />
+            <depends-on name="net.sf.jxls.controller.SheetCellFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.WorkbookTransformationController" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.controller.WorkbookTransformationControllerImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.controller.WorkbookTransformationController" classification="implements" />
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.exception">
+        <type name="net.sf.jxls.exception.ParsePropertyException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.exception.TaglibRegistrationException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.formula">
+        <type name="net.sf.jxls.formula.BaseFormulaResolver" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.formula.FormulaResolver" classification="implements" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.CellRef" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.formula.FormulaPart" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.CommonFormulaResolver" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sf.jxls.formula.BaseFormulaResolver" classification="extends" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookCellFinder" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.Formula" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaPart" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.FormulaController" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.FormulaControllerImpl" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="net.sf.jxls.formula.FormulaController" classification="implements" />
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaResolver" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.DuplicateTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookCellFinder" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.FormulaPart" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.FormulaResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookCellFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.formula.ListRange" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.parser">
+        <type name="net.sf.jxls.parser.Aggregator$Average" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Aggregator$Count" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Aggregator$Maximum" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Aggregator$Minimum" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Aggregator$Sum" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Aggregator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.parser.Aggregator$Sum" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Aggregator$Average" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Aggregator$Minimum" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Aggregator$Maximum" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Aggregator$Count" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Cell" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Tag" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.CellParser" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Tag" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Expression" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Aggregator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.ExpressionCollectionParser$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.ExpressionCollectionParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.ExpressionCollectionParser" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.ExpressionCollectionParser$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.ExpressionParser" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.parser.Property" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.ExpressionCollectionParser" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.processor">
+        <type name="net.sf.jxls.processor.CellProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.processor.PropertyPreprocessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.processor.RowProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.report">
+        <type name="net.sf.jxls.report.ReportManager" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.report.ReportManagerImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.report.ReportManager" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.report.ResultSetCollection" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.tag">
+        <type name="net.sf.jxls.tag.AttributeInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.BaseTag" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.tag.Tag" classification="implements" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.Block" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.ForEachTag" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="net.sf.jxls.tag.BaseTag" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.util.GroupData" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.LoopStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.util.ReportUtil" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.IfTag" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="net.sf.jxls.tag.BaseTag" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.ExpressionParser" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationControllerImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.JxTaglib" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.tag.TagLib" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.LoopStatus" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.OutlineTag" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="net.sf.jxls.tag.BaseTag" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.OutTag" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="net.sf.jxls.tag.BaseTag" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.Point" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.SQLTag" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="net.sf.jxls.tag.BaseTag" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.report.ReportManager" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.util.ReportUtil" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.Tag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.TagContext" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.TagInfo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.tag.AttributeInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.TagLib" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.tag.TaglibXMLParser" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.transformation">
+        <type name="net.sf.jxls.transformation.BaseTransformation" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.transformation.Transformation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.BlockTransformation" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.DuplicateTransformation" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.DuplicateTransformationByColumns" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.DuplicateTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.RemoveTransformation" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.ResultTransformation" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.transformation.BaseTransformation" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.ShiftTransformation" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformation.BlockTransformation" classification="extends" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Point" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CellRef" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.Transformation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformation.TransformationType" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.transformer">
+        <type name="net.sf.jxls.transformer.BaseRowTransformer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="net.sf.jxls.transformer.RowTransformer" classification="implements" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.CellProcessor" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.util.FormulaUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.CellTransformer" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.ChainTransformer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.RowProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.CollectionRowTransformer" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="net.sf.jxls.transformer.BaseRowTransformer" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SimpleRowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.Configuration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.tag.TagLib" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.JxTaglib" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.MergedRegion" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.Row" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.MergedRegion" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.RowCollection" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.RowTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.Sheet" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.SheetTransformer" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.ChainTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.ListRange" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.CellParser" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SimpleRowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.RowProcessor" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationControllerImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.CollectionRowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.TagRowTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Tag" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.SimpleRowTransformer" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="net.sf.jxls.transformer.BaseRowTransformer" classification="extends" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.CellTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.CellProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.TagRowTransformer" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="net.sf.jxls.transformer.BaseRowTransformer" classification="extends" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Tag" classification="uses" />
+            <depends-on name="net.sf.jxls.transformation.ResultTransformation" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.SheetTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.TagContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.Workbook" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.formula.FormulaController" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaControllerImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.util.SheetHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.transformer.XLSTransformer" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookTransformationController" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaResolver" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.PropertyPreprocessor" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.RowProcessor" classification="uses" />
+            <depends-on name="net.sf.jxls.processor.CellProcessor" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Workbook" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.SheetTransformer" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.FormulaController" classification="uses" />
+            <depends-on name="net.sf.jxls.controller.WorkbookTransformationControllerImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.CommonFormulaResolver" classification="uses" />
+            <depends-on name="net.sf.jxls.exception.ParsePropertyException" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sf.jxls.util">
+        <type name="net.sf.jxls.util.FormulaUtil" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.util.GroupData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.util.ReportUtil" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.util.GroupData" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Expression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.util.SheetHelper" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.formula.Formula" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.CellParser" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Configuration" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.util.TagBodyHelper" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.tag.Block" classification="uses" />
+            <depends-on name="net.sf.jxls.util.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.util.Util" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.transformer.RowCollection" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Cell" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Row" classification="uses" />
+            <depends-on name="net.sf.jxls.transformer.Sheet" classification="uses" />
+            <depends-on name="net.sf.jxls.parser.Property" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

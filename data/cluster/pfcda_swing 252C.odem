@@ -1,0 +1,1981 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="pfcda_swing">
+    <description>PF-CDA Swing Forms. Part of the PF-CDA implementation.</description>
+    <container name="C:/Users/marcio.barros/Desktop/PF-CDA/pf-cda-swing.jar" classification="jar">
+      <namespace name="org.pf.tools.cda">
+        <type name="org.pf.tools.cda.CDATool" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.RemoteControlEngine" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainUIBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.GlobalActionHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.Global" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui">
+        <type name="org.pf.tools.cda.ui.AbstractMenuBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.ActionConfigurer$ActionData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.ActionConfigurer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.ActionConfigurer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.ActionConfigurer$ActionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.GlobalActionHandler" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="implements" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.ImageProvider" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.Module" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.MultiContextActionConfigurer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.RadioButtonGroupSpec" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.StandardView" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.SubWindowController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.ActionConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.MultiContextActionConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.comp.editor">
+        <type name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentTreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentTreeViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentTreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.editor.ComponentTreeController" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.RootComponentHolderTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.PopupMenuBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.editor.ComponentTreeViewBuilder" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentTreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CDATreeView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.DragOnlyTransferHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.editor.PopupMenuBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.SoftwareComponentTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.editor.RootComponentHolderTreeNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.SoftwareComponentTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.comp.wizard">
+        <type name="org.pf.tools.cda.ui.comp.wizard.ComponentGeneralDataController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardPageController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentGeneralDataViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.ComponentGeneralDataViewBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentGeneralDataController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.ComponentWizardController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentGeneralDataController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentWizardViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.ComponentWizardViewBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.ComponentWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.comp.wizard.containers">
+        <type name="org.pf.tools.cda.ui.comp.wizard.containers.ContainerDefinition" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.containers.ContainerNameTableEditorController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.containers.ContainerNameTableEditorViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.containers.ContainerNameTableEditorViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.containers.ContainerNameTableEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.comp.wizard.packages">
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternDefinition" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsEditorController" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.SoftwareComponentDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsEditorViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsInputDialogController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsInputDialogViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsInputDialogViewBuilder" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternsTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.comp.wizard.packages.PackagePatternDefinition" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.dependency">
+        <type name="org.pf.tools.cda.ui.dependency.ClassTableModel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AClassTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.ContainerTableModel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AContainerTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyInfoView" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyInfoViewBuilder" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyTableView" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.StandardTableView" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyTableViewBuilder" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyTableViewController" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyViewController$1" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="implements" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$AggregationLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$DependencyLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortField" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortOrder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterEditorWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyInfoViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.PackageTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.ContainerTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.ClassTableModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.PackageTableModel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.APackageTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyTableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.dependency.cycles">
+        <type name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesTableViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesWindowBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.StandardTableView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesWindowController" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesWindowBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableViewController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependencyTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesTableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.dependency.table.classes">
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.ClassDependencyTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.DependencyTableModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListWindowBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerWindow" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.DependencyTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListWindowController" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerSubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.DependencyTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListWindowBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dependency.table.classes.JTableToHtmlConverter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.dnd">
+        <type name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferHandler" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferable" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.edit.table">
+        <type name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AbstractTableController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.edit.table.TableEditorModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AbstractTableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AbstractTableController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph">
+        <type name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.ClipMode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.ClipModeHolder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DependencyEdgeRealizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.DependencyEdgeRealizer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.RealizerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.Graph2DPrintPreviewPanel$ScaleFactorHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DPrintPreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.Graph2DPrintPreviewPanel" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipModeHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DPrintPreviewPanel$ScaleFactorHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphExportConfiguration$IOHandlerHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration$IOHandlerHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipModeHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphExportDialogController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportDialogViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration$IOHandlerHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphExportDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.StandardView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration$IOHandlerHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipModeHolder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DPrintPreviewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphViewController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewExporter" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphViewExporter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphExportConfiguration" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.YUtil" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphViewPopupMode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphWindowBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.PreferencesWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphicsPreferences" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.MainGraphViewPopupMode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.RealizerFactory" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassInformationRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.ClassPackageRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ClassContainerRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackageDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerDependencyEdgeRealizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.YUtil" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.ClipMode" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph.anel">
+        <type name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.graph.DependencyEdgeRealizer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.RealizerFactory" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementPopupMode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.MainGraphViewPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.anel.LocalTransferHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferHandler" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph.classes">
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassDependencyEdgeRealizer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewBuilder" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassInfoEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferable" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.LocalTransferHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassPopupMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassInfoEditMode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassInformationRealizer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.classes.ClassPopupMode" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph.containers">
+        <type name="org.pf.tools.cda.ui.graph.containers.ClassContainerEditMode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.containers.ClassContainerRealizer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.containers.ContainerDependencyEdgeRealizer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewBuilder" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ClassContainerEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferable" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.LocalTransferHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerPopupMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.containers.ContainerPopupMode" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph.packages">
+        <type name="org.pf.tools.cda.ui.graph.packages.ClassPackageEditMode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.packages.ClassPackageRealizer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.packages.PackageDependencyEdgeRealizer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewBuilder" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.ClassPackageEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferable" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.LocalTransferHandler" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackagePopupMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.packages.PackagePopupMode" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.graph.pathtracker">
+        <type name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathPopupMode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.MainGraphViewPopupMode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementRealizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewBuilder$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewBuilder" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.CDAGraphView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassInformationRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassDependencyEdgeRealizer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.Graph2DViewManipulator" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.DefaultEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassInfoEditMode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewBuilder$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathPopupMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewPanel" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.info">
+        <type name="org.pf.tools.cda.ui.info.AnalyzableElementInfoView" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.PanelSlot" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.InfoController" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.AnalyzableElementInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoViewCacheEntry" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.OverviewInfoViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.InfoViewBuilder$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.info.InfoViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.AnalyzableElementInfoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.InfoViewBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.info.AnalyzableElementInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.OverviewInfoViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoViewBuilder$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.PanelSlot" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.InfoViewCacheEntry" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.info.AnalyzableElementInfoView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.DependencyViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.OverviewInfoViewBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.info.PanelSlot" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.input.dialog">
+        <type name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.joi">
+        <type name="org.pf.tools.cda.ui.joi.ClassInformationArrayRenderer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.main">
+        <type name="org.pf.tools.cda.ui.main.DynamicMenuBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$6" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController$7" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainController" classification="class" visibility="public">
+          <dependencies count="32">
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.DynamicMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.classes.ClassGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.comp.editor.ComponentEditorWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.DependencyListWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.ClassDependencyTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.plugin.support.ExtensionSubWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.pathtracker.DependencyPathViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.ProgressCounterDialog" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.packages.PackageGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.containers.ContainerGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.GraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.cycles.CircularDependenciesWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.graph.anel.AnalyzableElementGraphViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.DependencyTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$2" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$3" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$4" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$5" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$6" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController$7" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.MainUIBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.DynamicMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.info.InfoController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.TextFieldProgressMonitor" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitStepWidgets" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitorViewBuilder" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitProgressMonitor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.WorksetInitStepWidgets" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.WorksetInitStepWidgets" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.main.tree">
+        <type name="org.pf.tools.cda.ui.main.tree.ATreeLookupEngine" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.CDATreeView" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptions" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptionsDialogController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptionsDialogViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptionsDialogViewBuilder" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptionsDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.StandardView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.DragOnlyTransferHandler" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferHandler" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CDATreeView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dnd.AnalyzableElementTransferable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.PopupMenuBuilder" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.ProgressCounterDialog" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.SearchSpecDialogController" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.SearchSpecDialogViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.SearchSpecDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.SearchSpecDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.TreeController" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeGotoEngine" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.SearchSpecDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeSearchEngine" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CycleDetectionOptionsDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.ProgressCounterDialog" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.PopupMenuBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.TreeGotoEngine" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.main.tree.ATreeLookupEngine" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.TreeSearchEngine" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.main.tree.ATreeLookupEngine" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.main.tree.TreeViewBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.TreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.CDATreeView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.tree.DragOnlyTransferHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.packages.selection">
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionDialogController" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionDialogViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionModel" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.packages.selection.PackageSelectionTableController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.plugin.support">
+        <type name="org.pf.tools.cda.ui.plugin.support.ExtensionSubWindowController" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.prefwizard">
+        <type name="org.pf.tools.cda.ui.prefwizard.PreferencesWizardController" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphicsPreferences" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphPreferencesPageController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.PreferencesWizardViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.prefwizard.PreferencesWizardViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.PreferencesWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.prefwizard.graph">
+        <type name="org.pf.tools.cda.ui.prefwizard.graph.GraphPreferencesPageController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardPageController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphicsPreferences" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphPreferencesPageViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.prefwizard.graph.GraphPreferencesPageViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphPreferencesPageController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.prefwizard.graph.GraphicsPreferences" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.prefwizard.graph.GraphicsPreferences" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.search">
+        <type name="org.pf.tools.cda.ui.search.ClassTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.table.AClassTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.ClassesTableModelWithoutPackages" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.search.ClassTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.ContainerTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.table.AContainerTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.PackageTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.table.APackageTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.SearchResultTableViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.SearchResultTableViewController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultTableViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.SearchResultWindowBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerWindow" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.search.SearchResultWindowController" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerSubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.SearchResultWindowBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerWindow" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.PackageTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.ContainerTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.ClassesTableModelWithoutPackages" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.search.ClassTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.table">
+        <type name="org.pf.tools.cda.ui.table.AClassTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AContainerTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.APackageTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AbstractTableController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AbstractTableViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.AbstractTableController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.AnalyzableElementTableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.CDATableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.DependencyTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.EditableTableModel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.ITablePresentation$AggregationLevel" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.ITablePresentation$DependencyLevel" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.ITablePresentation$SortField" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.ITablePresentation$SortOrder" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.ITablePresentation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$AggregationLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$DependencyLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortOrder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.StandardTableView" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.StandardView" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.TableContainerSubWindowController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.SubWindowController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableContainerWindow" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.TableContainerWindow" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.TableDisplayOptions" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.AbstractMenuBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.StandardTableView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.table.TableViewController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.table.TableViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.CDATableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.StandardTableView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.UserInterfaceConfigurer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.tree">
+        <type name="org.pf.tools.cda.ui.tree.CDATreeController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.main.MainController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.CDATreeViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.CDATreeController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeCellRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.TreePopupMenuBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.AbstractMenuBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.SoftwareComponentTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.tree.model">
+        <type name="org.pf.tools.cda.ui.tree.model.CDATreeCellRenderer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.GenericContainerTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.ImageProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.GenericContainerTreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ProxyChildNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.GenericContainerTreeNode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.ProxyChildNode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.RootTreeNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.SelectionHistory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.SoftwareComponentTreeNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.GenericContainerTreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.PackageTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.tree.model.CDATreeNode" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.SelectionHistory" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.ClassContainerTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.wizard">
+        <type name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wizard.AWizardPageController" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.wswizard">
+        <type name="org.pf.tools.cda.ui.wswizard.WorksetEditGeneralDataController" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardPageController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetEditGeneralDataViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.WorksetEditGeneralDataViewBuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.AbstractUIBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetEditGeneralDataController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.WorksetWizardController" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableTableEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetEditGeneralDataController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetWizardViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.WorksetWizardViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.WorksetWizardController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wizard.AWizardDialogController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.wswizard.classpath">
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionData" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorController" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorViewBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.OneColumnTableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogController" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.PopupMenuBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.Module" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogViewBuilder$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.StandardView" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.classpath.ClasspathInputDialogViewBuilder$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.classpath.PopupMenuBuilder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.AbstractMenuBuilder" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.wswizard.filter">
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionData" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterPatternTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorController" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterPatternTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterEditorWindowBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterEditorWindowController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.Global" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterEditorWindowController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterEditorWindowBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterInputDialogController" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterInputDialogViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterInputDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterInputDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.filter.FilterDefinitionData" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.filter.FilterPatternTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorModel" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.ui.wswizard.variables">
+        <type name="org.pf.tools.cda.ui.wswizard.variables.ObservableVariable" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogController" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogViewBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.ObservableVariable" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.input.dialog.InputDialogController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.variables.VariableTableEditorController" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableEditDialogController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.EditableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableTableEditorViewBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.variables.VariableTableEditorViewBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorViewBuilder" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableTableEditorController" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.wswizard.variables.VariableTableModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.ui.wswizard.variables.VariableTableModel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.edit.table.TableEditorModel" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pfsw.tools.cda.ui.darc">
+        <type name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.RemoteControlEngine" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pfsw.tools.cda.ui.darc.commands">
+        <type name="org.pfsw.tools.cda.ui.darc.commands.AnalyzeDependencies$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.commands.AnalyzeDependencies" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.AnalyzeDependencies" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.dependency.table.classes.JTableToHtmlConverter" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+            <depends-on name="org.pfsw.tools.cda.ui.darc.commands.AnalyzeDependencies$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$AggregationLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$DependencyLevel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortOrder" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.table.ITablePresentation$SortField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.CloseWorkset" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.tree.model.WorksetTreeNode" classification="uses" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.ExportToFile" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.GetCurrent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.GetCurrentInfo" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.LoadWorkset" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pfsw.tools.cda.ui.darc.commands.SelectCurrent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pfsw.tools.cda.ui.darc.AGenericCommand" classification="extends" />
+            <depends-on name="org.pf.tools.cda.ui.IGlobalActionHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

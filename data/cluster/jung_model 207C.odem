@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jung_model">
+  	<description>Jung Graph Model Package v2.0.1</description>
+    <container name="C:/Users/Marcio Barros/Desktop/jung-graph-impl-2.0.1.jar" classification="jar">
+      <namespace name="edu.uci.ics.jung.graph">
+        <type name="edu.uci.ics.jung.graph.AbstractGraph" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DelegateForest" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.graph.GraphDecorator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DelegateTree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.TreeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DelegateTree$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DelegateTree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DelegateTree" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.graph.GraphDecorator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DelegateTree$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedOrderedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedOrderedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedOrderedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedOrderedSparseMultigraph$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedSparseGraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedSparseGraph" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseGraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.OrderedKAryTree$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.OrderedKAryTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.OrderedKAryTree$VertexData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.OrderedKAryTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.OrderedKAryTree" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.OrderedKAryTree$VertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.OrderedKAryTree$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.OrderedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.OrderedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.OrderedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.SparseMultigraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.OrderedSparseMultigraph$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SetHypergraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SetHypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SetHypergraph" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SetHypergraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SortedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SortedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SortedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.OrderedSparseMultigraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SortedSparseMultigraph$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SparseGraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SparseGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SparseGraph" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SparseGraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.SparseMultigraph" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SparseMultigraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedOrderedSparseMultigraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedSparseGraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedSparseGraph" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseGraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.AbstractTypedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.graph.util">
+        <type name="edu.uci.ics.jung.graph.util.TestGraphs" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedSparseMultigraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedSparseMultigraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.SparseMultigraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+    <container name="C:/Users/Marcio Barros/Desktop/jung-api-2.0.1.jar" classification="jar">
+      <namespace name="edu.uci.ics.jung.graph">
+        <type name="edu.uci.ics.jung.graph.DirectedGraph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.Forest" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.Graph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.GraphDecorator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.Hypergraph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.KPartiteGraph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.MultiGraph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.ObservableGraph" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.graph.GraphDecorator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEventListener" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Vertex" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.Tree" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.UndirectedGraph" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.graph.event">
+        <type name="edu.uci.ics.jung.graph.event.GraphEvent$Edge" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.event.GraphEvent$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.event.GraphEvent$Vertex" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.event.GraphEvent" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Type" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent$Vertex" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.event.GraphEventListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.event.GraphEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.graph.util">
+        <type name="edu.uci.ics.jung.graph.util.Context" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.DefaultParallelEdgeIndexFunction" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeIndexFunction" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Context" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.EdgeIndexFunction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.EdgeType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedAbstractGraph" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedDirectedGraph" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedForest" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedDirectedGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedGraph" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedTree" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedForest" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedUndirectedGraph" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableAbstractGraph" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableDirectedGraph" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableForest" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableGraph" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableTree" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableForest" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableUndirectedGraph" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableAbstractGraph" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Graphs" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedForest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedTree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableTree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableForest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedDirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedUndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableDirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableUndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$UnmodifiableAbstractGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Graphs$SynchronizedAbstractGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.IncidentEdgeIndexFunction" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeIndexFunction" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Pair$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Pair$PairIterator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.Pair" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair$PairIterator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.graph.util.TreeUtils" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+    <container name="C:/Users/Marcio Barros/Desktop/jung-algorithms-2.0.1.jar" classification="jar">
+      <namespace name="edu.uci.ics.jung.algorithms.blockmodel">
+        <type name="edu.uci.ics.jung.algorithms.blockmodel.StructurallyEquivalent" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.blockmodel.VertexPartition" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.blockmodel.VertexPartition" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.cluster">
+        <type name="edu.uci.ics.jung.algorithms.cluster.BicomponentClusterer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.cluster.EdgeBetweennessClusterer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.cluster.WeakComponentClusterer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.cluster.VoltageClusterer$MapValueArrayComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.cluster.VoltageClusterer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.cluster.VoltageClusterer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.KMeansClusterer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VoltageScorer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.KMeansClusterer$NotEnoughClustersException" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.cluster.VoltageClusterer$MapValueArrayComparator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.DiscreteDistribution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.cluster.WeakComponentClusterer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.filters">
+        <type name="edu.uci.ics.jung.algorithms.filters.EdgePredicateFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.Filter" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.Filter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.FilterUtils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter$EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter$EdgeType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.Filter" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter$EdgeType" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.filters.VertexPredicateFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.Filter" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.flows">
+        <type name="edu.uci.ics.jung.algorithms.flows.EdmondsKarpMaxFlow" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeProcess" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.generators">
+        <type name="edu.uci.ics.jung.algorithms.generators.EvolvingGraphGenerator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.GraphGenerator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.GraphGenerator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.Lattice2DGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.GraphGenerator" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.generators.random">
+        <type name="edu.uci.ics.jung.algorithms.generators.random.BarabasiAlbertGenerator" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.EvolvingGraphGenerator" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.MultiGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.random.EppsteinPowerLawGenerator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.GraphGenerator" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.random.ErdosRenyiGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.GraphGenerator" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.random.KleinbergSmallWorldGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.Lattice2DGenerator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.generators.random.MixedRandomGraphGenerator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.generators.random.BarabasiAlbertGenerator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.importance">
+        <type name="edu.uci.ics.jung.algorithms.importance.AbstractRanker$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.AbstractRanker$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeProcess" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.Ranking" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessData" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.BetweennessCentrality$BetweennessData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.KStepMarkov" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.RelativeAuthorityRanker" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.MarkovCentrality" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.RelativeAuthorityRanker" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.PageRank" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.Indexer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.matrix.GraphMatrixOperations" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.RandomWalkBetweenness" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.RandomWalkSTBetweenness" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.RandomWalkSTBetweenness" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.matrix.GraphMatrixOperations" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.Indexer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.Ranking" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.RelativeAuthorityRanker" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.importance.WeightedNIPaths" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.importance.AbstractRanker" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.layout">
+        <type name="edu.uci.ics.jung.algorithms.layout.AbstractLayout$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.AggregateLayout" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.BalloonLayout$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.BalloonLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.PolarPoint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.BalloonLayout" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.TreeLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.PolarPoint" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.BalloonLayout$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.TreeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.CircleLayout$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.CircleLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.CircleLayout$CircleVertexData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.CircleLayout$CircleVertexData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.CircleLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.CircleLayout" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.CircleLayout$CircleVertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.CircleLayout$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.DAGLayout" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringVertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.FRLayout$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout$FRVertexData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.FRLayout$FRVertexData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.FRLayout" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout$FRVertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.FRLayout2$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.FRLayout2" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.FRLayout2$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.GraphElementAccessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.ISOMLayout$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.ISOMLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.ISOMLayout$ISOMVertexData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.ISOMLayout$ISOMVertexData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.ISOMLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.ISOMLayout" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.ISOMLayout$ISOMVertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.GraphElementAccessor" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.ISOMLayout$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.RadiusGraphElementAccessor" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.KKLayout" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.UnweightedShortestPath" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DistanceStatistics" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.Layout" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.LayoutDecorator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.PolarPoint" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.RadialTreeLayout" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.TreeLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.PolarPoint" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.RadiusGraphElementAccessor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.GraphElementAccessor" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.SpringLayout$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringVertexData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringDimensionChecker" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringVertexData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringVertexData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringDimensionChecker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.SpringLayout2" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.SpringLayout$SpringVertexData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.StaticLayout" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.AbstractLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.TreeLayout$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.TreeLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.TreeLayout" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.Layout" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.TreeLayout$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.TreeUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.layout.util">
+        <type name="edu.uci.ics.jung.algorithms.layout.util.RandomLocationTransformer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.util.Relaxer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.layout.util.VisRunner" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.layout.util.Relaxer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.matrix">
+        <type name="edu.uci.ics.jung.algorithms.matrix.GraphMatrixOperations" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.matrix.MatrixElementOperations" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.ConstantMap" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.Indexer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.matrix.MatrixElementOperations" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.matrix.RealMatrixElementOperations" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.matrix.MatrixElementOperations" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.metrics">
+        <type name="edu.uci.ics.jung.algorithms.metrics.Metrics" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.metrics.StructuralHoles" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.metrics.TriadicCensus" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.scoring">
+        <type name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.VEPair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.DelegateToEdgeTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorerWithPriors" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.BarycenterScorer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.DistanceCentralityScorer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$BetweennessComparator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$BetweennessData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$BetweennessData" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.EdgeScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$BetweennessData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$BetweennessComparator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.ClosenessCentrality" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.DistanceCentralityScorer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.DegreeScorer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.DistanceCentralityScorer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.UnweightedShortestPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.EdgeScorer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.EigenvectorCentrality" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.PageRank" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.HITS$Scores" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.HITS" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITSWithPriors" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS$Scores" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.HITSWithPriors" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorerWithPriors" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS$Scores" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.KStepMarkov" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.PageRankWithPriors" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.PageRank" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.PageRankWithPriors" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.PageRankWithPriors" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorerWithPriors" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.UniformDegreeWeight" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.VoltageScorer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.AbstractIterativeScorer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.UniformDegreeWeight" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.scoring.util">
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.DelegateToEdgeTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.VEPair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS$Scores" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS$Scores" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.ScoringUtils$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.HITS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.UniformDegreeWeight" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.VEPair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.UniformInOut" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.VEPair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.VEPair" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.scoring.util.VertexScoreTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.shortestpath">
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.BFSDistanceLabeler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$SourceData" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$VertexComparator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.BasicMapEntry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$VertexComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$SourceData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$VertexComparator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$SourcePathData" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$SourceData" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.ShortestPath" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraDistance$SourceData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath$SourcePathData" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.DistanceStatistics" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.ClosenessCentrality" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.util.VertexScoreTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.UnweightedShortestPath" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.scoring.VertexScorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.MinimumSpanningForest" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.MinimumSpanningForest2" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Forest" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.PrimMinimumSpanningTree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.cluster.WeakComponentClusterer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Tree" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.filters.FilterUtils" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.TreeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.PrimMinimumSpanningTree" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.ShortestPath" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.ShortestPathUtils" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.ShortestPath" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.shortestpath.UnweightedShortestPath" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.ShortestPath" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.Distance" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.shortestpath.BFSDistanceLabeler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.transformation">
+        <type name="edu.uci.ics.jung.algorithms.transformation.DirectionTransformer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.UndirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.DirectedGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.EdgeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.transformation.FoldingTransformer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.KPartiteGraph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Hypergraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.transformation.VertexPartitionCollapser" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.blockmodel.VertexPartition" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.algorithms.util">
+        <type name="edu.uci.ics.jung.algorithms.util.BasicMapEntry" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.ConstantMap" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.DiscreteDistribution" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.Indexer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.IterativeProcess" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.IterativeContext" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.KMeansClusterer$NotEnoughClustersException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.KMeansClusterer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.KMeansClusterer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.KMeansClusterer$NotEnoughClustersException" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.DiscreteDistribution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap$ComparableComparator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap$ComparableComparator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.MapBinaryHeap$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.MapSettableTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.SettableTransformer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.SelfLoopEdgePredicate" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.graph.util.Context" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.Graph" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.graph.util.Pair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.SettableTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.WeightedChoice$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.WeightedChoice$ItemPair" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.algorithms.util.WeightedChoice" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice$ItemPair" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.algorithms.util.WeightedChoice$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

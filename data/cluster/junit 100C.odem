@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="junit">
+  	<description>JUnit v3.8.1</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/junit/junit-3.8.1 100C.jar" classification="jar">
+      <namespace name="junit.awtui">
+        <type name="junit.awtui.AboutDialog$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.AboutDialog$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.AboutDialog" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="junit.awtui.Logo" classification="uses" />
+            <depends-on name="junit.awtui.AboutDialog$1" classification="uses" />
+            <depends-on name="junit.runner.Version" classification="uses" />
+            <depends-on name="junit.awtui.AboutDialog$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.Logo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.ProgressBar" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$10" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.framework.TestListener" classification="uses" />
+            <depends-on name="junit.awtui.ProgressBar" classification="uses" />
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$4" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$5" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$6" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$7" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$8" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.awtui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner$9" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.awtui.TestRunner" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="junit.runner.BaseTestRunner" classification="extends" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.awtui.ProgressBar" classification="uses" />
+            <depends-on name="junit.awtui.Logo" classification="uses" />
+            <depends-on name="junit.awtui.AboutDialog" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestCase" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$1" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$2" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$3" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$4" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$5" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$6" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$7" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$8" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$9" classification="uses" />
+            <depends-on name="junit.runner.TestSuiteLoader" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+            <depends-on name="junit.awtui.TestRunner$10" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="junit.extensions">
+        <type name="junit.extensions.ActiveTestSuite$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="junit.extensions.ActiveTestSuite" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.ActiveTestSuite" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="junit.framework.TestSuite" classification="extends" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.extensions.ActiveTestSuite$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.ExceptionTestCase" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="junit.framework.TestCase" classification="extends" />
+            <depends-on name="junit.framework.Assert" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.RepeatedTest" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="junit.extensions.TestDecorator" classification="extends" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.TestDecorator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="junit.framework.Assert" classification="extends" />
+            <depends-on name="junit.framework.Test" classification="implements" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.TestSetup$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="junit.framework.Protectable" classification="implements" />
+            <depends-on name="junit.extensions.TestSetup" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.extensions.TestDecorator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.extensions.TestSetup" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="junit.extensions.TestDecorator" classification="extends" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.framework.Protectable" classification="uses" />
+            <depends-on name="junit.extensions.TestSetup$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="junit.framework">
+        <type name="junit.framework.Assert" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+            <depends-on name="junit.framework.ComparisonFailure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.AssertionFailedError" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.framework.ComparisonFailure" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="junit.framework.AssertionFailedError" classification="extends" />
+            <depends-on name="junit.framework.Assert" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.Protectable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.framework.Test" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestCase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="junit.framework.Assert" classification="extends" />
+            <depends-on name="junit.framework.Test" classification="implements" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestFailure" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestResult$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="junit.framework.Protectable" classification="implements" />
+            <depends-on name="junit.framework.TestCase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestResult" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+            <depends-on name="junit.framework.TestListener" classification="uses" />
+            <depends-on name="junit.framework.TestCase" classification="uses" />
+            <depends-on name="junit.framework.Protectable" classification="uses" />
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.framework.TestResult$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestSuite$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="junit.framework.TestCase" classification="extends" />
+            <depends-on name="junit.framework.Assert" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.framework.TestSuite" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="junit.framework.Test" classification="implements" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.framework.TestCase" classification="uses" />
+            <depends-on name="junit.framework.TestSuite$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="junit.runner">
+        <type name="junit.runner.BaseTestRunner" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="junit.framework.TestListener" classification="implements" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+            <depends-on name="junit.runner.TestSuiteLoader" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+            <depends-on name="junit.runner.ReloadingTestSuiteLoader" classification="uses" />
+            <depends-on name="junit.runner.StandardTestSuiteLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.ClassPathTestCollector" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="junit.runner.TestCollector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.FailureDetailView" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.LoadingTestCollector" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="junit.runner.ClassPathTestCollector" classification="extends" />
+            <depends-on name="junit.runner.TestCaseClassLoader" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.ReloadingTestSuiteLoader" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="junit.runner.TestSuiteLoader" classification="implements" />
+            <depends-on name="junit.runner.TestCaseClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.SimpleTestCollector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.runner.ClassPathTestCollector" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.Sorter$Swapper" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="junit.runner.Sorter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.Sorter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.runner.Sorter$Swapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.StandardTestSuiteLoader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.runner.TestSuiteLoader" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="junit.runner.TestCaseClassLoader" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.runner.TestCollector" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.runner.TestRunListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.runner.TestSuiteLoader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.runner.Version" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="junit.swingui">
+        <type name="junit.swingui.AboutDialog$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.AboutDialog$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.AboutDialog" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+            <depends-on name="junit.swingui.AboutDialog$1" classification="uses" />
+            <depends-on name="junit.runner.Version" classification="uses" />
+            <depends-on name="junit.swingui.AboutDialog$2" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.CounterPanel" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.swingui.StatusLine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.DefaultFailureDetailView$StackEntryRenderer" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="junit.swingui.DefaultFailureDetailView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.DefaultFailureDetailView$StackTraceListModel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="junit.swingui.DefaultFailureDetailView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.DefaultFailureDetailView" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="junit.runner.FailureDetailView" classification="implements" />
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.swingui.DefaultFailureDetailView$StackTraceListModel" classification="uses" />
+            <depends-on name="junit.swingui.DefaultFailureDetailView$StackEntryRenderer" classification="uses" />
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.FailureRunView$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="junit.swingui.FailureRunView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.FailureRunView$FailureListCellRenderer" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+            <depends-on name="junit.swingui.FailureRunView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.FailureRunView" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="junit.swingui.TestRunView" classification="implements" />
+            <depends-on name="junit.swingui.TestRunContext" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.swingui.FailureRunView$FailureListCellRenderer" classification="uses" />
+            <depends-on name="junit.swingui.FailureRunView$1" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.ProgressBar" classification="class" visibility="default">
+          <dependencies count="2">
+          </dependencies>
+        </type>
+        <type name="junit.swingui.StatusLine" classification="class" visibility="public">
+          <dependencies count="5">
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestHierarchyRunView$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="junit.swingui.TestHierarchyRunView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestHierarchyRunView" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="junit.swingui.TestRunView" classification="implements" />
+            <depends-on name="junit.swingui.TestSuitePanel" classification="uses" />
+            <depends-on name="junit.swingui.TestRunContext" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestTreeModel" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.swingui.TestHierarchyRunView$1" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.TestListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="junit.framework.Test" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.CounterPanel" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$10" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$11" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$12" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$13" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$14" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$15" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$16" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$17" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$18" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.swingui.ProgressBar" classification="uses" />
+            <depends-on name="junit.swingui.CounterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$19" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.swingui.CounterPanel" classification="uses" />
+            <depends-on name="junit.swingui.ProgressBar" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestRunView" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$4" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$5" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$6" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$7" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$8" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner$9" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunner" classification="class" visibility="public">
+          <dependencies count="66">
+            <depends-on name="junit.runner.BaseTestRunner" classification="extends" />
+            <depends-on name="junit.swingui.TestRunContext" classification="implements" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.swingui.ProgressBar" classification="uses" />
+            <depends-on name="junit.swingui.CounterPanel" classification="uses" />
+            <depends-on name="junit.swingui.StatusLine" classification="uses" />
+            <depends-on name="junit.runner.FailureDetailView" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestRunView" classification="uses" />
+            <depends-on name="junit.swingui.FailureRunView" classification="uses" />
+            <depends-on name="junit.swingui.TestHierarchyRunView" classification="uses" />
+            <depends-on name="junit.runner.TestCollector" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+            <depends-on name="junit.framework.TestCase" classification="uses" />
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.swingui.AboutDialog" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$1" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$2" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$3" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$4" classification="uses" />
+            <depends-on name="junit.swingui.DefaultFailureDetailView" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$5" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$6" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$7" classification="uses" />
+            <depends-on name="junit.runner.Version" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$8" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$9" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$10" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$11" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$12" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$13" classification="uses" />
+            <depends-on name="junit.runner.SimpleTestCollector" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$14" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$15" classification="uses" />
+            <depends-on name="junit.runner.TestSuiteLoader" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$16" classification="uses" />
+            <depends-on name="junit.framework.TestListener" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$17" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$18" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner$19" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestRunView" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$4" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$DoubleClickListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$KeySelectListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$ParallelSwapper" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="junit.runner.Sorter$Swapper" classification="implements" />
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector$TestCellRenderer" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="junit.swingui.TestSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSelector" classification="class" visibility="default">
+          <dependencies count="22">
+            <depends-on name="junit.runner.TestCollector" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$TestCellRenderer" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$1" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$2" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$DoubleClickListener" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$KeySelectListener" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$3" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$4" classification="uses" />
+            <depends-on name="junit.swingui.TestSelector$ParallelSwapper" classification="uses" />
+            <depends-on name="junit.runner.Sorter" classification="uses" />
+            <depends-on name="junit.runner.Sorter$Swapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSuitePanel$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="junit.swingui.TestSuitePanel" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestTreeModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSuitePanel$TestTreeCellRenderer" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="junit.swingui.TestTreeModel" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.swingui.TestRunner" classification="uses" />
+            <depends-on name="junit.swingui.TestSuitePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestSuitePanel" classification="class" visibility="default">
+          <dependencies count="15">
+            <depends-on name="junit.framework.TestListener" classification="implements" />
+            <depends-on name="junit.swingui.TestTreeModel" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+            <depends-on name="junit.swingui.TestSuitePanel$TestTreeCellRenderer" classification="uses" />
+            <depends-on name="junit.swingui.TestSuitePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.swingui.TestTreeModel" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+            <depends-on name="junit.extensions.TestDecorator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="junit.textui">
+        <type name="junit.textui.ResultPrinter" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="junit.framework.TestListener" classification="implements" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.framework.TestFailure" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.AssertionFailedError" classification="uses" />
+            <depends-on name="junit.runner.BaseTestRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="junit.textui.TestRunner" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="junit.runner.BaseTestRunner" classification="extends" />
+            <depends-on name="junit.textui.ResultPrinter" classification="uses" />
+            <depends-on name="junit.framework.Test" classification="uses" />
+            <depends-on name="junit.framework.TestResult" classification="uses" />
+            <depends-on name="junit.runner.TestSuiteLoader" classification="uses" />
+            <depends-on name="junit.framework.TestSuite" classification="uses" />
+            <depends-on name="junit.runner.StandardTestSuiteLoader" classification="uses" />
+            <depends-on name="junit.framework.TestListener" classification="uses" />
+            <depends-on name="junit.runner.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,2922 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jace">
+    <description>Java Apple computer emulator</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/jace" classification="dir">
+      <namespace name="jace">
+        <type name="jace.ConvertDiskImage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.FloppyDisk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.Emulator$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.Emulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.Emulator$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.Emulator" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.Emulator" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jace.apple2e.Apple2e" classification="uses" />
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+            <depends-on name="jace.Emulator$1" classification="uses" />
+            <depends-on name="jace.Emulator$2" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.EmulatorUILogic$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.core.Debugger" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.EmulatorUILogic$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.EmulatorUILogic" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="jace.core.Debugger" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+            <depends-on name="jace.config.InvokableAction" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic$2" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic$1" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.Emulator" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.apple2e">
+        <type name="jace.apple2e.Apple2e$1$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.apple2e.Apple2e$1" classification="uses" />
+            <depends-on name="jace.apple2e.Apple2e" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Apple2e$1" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.Apple2e" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.Apple2e$1$1" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Apple2e$2" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.Apple2e" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Apple2e" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="jace.core.Computer" classification="extends" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+            <depends-on name="jace.config.ClassSelection" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe" classification="uses" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+            <depends-on name="jace.cheat.Cheats" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.hardware.CardDiskII" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.apple2e.VideoNTSC" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.Apple2e$1" classification="uses" />
+            <depends-on name="jace.apple2e.Apple2e$2" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.Emulator" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$AddressCalculator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$BBRCommand" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$BBSCommand" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$10" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$11" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$12" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$13" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$14" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$15" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$16" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$17" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$18" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$19" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$20" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$21" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$22" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$23" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$24" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$25" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$26" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$27" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$28" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$29" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$30" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$31" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$32" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$33" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$34" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$35" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$36" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$37" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$38" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$39" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$4" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$40" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$41" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$42" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$43" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$44" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$45" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$46" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$47" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$48" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$49" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$5" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$50" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$51" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$52" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$53" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$54" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$55" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$56" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$57" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$58" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$59" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$6" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$60" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$61" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$62" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$63" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$64" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$65" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$66" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$67" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$68" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$69" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$7" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$70" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$71" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$72" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$8" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND$9" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$COMMAND" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="78">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$2" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$3" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$4" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$BBRCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$BBSCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$5" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$6" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$7" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$8" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$9" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$10" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$11" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$12" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$13" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$14" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$15" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$16" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$17" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$18" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$19" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$20" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$21" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$22" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$23" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$24" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$25" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$26" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$27" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$28" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$29" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$30" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$31" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$32" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$33" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$34" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$35" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$36" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$37" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$38" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$39" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$40" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$41" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$42" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$43" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$44" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$45" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$46" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$47" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$48" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$RMBCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$49" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$50" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$51" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$52" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$53" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$54" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$55" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$56" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$57" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$58" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$SMBCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$59" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$60" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$61" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$62" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$63" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$64" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$65" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$66" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$67" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$68" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$69" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$70" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$71" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND$72" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$CommandProcessor" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$10" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$11" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$12" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$13" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$14" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$15" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$4" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$5" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$6" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$7" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$8" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE$9" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="extends" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$MODE" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="18">
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$2" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$3" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$4" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$5" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$6" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$7" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$8" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$9" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$10" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$11" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$12" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$13" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$14" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE$15" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$OPCODE" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$RMBCommand" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02$SMBCommand" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="implements" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.MOS65C02" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="jace.core.CPU" classification="extends" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$OPCODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$1" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$COMMAND" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$SMBCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$RMBCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$BBSCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$BBRCommand" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$CommandProcessor" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$MODE" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02$AddressCalculator" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.RAM128k" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAM" classification="extends" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.PagedMemory$Type" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.SoftSwitches$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="jace.apple2e.softswitch.VideoSoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.SoftSwitches$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.SoftSwitches$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.SoftSwitches" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.MemorySoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.IntC8SoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.Memory2SoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.VideoSoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches$1" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.KeyboardSoftSwitch" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches$2" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches$3" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Speaker$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.Speaker" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Speaker$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.apple2e.Speaker" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+            <depends-on name="jace.core.SoundMixer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.Speaker" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.apple2e.Speaker$1" classification="uses" />
+            <depends-on name="jace.apple2e.Speaker$2" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+            <depends-on name="jace.core.SoundMixer" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$10" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$11" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$12" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$13" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$14" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.VideoWriter" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$15" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.VideoWriter" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$4" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$5" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$6" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$7" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$8" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR$9" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.core.VideoWriter" classification="extends" />
+            <depends-on name="jace.apple2e.VideoDHGR" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoDHGR" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="jace.core.Video" classification="extends" />
+            <depends-on name="jace.core.VideoWriter" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$1" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$2" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$3" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$4" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$5" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$6" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$7" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$8" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$9" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$10" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$11" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$12" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$13" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$14" classification="uses" />
+            <depends-on name="jace.apple2e.VideoDHGR$15" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.Palette" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Font" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.VideoNTSC" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.apple2e.VideoDHGR" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.VideoWriter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.apple2e.softswitch">
+        <type name="jace.apple2e.softswitch.IntC8SoftSwitch$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.softswitch.IntC8SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.IntC8SoftSwitch$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.apple2e.softswitch.IntC8SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.IntC8SoftSwitch" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.apple2e.softswitch.IntC8SoftSwitch$1" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.IntC8SoftSwitch$2" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.KeyboardSoftSwitch" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.Memory2SoftSwitch" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.apple2e.softswitch.MemorySoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.MemorySoftSwitch" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.apple2e.softswitch.VideoSoftSwitch" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.core.SoftSwitch" classification="extends" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.applesoft">
+        <type name="jace.applesoft.Command$ByteOrToken" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.applesoft.Command$TOKEN" classification="uses" />
+            <depends-on name="jace.applesoft.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.applesoft.Command$TOKEN" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.applesoft.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.applesoft.Command" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.applesoft.Command$ByteOrToken" classification="uses" />
+            <depends-on name="jace.applesoft.Command$TOKEN" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.applesoft.Line" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.applesoft.Command" classification="uses" />
+            <depends-on name="jace.applesoft.Command$ByteOrToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.applesoft.Program" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.applesoft.Line" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.cheat">
+        <type name="jace.cheat.Cheats" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$10" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$11" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$12" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$13" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$14" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$15" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm$9" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheatForm" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="jace.cheat.MetaCheatForm$1" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$2" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$3" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$4" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$5" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$6" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$7" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$8" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$9" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$10" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$11" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$12" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$13" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$14" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheatForm$15" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheats$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.MetaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheats$2$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.cheat.MetaCheats$2" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheats$2" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.MetaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats$2$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheats$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.KeyHandler" classification="extends" />
+            <depends-on name="jace.cheat.MetaCheats" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.MetaCheats" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="jace.cheat.Cheats" classification="extends" />
+            <depends-on name="jace.cheat.MetaCheatForm" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats$1" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats$2" classification="uses" />
+            <depends-on name="jace.cheat.MetaCheats$3" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.core.KeyHandler" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats$2" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats$3" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats$4" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats$5" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.cheat.PrinceOfPersiaCheats" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="jace.cheat.Cheats" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats$1" classification="uses" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats$2" classification="uses" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats$3" classification="uses" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats$4" classification="uses" />
+            <depends-on name="jace.cheat.PrinceOfPersiaCheats$5" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.Emulator" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.config">
+        <type name="jace.config.BooleanComponent" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ClassSelection$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ClassSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ClassSelection$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.config.ClassSelection" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ClassSelection$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ClassSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ClassSelection" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.config.DynamicSelection" classification="extends" />
+            <depends-on name="jace.config.ClassSelection$1" classification="uses" />
+            <depends-on name="jace.config.ClassSelection$2" classification="uses" />
+            <depends-on name="jace.config.ClassSelection$3" classification="uses" />
+            <depends-on name="jace.core.Utility" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurableField" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.config.Configuration$ConfigNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.config.Reconfigurable" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.Configuration$ConfigTreeModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.Configuration" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.config.ISelection" classification="uses" />
+            <depends-on name="jace.config.InvokableAction" classification="uses" />
+            <depends-on name="jace.config.Configuration$ConfigTreeModel" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.Utility" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurationPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ConfigurationPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurationPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ConfigurationPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurationPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ConfigurationPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurationPanel$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.ConfigurationPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.ConfigurationPanel" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.apple2e.Apple2e" classification="uses" />
+            <depends-on name="jace.config.Configuration$ConfigTreeModel" classification="uses" />
+            <depends-on name="jace.config.ConfigurationPanel$1" classification="uses" />
+            <depends-on name="jace.config.ConfigurationPanel$2" classification="uses" />
+            <depends-on name="jace.config.ConfigurationPanel$3" classification="uses" />
+            <depends-on name="jace.config.ConfigurationPanel$4" classification="uses" />
+            <depends-on name="jace.config.BooleanComponent" classification="uses" />
+            <depends-on name="jace.config.IntegerComponent" classification="uses" />
+            <depends-on name="jace.config.StringComponent" classification="uses" />
+            <depends-on name="jace.config.FileComponent" classification="uses" />
+            <depends-on name="jace.config.ISelection" classification="uses" />
+            <depends-on name="jace.config.DynamicSelectComponent" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+            <depends-on name="jace.config.Reconfigurable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.DynamicSelectComponent$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.config.DynamicSelectComponent" classification="uses" />
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.DynamicSelectComponent" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.DynamicSelection" classification="uses" />
+            <depends-on name="jace.config.StringComponent" classification="uses" />
+            <depends-on name="jace.config.DynamicSelectComponent$1" classification="uses" />
+            <depends-on name="jace.config.Reconfigurable" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.DynamicSelection" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jace.config.ISelection" classification="implements" />
+            <depends-on name="jace.core.Utility" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.FileComponent$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.FileComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.FileComponent$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.config.FileComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.FileComponent" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.StringComponent" classification="uses" />
+            <depends-on name="jace.config.FileComponent$1" classification="uses" />
+            <depends-on name="jace.config.FileComponent$2" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.IntegerComponent" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.config.StringComponent" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.Reconfigurable" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.config.InvokableAction" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.config.ISelection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.config.Name" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.config.Reconfigurable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.config.StringComponent" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.config.Configuration$ConfigNode" classification="uses" />
+            <depends-on name="jace.config.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.core">
+        <type name="jace.core.Card$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Card$2" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Card" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="12">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.Card$1" classification="uses" />
+            <depends-on name="jace.core.Card$2" classification="uses" />
+            <depends-on name="jace.core.PagedMemory$Type" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Computer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.config.InvokableAction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.CPU" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.core.Debugger" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Debugger" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.core.Device" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Font" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.core.Keyboard$1" classification="class" visibility="default">
+          <dependencies count="16">
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.KeyboardSoftSwitch" classification="uses" />
+            <depends-on name="jace.hardware.CardDiskII" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.config.ConfigurationPanel" classification="uses" />
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.Emulator" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+            <depends-on name="jace.apple2e.Speaker" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Keyboard" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.core.KeyHandler" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.KeyboardSoftSwitch" classification="uses" />
+            <depends-on name="jace.core.Keyboard$1" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.KeyHandler" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.core.Motherboard" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jace.core.TimedDevice" classification="extends" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.Device" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.Speaker" classification="uses" />
+            <depends-on name="jace.core.SoundMixer" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.PagedMemory$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.PagedMemory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.core.PagedMemory$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Palette" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.core.RAM" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.RAMEvent$SCOPE" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.RAMEvent$TYPE" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.RAMEvent$VALUE" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.RAMEvent" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.RAMListener" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoftSwitch$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoftSwitch$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoftSwitch$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoftSwitch$4" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoftSwitch" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="11">
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch$1" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch$2" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch$3" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch$4" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoundMixer$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="jace.config.DynamicSelection" classification="extends" />
+            <depends-on name="jace.core.SoundMixer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.SoundMixer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.config.DynamicSelection" classification="uses" />
+            <depends-on name="jace.core.Card" classification="uses" />
+            <depends-on name="jace.core.SoundMixer$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.TimedDevice$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.core.TimedDevice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.TimedDevice" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.core.TimedDevice$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Utility$RankingComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.core.Utility" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Utility" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.core.Utility$RankingComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Video$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.core.Video" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.Video" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.core.VideoWriter" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.config.InvokableAction" classification="uses" />
+            <depends-on name="jace.core.Video$1" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.core.VideoWriter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.hardware">
+        <type name="jace.hardware.CardAppleMouse$1" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.CardAppleMouse" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardAppleMouse" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.RAM128k" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.CardAppleMouse$1" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.Emulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardDiskII" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.hardware.DiskIIDrive" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.FloppyDisk" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardMockingboard$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.mockingboard.R6522" classification="extends" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardMockingboard$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardMockingboard" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.R6522" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard$1" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard$2" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+            <depends-on name="jace.core.SoundMixer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardSSC$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.CardSSC" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardSSC$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.CardSSC" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.CardSSC" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.CardSSC$1" classification="uses" />
+            <depends-on name="jace.hardware.CardSSC$2" classification="uses" />
+            <depends-on name="jace.core.PagedMemory" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbe$1" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.ConsoleProbe" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe$ScreenReader" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbe$KeyReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbe$ScreenReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.ConsoleProbe" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbe" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe$KeyReader" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe$1" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbe$ScreenReader" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbeSimple$1" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbeSimple" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbeSimple$KeyReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbeSimple" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.ConsoleProbeSimple" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbeSimple$KeyReader" classification="uses" />
+            <depends-on name="jace.hardware.ConsoleProbeSimple$1" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.DiskIIDrive$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.DiskIIDrive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.DiskIIDrive" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.FloppyDisk" classification="uses" />
+            <depends-on name="jace.hardware.DiskIIDrive$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.FloppyDisk" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.MemorySoftSwitch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.KeyHandler" classification="extends" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.KeyHandler" classification="extends" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.KeyHandler" classification="extends" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.core.KeyHandler" classification="extends" />
+            <depends-on name="jace.hardware.Joystick" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.Joystick" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.apple2e.softswitch.MemorySoftSwitch" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.hardware.Joystick$1" classification="uses" />
+            <depends-on name="jace.hardware.Joystick$2" classification="uses" />
+            <depends-on name="jace.hardware.Joystick$3" classification="uses" />
+            <depends-on name="jace.hardware.Joystick$4" classification="uses" />
+            <depends-on name="jace.hardware.Joystick$5" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.SoftSwitch" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.Keyboard" classification="uses" />
+            <depends-on name="jace.core.KeyHandler" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.PassportMidiInterface$1" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.PassportMidiInterface" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.PassportMidiInterface$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.PassportMidiInterface" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.PassportMidiInterface$PTMTimer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.PassportMidiInterface$TIMER_MODE" classification="uses" />
+            <depends-on name="jace.hardware.PassportMidiInterface" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.PassportMidiInterface$TIMER_MODE" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.PassportMidiInterface" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.PassportMidiInterface" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.hardware.PassportMidiInterface$PTMTimer" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.PassportMidiInterface$1" classification="uses" />
+            <depends-on name="jace.hardware.PassportMidiInterface$2" classification="uses" />
+            <depends-on name="jace.hardware.PassportMidiInterface$TIMER_MODE" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.hardware.massStorage">
+        <type name="jace.hardware.massStorage.CardMassStorage$1" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="jace.core.RAMListener" classification="extends" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.apple2e.SoftSwitches" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.IDisk" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_RETURN" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.CardMassStorage$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_COMMAND_TYPE" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.CardMassStorage$MLI_COMMAND_TYPE" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.CardMassStorage$MLI_RETURN" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.CardMassStorage" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="jace.core.Card" classification="extends" />
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.hardware.massStorage.IDisk" classification="uses" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.core.RAMListener" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$TYPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_RETURN" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_COMMAND_TYPE" classification="uses" />
+            <depends-on name="jace.config.Name" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.LargeDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$1" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$2" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.core.Motherboard" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$SCOPE" classification="uses" />
+            <depends-on name="jace.core.RAMEvent$VALUE" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.DirectoryNode$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.massStorage.DirectoryNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.DirectoryNode" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="extends" />
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DirectoryNode$1" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.FileNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DiskNode$EntryType" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.FreespaceBitmap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.DiskNode$EntryType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.DiskNode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DiskNode$EntryType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.FileNode$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.massStorage.FileNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DiskNode$EntryType" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.FileNode$FileType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.massStorage.FileNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.FileNode" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="extends" />
+            <depends-on name="jace.hardware.massStorage.DiskNode$EntryType" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.FileNode$FileType" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.SubNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.FileNode$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.FreespaceBitmap" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="extends" />
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.SubNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.IDisk" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.LargeDisk" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jace.hardware.massStorage.IDisk" classification="implements" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_COMMAND_TYPE" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.ProdosVirtualDisk" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jace.hardware.massStorage.IDisk" classification="implements" />
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.DirectoryNode" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.FreespaceBitmap" classification="uses" />
+            <depends-on name="jace.core.RAM" classification="uses" />
+            <depends-on name="jace.apple2e.MOS65C02" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage" classification="uses" />
+            <depends-on name="jace.hardware.massStorage.CardMassStorage$MLI_COMMAND_TYPE" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.massStorage.SubNode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.massStorage.DiskNode" classification="extends" />
+            <depends-on name="jace.hardware.massStorage.ProdosVirtualDisk" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.hardware.mockingboard">
+        <type name="jace.hardware.mockingboard.AY8910_old$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.mockingboard.AY8910_old" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$Reg" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.AY8910_old$PSG" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$Reg" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.AY8910_old" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$1" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.AY8910_old$Reg" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.AY8910_old" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.AY8910_old" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$PSG" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$Reg" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.AY8910_old$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.EnvelopeGenerator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.TimedGenerator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.NoiseGenerator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.TimedGenerator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.PSG$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$BusControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.PSG$BusControl" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.PSG$Reg" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.PSG" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jace.hardware.mockingboard.SoundGenerator" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.EnvelopeGenerator" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.NoiseGenerator" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$BusControl" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.R6522$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.mockingboard.R6522" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.R6522$Register" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.R6522$Register" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.hardware.mockingboard.R6522" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.R6522" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="jace.core.Device" classification="extends" />
+            <depends-on name="jace.hardware.mockingboard.R6522$Register" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.R6522$1" classification="uses" />
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.CPU" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.SoundGenerator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jace.hardware.mockingboard.TimedGenerator" classification="extends" />
+            <depends-on name="jace.hardware.mockingboard.NoiseGenerator" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.EnvelopeGenerator" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.hardware.mockingboard.TimedGenerator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.tracker">
+        <type name="jace.tracker.Pattern" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.PlaybackEngine$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.PlaybackEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.PlaybackEngine$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.PlaybackEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.PlaybackEngine" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+            <depends-on name="jace.tracker.PlaybackEngine$1" classification="uses" />
+            <depends-on name="jace.tracker.PlaybackEngine$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.PlaybackTest" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jace.tracker.PlaybackEngine" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.Row" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.tracker.Song$Scale" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.Song" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.Song" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jace.tracker.Pattern" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+            <depends-on name="jace.tracker.Song$Scale" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$10" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$11" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$12" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$13" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$14" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$15" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI$9" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.tracker.TrackerUI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.tracker.TrackerUI" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="jace.tracker.PlaybackEngine" classification="uses" />
+            <depends-on name="jace.hardware.CardMockingboard" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG$Reg" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$1" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$2" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$3" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$4" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$5" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$6" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$7" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$8" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$9" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$10" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$11" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$12" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$13" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$14" classification="uses" />
+            <depends-on name="jace.tracker.TrackerUI$15" classification="uses" />
+            <depends-on name="jace.tracker.Song" classification="uses" />
+            <depends-on name="jace.hardware.mockingboard.PSG" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jace.ui">
+        <type name="jace.ui.EmulatorFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.EmulatorFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.EmulatorFrame$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.ui.EmulatorFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.EmulatorFrame$MA" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jace.ui.EmulatorFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.EmulatorFrame" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.ui.EmulatorFrame$MA" classification="uses" />
+            <depends-on name="jace.ui.EmulatorFrame$1" classification="uses" />
+            <depends-on name="jace.ui.EmulatorFrame$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.Library" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$10" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$11" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$12" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$9" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame$CustomCanvas" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jace.core.Computer" classification="uses" />
+            <depends-on name="jace.core.Video" classification="uses" />
+            <depends-on name="jace.ui.MainFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jace.ui.MainFrame" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="jace.config.Reconfigurable" classification="implements" />
+            <depends-on name="jace.config.ConfigurableField" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$CustomCanvas" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$1" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$2" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$3" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$4" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$5" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$6" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$7" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$8" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$9" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$10" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$11" classification="uses" />
+            <depends-on name="jace.ui.MainFrame$12" classification="uses" />
+            <depends-on name="jace.EmulatorUILogic" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

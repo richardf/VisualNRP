@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="javacc">
+	<description>Java Geometry library.</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/javacc/javacc.jar" classification="jar">
+      <namespace name="">
+        <type name="javacc" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Main" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jjdoc" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjdoc.JJDocMain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jjtree" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Main" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.javacc">
+        <type name="org.javacc.JavaCCTestCase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.Version" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.javacc.jjdoc">
+        <type name="org.javacc.jjdoc.BNFGenerator" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.javacc.jjdoc.Generator" classification="implements" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocOptions" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.Generator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.HTMLGenerator" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.javacc.jjdoc.TextGenerator" classification="extends" />
+            <depends-on name="org.javacc.jjdoc.Generator" classification="implements" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocOptions" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.JJDoc" classification="class" visibility="public">
+          <dependencies count="32">
+            <depends-on name="org.javacc.jjdoc.JJDocGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.Generator" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.BNFProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RJustName" classification="uses" />
+            <depends-on name="org.javacc.parser.REndOfFile" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.RCharacterList" classification="uses" />
+            <depends-on name="org.javacc.parser.SingleCharacter" classification="uses" />
+            <depends-on name="org.javacc.parser.CharacterRange" classification="uses" />
+            <depends-on name="org.javacc.parser.RChoice" classification="uses" />
+            <depends-on name="org.javacc.parser.ROneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RSequence" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.RRepetitionRange" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParserInternals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.JJDocGlobals" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.jjdoc.Generator" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.TextGenerator" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.BNFGenerator" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.HTMLGenerator" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.JJDocMain" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.javacc.jjdoc.JJDocGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+            <depends-on name="org.javacc.parser.MetaParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.Main" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocOptions" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDoc" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.JJDocOptions" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Options" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjdoc.TextGenerator" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.javacc.jjdoc.Generator" classification="implements" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocOptions" classification="uses" />
+            <depends-on name="org.javacc.jjdoc.JJDocGlobals" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.javacc.jjtree">
+        <type name="org.javacc.jjtree.ASTBNF" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.ASTProduction" classification="extends" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFAction" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTExpansionNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFSequence" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFTryBlock" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFOneOrMore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFAssignment" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFChoice" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFDeclaration" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenUtils" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFLookahead" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFNodeScope" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFNonTerminal" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFOneOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFParenthesized" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFSequence" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFTryBlock" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFZeroOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTBNFZeroOrOne" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTCharDescriptor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTCompilationUnit" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeFiles" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTExpansionNodeScope" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTGrammar" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTJavacode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.ASTProduction" classification="extends" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTJavacodeBody" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTLHS" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTNodeDescriptor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptorExpression" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTNodeDescriptorExpression" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTOptionBinding" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTOptions" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTPrimaryExpression" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTProduction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTProductions" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRE" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRECharList" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREChoice" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREEOF" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRENamed" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREOneOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREParenthesized" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREReference" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRESequence" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRESpec" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREStringLiteral" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREZeroOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTREZeroOrOne" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTRRepetitionRange" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ASTTokenDecls" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.IO" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.javacc.jjtree.JJTreeIOException" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTJJTreeParserState" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTree" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeIOException" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTGrammar" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ParseException" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+            <depends-on name="org.javacc.parser.Main" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTJJTreeParserState" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeFiles" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeGlobals" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeIOException" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeNode" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.javacc.jjtree.SimpleNode" classification="extends" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenUtils" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeOptions" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Options" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParser$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParser$JJCalls" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParser$LookaheadSuccess" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.javacc.jjtree.JJTreeParser$1" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParser" classification="class" visibility="public">
+          <dependencies count="59">
+            <depends-on name="org.javacc.jjtree.JJTreeParserTreeConstants" classification="implements" />
+            <depends-on name="org.javacc.jjtree.JJTreeParserConstants" classification="implements" />
+            <depends-on name="org.javacc.jjtree.JJTJJTreeParserState" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParserTokenManager" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JavaCharStream" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser$JJCalls" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser$LookaheadSuccess" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTProduction" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ParseException" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTGrammar" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTCompilationUnit" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTProductions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTOptionBinding" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTJavacode" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTJavacodeBody" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNF" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFDeclaration" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRE" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTTokenDecls" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRESpec" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFChoice" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFSequence" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFLookahead" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTExpansionNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFAction" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFTryBlock" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFAssignment" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFNonTerminal" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFOneOrMore" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFParenthesized" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRENamed" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREReference" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREEOF" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREChoice" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRESequence" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREOneOrMore" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRRepetitionRange" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTREParenthesized" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTRECharList" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTCharDescriptor" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptorExpression" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTPrimaryExpression" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token$GTToken" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser$1" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParserConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParserTokenManager" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.jjtree.JJTreeParserConstants" classification="implements" />
+            <depends-on name="org.javacc.jjtree.JavaCharStream" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenMgrError" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token$GTToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeParserTreeConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JJTreeState" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeFiles" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.JavaCharStream" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.Main" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.JJTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.Node" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.NodeFiles" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+            <depends-on name="org.javacc.utils.JavaFileGenerator" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.NodeScope" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.javacc.jjtree.ASTProduction" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTNodeDescriptor" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="uses" />
+            <depends-on name="org.javacc.jjtree.Node" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFNonTerminal" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFDeclaration" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTBNFNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.ASTExpansionNodeScope" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeOptions" classification="uses" />
+            <depends-on name="org.javacc.jjtree.NodeFiles" classification="uses" />
+            <depends-on name="org.javacc.jjtree.TokenUtils" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeGlobals" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.ParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.SimpleNode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.jjtree.Node" classification="implements" />
+            <depends-on name="org.javacc.jjtree.JJTreeParser" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeParserTreeConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.Token$GTToken" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Token" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.Token" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.jjtree.Token$GTToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.TokenMgrError" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.jjtree.TokenUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.javacc.jjtree.Token" classification="uses" />
+            <depends-on name="org.javacc.jjtree.IO" classification="uses" />
+            <depends-on name="org.javacc.jjtree.JJTreeNode" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.javacc.parser">
+        <type name="org.javacc.parser.Action" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.BNFProduction" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.NormalProduction" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.CharacterRange" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Choice" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Container" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Expansion" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ExpansionTreeWalker" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.RChoice" classification="uses" />
+            <depends-on name="org.javacc.parser.RSequence" classification="uses" />
+            <depends-on name="org.javacc.parser.ROneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.RRepetitionRange" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCErrors" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.CharacterRange" classification="uses" />
+            <depends-on name="org.javacc.parser.SingleCharacter" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCGlobals" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.Version" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParser$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParser$JJCalls" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParser$LookaheadSuccess" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.JavaCCParser$1" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParser$ModifierSet" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParser" classification="class" visibility="public">
+          <dependencies count="41">
+            <depends-on name="org.javacc.parser.JavaCCParserInternals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.JavaCCParserTokenManager" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCharStream" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser$JJCalls" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser$LookaheadSuccess" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Container" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.BNFProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.REndOfFile" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.RJustName" classification="uses" />
+            <depends-on name="org.javacc.parser.RSequence" classification="uses" />
+            <depends-on name="org.javacc.parser.RChoice" classification="uses" />
+            <depends-on name="org.javacc.parser.ROneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.RRepetitionRange" classification="uses" />
+            <depends-on name="org.javacc.parser.RCharacterList" classification="uses" />
+            <depends-on name="org.javacc.parser.CharacterRange" classification="uses" />
+            <depends-on name="org.javacc.parser.SingleCharacter" classification="uses" />
+            <depends-on name="org.javacc.parser.Token$GTToken" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser$1" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParser$ModifierSet" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParserConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParserInternals" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="14">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.BNFProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Container" classification="uses" />
+            <depends-on name="org.javacc.parser.REndOfFile" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCCParserTokenManager" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.JavaCharStream" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenMgrError" classification="uses" />
+            <depends-on name="org.javacc.parser.Token$GTToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCharStream" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaCodeProduction" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.NormalProduction" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.JavaFiles" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.utils.JavaFileGenerator" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.Version" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.KindInfo" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.LexGen" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.RChoice" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaFiles" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Lookahead" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.LookaheadCalc" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.MatchInfo" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.LookaheadWalk" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.LookaheadWalk" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="13">
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.MatchInfo" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Main" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="18">
+            <depends-on name="org.javacc.parser.JavaCCParser" classification="uses" />
+            <depends-on name="org.javacc.parser.MetaParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseGen" classification="uses" />
+            <depends-on name="org.javacc.parser.LexGen" classification="uses" />
+            <depends-on name="org.javacc.parser.OtherFilesGen" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCParserInternals" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaFiles" classification="uses" />
+            <depends-on name="org.javacc.parser.MatchInfo" classification="uses" />
+            <depends-on name="org.javacc.parser.LookaheadWalk" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.MatchInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.MetaParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.ParseException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Nfa" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.NfaState" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.parser.LexGen" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.NonTerminal" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.NormalProduction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OneOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Options" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OtherFilesGen" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.MetaParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaFiles" classification="uses" />
+            <depends-on name="org.javacc.parser.LexGen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OutputFile$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OutputFile$NullOutputStream" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.OutputFile$1" classification="uses" />
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OutputFile$TrapClosePrintWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.OutputFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.OutputFile" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.javacc.parser.OutputFile$TrapClosePrintWriter" classification="uses" />
+            <depends-on name="org.javacc.parser.OutputFile$NullOutputStream" classification="uses" />
+            <depends-on name="org.javacc.parser.OutputFile$1" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.Version" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ParseEngine" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.BNFProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Phase3Data" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCodeProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ParseGen" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.JavaCCParserConstants" classification="implements" />
+            <depends-on name="org.javacc.parser.MetaParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.ParseEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Phase3Data" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RCharacterList" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.CharacterRange" classification="uses" />
+            <depends-on name="org.javacc.parser.SingleCharacter" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RChoice" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.RJustName" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.RCharacterList" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+            <depends-on name="org.javacc.parser.LexGen" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.REndOfFile" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RJustName" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ROneOrMore" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RRepetitionRange" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.RSequence" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RSequence" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RStringLiteral" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+            <depends-on name="org.javacc.parser.KindInfo" classification="uses" />
+            <depends-on name="org.javacc.parser.RCharacterList" classification="uses" />
+            <depends-on name="org.javacc.parser.LexGen" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RZeroOrMore" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RZeroOrOne" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="extends" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+            <depends-on name="org.javacc.parser.NfaState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RegExprSpec" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.RegularExpression" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Nfa" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize$EmptyChecker" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="implements" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize$FixRJustNames" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="implements" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RJustName" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize$LookaheadChecker" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="implements" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.LookaheadCalc" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize$LookaheadFixer" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="implements" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.REndOfFile" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize$ProductionDefinedChecker" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="implements" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Semanticize" classification="class" visibility="public">
+          <dependencies count="35">
+            <depends-on name="org.javacc.parser.JavaCCGlobals" classification="extends" />
+            <depends-on name="org.javacc.parser.RegularExpression" classification="uses" />
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+            <depends-on name="org.javacc.parser.NormalProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.MetaParseException" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize$LookaheadFixer" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize$ProductionDefinedChecker" classification="uses" />
+            <depends-on name="org.javacc.parser.TokenProduction" classification="uses" />
+            <depends-on name="org.javacc.parser.RegExprSpec" classification="uses" />
+            <depends-on name="org.javacc.parser.REndOfFile" classification="uses" />
+            <depends-on name="org.javacc.parser.RJustName" classification="uses" />
+            <depends-on name="org.javacc.parser.RStringLiteral" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize$FixRJustNames" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize$EmptyChecker" classification="uses" />
+            <depends-on name="org.javacc.parser.Semanticize$LookaheadChecker" classification="uses" />
+            <depends-on name="org.javacc.parser.NonTerminal" classification="uses" />
+            <depends-on name="org.javacc.parser.Action" classification="uses" />
+            <depends-on name="org.javacc.parser.OneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.ZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+            <depends-on name="org.javacc.parser.Choice" classification="uses" />
+            <depends-on name="org.javacc.parser.Sequence" classification="uses" />
+            <depends-on name="org.javacc.parser.TryBlock" classification="uses" />
+            <depends-on name="org.javacc.parser.RChoice" classification="uses" />
+            <depends-on name="org.javacc.parser.RSequence" classification="uses" />
+            <depends-on name="org.javacc.parser.ROneOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrMore" classification="uses" />
+            <depends-on name="org.javacc.parser.RZeroOrOne" classification="uses" />
+            <depends-on name="org.javacc.parser.RRepetitionRange" classification="uses" />
+            <depends-on name="org.javacc.parser.JavaCCErrors" classification="uses" />
+            <depends-on name="org.javacc.parser.Options" classification="uses" />
+            <depends-on name="org.javacc.parser.ExpansionTreeWalker" classification="uses" />
+            <depends-on name="org.javacc.parser.TreeWalkerOp" classification="uses" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Sequence" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+            <depends-on name="org.javacc.parser.Lookahead" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.SingleCharacter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Token$GTToken" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Token" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.Token" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Token$GTToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.TokenMgrError" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.TokenProduction" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.TreeWalkerOp" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Expansion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.TryBlock" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ZeroOrMore" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.javacc.parser.ZeroOrOne" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.javacc.parser.Expansion" classification="extends" />
+            <depends-on name="org.javacc.parser.Token" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.javacc.utils">
+        <type name="org.javacc.utils.JavaFileGenerator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

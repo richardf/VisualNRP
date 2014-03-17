@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="pdf_renderer">
+    <description>Java PDF file renderer v0.2.1</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/NoteLab_05-05-2009_04-24-41_v0.2.1beta1/jar/PDFRenderer.jar" classification="jar">
+      <namespace name="com.sun.pdfview">
+        <type name="com.sun.pdfview.PDFPaint" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.Cache" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+            <depends-on name="com.sun.pdfview.ImageInfo" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache$PageRecord" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache$Record" classification="uses" />
+            <depends-on name="com.sun.pdfview.BaseWatchable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFStrokeAlphaCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFShapeCmd" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.Identity8BitCharsetEncoder" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFImage$DecodeComponentColorModel" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFImage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFXref" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFImageCmd" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFImage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFParser$ParserState" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFTextFormat" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.NameTree" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFDestination" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.NameTree" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFObject" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser$Tok" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFXref" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFStringUtil" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.PDFDecoder" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.IdentityDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.HexDump" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFPopCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.BaseWatchable" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.Watchable" classification="implements" />
+            <depends-on name="com.sun.pdfview.BaseWatchable$Gate" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFPage" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache" classification="uses" />
+            <depends-on name="com.sun.pdfview.ImageInfo" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFChangeStrokeCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFImage" classification="uses" />
+            <depends-on name="com.sun.pdfview.RefImage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPushCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPopCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFXformCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFShapeCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFillPaintCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFStrokePaintCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFillAlphaCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFStrokeAlphaCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFImageCmd" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.Cache$PageRecord" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.Cache$Record" classification="extends" />
+            <depends-on name="com.sun.pdfview.ImageInfo" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFRenderer$GraphicsState" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFParser" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="com.sun.pdfview.BaseWatchable" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFParser$ParserState" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser$Tok" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.PatternSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PDFShader" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFTextFormat" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFImage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.Cache$Record" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.BaseWatchable" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFCmd" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.RefImage" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFStringUtil" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFDocCharsetEncoder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFChangeStrokeCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFImage" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.IndexedColor" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFImage$DecodeComponentColorModel" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType0" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.OutlineNode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.action.PDFAction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFRenderer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.sun.pdfview.BaseWatchable" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer$GraphicsState" classification="uses" />
+            <depends-on name="com.sun.pdfview.ImageInfo" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFImage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFXformCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.BaseWatchable$Gate" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.BaseWatchable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFFillAlphaCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFFile" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="com.sun.pdfview.PDFXref" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.Cache" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.UnsupportedEncryptionException" classification="uses" />
+            <depends-on name="com.sun.pdfview.OutlineNode" classification="uses" />
+            <depends-on name="com.sun.pdfview.action.PDFAction" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFDestination" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.IdentityDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFAuthenticationFailureException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByProductException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByPlatformException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypterFactory" classification="uses" />
+            <depends-on name="com.sun.pdfview.action.GoToAction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFFillPaintCmd" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.ImageInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFParseException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFStrokePaintCmd" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFDocCharsetEncoder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.Watchable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFTextFormat" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFParser$Tok" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.PDFPushCmd" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.font.ttf">
+        <type name="com.sun.pdfview.font.ttf.PostTable$PostMap" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.GlyfSimple" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.Glyf" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.HmtxTable" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.MaxpTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HheaTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.HeadTable" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.Glyf" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfCompound" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfSimple" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.HheaTable" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HeadTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HheaTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HmtxTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.LocaTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.MaxpTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.NameTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.LocaTable" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.MaxpTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HeadTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.NameTable$NameRecord" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.NameTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CMapFormat4" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat4$Segment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CmapTable" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable$CmapSubtable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.GlyfTable" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.LocaTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.MaxpTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.Glyf" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.PostTable$PostMapFormat0" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable$PostMap" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.AdobeGlyphList" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.AdobeGlyphList$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.NameTable" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.NameTable$NameRecord" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CMapFormat4$Segment" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CMapFormat0" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.AdobeGlyphList$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.AdobeGlyphList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CmapTable$CmapSubtable" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.GlyfCompound" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.Glyf" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfCompound$GlyfComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.GlyfCompound$GlyfComponent" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfCompound" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.PostTable" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable$PostMap" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable$PostMapFormat0" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable$PostMapFormat2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.MaxpTable" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CMapFormat6" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.CMap" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat0" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat4" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat6" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.ttf.PostTable$PostMapFormat2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable$PostMapFormat0" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.font">
+        <type name="com.sun.pdfview.font.FlPoint" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.FontSupport" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type3Font" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type1Font" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.font.OutlineFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.FlPoint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type1Font$PSParser" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FontSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type1Font$PSParser" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.Type1Font" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.TTFFont" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="com.sun.pdfview.font.OutlineFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HeadTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.Glyf" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HmtxTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfSimple" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.TTFFont$RenderState" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.TTFFont$PointRec" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfCompound" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.AdobeGlyphList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFCMap" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFCMap$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFGlyph" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFShapeCmd" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFCmd" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.NativeFont" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="com.sun.pdfview.font.OutlineFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.PostTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HmtxTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.HeadTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.NameTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat4" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat0" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.TTFFont$RenderState" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.TTFFont$PointRec" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.TTFFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type1CFont$Range" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.Type1CFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFFontEncoding" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.font.PDFCMap" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FontSupport" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type0Font" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.BuiltinFont" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.Type1Font" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.NativeFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFFontDescriptor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.OutlineFont" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFCMap$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.font.PDFCMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type1CFont" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.font.OutlineFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type1CFont$Range" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FlPoint" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FontSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.TTFFont$PointRec" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.font.TTFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.GlyfSimple" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.PDFFont" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="com.sun.pdfview.font.PDFFontEncoding" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFCMap" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type0Font" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.BuiltinFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type1Font" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type1CFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.TTFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type3Font" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.CIDFontType2" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.Type0Font" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.font.CIDFontType2" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.font.TTFFont" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFontDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.colorspace">
+        <type name="com.sun.pdfview.colorspace.PatternSpace" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PDFPattern" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.CalRGBColor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType0" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.LabColor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.CalGrayColor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.MaskColorSpace" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.AlternateColorSpace" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.PDFColorSpace" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.CMYKColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.PatternSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.CalGrayColor" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.CalRGBColor" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.LabColor" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.AlternateColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.IndexedColor" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.CMYKColorSpace" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.colorspace.IndexedColor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.decrypt">
+        <type name="com.sun.pdfview.decrypt.CryptFilterDecrypter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="implements" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.IdentityDecrypter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="implements" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.StandardDecrypter$EncryptionAlgorithm" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.decrypt.StandardDecrypter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFDecrypter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.UnsupportedEncryptionException" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.EncryptionUnsupportedByPlatformException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.decrypt.UnsupportedEncryptionException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.EncryptionUnsupportedByProductException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.decrypt.UnsupportedEncryptionException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$PasswordByteGenerator" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$PDFDocEncodingByteGenerator" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$1" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$IdentityEncodingByteGenerator" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFStringUtil" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$CharsetEncoderGenerator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword$PDFDocEncodingByteGenerator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$CharsetEncoderGenerator" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFDocCharsetEncoder" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword$CharsetEncoderGenerator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$PasswordByteGenerator" classification="implements" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFAuthenticationFailureException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword$PasswordByteGenerator" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.StandardDecrypter" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="implements" />
+            <depends-on name="com.sun.pdfview.decrypt.StandardDecrypter$EncryptionAlgorithm" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByProductException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByPlatformException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFAuthenticationFailureException" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$PasswordByteGenerator" classification="implements" />
+            <depends-on name="com.sun.pdfview.PDFStringUtil" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFPassword$IdentityEncodingByteGenerator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword$CharsetEncoderGenerator" classification="extends" />
+            <depends-on name="com.sun.pdfview.Identity8BitCharsetEncoder" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decrypt.PDFDecrypterFactory" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFPassword" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.StandardDecrypter$EncryptionAlgorithm" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByPlatformException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.EncryptionUnsupportedByProductException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFAuthenticationFailureException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.IdentityDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.CryptFilterDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.StandardDecrypter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.pattern">
+        <type name="com.sun.pdfview.pattern.PDFShader" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.ShaderType2" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.sun.pdfview.pattern.PDFShader" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2$Type2Paint" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2$Type2PaintContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.ShaderType2$Type2PaintContext" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.PatternType1$TilingPatternPaint" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="extends" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.PatternType1$Type1PaintContext" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.pattern.PatternType1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.PDFPattern" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.PatternType1$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.pattern.PatternType1" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1$Type1PaintContext" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.ShaderType2$Type2Paint" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.ShaderType2$Type2PaintContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.pattern.PatternType1" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.sun.pdfview.pattern.PDFPattern" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParser" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1$1" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1$TilingPatternPaint" classification="uses" />
+            <depends-on name="com.sun.pdfview.pattern.PatternType1$Type1PaintContext" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.function">
+        <type name="com.sun.pdfview.function.FunctionType4$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType0" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$29" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$8" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$37" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$36" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$15" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.PDFFunction" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType0" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType2" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType3" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$Operation" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$6" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$38" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$10" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$14" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType2" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$31" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$7" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$20" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$34" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Expression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$Expression" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$28" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$41" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$35" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Expression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType3" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4" classification="class" visibility="public">
+          <dependencies count="46">
+            <depends-on name="com.sun.pdfview.function.PDFFunction" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Expression" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$1" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$2" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$3" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$4" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$5" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$6" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$7" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$8" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$9" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$10" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$11" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$12" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$13" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$14" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$15" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$16" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$17" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$18" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$19" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$20" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$21" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$22" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$23" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$24" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$25" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$26" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$27" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$28" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$29" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$30" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$31" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$32" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$33" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$34" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$35" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$36" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$37" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$38" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$39" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$40" classification="uses" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4$41" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$33" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$30" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$13" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$22" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$21" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$23" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$18" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$27" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$25" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$24" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$26" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$16" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$32" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$11" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$17" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$40" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$19" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$9" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$12" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.function.FunctionType4$39" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.function.FunctionType4$Operation" classification="extends" />
+            <depends-on name="com.sun.pdfview.function.FunctionType4" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.decode">
+        <type name="com.sun.pdfview.decode.MyTracker" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.ASCII85Decode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.DCTDecode" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.MyTracker" classification="uses" />
+            <depends-on name="com.sun.pdfview.colorspace.PDFColorSpace" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.RunLengthDecode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.CCITTFaxDecoder" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.Predictor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.PNGPredictor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.CCITTFaxDecode" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.CCITTFaxDecoder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.FlateDecode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.Predictor" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.ASCIIHexDecode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.LZWDecode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.Predictor" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.PDFDecoder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.decrypt.PDFDecrypter" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.FlateDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.LZWDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.ASCII85Decode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.ASCIIHexDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.RunLengthDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.DCTDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.decode.CCITTFaxDecode" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.decode.PNGPredictor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.decode.Predictor" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.pdfview.action">
+        <type name="com.sun.pdfview.action.GoToAction" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.sun.pdfview.action.PDFAction" classification="extends" />
+            <depends-on name="com.sun.pdfview.PDFDestination" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.pdfview.action.PDFAction" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFParseException" classification="uses" />
+            <depends-on name="com.sun.pdfview.action.GoToAction" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="test">
+        <type name="test.TTFTest$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.TTFTest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.TestType1CFont" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="test.TestType1CFont$GlyphData" classification="uses" />
+            <depends-on name="test.TestType1CFont$Range" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FlPoint" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.FontSupport" classification="uses" />
+            <depends-on name="test.TestType1CFont$GlyphPoint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.TestType1CFont$Range" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.TestType1CFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.TTFTest" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.MaxpTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat0" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMapFormat4" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CmapTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.NameTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.TrueTypeTable" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.ttf.CMap" classification="uses" />
+            <depends-on name="test.TTFTest$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.TestType1CFont$GlyphPoint" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.TestType1CFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFGlyph" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFFile" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFPage" classification="uses" />
+            <depends-on name="com.sun.pdfview.PDFObject" classification="uses" />
+            <depends-on name="test.FontToy$1" classification="uses" />
+            <depends-on name="test.FontToy$2" classification="uses" />
+            <depends-on name="test.FontToy$3" classification="uses" />
+            <depends-on name="test.FontToy$4" classification="uses" />
+            <depends-on name="test.FontToy$5" classification="uses" />
+            <depends-on name="test.FontToy$6" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.OutlineFont" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.Type3Font" classification="uses" />
+            <depends-on name="test.FontToy$7" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.Type1Decode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.sun.pdfview.HexDump" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="test.FontToy" classification="uses" />
+            <depends-on name="com.sun.pdfview.font.PDFFont" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.FontToy$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="test.FontToy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="test.TestType1CFont$GlyphData" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="test.TestType1CFont$GlyphPoint" classification="uses" />
+            <depends-on name="test.TestType1CFont" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

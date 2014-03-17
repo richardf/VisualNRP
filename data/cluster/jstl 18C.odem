@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jstl">
+	<description>JSTL v1.0.6</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/jstl/jstl-1.0.6 18C.jar" classification="jar">
+      <namespace name="javax.servlet.jsp.jstl.core">
+        <type name="javax.servlet.jsp.jstl.core.ConditionalTagSupport" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.core.Config" classification="class" visibility="public">
+          <dependencies count="4">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.core.LoopTag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTagStatus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.core.LoopTagStatus" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.core.LoopTagSupport$1Status" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTagStatus" classification="implements" />
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTagSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.core.LoopTagSupport" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTag" classification="implements" />
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTagStatus" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.core.LoopTagSupport$1Status" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.jsp.jstl.fmt">
+        <type name="javax.servlet.jsp.jstl.fmt.LocaleSupport" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.jsp.jstl.fmt.LocalizationContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.fmt.LocalizationContext" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.jsp.jstl.sql">
+        <type name="javax.servlet.jsp.jstl.sql.Result" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.sql.ResultImpl" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.jstl.sql.Result" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.sql.ResultSupport" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.jstl.sql.Result" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.sql.ResultImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.sql.SQLExecutionTag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.jsp.jstl.tlv">
+        <type name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV$PermittedTaglibsHandler" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV$PermittedTaglibsHandler" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV$MyContentHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV$MyContentHandler" classification="uses" />
+            <depends-on name="javax.servlet.jsp.jstl.tlv.ScriptFreeTLV$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

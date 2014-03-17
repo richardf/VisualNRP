@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="servletapi">
+	<description>Servlet API v2.3</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/servlet api/servletapi-2.3 74C.jar" classification="jar">
+      <namespace name="javax.servlet">
+        <type name="javax.servlet.Filter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.FilterConfig" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.FilterChain" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.FilterChain" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.FilterConfig" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.GenericServlet" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="javax.servlet.Servlet" classification="implements" />
+            <depends-on name="javax.servlet.ServletConfig" classification="implements" />
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.RequestDispatcher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.Servlet" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="javax.servlet.ServletConfig" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletConfig" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.RequestDispatcher" classification="uses" />
+            <depends-on name="javax.servlet.Servlet" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletContextAttributeEvent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletContextEvent" classification="extends" />
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletContextAttributeListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletContextAttributeEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletContextEvent" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletContextListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletContextEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletInputStream" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletOutputStream" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletRequest" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletInputStream" classification="uses" />
+            <depends-on name="javax.servlet.RequestDispatcher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletRequestWrapper" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.ServletRequest" classification="implements" />
+            <depends-on name="javax.servlet.ServletInputStream" classification="uses" />
+            <depends-on name="javax.servlet.RequestDispatcher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletResponse" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.ServletResponseWrapper" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletResponse" classification="implements" />
+            <depends-on name="javax.servlet.ServletOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.SingleThreadModel" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.UnavailableException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletException" classification="extends" />
+            <depends-on name="javax.servlet.Servlet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.http">
+        <type name="javax.servlet.http.Cookie" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpServlet" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="javax.servlet.GenericServlet" classification="extends" />
+            <depends-on name="javax.servlet.http.HttpServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.http.NoBodyResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletOutputStream" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpServletRequest" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.ServletRequest" classification="extends" />
+            <depends-on name="javax.servlet.http.Cookie" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpServletRequestWrapper" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.ServletRequestWrapper" classification="extends" />
+            <depends-on name="javax.servlet.http.HttpServletRequest" classification="implements" />
+            <depends-on name="javax.servlet.http.Cookie" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpServletResponse" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletResponse" classification="extends" />
+            <depends-on name="javax.servlet.http.Cookie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpServletResponseWrapper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="javax.servlet.ServletResponseWrapper" classification="extends" />
+            <depends-on name="javax.servlet.http.HttpServletResponse" classification="implements" />
+            <depends-on name="javax.servlet.http.Cookie" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSession" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpSessionContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionActivationListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSessionEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionAttributeListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSessionBindingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionBindingEvent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.http.HttpSessionEvent" classification="extends" />
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionBindingListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSessionBindingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionEvent" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpSessionListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.http.HttpSessionEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.HttpUtils" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.ServletInputStream" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.NoBodyOutputStream" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.ServletOutputStream" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.http.NoBodyResponse" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.http.HttpServletResponse" classification="implements" />
+            <depends-on name="javax.servlet.http.NoBodyOutputStream" classification="uses" />
+            <depends-on name="javax.servlet.ServletOutputStream" classification="uses" />
+            <depends-on name="javax.servlet.http.Cookie" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.jsp">
+        <type name="javax.servlet.jsp.HttpJspPage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="javax.servlet.jsp.JspPage" classification="extends" />
+            <depends-on name="javax.servlet.http.HttpServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspEngineInfo" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.Servlet" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.jsp.PageContext" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspEngineInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspPage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.Servlet" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspTagException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.JspException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.JspWriter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.PageContext" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="javax.servlet.Servlet" classification="uses" />
+            <depends-on name="javax.servlet.ServletRequest" classification="uses" />
+            <depends-on name="javax.servlet.ServletResponse" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspWriter" classification="uses" />
+            <depends-on name="javax.servlet.http.HttpSession" classification="uses" />
+            <depends-on name="javax.servlet.ServletConfig" classification="uses" />
+            <depends-on name="javax.servlet.ServletContext" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.BodyContent" classification="uses" />
+            <depends-on name="javax.servlet.ServletException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.servlet.jsp.tagext">
+        <type name="javax.servlet.jsp.tagext.BodyContent" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.JspWriter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.BodyTag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.jsp.tagext.IterationTag" classification="extends" />
+            <depends-on name="javax.servlet.jsp.tagext.BodyContent" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.BodyTagSupport" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="javax.servlet.jsp.tagext.TagSupport" classification="extends" />
+            <depends-on name="javax.servlet.jsp.tagext.BodyTag" classification="implements" />
+            <depends-on name="javax.servlet.jsp.tagext.BodyContent" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspWriter" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.IterationTag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.tagext.Tag" classification="extends" />
+            <depends-on name="javax.servlet.jsp.JspException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.PageData" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.Tag" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.PageContext" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagAttributeInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagExtraInfo" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="javax.servlet.jsp.tagext.TagInfo" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.TagData" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.VariableInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagInfo" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="javax.servlet.jsp.tagext.TagLibraryInfo" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.TagExtraInfo" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.TagAttributeInfo" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.TagVariableInfo" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.TagData" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.VariableInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagLibraryInfo" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.servlet.jsp.tagext.TagInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagLibraryValidator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.servlet.jsp.tagext.PageData" classification="uses" />
+            <depends-on name="javax.servlet.jsp.tagext.ValidationMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagSupport" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="javax.servlet.jsp.tagext.IterationTag" classification="implements" />
+            <depends-on name="javax.servlet.jsp.tagext.Tag" classification="uses" />
+            <depends-on name="javax.servlet.jsp.PageContext" classification="uses" />
+            <depends-on name="javax.servlet.jsp.JspException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TagVariableInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.TryCatchFinally" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.ValidationMessage" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.servlet.jsp.tagext.VariableInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,285 @@
+E; project; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; vpl; 134653.5; cost; 1170900
+E; project; Construção de cerca e estacionamento em uma SE; vpl; 1867.91666666667; cost; 75153
+E; project; Construção de Estacionamento em UHE; vpl; 4277; cost; 26541
+E; project; Construção de travessias sobre Canaletas em uma SE de São José; vpl; 4584454.25; cost; 182365487
+E; project; Contr. de uma estrutura laboratorial de sistemas eólicos; vpl; 250000; cost; 1900000
+E; project; Instalação da LT ARARAQUARA/CAMPINAS 500KV; vpl; 809975.11; cost; 1028939
+E; project; Instalação de Sistema Optico - SE; vpl; 125000; cost; 31000000
+E; project; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; vpl; 8774.42; cost; 12421.6
+E; project; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; vpl; 7926.64; cost; 18500
+E; project; Montagem e Instal. de Sala Cofre em E.Central; vpl; 5614; cost; 35142
+E; project; Obra Vestiário Academia da empresa; vpl; 3514; cost; 22014
+E; project; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; vpl; 4534.33333333333; cost; 92931
+E; project; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; vpl; 1388.31; cost; 351686
+E; project; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; vpl; 1842; cost; 3000
+E; project; Construção de garagem com escritório para órgão na UTE de Campos; vpl; 8530.41666666667; cost; 256317
+E; project; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; vpl; 1278.5; cost; 33280.53
+E; project; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; vpl; 211780.583333333; cost; 5883827
+E; project; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; vpl; 456617; cost; 2123800
+E; project; Obra de ampliação de Posto Médico em SE localizada em Vitoria; vpl; 121962; cost; 13214254
+E; project; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; vpl; 816666.64; cost; 5000000
+E; project; Implantação/Aquisição/Substituição de Pára-raios; vpl; 85000; cost; 418000
+E; project; Implantação de Bacia de contenção nas instalações de uma SE; vpl; 585.0475; cost; 1728446
+E; project; Implantação de telefonia IP em SE´s; vpl; 333333.333333333; cost; 2900000
+E; project; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; vpl; 37982.5618; cost; 399816.44
+E; project; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); vpl; 468512.833333333; cost; 9088385
+E; risk; Não renovação das concessões de Geração e Transmissão; probability; 35
+E; risk; Regulação do preço de venda de energia ; probability; 34
+E; risk; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; probability; 45
+E; risk; Ingerência Política ; probability; 47
+E; risk; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; probability; 37
+E; risk; Atraso na obtenção de licenças / autorizações ambientais ; probability; 36
+E; risk; Falha no acompanhamento das mudanças da legislação de interesse da empresa; probability; 52
+E; risk; Falta de renovação e recomposição da força de trabalho ; probability; 49
+E; risk; Cenários internos não alinhados com o planejamento estratégico; probability; 37
+E; risk; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; probability; 46
+R; affects; Não renovação das concessões de Geração e Transmissão; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -351270
+R; affects; Não renovação das concessões de Geração e Transmissão; Construção de cerca e estacionamento em uma SE; impact; -22545.9
+R; affects; Não renovação das concessões de Geração e Transmissão; Construção de Estacionamento em UHE; impact; -7962.3
+R; affects; Não renovação das concessões de Geração e Transmissão; Construção de travessias sobre Canaletas em uma SE de São José; impact; -54709646.1
+R; affects; Não renovação das concessões de Geração e Transmissão; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -570000
+R; affects; Não renovação das concessões de Geração e Transmissão; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -308681.7
+R; affects; Não renovação das concessões de Geração e Transmissão; Instalação de Sistema Optico - SE; impact; -9300000
+R; affects; Não renovação das concessões de Geração e Transmissão; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -3726.48
+R; affects; Não renovação das concessões de Geração e Transmissão; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -5550
+R; affects; Não renovação das concessões de Geração e Transmissão; Montagem e Instal. de Sala Cofre em E.Central; impact; -10542.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Obra Vestiário Academia da empresa; impact; -6604.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -27879.3
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -105505.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -900
+R; affects; Não renovação das concessões de Geração e Transmissão; Construção de garagem com escritório para órgão na UTE de Campos; impact; -76895.1
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -9984.159
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -1765148.1
+R; affects; Não renovação das concessões de Geração e Transmissão; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -637140
+R; affects; Não renovação das concessões de Geração e Transmissão; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -3964276.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -1500000
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação/Aquisição/Substituição de Pára-raios; impact; -125400
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de Bacia de contenção nas instalações de uma SE; impact; -518533.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Implantação de telefonia IP em SE´s; impact; -870000
+R; affects; Não renovação das concessões de Geração e Transmissão; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -119944.932
+R; affects; Não renovação das concessões de Geração e Transmissão; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -2726515.5
+R; affects; Regulação do preço de venda de energia ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -77133.27168
+R; affects; Regulação do preço de venda de energia ; Construção de cerca e estacionamento em uma SE; impact; -4950.7189056
+R; affects; Regulação do preço de venda de energia ; Construção de Estacionamento em UHE; impact; -1748.3936832
+R; affects; Regulação do preço de venda de energia ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -12013362.9292224
+R; affects; Regulação do preço de venda de energia ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -125162.88
+R; affects; Regulação do preço de venda de energia ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -67781.5624128
+R; affects; Regulação do preço de venda de energia ; Instalação de Sistema Optico - SE; impact; -2042131.2
+R; affects; Regulação do preço de venda de energia ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -818.27538432
+R; affects; Regulação do preço de venda de energia ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -1218.6912
+R; affects; Regulação do preço de venda de energia ; Montagem e Instal. de Sala Cofre em E.Central; impact; -2314.9862784
+R; affects; Regulação do preço de venda de energia ; Obra Vestiário Academia da empresa; impact; -1450.1766528
+R; affects; Regulação do preço de venda de energia ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -6121.8482112
+R; affects; Regulação do preço de venda de energia ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -23167.3855872
+R; affects; Regulação do preço de venda de energia ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -197.6256
+R; affects; Regulação do preço de venda de energia ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -16884.9336384
+R; affects; Regulação do preço de venda de energia ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -2192.361569856
+R; affects; Regulação do preço de venda de energia ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -387598.2803904
+R; affects; Regulação do preço de venda de energia ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -139905.74976
+R; affects; Regulação do preço de venda de energia ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -870491.6251008
+R; affects; Regulação do preço de venda de energia ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -329376
+R; affects; Regulação do preço de venda de energia ; Implantação/Aquisição/Substituição de Pára-raios; impact; -27535.8336
+R; affects; Regulação do preço de venda de energia ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -113861.7259392
+R; affects; Regulação do preço de venda de energia ; Implantação de telefonia IP em SE´s; impact; -191038.08
+R; affects; Regulação do preço de venda de energia ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -26337.987948288
+R; affects; Regulação do preço de venda de energia ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -598699.179552
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -17563.5292725
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Construção de cerca e estacionamento em uma SE; impact; -1127.296878825
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Construção de Estacionamento em UHE; impact; -398.115663525
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -2735486.86413718
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -28500.0475
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -15434.110723475
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instalação de Sistema Optico - SE; impact; -465000.775
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -186.32431054
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -277.5004625
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Montagem e Instal. de Sala Cofre em E.Central; impact; -527.13087855
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Obra Vestiário Academia da empresa; impact; -330.21055035
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -1393.967323275
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -5275.29879215
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -45.000075
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -3844.761407925
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -499.20878201325
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -88257.552095675
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -31857.053095
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -198214.14035635
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -75000.125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação/Aquisição/Substituição de Pára-raios; impact; -6270.01045
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -25926.73321115
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Implantação de telefonia IP em SE´s; impact; -43500.0725
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -5997.256595411
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -136326.002209625
+R; affects; Ingerência Política ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -11709
+R; affects; Ingerência Política ; Construção de cerca e estacionamento em uma SE; impact; -751.53
+R; affects; Ingerência Política ; Construção de Estacionamento em UHE; impact; -265.41
+R; affects; Ingerência Política ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -1823654.87
+R; affects; Ingerência Política ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -19000
+R; affects; Ingerência Política ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -10289.39
+R; affects; Ingerência Política ; Instalação de Sistema Optico - SE; impact; -310000
+R; affects; Ingerência Política ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -124.216
+R; affects; Ingerência Política ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -185
+R; affects; Ingerência Política ; Montagem e Instal. de Sala Cofre em E.Central; impact; -351.42
+R; affects; Ingerência Política ; Obra Vestiário Academia da empresa; impact; -220.14
+R; affects; Ingerência Política ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -929.31
+R; affects; Ingerência Política ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -3516.86
+R; affects; Ingerência Política ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -30
+R; affects; Ingerência Política ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -2563.17
+R; affects; Ingerência Política ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -332.8053
+R; affects; Ingerência Política ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -58838.27
+R; affects; Ingerência Política ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -21238
+R; affects; Ingerência Política ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -132142.54
+R; affects; Ingerência Política ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -50000
+R; affects; Ingerência Política ; Implantação/Aquisição/Substituição de Pára-raios; impact; -4180
+R; affects; Ingerência Política ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -17284.46
+R; affects; Ingerência Política ; Implantação de telefonia IP em SE´s; impact; -29000
+R; affects; Ingerência Política ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -3998.1644
+R; affects; Ingerência Política ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -90883.85
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -10655.19
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Construção de cerca e estacionamento em uma SE; impact; -683.8923
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Construção de Estacionamento em UHE; impact; -241.5231
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -1659525.9317
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -17290
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -9363.3449
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instalação de Sistema Optico - SE; impact; -282100
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -113.03656
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -168.35
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Montagem e Instal. de Sala Cofre em E.Central; impact; -319.7922
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Obra Vestiário Academia da empresa; impact; -200.3274
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -845.6721
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -3200.3426
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -27.3
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -2332.4847
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -302.852823
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -53542.8257
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -19326.58
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -120249.7114
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -45500
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação/Aquisição/Substituição de Pára-raios; impact; -3803.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -15728.8586
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Implantação de telefonia IP em SE´s; impact; -26390
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -3638.329604
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -82704.3035
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -9425.745
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Construção de cerca e estacionamento em uma SE; impact; -604.98165
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Construção de Estacionamento em UHE; impact; -213.65505
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -1468042.17035
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -15295
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -8282.95895
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instalação de Sistema Optico - SE; impact; -249550
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -99.99388
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -148.925
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Montagem e Instal. de Sala Cofre em E.Central; impact; -282.8931
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Obra Vestiário Academia da empresa; impact; -177.2127
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -748.09455
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -2831.0723
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -24.15
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -2063.35185
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -267.9082665
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -47364.80735
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -17096.59
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -106374.7447
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -40250
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação/Aquisição/Substituição de Pára-raios; impact; -3364.9
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -13913.9903
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Implantação de telefonia IP em SE´s; impact; -23345
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -3218.522342
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -73161.49925
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -2927.25
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Construção de cerca e estacionamento em uma SE; impact; -187.8825
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Construção de Estacionamento em UHE; impact; -66.3525
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Construção de travessias sobre Canaletas em uma SE de São José; impact; -455913.7175
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -4750
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -2572.3475
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instalação de Sistema Optico - SE; impact; -77500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -31.054
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -46.25
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Montagem e Instal. de Sala Cofre em E.Central; impact; -87.855
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Obra Vestiário Academia da empresa; impact; -55.035
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -232.3275
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -879.215
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -7.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Construção de garagem com escritório para órgão na UTE de Campos; impact; -640.7925
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -83.201325
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -14709.5675
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -5309.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -33035.635
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -12500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação/Aquisição/Substituição de Pára-raios; impact; -1045
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de Bacia de contenção nas instalações de uma SE; impact; -4321.115
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Implantação de telefonia IP em SE´s; impact; -7250
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -999.5411
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -22720.9625
+R; affects; Falta de renovação e recomposição da força de trabalho ; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -4683.6
+R; affects; Falta de renovação e recomposição da força de trabalho ; Construção de cerca e estacionamento em uma SE; impact; -300.612
+R; affects; Falta de renovação e recomposição da força de trabalho ; Construção de Estacionamento em UHE; impact; -106.164
+R; affects; Falta de renovação e recomposição da força de trabalho ; Construção de travessias sobre Canaletas em uma SE de São José; impact; -729461.948
+R; affects; Falta de renovação e recomposição da força de trabalho ; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -7600
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -4115.756
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instalação de Sistema Optico - SE; impact; -124000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -49.6864
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -74
+R; affects; Falta de renovação e recomposição da força de trabalho ; Montagem e Instal. de Sala Cofre em E.Central; impact; -140.568
+R; affects; Falta de renovação e recomposição da força de trabalho ; Obra Vestiário Academia da empresa; impact; -88.056
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -371.724
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -1406.744
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -12
+R; affects; Falta de renovação e recomposição da força de trabalho ; Construção de garagem com escritório para órgão na UTE de Campos; impact; -1025.268
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -133.12212
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -23535.308
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -8495.2
+R; affects; Falta de renovação e recomposição da força de trabalho ; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -52857.016
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -20000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação/Aquisição/Substituição de Pára-raios; impact; -1672
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de Bacia de contenção nas instalações de uma SE; impact; -6913.784
+R; affects; Falta de renovação e recomposição da força de trabalho ; Implantação de telefonia IP em SE´s; impact; -11600
+R; affects; Falta de renovação e recomposição da força de trabalho ; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -1599.26576
+R; affects; Falta de renovação e recomposição da força de trabalho ; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -36353.54
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -5854.5
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Construção de cerca e estacionamento em uma SE; impact; -375.765
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Construção de Estacionamento em UHE; impact; -132.705
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Construção de travessias sobre Canaletas em uma SE de São José; impact; -911827.435
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -9500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -5144.695
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instalação de Sistema Optico - SE; impact; -155000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -62.108
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -92.5
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Montagem e Instal. de Sala Cofre em E.Central; impact; -175.71
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Obra Vestiário Academia da empresa; impact; -110.07
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -464.655
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -1758.43
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -15
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Construção de garagem com escritório para órgão na UTE de Campos; impact; -1281.585
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -166.40265
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -29419.135
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -10619
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -66071.27
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -25000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação/Aquisição/Substituição de Pára-raios; impact; -2090
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de Bacia de contenção nas instalações de uma SE; impact; -8642.23
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Implantação de telefonia IP em SE´s; impact; -14500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -1999.0822
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -45441.925
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Constr. de um Reator Saturado em 13,8kV no sist. de Transm. para aval. de desemp.; impact; -4098.15
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Construção de cerca e estacionamento em uma SE; impact; -263.0355
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Construção de Estacionamento em UHE; impact; -92.8935
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Construção de travessias sobre Canaletas em uma SE de São José; impact; -638279.2045
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Contr. de uma estrutura laboratorial de sistemas eólicos; impact; -6650
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instalação da LT ARARAQUARA/CAMPINAS 500KV; impact; -3601.2865
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instalação de Sistema Optico - SE; impact; -108500
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instalação do Sist. Ótico para a LT CAMPOS-R.LEAO 138KV; impact; -43.4756
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instalação do Sist. Ótico para a LT R.LEAO-MAGE 138KV; impact; -64.75
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Montagem e Instal. de Sala Cofre em E.Central; impact; -122.997
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Obra Vestiário Academia da empresa; impact; -77.049
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de SIST. MICROONDAS - B.ALTO E NIQUELANDIA; impact; -325.2585
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de SIST. MICROONDAS - DIGITAL. ROTA ITAIPU; impact; -1230.901
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de SIST. MICROONDAS - SE STA CRUZ / ANGRA; impact; -10.5
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Construção de garagem com escritório para órgão na UTE de Campos; impact; -897.1095
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de Sist. Ar condicionado e ventilação em escritório de UTE em S. Cruz; impact; -116.481855
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de Ciclo Combinado em UTE localizada em Santa Cruz; impact; -20593.3945
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instalação de Combustor Piloto de Leito Fluidizado Circulante Multicombustível; impact; -7433.3
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Obra de ampliação de Posto Médico em SE localizada em Vitoria; impact; -46249.889
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação/Aquisição/Substituição de Sist de Combate a Incêndio; impact; -17500
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação/Aquisição/Substituição de Pára-raios; impact; -1463
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de Bacia de contenção nas instalações de uma SE; impact; -6049.561
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Implantação de telefonia IP em SE´s; impact; -10150
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Instal. Módulo de Geração Elétrica para interligação a Turbina Eólica do tipo Multipás; impact; -1399.35754
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Construção do Sistema de transmissão MACAE(RJ)-CAMPOS(RJ) (Parte III); impact; -31809.3475

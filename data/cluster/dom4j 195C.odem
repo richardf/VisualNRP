@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="dom4j">
+    <description>DOM4J v1.5.2</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/dom4j/dom4j-1.5.2 195C.jar" classification="jar">
+      <namespace name="org.dom4j">
+        <type name="org.dom4j.Attribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Branch" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.CDATA" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.CharacterData" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.CharacterData" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Comment" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.CharacterData" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Document" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.Branch" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.DocumentException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.DocumentFactory" classification="class" visibility="public">
+          <dependencies count="28">
+            <depends-on name="org.dom4j.tree.QNameCache" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultDocument" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.xpath.DefaultXPath" classification="uses" />
+            <depends-on name="org.dom4j.NodeFilter" classification="uses" />
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultDocumentType" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultAttribute" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultCDATA" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultComment" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultText" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultEntity" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.xpath.XPathPattern" classification="uses" />
+            <depends-on name="org.dom4j.InvalidXPathException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.DocumentHelper" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.NodeFilter" classification="uses" />
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.InvalidXPathException" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.DocumentType" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Element" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.Branch" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.ElementHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.ElementPath" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Entity" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.IllegalAddException" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.InvalidXPathException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Namespace" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.tree.NamespaceCache" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultNamespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Node" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+            <depends-on name="org.dom4j.InvalidXPathException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.NodeFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.ProcessingInstruction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.QName" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.tree.QNameCache" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Text" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.CharacterData" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.Visitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.VisitorSupport" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="11">
+            <depends-on name="org.dom4j.Visitor" classification="implements" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.XPath" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.NodeFilter" classification="extends" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.XPathException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.bean">
+        <type name="org.dom4j.bean.BeanAttribute" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.tree.AbstractAttribute" classification="extends" />
+            <depends-on name="org.dom4j.bean.BeanAttributeList" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.bean.BeanAttributeList" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.bean.BeanElement" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanMetaData" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanAttribute" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.bean.BeanDocumentFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanElement" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.bean.BeanElement" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="extends" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanAttributeList" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanDocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.bean.BeanMetaData" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanElement" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanAttributeList" classification="uses" />
+            <depends-on name="org.dom4j.bean.BeanDocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.datatype">
+        <type name="org.dom4j.datatype.DatatypeAttribute" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.tree.AbstractAttribute" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.DatatypeDocumentFactory" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.datatype.SchemaParser" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeElementFactory" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.datatype.InvalidSchemaException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.DatatypeElement" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.DatatypeElementFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeElement" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.InvalidSchemaException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.NamedTypeResolver" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeElementFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.datatype.SchemaParser" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeDocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.datatype.NamedTypeResolver" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.datatype.DatatypeElementFactory" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.datatype.InvalidSchemaException" classification="uses" />
+            <depends-on name="org.dom4j.util.AttributeHelper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.dom">
+        <type name="org.dom4j.dom.DOMAttribute" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.tree.DefaultAttribute" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMAttributeNodeMap" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.dom.DOMElement" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMCDATA" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.dom4j.tree.DefaultCDATA" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMComment" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.dom4j.tree.DefaultComment" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMDocument" classification="class" visibility="public">
+          <dependencies count="32">
+            <depends-on name="org.dom4j.tree.DefaultDocument" classification="extends" />
+            <depends-on name="org.dom4j.dom.DOMDocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMElement" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMDocumentType" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMDocumentFactory" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMDocument" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMDocumentType" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMElement" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMAttribute" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMCDATA" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMComment" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMText" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMEntityReference" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNamespace" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMProcessingInstruction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMDocumentType" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.tree.DefaultDocumentType" classification="extends" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMElement" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="extends" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMAttributeNodeMap" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMAttribute" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMDocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMEntityReference" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.tree.DefaultEntity" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMNamespace" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.tree.DefaultNamespace" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMNodeHelper$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMNodeHelper$EmptyNodeList" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMNodeHelper" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper$1" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper$EmptyNodeList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMProcessingInstruction" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.tree.DefaultProcessingInstruction" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dom.DOMText" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.tree.DefaultText" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMNodeHelper" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.dtd">
+        <type name="org.dom4j.dtd.AttributeDecl" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dtd.ElementDecl" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dtd.ExternalEntityDecl" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.dtd.InternalEntityDecl" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.io">
+        <type name="org.dom4j.io.DispatchHandler" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.ElementHandler" classification="implements" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DocumentInputSource$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.io.DocumentInputSource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DocumentInputSource" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.io.DocumentInputSource$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DocumentResult" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.io.SAXContentHandler" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DocumentSource" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.DocumentInputSource" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DOMReader" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.DOMWriter" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.io.JAXPHelper" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.ElementModifier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.ElementStack" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.ElementPath" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.HTMLWriter$FormatState" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.io.HTMLWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.HTMLWriter" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.io.XMLWriter" classification="extends" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.io.HTMLWriter$FormatState" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.DocumentHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.JAXPHelper" classification="class" visibility="default">
+          <dependencies count="6">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.OutputFormat" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.PruningDispatchHandler" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="extends" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.PruningElementStack" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.io.ElementStack" classification="extends" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXContentHandler" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.ElementStack" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.tree.AbstractElement" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.dtd.ElementDecl" classification="uses" />
+            <depends-on name="org.dom4j.dtd.AttributeDecl" classification="uses" />
+            <depends-on name="org.dom4j.dtd.InternalEntityDecl" classification="uses" />
+            <depends-on name="org.dom4j.dtd.ExternalEntityDecl" classification="uses" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXEventRecorder$SAXEvent" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.io.SAXEventRecorder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXEventRecorder" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.io.SAXEventRecorder$SAXEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXHelper" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.io.JAXPHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXModifier" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyReader" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyException" classification="uses" />
+            <depends-on name="org.dom4j.io.ElementModifier" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.io.PruningDispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXModifyContentHandler" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.io.SAXContentHandler" classification="extends" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.ElementStack" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyException" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXModifyElementHandler" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.ElementHandler" classification="implements" />
+            <depends-on name="org.dom4j.io.ElementModifier" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+            <depends-on name="org.dom4j.io.ElementStack" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyException" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXModifyException" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXModifyReader" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.io.SAXReader" classification="extends" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXContentHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXModifyContentHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXReader$SAXEntityResolver" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXReader" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXContentHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXReader$SAXEntityResolver" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXValidator" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.io.DocumentInputSource" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.SAXWriter" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.io.DocumentInputSource" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.STAXEventReader" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.STAXEventWriter$AttributeIterator" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.io.STAXEventWriter" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.STAXEventWriter$NamespaceIterator" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.io.STAXEventWriter" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.STAXEventWriter" classification="class" visibility="public">
+          <dependencies count="34">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.io.STAXEventWriter$AttributeIterator" classification="uses" />
+            <depends-on name="org.dom4j.io.STAXEventWriter$NamespaceIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.XMLResult" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.XMLWriter" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.XPP3Reader" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.io.XPPReader" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.io.DispatchHandler" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.xpp.ProxyXmlStartTag" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.jaxb">
+        <type name="org.dom4j.jaxb.JAXBModifier$JAXBElementModifier" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.io.ElementModifier" classification="implements" />
+            <depends-on name="org.dom4j.jaxb.JAXBModifier" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBObjectModifier" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBModifier" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.dom4j.jaxb.JAXBSupport" classification="extends" />
+            <depends-on name="org.dom4j.io.SAXModifier" classification="uses" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBRuntimeException" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBObjectModifier" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBModifier$JAXBElementModifier" classification="uses" />
+            <depends-on name="org.dom4j.io.ElementModifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBObjectHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBObjectModifier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBReader$PruningElementHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.ElementHandler" classification="implements" />
+            <depends-on name="org.dom4j.jaxb.JAXBReader" classification="uses" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBReader$UnmarshalElementHandler" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.ElementHandler" classification="implements" />
+            <depends-on name="org.dom4j.jaxb.JAXBReader" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBObjectHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementPath" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBRuntimeException" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBReader" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.jaxb.JAXBSupport" classification="extends" />
+            <depends-on name="org.dom4j.io.SAXReader" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBRuntimeException" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBObjectHandler" classification="uses" />
+            <depends-on name="org.dom4j.ElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.DocumentException" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBReader$UnmarshalElementHandler" classification="uses" />
+            <depends-on name="org.dom4j.jaxb.JAXBReader$PruningElementHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBRuntimeException" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBSupport" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.dom.DOMDocument" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.jaxb.JAXBWriter" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.jaxb.JAXBSupport" classification="extends" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.persistence">
+        <type name="org.dom4j.persistence.DocumentMarshalling" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.persistence.MarshallingStrategy" classification="implements" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.DocumentMemento" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.persistence.Memento" classification="implements" />
+            <depends-on name="org.dom4j.persistence.MarshallingStrategy" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.persistence.DocumentMarshalling" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.Initiator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+            <depends-on name="org.dom4j.persistence.Memento" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.MarshallingContext" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.MarshallingStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.Memento" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.persistence.PersitenceManager" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.persistence.Initiator" classification="implements" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+            <depends-on name="org.dom4j.persistence.Memento" classification="uses" />
+            <depends-on name="org.dom4j.persistence.DocumentMemento" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.persistence.nativ">
+        <type name="org.dom4j.persistence.nativ.XMLDBStrategy" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.persistence.DocumentMarshalling" classification="extends" />
+            <depends-on name="org.dom4j.io.SAXContentHandler" classification="uses" />
+            <depends-on name="org.dom4j.io.SAXWriter" classification="uses" />
+            <depends-on name="org.dom4j.persistence.MarshallingContext" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.rule">
+        <type name="org.dom4j.rule.Action" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.Mode" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.rule.RuleSet" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.rule.Action" classification="uses" />
+            <depends-on name="org.dom4j.rule.Rule" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.NullAction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.rule.Action" classification="implements" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.Pattern" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.NodeFilter" classification="extends" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.Rule" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+            <depends-on name="org.dom4j.rule.Action" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.RuleManager$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.rule.Action" classification="implements" />
+            <depends-on name="org.dom4j.rule.Mode" classification="uses" />
+            <depends-on name="org.dom4j.rule.RuleManager" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.RuleManager" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.rule.Action" classification="uses" />
+            <depends-on name="org.dom4j.rule.Mode" classification="uses" />
+            <depends-on name="org.dom4j.rule.Rule" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+            <depends-on name="org.dom4j.rule.RuleManager$1" classification="uses" />
+            <depends-on name="org.dom4j.rule.pattern.NodeTypePattern" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.RuleSet" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.rule.Rule" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.Stylesheet" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.rule.RuleManager" classification="uses" />
+            <depends-on name="org.dom4j.rule.Rule" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.rule.Mode" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.rule.Action" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.rule.pattern">
+        <type name="org.dom4j.rule.pattern.DefaultPattern" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.rule.Pattern" classification="implements" />
+            <depends-on name="org.dom4j.NodeFilter" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.rule.pattern.NodeTypePattern" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.rule.Pattern" classification="implements" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.swing">
+        <type name="org.dom4j.swing.BranchTreeNode$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.swing.BranchTreeNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.BranchTreeNode" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.swing.LeafTreeNode" classification="extends" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.swing.BranchTreeNode$1" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.DocumentTreeModel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.swing.BranchTreeNode" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.LeafTreeNode$1" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.LeafTreeNode" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.swing.LeafTreeNode$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.XMLTableColumnDefinition" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.DocumentHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.XMLTableDefinition" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.swing.XMLTableColumnDefinition" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.swing.XMLTableModel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.swing.XMLTableDefinition" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.tree">
+        <type name="org.dom4j.tree.AbstractAttribute" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.Attribute" classification="implements" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultAttribute" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractBranch" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="14">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.Branch" classification="implements" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.tree.BackedList" classification="uses" />
+            <depends-on name="org.dom4j.tree.ContentListFacade" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractCDATA" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.AbstractCharacterData" classification="extends" />
+            <depends-on name="org.dom4j.CDATA" classification="implements" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractCharacterData" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.CharacterData" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractComment" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractCharacterData" classification="extends" />
+            <depends-on name="org.dom4j.Comment" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractDocument" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="15">
+            <depends-on name="org.dom4j.tree.AbstractBranch" classification="extends" />
+            <depends-on name="org.dom4j.Document" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractDocumentType" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.DocumentType" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractElement" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="24">
+            <depends-on name="org.dom4j.tree.AbstractBranch" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="implements" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.io.XMLWriter" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.tree.BackedList" classification="uses" />
+            <depends-on name="org.dom4j.tree.NamespaceStack" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.tree.ContentListFacade" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+            <depends-on name="org.dom4j.tree.SingleIterator" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractEntity" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.Entity" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractNode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.Node" classification="implements" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.NodeFilter" classification="uses" />
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractProcessingInstruction" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractNode" classification="extends" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.AbstractText" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.AbstractCharacterData" classification="extends" />
+            <depends-on name="org.dom4j.Text" classification="implements" />
+            <depends-on name="org.dom4j.Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.BackedList" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.AbstractBranch" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.BaseElement" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.dom4j.tree.AbstractElement" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.tree.ContentListFacade" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$BarrierLock" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$Entry" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$EntrySet" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$1" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$HashIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$HashIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$Entry" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$KeyIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$HashIterator" classification="extends" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$KeySet" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$1" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$KeyIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$ValueIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$HashIterator" classification="extends" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap$Values" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$1" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$ValueIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ConcurrentReaderHashMap" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$BarrierLock" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$Entry" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$KeySet" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$Values" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$EntrySet" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$KeyIterator" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$ValueIterator" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$1" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap$HashIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ContentListFacade" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.AbstractBranch" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultAttribute" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.FlyweightAttribute" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultCDATA" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FlyweightCDATA" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultComment" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FlyweightComment" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultDocument" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.dom4j.tree.AbstractDocument" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.ContentListFacade" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+            <depends-on name="org.dom4j.io.OutputFormat" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.tree.BackedList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultDocumentType" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.tree.AbstractDocumentType" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultElement" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.dom4j.tree.AbstractElement" classification="extends" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.tree.BackedList" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.tree.ContentListFacade" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultText" classification="uses" />
+            <depends-on name="org.dom4j.IllegalAddException" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.tree.AbstractBranch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultEntity" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FlyweightEntity" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultNamespace" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.Namespace" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultProcessingInstruction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FlyweightProcessingInstruction" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.DefaultText" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FlyweightText" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ElementIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FilterIterator" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ElementNameIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.FilterIterator" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.ElementQNameIterator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.FilterIterator" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FilterIterator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightAttribute" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractAttribute" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightCDATA" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.tree.AbstractCDATA" classification="extends" />
+            <depends-on name="org.dom4j.CDATA" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultCDATA" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightComment" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.tree.AbstractComment" classification="extends" />
+            <depends-on name="org.dom4j.Comment" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultComment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightEntity" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractEntity" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultEntity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightProcessingInstruction" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.AbstractProcessingInstruction" classification="extends" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultProcessingInstruction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.FlyweightText" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.tree.AbstractText" classification="extends" />
+            <depends-on name="org.dom4j.Text" classification="implements" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.tree.DefaultText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.NamespaceCache" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.tree.ConcurrentReaderHashMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.NamespaceStack" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.QNameCache" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.tree.SingleIterator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.util">
+        <type name="org.dom4j.util.AttributeHelper" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.IndexedDocumentFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.util.IndexedElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.IndexedElement" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.tree.BackedList" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.NodeComparator" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.CharacterData" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.Branch" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.NonLazyDocumentFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.util.NonLazyElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.NonLazyElement" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.dom4j.tree.BaseElement" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.ProxyDocumentFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="16">
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentType" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.CDATA" classification="uses" />
+            <depends-on name="org.dom4j.Comment" classification="uses" />
+            <depends-on name="org.dom4j.Text" classification="uses" />
+            <depends-on name="org.dom4j.Entity" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.dom4j.XPath" classification="uses" />
+            <depends-on name="org.dom4j.NodeFilter" classification="uses" />
+            <depends-on name="org.dom4j.rule.Pattern" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.UserDataAttribute" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.dom4j.tree.DefaultAttribute" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.UserDataDocumentFactory" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.dom4j.DocumentFactory" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.util.UserDataElement" classification="uses" />
+            <depends-on name="org.dom4j.util.UserDataAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.UserDataElement" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.dom4j.tree.DefaultElement" classification="extends" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.util.XMLErrorHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentHelper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.xpath">
+        <type name="org.dom4j.xpath.DefaultNamespaceContext" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.Document" classification="uses" />
+            <depends-on name="org.dom4j.Namespace" classification="uses" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.xpath.DefaultXPath$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.dom4j.xpath.DefaultXPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.xpath.DefaultXPath" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.dom4j.XPath" classification="implements" />
+            <depends-on name="org.dom4j.NodeFilter" classification="implements" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.XPathException" classification="uses" />
+            <depends-on name="org.dom4j.xpath.DefaultXPath$1" classification="uses" />
+            <depends-on name="org.dom4j.InvalidXPathException" classification="uses" />
+            <depends-on name="org.dom4j.xpath.DefaultNamespaceContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.dom4j.xpath.XPathPattern" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.dom4j.rule.Pattern" classification="implements" />
+            <depends-on name="org.dom4j.Node" classification="uses" />
+            <depends-on name="org.dom4j.InvalidXPathException" classification="uses" />
+            <depends-on name="org.dom4j.XPathException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.dom4j.xpp">
+        <type name="org.dom4j.xpp.ProxyXmlStartTag" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.dom4j.Element" classification="uses" />
+            <depends-on name="org.dom4j.DocumentFactory" classification="uses" />
+            <depends-on name="org.dom4j.Attribute" classification="uses" />
+            <depends-on name="org.dom4j.QName" classification="uses" />
+            <depends-on name="org.dom4j.tree.AbstractElement" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="notelab_model">
+    <description>Digital notebook for tablets Model Package v0.2.1</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/NoteLab_05-05-2009_04-24-41_v0.2.1beta1/noteLab/model" classification="dir">
+      <namespace name="">
+        <type name="Page" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="Paper$PaperType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="Paper" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="Path" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="Stroke" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="binder">
+        <type name="binder.Binder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="binder.BinderListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="binder.FlowBinder" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="canvas">
+        <type name="canvas.CompositeCanvas$1" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$CanvasMouseListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$EventType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$PointProcessor$1" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$PointProcessor$2" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$PointProcessor$3" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$PointProcessor" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas$StylusEvent" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.CompositeCanvas" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$Action" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$DropLine" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$PageSelectionToolBar$ImportProcessor" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$PageSelectionToolBar$MenuListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas$PageSelectionToolBar" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.PageSelectionCanvas" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeCanvas$1" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeCanvas$PenToolBar" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeCanvas" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$Action" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$SelectionToolBar$ColorListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$SelectionToolBar$MenuListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$SelectionToolBar$SizeListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas$SelectionToolBar" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.StrokeSelectionCanvas" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.SubCanvas$MouseButton" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="canvas.SubCanvas" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="geom">
+        <type name="geom.FloatPoint2D" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="geom.TransformRectangle2D" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="pdf">
+        <type name="pdf.PDFFileInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="pdf.PDFPageInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="tool">
+        <type name="tool.Deleter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="tool.PageSelector" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="tool.Pen" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="tool.StrokeSelector" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="tool.Tool" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

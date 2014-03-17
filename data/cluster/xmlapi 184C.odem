@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="xmlapi">
+	<description>Java XML implementation v1.0</description>
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/xmlapi/xml-apis-1.0.b2 32C.jar" classification="jar">
+      <namespace name="javax.xml.parsers">
+        <type name="javax.xml.parsers.DocumentBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.w3c.dom.Document" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMImplementation" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.DocumentBuilderFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="javax.xml.parsers.DocumentBuilder" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryFinder$ConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.parsers.ParserConfigurationException" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.FactoryConfigurationError" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.FactoryFinder$ConfigurationError" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.xml.parsers.FactoryFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.FactoryFinder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.xml.parsers.FactoryFinder$ConfigurationError" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.ParserConfigurationException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.SAXParser" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="org.xml.sax.HandlerBase" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.DefaultHandler" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.Parser" classification="uses" />
+            <depends-on name="org.xml.sax.XMLReader" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotRecognizedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="org.xml.sax.DocumentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.parsers.SAXParserFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="javax.xml.parsers.SAXParser" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryFinder$ConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.parsers.ParserConfigurationException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotRecognizedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="javax.xml.parsers.FactoryFinder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.xml.transform.dom">
+        <type name="javax.xml.transform.dom.DOMLocator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.SourceLocator" classification="extends" />
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.dom.DOMResult" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.Result" classification="implements" />
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.dom.DOMSource" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.Source" classification="implements" />
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.xml.transform">
+        <type name="javax.xml.transform.ErrorListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.TransformerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.FactoryFinder$ConfigurationError" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.FactoryFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.FactoryFinder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.FactoryFinder$ConfigurationError" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.OutputKeys" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.Result" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.Source" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.SourceLocator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.Templates" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.Transformer" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerConfigurationException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.Transformer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="javax.xml.transform.Source" classification="uses" />
+            <depends-on name="javax.xml.transform.Result" classification="uses" />
+            <depends-on name="javax.xml.transform.URIResolver" classification="uses" />
+            <depends-on name="javax.xml.transform.ErrorListener" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.TransformerConfigurationException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.TransformerException" classification="extends" />
+            <depends-on name="javax.xml.transform.SourceLocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.TransformerException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.SourceLocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.TransformerFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="javax.xml.transform.Source" classification="uses" />
+            <depends-on name="javax.xml.transform.Transformer" classification="uses" />
+            <depends-on name="javax.xml.transform.Templates" classification="uses" />
+            <depends-on name="javax.xml.transform.URIResolver" classification="uses" />
+            <depends-on name="javax.xml.transform.ErrorListener" classification="uses" />
+            <depends-on name="javax.xml.transform.FactoryFinder$ConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerFactoryConfigurationError" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerConfigurationException" classification="uses" />
+            <depends-on name="javax.xml.transform.FactoryFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.TransformerFactoryConfigurationError" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.URIResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="javax.xml.transform.Source" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.xml.transform.sax">
+        <type name="javax.xml.transform.sax.SAXResult" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="javax.xml.transform.Result" classification="implements" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ext.LexicalHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.sax.SAXSource" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="javax.xml.transform.Source" classification="implements" />
+            <depends-on name="org.xml.sax.XMLReader" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="javax.xml.transform.stream.StreamSource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.sax.SAXTransformerFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="javax.xml.transform.TransformerFactory" classification="extends" />
+            <depends-on name="javax.xml.transform.Source" classification="uses" />
+            <depends-on name="javax.xml.transform.sax.TransformerHandler" classification="uses" />
+            <depends-on name="javax.xml.transform.Templates" classification="uses" />
+            <depends-on name="javax.xml.transform.sax.TemplatesHandler" classification="uses" />
+            <depends-on name="org.xml.sax.XMLFilter" classification="uses" />
+            <depends-on name="javax.xml.transform.TransformerConfigurationException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.sax.TemplatesHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.xml.sax.ContentHandler" classification="extends" />
+            <depends-on name="javax.xml.transform.Templates" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.sax.TransformerHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.xml.sax.ContentHandler" classification="extends" />
+            <depends-on name="org.xml.sax.ext.LexicalHandler" classification="extends" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="extends" />
+            <depends-on name="javax.xml.transform.Result" classification="uses" />
+            <depends-on name="javax.xml.transform.Transformer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="javax.xml.transform.stream">
+        <type name="javax.xml.transform.stream.StreamResult" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.Result" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="javax.xml.transform.stream.StreamSource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="javax.xml.transform.Source" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.xmlcommons">
+        <type name="org.apache.xmlcommons.Version" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom">
+        <type name="org.w3c.dom.Attr" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.Element" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.CDATASection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Text" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.CharacterData" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Comment" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.CharacterData" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Document" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.DocumentType" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMImplementation" classification="uses" />
+            <depends-on name="org.w3c.dom.Element" classification="uses" />
+            <depends-on name="org.w3c.dom.DocumentFragment" classification="uses" />
+            <depends-on name="org.w3c.dom.Text" classification="uses" />
+            <depends-on name="org.w3c.dom.Comment" classification="uses" />
+            <depends-on name="org.w3c.dom.CDATASection" classification="uses" />
+            <depends-on name="org.w3c.dom.ProcessingInstruction" classification="uses" />
+            <depends-on name="org.w3c.dom.Attr" classification="uses" />
+            <depends-on name="org.w3c.dom.EntityReference" classification="uses" />
+            <depends-on name="org.w3c.dom.NodeList" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.DocumentFragment" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.DocumentType" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.NamedNodeMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.DOMException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.DOMImplementation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.DocumentType" classification="uses" />
+            <depends-on name="org.w3c.dom.Document" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Element" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.Attr" classification="uses" />
+            <depends-on name="org.w3c.dom.NodeList" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Entity" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.EntityReference" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.NamedNodeMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Node" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.NodeList" classification="uses" />
+            <depends-on name="org.w3c.dom.NamedNodeMap" classification="uses" />
+            <depends-on name="org.w3c.dom.Document" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.NodeList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Notation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.ProcessingInstruction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.Node" classification="extends" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.Text" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.CharacterData" classification="extends" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.css">
+        <type name="org.w3c.dom.css.Counter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSS2Properties" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSCharsetRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSFontFaceRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSImportRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.stylesheets.MediaList" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSStyleSheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSMediaRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.stylesheets.MediaList" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSRuleList" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSPageRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSPrimitiveValue" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.w3c.dom.css.CSSValue" classification="extends" />
+            <depends-on name="org.w3c.dom.css.Counter" classification="uses" />
+            <depends-on name="org.w3c.dom.css.Rect" classification="uses" />
+            <depends-on name="org.w3c.dom.css.RGBColor" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.css.CSSStyleSheet" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSRuleList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSStyleDeclaration" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.css.CSSValue" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSStyleRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSStyleSheet" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.stylesheets.StyleSheet" classification="extends" />
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSRuleList" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSUnknownRule" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSRule" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSValue" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.CSSValueList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSValue" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.DocumentCSS" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.stylesheets.DocumentStyle" classification="extends" />
+            <depends-on name="org.w3c.dom.Element" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.DOMImplementationCSS" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.DOMImplementation" classification="extends" />
+            <depends-on name="org.w3c.dom.css.CSSStyleSheet" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.ElementCSSInlineStyle" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.Rect" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSPrimitiveValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.RGBColor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.css.CSSPrimitiveValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.css.ViewCSS" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.views.AbstractView" classification="extends" />
+            <depends-on name="org.w3c.dom.Element" classification="uses" />
+            <depends-on name="org.w3c.dom.css.CSSStyleDeclaration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.events">
+        <type name="org.w3c.dom.events.DocumentEvent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.events.Event" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.Event" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.events.EventTarget" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.EventException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.EventListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.events.Event" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.EventTarget" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.events.EventListener" classification="uses" />
+            <depends-on name="org.w3c.dom.events.Event" classification="uses" />
+            <depends-on name="org.w3c.dom.events.EventException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.MouseEvent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.events.UIEvent" classification="extends" />
+            <depends-on name="org.w3c.dom.events.EventTarget" classification="uses" />
+            <depends-on name="org.w3c.dom.views.AbstractView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.MutationEvent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.events.Event" classification="extends" />
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.events.UIEvent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.events.Event" classification="extends" />
+            <depends-on name="org.w3c.dom.views.AbstractView" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.html">
+        <type name="org.w3c.dom.html.HTMLAnchorElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLAppletElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLAreaElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLBaseElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLBaseFontElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLBlockquoteElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLBodyElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLBRElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLButtonElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLCollection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLDirectoryElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLDivElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLDListElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLDocument" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.w3c.dom.Document" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="uses" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+            <depends-on name="org.w3c.dom.Element" classification="uses" />
+            <depends-on name="org.w3c.dom.NodeList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Element" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLFieldSetElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLFontElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLFormElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLFrameElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLFrameSetElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLHeadElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLHeadingElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLHRElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLHtmlElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLIFrameElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLImageElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLInputElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLIsIndexElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLLabelElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLLegendElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLLIElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLLinkElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLMapElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLMenuElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLMetaElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLModElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLObjectElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLOListElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLOptGroupElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLOptionElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLParagraphElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLParamElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLPreElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLQuoteElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLScriptElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLSelectElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLStyleElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableCaptionElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableCellElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableColElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLTableCaptionElement" classification="uses" />
+            <depends-on name="org.w3c.dom.html.HTMLTableSectionElement" classification="uses" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableRowElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTableSectionElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTextAreaElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+            <depends-on name="org.w3c.dom.html.HTMLFormElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLTitleElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.html.HTMLUListElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.html.HTMLElement" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.ranges">
+        <type name="org.w3c.dom.ranges.DocumentRange" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.ranges.Range" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.ranges.Range" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.DocumentFragment" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+            <depends-on name="org.w3c.dom.ranges.RangeException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.ranges.RangeException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.stylesheets">
+        <type name="org.w3c.dom.stylesheets.DocumentStyle" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.stylesheets.StyleSheetList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.stylesheets.LinkStyle" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.stylesheets.StyleSheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.stylesheets.MediaList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.stylesheets.StyleSheet" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.stylesheets.MediaList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.stylesheets.StyleSheetList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.stylesheets.StyleSheet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.traversal">
+        <type name="org.w3c.dom.traversal.DocumentTraversal" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.traversal.NodeFilter" classification="uses" />
+            <depends-on name="org.w3c.dom.traversal.NodeIterator" classification="uses" />
+            <depends-on name="org.w3c.dom.traversal.TreeWalker" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.traversal.NodeFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.traversal.NodeIterator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.traversal.NodeFilter" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.traversal.TreeWalker" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.w3c.dom.Node" classification="uses" />
+            <depends-on name="org.w3c.dom.traversal.NodeFilter" classification="uses" />
+            <depends-on name="org.w3c.dom.DOMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.w3c.dom.views">
+        <type name="org.w3c.dom.views.AbstractView" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.views.DocumentView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.w3c.dom.views.DocumentView" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.w3c.dom.views.AbstractView" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.xml.sax">
+        <type name="org.xml.sax.AttributeList" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.Attributes" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.ContentHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.DocumentHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.AttributeList" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.DTDHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.EntityResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.ErrorHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.xml.sax.SAXParseException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.HandlerBase" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.xml.sax.EntityResolver" classification="implements" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="implements" />
+            <depends-on name="org.xml.sax.DocumentHandler" classification="implements" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="implements" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.AttributeList" classification="uses" />
+            <depends-on name="org.xml.sax.SAXParseException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.InputSource" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.Locator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.Parser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="uses" />
+            <depends-on name="org.xml.sax.DocumentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.SAXException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.SAXNotRecognizedException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.SAXException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.SAXNotSupportedException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.SAXException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.SAXParseException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.xml.sax.SAXException" classification="extends" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.XMLFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.XMLReader" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.XMLReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotRecognizedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.xml.sax.ext">
+        <type name="org.xml.sax.ext.DeclHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.ext.LexicalHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.xml.sax.helpers">
+        <type name="org.xml.sax.helpers.AttributeListImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.AttributeList" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.AttributesImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.Attributes" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.DefaultHandler" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.xml.sax.EntityResolver" classification="implements" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="implements" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="implements" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="implements" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+            <depends-on name="org.xml.sax.SAXParseException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.LocatorImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.Locator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.NamespaceSupport$Context" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.helpers.NamespaceSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.NamespaceSupport" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.xml.sax.helpers.NamespaceSupport$Context" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.NewInstance" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.ParserAdapter$AttributeListAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.xml.sax.Attributes" classification="implements" />
+            <depends-on name="org.xml.sax.AttributeList" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.ParserAdapter" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.AttributesImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.ParserAdapter" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="org.xml.sax.XMLReader" classification="implements" />
+            <depends-on name="org.xml.sax.DocumentHandler" classification="implements" />
+            <depends-on name="org.xml.sax.helpers.NamespaceSupport" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.ParserAdapter$AttributeListAdapter" classification="uses" />
+            <depends-on name="org.xml.sax.Parser" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.AttributesImpl" classification="uses" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.AttributeList" classification="uses" />
+            <depends-on name="org.xml.sax.SAXParseException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotRecognizedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.ParserFactory" classification="uses" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.ParserFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.xml.sax.Parser" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.NewInstance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.XMLFilterImpl" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.xml.sax.XMLFilter" classification="implements" />
+            <depends-on name="org.xml.sax.EntityResolver" classification="implements" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="implements" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="implements" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="implements" />
+            <depends-on name="org.xml.sax.XMLReader" classification="uses" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+            <depends-on name="org.xml.sax.SAXParseException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotRecognizedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.XMLReaderAdapter$AttributesAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.xml.sax.AttributeList" classification="implements" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.XMLReaderAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.XMLReaderAdapter" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.xml.sax.Parser" classification="implements" />
+            <depends-on name="org.xml.sax.ContentHandler" classification="implements" />
+            <depends-on name="org.xml.sax.XMLReader" classification="uses" />
+            <depends-on name="org.xml.sax.DocumentHandler" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.XMLReaderAdapter$AttributesAdapter" classification="uses" />
+            <depends-on name="org.xml.sax.EntityResolver" classification="uses" />
+            <depends-on name="org.xml.sax.DTDHandler" classification="uses" />
+            <depends-on name="org.xml.sax.ErrorHandler" classification="uses" />
+            <depends-on name="org.xml.sax.InputSource" classification="uses" />
+            <depends-on name="org.xml.sax.Locator" classification="uses" />
+            <depends-on name="org.xml.sax.Attributes" classification="uses" />
+            <depends-on name="org.xml.sax.SAXNotSupportedException" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.XMLReaderFactory" classification="uses" />
+            <depends-on name="org.xml.sax.AttributeList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.xml.sax.helpers.XMLReaderFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.xml.sax.XMLReader" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.ParserAdapter" classification="uses" />
+            <depends-on name="org.xml.sax.SAXException" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.NewInstance" classification="uses" />
+            <depends-on name="org.xml.sax.helpers.ParserFactory" classification="uses" />
+            <depends-on name="org.xml.sax.Parser" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

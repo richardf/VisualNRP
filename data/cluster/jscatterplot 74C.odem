@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jscatterplot">
+    <description>Java Scatterplot chart</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/TreeView-1.1.6r2-win/Scatterplot.jar" classification="jar">
+      <namespace name="edu.stanford.genetics.treeview.plugin.scatterview">
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.BitmapScatterViewExportPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.BitmapScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.BitmapScatterViewExportPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.BitmapScatterViewExportPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel$ParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.HorizontalAxisPane" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.VerticalAxisPane" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$AxisPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DragRect" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.DummySource" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.GifScatterViewExportPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.HorizontalAxisPane" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.BitmapScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$DataModelSource" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="implements" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$DataModelSource" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ColorPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ColorPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ColorPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$DrawPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$DrawPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$DrawPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$DrawPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$SizePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$SizePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$SizePanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$SizePanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$DrawPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$SizePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterParameterPanel$ZoomPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView$EventTracker" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DragRect" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.SPDataSource" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DragRect" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.DummySource" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView$EventTracker" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$FilePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$FilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$FilePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$FilePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$InclusionPanel" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel$DrawingPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel$DrawingPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$FilePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.TestExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$StatPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$StatPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$StatPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterplotFactory$GraphDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.TestExportPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterViewExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.scatterview.VerticalAxisPane" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.AxisInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.scatterview.ScatterColorSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,2659 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="notelab_full">
+    <description>Digital notebook for tablets v0.2.1b1</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/NoteLab_05-05-2009_04-24-41_v0.2.1beta1" classification="dir">
+      <namespace name="noteLab.gui">
+        <type name="noteLab.gui.AutoButton$ButtonListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.AutoButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.AutoButton$TimerListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.AutoButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.AutoButton" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.AutoButton$ButtonListener" classification="uses" />
+            <depends-on name="noteLab.gui.AutoButton$TimerListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.ButtonPair$Orientation" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.ButtonPair" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.gui.AutoButton" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair$Orientation" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.DefinedIcon" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.GuiSettingsConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.NotificationFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.NotificationFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.NotificationFrame" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.fullscreen.FullScreenManager" classification="uses" />
+            <depends-on name="noteLab.gui.NotificationFrame$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.ProgressFrame$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.progress.Progressive" classification="implements" />
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ProgressFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.ProgressFrame" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="implements" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.util.progress.Progressive" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.ProgressFrame$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.SlidingPanel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.ToolBarButton" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.menu.Menued" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.button">
+        <type name="noteLab.gui.button.IconButton" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.button.IconedButton" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.button.IconedButton" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.button.IconToggleButton" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.button.IconedButton" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.chooser">
+        <type name="noteLab.gui.chooser.FileProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.NoteLabFileChooser$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.chooser.NoteLabFileChooser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.NoteLabFileChooser" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.NoteLabFileView" classification="uses" />
+            <depends-on name="noteLab.gui.fullscreen.FullScreenManager" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.NoteLabFileChooser$1" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.NoteLabFileView" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.chooser.filter">
+        <type name="noteLab.gui.chooser.filter.ImageFileFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.filter.JarnalFileFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.filter.NoteLabFileFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.filter.PDFFileFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.chooser.filter.SupportedFileFilter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.chooser.filter.NoteLabFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.JarnalFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.PDFFileFilter" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.control">
+        <type name="noteLab.gui.control.NumberSpinner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair$Orientation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.SliderControl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.ValueControl" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.control.drop">
+        <type name="noteLab.gui.control.drop.ButtonComboButton" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.control.drop.ImageComboButton" classification="extends" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconedButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ColorControl$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ColorControl$CancelListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ColorControl$OkListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ColorControl" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="extends" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl$OkListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl$CancelListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ComboButton" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.util.Selectable" classification="implements" />
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboEvent$ActionType" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboEvent" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ComboEvent$ActionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ComboEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ComboEvent" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ComboEvent$ActionType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ComboListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ComboEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.ImageComboButton" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="extends" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.ImagePic" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.MultiControl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.NumberControl" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="extends" />
+            <depends-on name="noteLab.gui.control.NumberSpinner" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.SizeControl$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.SizeControl" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="extends" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.TriControl$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.control.drop.TriControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.TriControl$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.control.drop.TriControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.TriControl$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.control.drop.TriControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.TriControl" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.SelectionChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.TriControl$1" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.TriControl$2" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.TriControl$3" classification="uses" />
+            <depends-on name="noteLab.gui.listener.SelectionChangeEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.control.drop.pic">
+        <type name="noteLab.gui.control.drop.pic.ButtonPic" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.pic.ImagePic" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.drop.pic.PrimitivePic" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.control.drop.pic.ButtonPic" classification="implements" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.control.geom">
+        <type name="noteLab.gui.control.geom.MDimensionControl$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MDimension" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MDimensionControl$PaperSizeChangeListener" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.PaperSizeControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MPaperSize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MDimensionControl$PaperSizeListener" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MPaperSize" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.PaperSizeControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MDimension" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MDimensionControl$UnitListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MDimensionControl" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.UnitControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.PaperSizeControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MDimension" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl$PaperSizeChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair$Orientation" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl$UnitListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl$PaperSizeListener" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MPaperSize" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MDimensionControl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MValueControl$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MValueControl$ButtonPairValueChangeListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MValueControl$UnitValueChangeListener" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.UnitControl" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.MValueControl" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.gui.ButtonPair" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.UnitControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.ButtonPair$Orientation" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl$ButtonPairValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl$UnitValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.MValueControl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.PaperSizeControl$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MPaperSize" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.PaperSizeControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.PaperSizeControl" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.util.geom.unit.MPaperSize" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.PaperSizeControl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.UnitControl$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.UnitControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.control.geom.UnitControl" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.control.ValueControl" classification="implements" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.geom.UnitControl$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.file">
+        <type name="noteLab.gui.file.ViewFilePanel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.fullscreen">
+        <type name="noteLab.gui.fullscreen.FullScreenListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.fullscreen.FullScreenManager" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.fullscreen.FullScreenListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.help">
+        <type name="noteLab.gui.help.AboutFrame$ViewTextFrame" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.file.ViewFilePanel" classification="uses" />
+            <depends-on name="noteLab.gui.help.AboutFrame" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.help.AboutFrame" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.help.HelpConstants" classification="implements" />
+            <depends-on name="noteLab.gui.help.AboutFrame$ViewTextFrame" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.file.ViewFilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.help.HelpConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.help.HelpMenu" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.menu.Menued" classification="implements" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.gui.help.AboutFrame" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.install">
+        <type name="noteLab.gui.install.Installer$MutableInt" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.install.Installer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.Installer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="uses" />
+            <depends-on name="noteLab.gui.install.Installer$MutableInt" classification="uses" />
+            <depends-on name="noteLab.util.percent.PercentCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.InstallFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.install.InstallFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.InstallFrame$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.install.InstallFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.InstallFrame" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="noteLab.gui.sequence.SequenceFrame" classification="extends" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.WelcomeInstallTile" classification="uses" />
+            <depends-on name="noteLab.gui.install.InstallFrame$1" classification="uses" />
+            <depends-on name="noteLab.gui.install.InstallFrame$2" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.install.tile">
+        <type name="noteLab.gui.install.tile.EnvironmentTile$ScriptGenThread" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.install.tile.EnvironmentTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.EnvironmentTile" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.gui.install.tile.ExtractTile" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter$OSType" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.EnvironmentTile$ScriptGenThread" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.FinishedTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.ExtractTile$ExtractorThread" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.install.Installer" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.ExtractTile" classification="uses" />
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.ExtractTile" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="implements" />
+            <depends-on name="noteLab.gui.install.tile.ExtractTile$ExtractorThread" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.InstallDirTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.EnvironmentTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.FinishedTile" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.gui.install.tile.EnvironmentTile" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.InstallDirTile$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="implements" />
+            <depends-on name="noteLab.gui.install.tile.InstallDirTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.LicenseTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.InstallDirTile" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.gui.chooser.NoteLabFileChooser" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.LicenseTile" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.InstallDirTile$1" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.ExtractTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.LicenseTile$AcceptPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.install.tile.LicenseTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.LicenseTile" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.gui.help.HelpConstants" classification="implements" />
+            <depends-on name="noteLab.gui.file.ViewFilePanel" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.LicenseTile$AcceptPanel" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.WelcomeInstallTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.InstallDirTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.install.tile.WelcomeInstallTile" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.install.tile.LicenseTile" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.listener">
+        <type name="noteLab.gui.listener.RepaintBroadcastCenter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.listener.RepaintListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.RepaintBroadcaster" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.listener.RepaintBroadcastCenter" classification="implements" />
+            <depends-on name="noteLab.gui.listener.RepaintListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.RepaintListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.SelectionChangeEvent" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.SelectionChangeListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.listener.SelectionChangeEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.ValueChangeEvent" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.listener.ValueChangeListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.main">
+        <type name="noteLab.gui.main.MainFrame$MainFrameCloseListener" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.main.MainFrame" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="noteLab.gui.menu.Menued" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="implements" />
+            <depends-on name="noteLab.gui.fullscreen.FullScreenListener" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.CanvasControlToolBar" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.BinderToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame$MainFrameCloseListener" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.UndoRedoToolBar" classification="uses" />
+            <depends-on name="noteLab.gui.menu.DynamicMenuBar" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.gui.fullscreen.FullScreenManager" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainPanel" classification="uses" />
+            <depends-on name="noteLab.gui.help.HelpMenu" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.menu.DebugMenu" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.main.MainPanel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.listener.RepaintListener" classification="implements" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.gui.main.SwingDrawingBoard" classification="uses" />
+            <depends-on name="noteLab.util.settings.DebugSettings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.main.SwingDrawingBoard" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.render.EmptyRenderer2D" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainPanel" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.menu">
+        <type name="noteLab.gui.menu.DebugMenu$SettingsValuesFrame" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.menu.DebugMenu" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.DebugMenu" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="noteLab.gui.menu.Menued" classification="implements" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="implements" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.menu.DebugMenu$SettingsValuesFrame" classification="uses" />
+            <depends-on name="noteLab.util.settings.DebugSettings" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.DynamicMenuBar" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.menu.Menued" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.MenuConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.Menued" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.MenuPath" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.menu.PathMenuItem" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.sequence">
+        <type name="noteLab.gui.sequence.ProceedType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.sequence.SequenceFrame" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.sequence.SequenceTileListener" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.sequence.SequenceTile" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.sequence.SequenceTileListener" classification="implements" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.sequence.SequenceTileListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.settings">
+        <type name="noteLab.gui.settings.SettingsFrame$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.settings.SettingsFrame" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter$OSType" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.TriPenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.SettingsInfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.SettingsFrame" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.settings.panel.TriPenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.fullscreen.FullScreenManager" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.settings.SettingsFrame$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.SettingsInfoCenter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.settings.constants">
+        <type name="noteLab.gui.settings.constants.PageSettingsConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.constants.PenSettingsConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.settings.panel">
+        <type name="noteLab.gui.settings.panel.PageSettingsPanel$PaperColorPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.settings.constants.PageSettingsConstants" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.util.arg.PaperColorArg" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PageSettingsPanel$PaperTypePanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.gui.settings.constants.PageSettingsConstants" classification="uses" />
+            <depends-on name="noteLab.util.arg.PaperTypeArg" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PageSettingsPanel$UnitScalePanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.util.arg.UnitScaleArg" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PageSettingsPanel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel$PaperTypePanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel$PaperColorPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PageSettingsPanel$UnitScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PenSettingsPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PenSettingsPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PenSettingsPanel$ColorListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PenSettingsPanel$SizeListener" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.PenSettingsPanel" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel$ColorListener" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel$SizeListener" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel$1" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel$2" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.gui.settings.constants.PenSettingsConstants" classification="uses" />
+            <depends-on name="noteLab.util.arg.PenSizeArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PenColorArg" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.StrokeSmoothingPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.panel.StrokeSmoothingPanel" classification="uses" />
+            <depends-on name="noteLab.gui.control.SliderControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.StrokeSmoothingPanel" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.control.SliderControl" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.StrokeSmoothingPanel$1" classification="uses" />
+            <depends-on name="noteLab.util.arg.SmoothFactorArg" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.TriPenSettingsPanel" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.PenSettingsPanel" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.StrokeSmoothingPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.VMSettingsPanel$MemoryControlPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel$MemoryValue" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.VMSettingsPanel$MemoryValue" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.VMSettingsPanel" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.settings.state.SettingsSaveCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel$MemoryControlPanel" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter$OSType" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.VMSettingsPanel$MemoryValue" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.settings.panel.base">
+        <type name="noteLab.gui.settings.panel.base.ManagedSettingsPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel" classification="extends" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="noteLab.gui.settings.state.SettingsStateCapable" classification="implements" />
+            <depends-on name="noteLab.gui.control.drop.ComboListener" classification="implements" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ImageComboButton" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboEvent$ActionType" classification="uses" />
+            <depends-on name="noteLab.gui.settings.panel.base.PrimitiveSettingsPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.settings.state">
+        <type name="noteLab.gui.settings.state.SettingsSaveCapable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.settings.state.SettingsStateCapable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.toolbar">
+        <type name="noteLab.gui.toolbar.BinderToolBar" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.model.binder.BinderListener" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.CanvasControlToolBar" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.CutCopyPasteToolBar" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.util.copy.CopyStateListener" classification="implements" />
+            <depends-on name="noteLab.util.copy.CutCopyPasteReady" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.CopyReady" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.ModularPanel" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.UndoRedoToolBar$RedoListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.toolbar.UndoRedoToolBar" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.UndoRedoToolBar$UndoListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.toolbar.UndoRedoToolBar" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.UndoRedoToolBar" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.undoRedo.UndoRedoListener" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.UndoRedoToolBar$UndoListener" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.UndoRedoToolBar$RedoListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.toolbar.file">
+        <type name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="12">
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="implements" />
+            <depends-on name="noteLab.util.render.EmptyRenderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.render.SVGRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.RenderProgressManager" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.ExportFileProcessor" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="extends" />
+            <depends-on name="noteLab.util.render.EmptyRenderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.ImageRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.ImageFileFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.FileToolBar$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.FileToolBar$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.FileToolBar" classification="class" visibility="public">
+          <dependencies count="28">
+            <depends-on name="noteLab.gui.menu.Menued" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.OpenFileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.NoteLabFileChooser" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.ExportFileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.SaveFileProcessor" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFPageInfo" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.JarnalFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.NoteLabFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.SupportedFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.PDFFileFilter" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.ImageFileFilter" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.gui.fullscreen.FullScreenManager" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar$1" classification="uses" />
+            <depends-on name="noteLab.gui.settings.SettingsFrame" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.FileToolBar$2" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFFileInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.OpenFileProcessor" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="implements" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="implements" />
+            <depends-on name="noteLab.util.progress.Progressive" classification="implements" />
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="uses" />
+            <depends-on name="noteLab.util.io.FileLoader" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ProgressFrame" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoader" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalFileLoader" classification="uses" />
+            <depends-on name="noteLab.util.io.pdf.PDFFileLoader" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.toolbar.file.SaveFileProcessor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.gui.toolbar.file.CanvasFileProcessor" classification="extends" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.gui.uninstall">
+        <type name="noteLab.gui.uninstall.Uninstaller$MutableInt" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.uninstall.Uninstaller" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.Uninstaller" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.Uninstaller$MutableInt" classification="uses" />
+            <depends-on name="noteLab.util.percent.PercentCalculator" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.settings.SettingsInfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.UninstallFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.uninstall.UninstallFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.UninstallFrame$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.uninstall.UninstallFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.UninstallFrame" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="noteLab.gui.sequence.SequenceFrame" classification="extends" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.WelcomeUninstallTile" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.UninstallFrame$1" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.UninstallFrame$2" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.WelcomeUninstallTile$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.gui.uninstall.WelcomeUninstallTile" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.Uninstaller" classification="uses" />
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.WelcomeUninstallTile$ProgressPanel" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.gui.uninstall.WelcomeUninstallTile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.gui.uninstall.WelcomeUninstallTile" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="noteLab.gui.sequence.SequenceTile" classification="extends" />
+            <depends-on name="noteLab.util.percent.PercentChangedListener" classification="implements" />
+            <depends-on name="noteLab.gui.uninstall.WelcomeUninstallTile$ProgressPanel" classification="uses" />
+            <depends-on name="noteLab.gui.sequence.ProceedType" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.gui.uninstall.WelcomeUninstallTile$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model">
+        <type name="noteLab.model.Page" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="noteLab.model.geom.TransformRectangle2D" classification="extends" />
+            <depends-on name="noteLab.util.render.Renderable" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.Selectable" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.UnitScaleDependent" classification="implements" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.Paper$PaperType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.Paper" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="noteLab.model.geom.TransformRectangle2D" classification="extends" />
+            <depends-on name="noteLab.util.render.Renderable" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.Selectable" classification="implements" />
+            <depends-on name="noteLab.util.UnitScaleDependent" classification="implements" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFPageInfo" classification="uses" />
+            <depends-on name="noteLab.util.render.ImageRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFFileInfo" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.settings.DebugSettings" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.SVGRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.render.PrinterRenderer2D" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.Path" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.geom.ItemContainer" classification="extends" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.Stroke" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="noteLab.util.geom.ItemContainer" classification="extends" />
+            <depends-on name="noteLab.util.render.Renderable" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.Selectable" classification="implements" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model.binder">
+        <type name="noteLab.model.binder.Binder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="20">
+            <depends-on name="noteLab.util.render.Renderable" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.gui.listener.RepaintBroadcastCenter" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.UnitScaleDependent" classification="implements" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.gui.listener.RepaintListener" classification="uses" />
+            <depends-on name="noteLab.model.binder.BinderListener" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.render.PrinterRenderer2D" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.binder.BinderListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.binder.FlowBinder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.model.binder.Binder" classification="extends" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model.canvas">
+        <type name="noteLab.model.canvas.CompositeCanvas$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$CanvasMouseListener" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$CanvasMouseListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$StylusEvent" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$EventType" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$EventType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$PointProcessor$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$PointProcessor$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$PointProcessor$3" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$PointProcessor" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$StylusEvent" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$EventType" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor$1" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor$2" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas$StylusEvent" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$EventType" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.CompositeCanvas" classification="class" visibility="public">
+          <dependencies count="36">
+            <depends-on name="noteLab.gui.listener.RepaintBroadcaster" classification="extends" />
+            <depends-on name="noteLab.gui.listener.RepaintListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.RepaintBroadcastCenter" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoListener" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="implements" />
+            <depends-on name="noteLab.util.UnitScaleDependent" classification="implements" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$StylusEvent" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.model.tool.Tool" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.binder.FlowBinder" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$1" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$PointProcessor" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas$PenToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$CanvasMouseListener" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas$EventType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$Action" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$DropLine" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.geom.Transformable" classification="implements" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar$ImportProcessor" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.gui.toolbar.file.OpenFileProcessor" classification="extends" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar$MenuListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar" classification="class" visibility="default">
+          <dependencies count="38">
+            <depends-on name="noteLab.gui.ToolBarButton" classification="extends" />
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.util.copy.CutCopyPasteReady" classification="implements" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.util.copy.CopyStateListener" classification="uses" />
+            <depends-on name="noteLab.util.structure.CopyVector" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.CutCopyPasteToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ButtonComboButton" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar$MenuListener" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar$ImportProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.NoteLabFileChooser" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$Action" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$DropLine" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.FileProcessor" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.JarnalFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.NoteLabFileFilter" classification="uses" />
+            <depends-on name="noteLab.gui.chooser.filter.SupportedFileFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.PageSelectionCanvas" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="extends" />
+            <depends-on name="noteLab.model.tool.PageSelector" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$PageSelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$DropLine" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.model.tool.Tool" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.model.canvas.PageSelectionCanvas$Action" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeCanvas$1" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="noteLab.model.canvas.StrokeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.StrokeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeCanvas$PenToolBar" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="noteLab.gui.ToolBarButton" classification="extends" />
+            <depends-on name="noteLab.gui.listener.SelectionChangeListener" classification="implements" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.gui.settings.constants.PenSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.gui.control.drop.TriControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+            <depends-on name="noteLab.gui.listener.SelectionChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ComboButton" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeCanvas" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="extends" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas$PenToolBar" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.DrawStrokeAction" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.DeleteStrokeAction" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.model.tool.Tool" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeCanvas$1" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.util.render.EmptyRenderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$Action" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$ColorListener" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$MenuListener" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Action" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$SizeListener" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="implements" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeEvent" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="class" visibility="public">
+          <dependencies count="34">
+            <depends-on name="noteLab.gui.ToolBarButton" classification="extends" />
+            <depends-on name="noteLab.gui.GuiSettingsConstants" classification="implements" />
+            <depends-on name="noteLab.util.copy.CutCopyPasteReady" classification="implements" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.gui.menu.PathMenuItem" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconButton" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.SizeControl" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ColorControl" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$SizeListener" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$ColorListener" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.ButtonComboButton" classification="uses" />
+            <depends-on name="noteLab.gui.toolbar.CutCopyPasteToolBar" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar$MenuListener" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuPath" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.util.structure.CopyVector" classification="uses" />
+            <depends-on name="noteLab.util.copy.CopyStateListener" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Action" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic$Style" classification="uses" />
+            <depends-on name="noteLab.gui.listener.ValueChangeListener" classification="uses" />
+            <depends-on name="noteLab.gui.menu.MenuConstants" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.gui.control.drop.pic.PrimitivePic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.StrokeSelectionCanvas" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="extends" />
+            <depends-on name="noteLab.model.tool.StrokeSelector" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$SelectionToolBar" classification="uses" />
+            <depends-on name="noteLab.util.copy.CopyStateListener" classification="uses" />
+            <depends-on name="noteLab.util.structure.CopyVector" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Mode" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.model.tool.Tool" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.gui.button.IconToggleButton" classification="uses" />
+            <depends-on name="noteLab.model.canvas.StrokeSelectionCanvas$Action" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.SubCanvas$MouseButton" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.SubCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.canvas.SubCanvas" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="17">
+            <depends-on name="noteLab.gui.listener.RepaintBroadcaster" classification="extends" />
+            <depends-on name="noteLab.util.render.DualRenderable" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.SubCanvas$MouseButton" classification="uses" />
+            <depends-on name="noteLab.gui.ToolBarButton" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.DeletePagedStrokeAction" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.DrawPagedStrokeAction" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model.geom">
+        <type name="noteLab.model.geom.FloatPoint2D" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.geom.Transformable" classification="implements" />
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.geom.TransformRectangle2D" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model.pdf">
+        <type name="noteLab.model.pdf.PDFFileInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.model.pdf.PDFPageInfo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.pdf.PDFFileInfo" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.model.tool">
+        <type name="noteLab.model.tool.Deleter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.tool.Tool" classification="implements" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.tool.PageSelector" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.tool.Tool" classification="implements" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.tool.Pen" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.model.tool.Tool" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.tool.StrokeSelector" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.tool.Tool" classification="implements" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.model.tool.Tool" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.CopyReady" classification="extends" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="extends" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util">
+        <type name="noteLab.util.CopyReady" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.InfoCenter$OSType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.InfoCenter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter$OSType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.Selectable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.StartupUtilities$MainFrameLoader$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.StartupUtilities$MainFrameLoader" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.gui.main.MainFrame" classification="uses" />
+            <depends-on name="noteLab.util.StartupUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.StartupUtilities$MainFrameLoader" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="implements" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalFileLoader" classification="uses" />
+            <depends-on name="noteLab.util.io.pdf.PDFFileLoader" classification="uses" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoader" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.StartupUtilities$MainFrameLoader$1" classification="uses" />
+            <depends-on name="noteLab.util.StartupUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.StartupUtilities" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.util.arg.CommandInterpretor" classification="uses" />
+            <depends-on name="noteLab.util.arg.Argument" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.arg.VersionArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PenSizeArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PenColorArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PaperTypeArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PaperColorArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.LookAndFeelArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.HistorySizeArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.CombFactorArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.SmoothFactorArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.UnitScaleArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.CurrentDirectoryArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.DebugMenuArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.PrintArg" classification="uses" />
+            <depends-on name="noteLab.util.arg.DebugArgGenerator" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.util.StartupUtilities$MainFrameLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.UnitScaleDependent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.arg">
+        <type name="noteLab.util.arg.ArgResult" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.Argument" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.ColorArg" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.CombFactorArg" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.CommandInterpretor$HelpArgument" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.CommandInterpretor" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.CommandInterpretor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.arg.Argument" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.arg.CommandInterpretor$HelpArgument" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.CurrentDirectoryArg" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.DebugArgGenerator$BooleanArg" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.arg.DebugArgGenerator" classification="uses" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.DebugArgGenerator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.Argument" classification="uses" />
+            <depends-on name="noteLab.util.arg.DebugArgGenerator$BooleanArg" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.DebugMenuArg" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.HistorySizeArg" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.undoRedo.action.UndoRedoConstants" classification="implements" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.LookAndFeelArg" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.PaperColorArg" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.arg.ColorArg" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.PaperTypeArg" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.ParamInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.PenColorArg" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.arg.ColorArg" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.PenSizeArg" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.PrintArg" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="implements" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoader" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.SmoothFactorArg" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.UnitScaleArg" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.arg.VersionArg" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.arg.Argument" classification="extends" />
+            <depends-on name="noteLab.util.arg.ArgResult" classification="uses" />
+            <depends-on name="noteLab.util.arg.ParamInfo" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.copy">
+        <type name="noteLab.util.copy.CopyStateListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.copy.CopyStateNotifier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.copy.CopyStateListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.copy.CutCopyPasteReady" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.copy.CopyStateNotifier" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.geom">
+        <type name="noteLab.util.geom.Bounded" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.ItemContainer" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.geom.Transformable" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModBroadcaster" classification="implements" />
+            <depends-on name="noteLab.util.mod.ModListener" classification="implements" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="implements" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.RectangleUnioner" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.Transformable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.geom.unit">
+        <type name="noteLab.util.geom.unit.MDimension" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.unit.MPaperSize" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.geom.unit.MDimension" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.unit.MValue" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.geom.unit.Unit" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileConstants" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.io">
+        <type name="noteLab.util.io.FileLoader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.ResolvableHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.StateFile" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.StringInputStream" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.io.jarnal">
+        <type name="noteLab.util.io.jarnal.JarnalFileLoader" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoadedListener" classification="implements" />
+            <depends-on name="noteLab.util.io.FileLoader" classification="implements" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.jarnal.JarnalPageLoadedListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.Page" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.jarnal.JarnalPageLoader$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoadedListener" classification="implements" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.jarnal.JarnalPageLoader$JarnalPaperType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.jarnal.JarnalPageLoader" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="noteLab.util.io.ResolvableHandler" classification="extends" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoadedListener" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoader$JarnalPaperType" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.util.io.StringInputStream" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.util.io.jarnal.JarnalPageLoader$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.io.noteLab">
+        <type name="noteLab.util.io.noteLab.NoteLabFileConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.io.noteLab.NoteLabFileLoader" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="noteLab.util.io.ResolvableHandler" classification="extends" />
+            <depends-on name="noteLab.util.io.FileLoader" classification="implements" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileConstants" classification="implements" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFPageInfo" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.util.InfoCenter" classification="uses" />
+            <depends-on name="noteLab.model.binder.FlowBinder" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.gui.DefinedIcon" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.io.pdf">
+        <type name="noteLab.util.io.pdf.PDFFileLoader" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="noteLab.util.io.FileLoader" classification="implements" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileLoadedListener" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFFileInfo" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.binder.FlowBinder" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsUtilities" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+            <depends-on name="noteLab.model.pdf.PDFPageInfo" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.math">
+        <type name="noteLab.util.math.Polynomial" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.mem">
+        <type name="noteLab.util.mem.MemoryAnalyzer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.mem.MemoryAnalyzer2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.mod">
+        <type name="noteLab.util.mod.ModBroadcaster" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.mod.ModListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.mod.ModListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.mod.ModType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.mod.ModType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.percent">
+        <type name="noteLab.util.percent.PercentCalculator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.percent.PercentChangedListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.progress">
+        <type name="noteLab.util.progress.ProgressEvent" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.progress.Progressive" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.progress.ProgressListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.render">
+        <type name="noteLab.util.render.DualRenderable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.EmptyRenderer2D" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.render.Renderer2D" classification="extends" />
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.ImageRenderer2D" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="extends" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.PrinterRenderer2D" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="extends" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.Renderable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.Renderer2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="noteLab.util.Selectable" classification="implements" />
+            <depends-on name="noteLab.util.render.RenderListener" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.settings.DebugSettings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.RenderListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.RenderProgressManager" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="noteLab.util.render.RenderListener" classification="implements" />
+            <depends-on name="noteLab.util.progress.Progressive" classification="implements" />
+            <depends-on name="noteLab.util.progress.ProgressListener" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderer2D" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.util.progress.ProgressEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.RenderStable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.SVGRenderer2D$TranslateStack" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.render.SVGRenderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.SVGRenderer2D" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="noteLab.util.render.Renderer2D" classification="extends" />
+            <depends-on name="noteLab.util.io.noteLab.NoteLabFileConstants" classification="implements" />
+            <depends-on name="noteLab.util.render.SVGRenderer2D$TranslateStack" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.model.binder.Binder" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.SwingRenderer2D$SelectedStroke" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.render.SwingRenderer2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.render.SwingRenderer2D" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="noteLab.util.render.Renderer2D" classification="extends" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$RenderMode" classification="uses" />
+            <depends-on name="noteLab.model.geom.FloatPoint2D" classification="uses" />
+            <depends-on name="noteLab.model.Path" classification="uses" />
+            <depends-on name="noteLab.util.render.Renderable" classification="uses" />
+            <depends-on name="noteLab.util.geom.Bounded" classification="uses" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.util.settings.DebugSettings" classification="uses" />
+            <depends-on name="noteLab.util.render.SwingRenderer2D$SelectedStroke" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.settings">
+        <type name="noteLab.util.settings.DebugSettings" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.settings.SettingsChangedEvent" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.settings.SettingsChangedListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.settings.SettingsKeys" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.settings.SettingsManager" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.settings.SettingsUtilities" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.util.settings.SettingsKeys" classification="implements" />
+            <depends-on name="noteLab.model.Paper$PaperType" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.MValue" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+            <depends-on name="noteLab.gui.settings.constants.PageSettingsConstants" classification="uses" />
+            <depends-on name="noteLab.util.geom.unit.Unit" classification="uses" />
+            <depends-on name="noteLab.gui.settings.constants.PenSettingsConstants" classification="uses" />
+            <depends-on name="noteLab.model.Paper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.structure">
+        <type name="noteLab.util.structure.CopyVector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.CopyReady" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.structure.FiniteStack" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.undoRedo">
+        <type name="noteLab.util.undoRedo.UndoRedoListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.UndoRedoManager$UndoRedoAction" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.UndoRedoManager" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="noteLab.util.undoRedo.action.UndoRedoConstants" classification="implements" />
+            <depends-on name="noteLab.util.settings.SettingsChangedListener" classification="implements" />
+            <depends-on name="noteLab.util.structure.FiniteStack" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoManager$UndoRedoAction" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.UndoRedoListener" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsChangedEvent" classification="uses" />
+            <depends-on name="noteLab.util.settings.SettingsManager" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="noteLab.util.undoRedo.action">
+        <type name="noteLab.util.undoRedo.action.CanvasAction" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="implements" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.DeletePagedStrokeAction" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.undoRedo.action.CanvasAction" classification="extends" />
+            <depends-on name="noteLab.util.undoRedo.action.DeleteStrokeAction" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.DeleteStrokeAction" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.undoRedo.action.CanvasAction" classification="extends" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.DrawPagedStrokeAction" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="noteLab.util.undoRedo.action.CanvasAction" classification="extends" />
+            <depends-on name="noteLab.util.undoRedo.action.DrawStrokeAction" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.DrawStrokeAction" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="noteLab.util.undoRedo.action.CanvasAction" classification="extends" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.model.Page" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+            <depends-on name="noteLab.util.geom.RectangleUnioner" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.HistoryAction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.PenAction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="implements" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.StrokeAction" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="noteLab.util.undoRedo.action.HistoryAction" classification="implements" />
+            <depends-on name="noteLab.model.Stroke" classification="uses" />
+            <depends-on name="noteLab.util.undoRedo.action.PenAction" classification="uses" />
+            <depends-on name="noteLab.model.tool.Pen" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.TransformAction" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="noteLab.util.undoRedo.action.CanvasAction" classification="extends" />
+            <depends-on name="noteLab.util.geom.Transformable" classification="uses" />
+            <depends-on name="noteLab.model.canvas.CompositeCanvas" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="noteLab.util.undoRedo.action.UndoRedoConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="forms">
+    <description>Java Forms library v1.3.0. Part of the PF-CDA implementation.</description>
+    <container name="C:/Users/marcio.barros/Desktop/PF-CDA/lib/forms-1.3.0.jar" classification="jar">
+      <namespace name="com.jgoodies.forms.builder">
+        <type name="com.jgoodies.forms.builder.AbstractButtonPanelBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.AbstractFormBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints$Alignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.AbstractI15dPanelBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.builder.PanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.ButtonBarBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.jgoodies.forms.builder.PanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.ButtonBarBuilder2" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.jgoodies.forms.builder.AbstractButtonPanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.ButtonStackBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="com.jgoodies.forms.builder.PanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.DefaultFormBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.builder.I15dPanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.ComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.I15dPanelBuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.builder.AbstractI15dPanelBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.builder.PanelBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.builder.AbstractFormBuilder" classification="extends" />
+            <depends-on name="com.jgoodies.forms.factories.ComponentFactory" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.ComponentFactory2" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.jgoodies.forms.debug">
+        <type name="com.jgoodies.forms.debug.FormDebugPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$LayoutInfo" classification="uses" />
+            <depends-on name="com.jgoodies.forms.debug.FormDebugUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.debug.FormDebugUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$LayoutInfo" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.jgoodies.forms.factories">
+        <type name="com.jgoodies.forms.factories.Borders$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.factories.Borders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.Borders$EmptyBorder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.Borders" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders$EmptyBorder" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.Borders$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.ButtonBarFactory$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.factories.ButtonBarFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.ButtonBarFactory$MyButtonBarBuilder2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.builder.ButtonBarBuilder2" classification="extends" />
+            <depends-on name="com.jgoodies.forms.factories.ButtonBarFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.ButtonBarFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.ButtonBarFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.jgoodies.forms.builder.ButtonBarBuilder2" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.ButtonBarFactory$MyButtonBarBuilder2" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.ButtonBarFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.CC" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.CC" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints$Alignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.ComponentFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.ComponentFactory2" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.factories.ComponentFactory" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel$AccessibleFormsLabel" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel$AccessibleFormsLabel" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$ReadOnlyLabel" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel" classification="extends" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$TitleLabel" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel" classification="extends" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory$TitledSeparatorLayout" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.DefaultComponentFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.factories.ComponentFactory2" classification="implements" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$FormsLabel" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$ReadOnlyLabel" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$TitleLabel" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$TitledSeparatorLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.DefaultComponentFactory$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.factories.FormFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$ComponentSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.jgoodies.forms.layout">
+        <type name="com.jgoodies.forms.layout.BoundedSize" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="implements" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.CellConstraints$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.CellConstraints$Alignment" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.CellConstraints" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints$Alignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$ComponentSize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.ColumnSpec" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.LayoutMap" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.ConstantSize$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.ConstantSize$Unit" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.ConstantSize" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="implements" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize$Unit" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="implements" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$LayoutInfo" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$Measure" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$MinimumHeightMeasure" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$MinimumWidthMeasure" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$PreferredHeightMeasure" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout$PreferredWidthMeasure" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormLayout" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$ComponentSizeCache" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.LayoutMap" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.CellConstraints" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$LayoutInfo" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$MinimumWidthMeasure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$MinimumHeightMeasure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$PreferredWidthMeasure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$PreferredHeightMeasure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$CachingMeasure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpec$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpec" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$ComponentSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.BoundedSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.PrototypeSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpecParser$FormLayoutParseException" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpecParser$Multiplier" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.FormSpecParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="com.jgoodies.forms.layout.LayoutMap" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser$Multiplier" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser$FormLayoutParseException" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.LayoutMap" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.layout.ColumnSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.RowSpec" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser" classification="uses" />
+            <depends-on name="com.jgoodies.forms.factories.FormFactory" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.PrototypeSize" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="implements" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.DefaultUnitConverter" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.RowSpec" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.jgoodies.forms.layout.FormSpec" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpec$DefaultAlignment" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.LayoutMap" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormSpecParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.Size" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.Sizes$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.Sizes$ComponentSize" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="implements" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout$Measure" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.FormLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.layout.Sizes" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$ComponentSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.UnitConverter" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize$Unit" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.BoundedSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes$1" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.DefaultUnitConverter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.jgoodies.forms.util">
+        <type name="com.jgoodies.forms.util.AbstractUnitConverter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.util.UnitConverter" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.DefaultUnitConverter$DialogBaseUnits" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.util.DefaultUnitConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.DefaultUnitConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.jgoodies.forms.util.AbstractUnitConverter" classification="extends" />
+            <depends-on name="com.jgoodies.forms.util.DefaultUnitConverter$DialogBaseUnits" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.FormUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.util.DefaultUnitConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.LayoutStyle" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.MacLayoutStyle" classification="uses" />
+            <depends-on name="com.jgoodies.forms.util.WindowsLayoutStyle" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.MacLayoutStyle" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.UnitConverter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.Utilities" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.jgoodies.forms.util.FormUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.jgoodies.forms.util.WindowsLayoutStyle" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.jgoodies.forms.util.LayoutStyle" classification="extends" />
+            <depends-on name="com.jgoodies.forms.layout.Size" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.ConstantSize" classification="uses" />
+            <depends-on name="com.jgoodies.forms.layout.Sizes" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

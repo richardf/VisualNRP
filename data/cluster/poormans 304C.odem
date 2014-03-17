@@ -1,0 +1,2379 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="poormans">
+    <container name="C:/Users/Marcio Barros/Documents/My Dropbox/Academia/Projetos/2011/SBSE/Meus Papers/Pacotes/Analises/exemplos/Poorman CMS/poormans_2.3 304C.jar" classification="jar">
+      <namespace name="com.izforge.izpack">
+        <type name="com.izforge.izpack.CustomData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.ExecutableFile" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.GUIPrefs" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.Info$Author" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.Info" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.Info$Author" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.LocaleDatabase" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.Pack" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.PackFile" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.Panel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.ParsableFile" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.UpdateCheck" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.XPackFile" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.PackFile" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.adaptator">
+        <type name="com.izforge.izpack.adaptator.IXMLElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.IXMLParser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.IXMLWriter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.XMLException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.adaptator.impl">
+        <type name="com.izforge.izpack.adaptator.impl.LineNumberFilter" classification="class" visibility="public">
+          <dependencies count="9">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.impl.XMLParser$ByteBufferInputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.impl.XMLParser" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="implements" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.LineNumberFilter" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.XMLException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser$ByteBufferInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.adaptator.impl.XMLWriter" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLWriter" classification="implements" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.XMLException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.compiler">
+        <type name="com.izforge.izpack.compiler.CompilerException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.compiler.DynamicVariable" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.gui">
+        <type name="com.izforge.izpack.gui.AutomatedInstallScriptFilter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.ButtonFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.EtchedLineBorder" classification="class" visibility="public">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.FlowLayout" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.HighlightJButton$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.HighlightJButton$MouseHandler" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.HighlightJButton" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton$MouseHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.HighlightJButton$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IconsDatabase" classification="class" visibility="public">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IzPackKMetalTheme" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.gui.IzPackMetalTheme" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IzPackMetalTheme" classification="class" visibility="public">
+          <dependencies count="3">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IzPanelConstraints" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.gui.LayoutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IzPanelLayout$FillerComponent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.gui.IzPanelConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.IzPanelLayout" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="com.izforge.izpack.gui.LayoutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout$FillerComponent" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.MultiLineLabel" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory$FullLineLabel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PathSelectionPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Log" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.LabelFactory$FullLineLabel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.LabelFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.gui.LabelFactory$FullLineLabel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.LayoutConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.TwoColumnConstraints" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.gui.TwoColumnLayout" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.gui.TwoColumnConstraints" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.installer">
+        <type name="com.izforge.izpack.installer.AutomatedInstallData" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.AutomatedInstaller" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="com.izforge.izpack.installer.InstallerBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAction" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.CustomData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConsolePanelAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidatorFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator$Status" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ButtonConfig" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.CompileResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileResult" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$CompilationJob" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="com.izforge.izpack.installer.CompileHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileResult" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$EclipseStdOutHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$EclipseStdErrHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$EclipseStdErrHandler" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StdErrParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$EclipseStdOutHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.CompileHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StdOutParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$StdErrParser" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StreamParser" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$StdOutParser" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StreamParser" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker$StreamParser" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.CompileWorker" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$CompilationJob" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileResult" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StdErrParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StdOutParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$StreamParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$EclipseStdErrHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.CompileWorker$EclipseStdOutHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ConditionHistory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ConditionHistoryTableCellRenderer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.ConditionHistory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ConditionHistoryTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.ConditionHistory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ConsoleInstaller" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="com.izforge.izpack.installer.InstallerBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelConsole" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidatorFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ConsolePanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.PanelAutomationHelper" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DataValidator$Status" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DataValidator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DataValidatorFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Debugger$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Debugger$2" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.VariableHistory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.VariableHistoryTableModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Debugger$3" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConditionHistory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Debugger" classification="class" visibility="public">
+          <dependencies count="31">
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.VariableHistory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConditionHistory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.VariableHistoryTableModel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.VariableHistoryTableCellRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConditionHistoryTableModel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConditionHistoryTableCellRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger$3" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DownloadPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.DownloadPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DownloadPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.DownloadPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.DownloadPanel" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.installer.LoggedInputStream" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DownloadPanel$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DownloadPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller$FlagRenderer" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller$LanguageDialog$WindowHandler" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$LanguageDialog" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller$LanguageDialog" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="14">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$LanguageDialog$WindowHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$FlagRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIInstaller" classification="class" visibility="public">
+          <dependencies count="32">
+            <depends-on name="com.izforge.izpack.installer.InstallerBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPackKMetalTheme" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$LanguageDialog" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller$FlagRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.GUIListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.IMultiVolumeUnpackerHelper" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.IUnpacker" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallData" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="extends" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Installer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.GUIInstaller" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstaller" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ConsoleInstaller" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StringTool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerBase" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerRequirement" classification="uses" />
+            <depends-on name="com.izforge.izpack.compiler.DynamicVariable" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PrivilegedRunner" classification="uses" />
+            <depends-on name="com.izforge.izpack.CustomData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerCondition" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Log" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$BlockFocusTraversalPolicy" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$HelpHandler" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame$WindowHandler" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerFrame" classification="class" visibility="public">
+          <dependencies count="73">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.GUIListener" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerBase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$WindowHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$3" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$4" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$NavigationHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.EtchedLineBorder" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$HelpHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$5" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$6" classification="uses" />
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.CustomData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLWriter" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame$BlockFocusTraversalPolicy" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAction" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionConfiguration" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidatorFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Log" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Unpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UnpackerFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IUnpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.InstallerRequirement" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.IzPanel$Filler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.IzPanel" classification="class" visibility="public">
+          <dependencies count="30">
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="implements" />
+            <depends-on name="com.izforge.izpack.gui.LayoutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAction" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.HelpWindow" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.MultiLineLabel" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel$Filler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.DataValidator$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.LayoutHelper" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.gui.LayoutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel$Filler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.LoggedInputStream" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.DownloadPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebAccessor" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.MultiVolumeInstaller" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.ProgressDialog" classification="uses" />
+            <depends-on name="com.izforge.izpack.uninstaller.SelfModifier" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Installer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.MultiVolumeUnpacker" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="com.izforge.izpack.installer.UnpackerBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.IMultiVolumeUnpackerHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.MultiVolumeUnpackerAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.MultiVolumeUnpackerHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.io.FileSpanningInputStream" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.XPackFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.io.VolumeNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.io.CorruptVolumeException" classification="uses" />
+            <depends-on name="com.izforge.izpack.ParsableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.UpdateCheck" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ScriptParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.MultiVolumeInstaller" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.PackFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.MultiVolumeUnpackerAutomationHelper" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.IMultiVolumeUnpackerHelper" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.MultiVolumeUnpackerHelper" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.installer.IMultiVolumeUnpackerHelper" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.NextMediaDialog" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PackValidator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelAction$ActionStage" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.PanelAction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelAction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelActionConfiguration" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PanelAction$ActionStage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelActionConfiguration" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelActionFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.PanelAction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelAutomation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelAutomationHelper" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelConsole" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PanelConsoleHelper" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.PrivilegedRunner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableClass" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$Processable" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableFile$OutputMonitor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableFile" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$Processable" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableFile$OutputMonitor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker$Processable" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker$ProcessingJob" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$Processable" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProcessPanelWorker" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$ProcessingJob" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ButtonConfig" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$ExecutableClass" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ProcessPanelWorker$Processable" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProgressDialog" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.installer.ProgressDialogThread" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ProgressDialogThread" classification="class" visibility="default">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ResourceManager" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ResourceNotFoundException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.ScriptParser" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.ParsableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Unpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.UninstallData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.Unpacker" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="com.izforge.izpack.installer.UnpackerBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.PackFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.ParsableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.UpdateCheck" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ScriptParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebAccessor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebRepositoryAccessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.UnpackerBase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="20">
+            <depends-on name="com.izforge.izpack.installer.IUnpacker" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="org.apache.regexp.RE" classification="uses" />
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+            <depends-on name="com.izforge.izpack.PackFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.UpdateCheck" classification="uses" />
+            <depends-on name="org.apache.regexp.RESyntaxException" classification="uses" />
+            <depends-on name="com.izforge.izpack.event.InstallerListener" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Unpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.UnpackerFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IUnpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.VariableHistory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.VariableHistoryTableCellRenderer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.VariableHistory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.VariableHistoryTableModel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.VariableHistory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.WebAccessor$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.installer.WebAccessor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LoggedInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.WebAccessor$MyDialogAuthenticator" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.installer.WebAccessor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebAccessor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.WebAccessor" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.installer.WebAccessor$MyDialogAuthenticator" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebAccessor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.installer.WebRepositoryAccessor" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.WebAccessor" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.ParsableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.UpdateCheck" classification="uses" />
+            <depends-on name="com.izforge.izpack.compiler.CompilerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.io">
+        <type name="com.izforge.izpack.io.CorruptVolumeException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.io.FileSpanningInputStream" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.io.VolumeNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.io.CorruptVolumeException" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.io.FileSpanningOutputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.io.VolumeNotFoundException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.panels">
+        <type name="com.izforge.izpack.panels.HelpWindow" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.NextMediaDialog" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.NextMediaFileFilter" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.NextMediaFileFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PathSelectionPanel" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="com.izforge.izpack.gui.LayoutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.Validator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.ValidatorContainer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.SimpleFinishPanel" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Log" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.HTMLInfoPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.panels.HTMLInfoPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.HTMLInfoPanel" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.HTMLInfoPanel$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.HyperlinkHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.ImgPacksPanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelAutomationHelper" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksModel" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelInterface" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanel" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelAutomationHelper$1PInfo" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelAutomationHelper$1PInfo" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.panels.PacksModel" classification="extends" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelInterface" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase$CheckBoxRenderer" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$LFIndependentIcon" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase$LFIndependentIcon" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase$PacksPanelTableCellRenderer" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelBase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="48">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelInterface" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.PacksModel" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.PackValidator" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ImgPacksPanelAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$CheckBoxRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$PacksPanelTableCellRenderer" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PacksPanelBase$LFIndependentIcon" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.GUIPrefs" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PacksPanelInterface" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.Debugger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.InstallPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.panels.InstallPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.InstallPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.InstallPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.InstallPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanel" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.InstallPanel$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.InstallPanel$2" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.InstallPanel$3" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.InstallPanel$4" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.InstallPanel$5" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.izforge.izpack.installer.PanelAutomationHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UnpackerFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IUnpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.InstallPanelConsoleHelper" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.izforge.izpack.installer.PanelConsoleHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.PanelConsole" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UnpackerFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IUnpacker" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PathInputPanel" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.panels.PathSelectionPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.MultiLineLabel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.TargetPanel" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.panels.PathInputPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.TargetPanelAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PathSelectionPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.TargetPanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.TargetPanelConsoleHelper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.PanelConsoleHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.PanelConsole" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.DirInputField" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="com.izforge.izpack.panels.FileInputField" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.FileInputField" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputFileFilter" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.StringInputProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.MultipleFileInputField" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputFileFilter" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.StringInputProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PasswordGroup" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.PasswordUIElement" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.UIElement" classification="extends" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.ProcessingClient" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.Processor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.RadioButtonUIElement" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.UIElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.RuleInputField$FieldSpec" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.RuleInputField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.RuleInputField" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.RuleTextField" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.FlowLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.RuleInputField$FieldSpec" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="org.apache.regexp.RE" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.RuleTextField$Rule" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.panels.RuleTextField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.RuleTextField" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.RuleTextField$Rule" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.StringInputProcessingClient" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.TextInputField" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.FlowLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UIElement" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.UIElementType" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UIElementType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputFileFilter" classification="class" visibility="default">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanel$SearchField$1" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel$SearchField" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanel$SearchField" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel$SearchField$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanel$TextValuePair" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanel" classification="class" visibility="public">
+          <dependencies count="64">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel$SearchField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanel$TextValuePair" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UIElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ValidatorContainer" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.VariableExistenceCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.TwoColumnLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.TwoColumnConstraints" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.DirInputField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.MultipleFileInputField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.FileInputField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.TextInputField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.RuleInputField" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelAutomationHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.RadioButtonUIElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordUIElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.FlowLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.HyperlinkHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UIElementType" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.ButtonFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanelAutomationHelper" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.installer.PanelAutomation" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Choice" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Input" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Choice" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Password" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Input" classification="extends" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.UserInputPanelConsoleHelper" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="com.izforge.izpack.installer.PanelConsoleHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.PanelConsole" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Input" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.Panel" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.SpecHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Password" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.UserInputPanelConsoleHelper$Choice" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.HelloPanel" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.InstallerFrame" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IzPanelLayout" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info$Author" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.IconsDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.gui.LabelFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.LayoutHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.panels.HelloPanelConsoleHelper" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.installer.PanelConsoleHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.PanelConsole" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info$Author" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.rules">
+        <type name="com.izforge.izpack.rules.AndCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.CompareNumericsCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.Condition" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.JavaCondition" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.NotCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.OrCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.PackselectionCondition" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.RefCondition" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.RulesEngine" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.PackselectionCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.JavaCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.AndCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.OrCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.XorCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.NotCondition" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLWriter" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.XMLException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.UserCondition" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.VariableCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.VariableExistenceCondition" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="extends" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLElementImpl" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.rules.XorCondition" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.rules.OrCondition" classification="extends" />
+            <depends-on name="com.izforge.izpack.rules.Condition" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.rules.RulesEngine" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.uninstaller">
+        <type name="com.izforge.izpack.uninstaller.SelfModifier$StreamProxy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.uninstaller.SelfModifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.uninstaller.SelfModifier" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.uninstaller.SelfModifier$StreamProxy" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.util">
+        <type name="com.izforge.izpack.util.AbstractUIHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.AbstractUIProcessHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.CleanupClient" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Console" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.util.StdOut" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.ConsoleTextArea" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StdIn" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.ConsoleTextArea" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="com.izforge.izpack.util.ConsoleWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.ConsoleWrite" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.ConsoleTextArea" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.ConsoleWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.ConsoleTextArea" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.ConsoleWrite" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Debug" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.DebugConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.ExtendedUIProgressHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.FileExecutor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.FileExecutor" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.ExecutableFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.MonitorInputStream" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Console" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor$1" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsConstraint" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.FileUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.FreeThread" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.NativeLibraryClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.HostAddressValidator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Housekeeper" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.CleanupClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Librarian" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.HyperlinkHandler" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.IoHelper" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.IsPortValidator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.JarOutputStream" classification="class" visibility="public">
+          <dependencies count="2">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Librarian" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.util.CleanupClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.NativeLibraryClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Housekeeper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.TargetFactory" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.LibraryRemover" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.LibraryRemover$StreamProxy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.LibraryRemover" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.LibraryRemover" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.LibraryRemover$StreamProxy" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Log$Record" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.Log" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.Log" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.util.LogError" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.LogWarning" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.LogMessage" classification="implements" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Log$Record" classification="uses" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.Info" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.LogError" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.LogMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.LogWarning" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.MonitorInputStream" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.MultiLineLabel" classification="class" visibility="public">
+          <dependencies count="1">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.NativeLibraryClient" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.NotEmptyValidator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.OSClassHelper" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.OsConstraint" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.OsVersion" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.util.OsVersionConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.StringConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.FileUtil" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StringTool" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.OsVersionConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.PasswordEncryptionValidator" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.PasswordEqualityValidator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.PasswordKeystoreValidator" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.PortProcessor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.PortValidator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.RegularExpressionValidator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.Validator" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.panels.PasswordGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.SpecHelper" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.izforge.izpack.adaptator.IXMLElement" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.impl.XMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.InstallerException" classification="uses" />
+            <depends-on name="com.izforge.izpack.adaptator.IXMLParser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.StdIn" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.ConsoleTextArea" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.StdOut" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.ConsoleTextArea" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.ConsoleWrite" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.StringConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.StringTool" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.SummaryProcessor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.IzPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.TargetFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.UnixGroupProcessor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.UnixUserProcessor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.panels.Processor" classification="implements" />
+            <depends-on name="com.izforge.izpack.panels.ProcessingClient" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixUsers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.VariableSubstitutor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.util.IoHelper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.util.os">
+        <type name="com.izforge.izpack.util.os.RegistryDefaultHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.os.RegistryHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.TargetFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.RegistryHandler" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.izforge.izpack.util.OSClassHelper" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.ShellLink" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.NativeLibraryClient" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.Librarian" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.Shortcut" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.Unix_Shortcut" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="com.izforge.izpack.util.os.Shortcut" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.os.Unix_ShortcutConstants" classification="implements" />
+            <depends-on name="com.izforge.izpack.util.os.unix.ShellScript" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixUser" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceNotFoundException" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.OsVersion" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.UninstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StringTool" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixUsers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.Unix_ShortcutConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.Win_RegistryHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.util.os.RegistryHandler" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.VariableSubstitutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.Win_Shortcut" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.util.os.Shortcut" classification="extends" />
+            <depends-on name="com.izforge.izpack.util.os.ShellLink" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StringTool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.WrappedNativeLibException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.util.os.unix">
+        <type name="com.izforge.izpack.util.os.unix.ShellScript" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.unix.UnixConstants" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.unix.UnixHelper" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.ShellScript" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.unix.UnixUser" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.os.unix.ShellScript" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.FileExecutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.util.os.unix.UnixUsers" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixUser" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.os.unix.UnixHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.StringTool" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.regexp">
+        <type name="org.apache.regexp.CharacterArrayCharacterIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.CharacterIterator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.CharacterIterator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.RE" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+            <depends-on name="org.apache.regexp.CharacterIterator" classification="uses" />
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+            <depends-on name="org.apache.regexp.StringCharacterIterator" classification="uses" />
+            <depends-on name="org.apache.regexp.RESyntaxException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.RECompiler$RERange" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.RECompiler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+            <depends-on name="org.apache.regexp.RESyntaxException" classification="uses" />
+            <depends-on name="org.apache.regexp.RECompiler$RERange" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.REDebugCompiler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.RECompiler" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.REDemo$1" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.REDemo" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.regexp.RE" classification="uses" />
+            <depends-on name="org.apache.regexp.REDebugCompiler" classification="uses" />
+            <depends-on name="org.apache.regexp.REDemo$1" classification="uses" />
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.REProgram" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.RESyntaxException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.RETest" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.regexp.RE" classification="uses" />
+            <depends-on name="org.apache.regexp.REDebugCompiler" classification="uses" />
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.REUtil" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.regexp.RE" classification="uses" />
+            <depends-on name="org.apache.regexp.RESyntaxException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.ReaderCharacterIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.CharacterIterator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.StreamCharacterIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.CharacterIterator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.StringCharacterIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.regexp.CharacterIterator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.regexp.recompile" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.regexp.RECompiler" classification="uses" />
+            <depends-on name="org.apache.regexp.RESyntaxException" classification="uses" />
+            <depends-on name="org.apache.regexp.REProgram" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.izforge.izpack.event">
+        <type name="com.izforge.izpack.event.InstallerListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.PackFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.event.ProgressBarInstallerListener" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.izforge.izpack.event.SimpleInstallerListener" classification="extends" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.ExtendedUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.Debug" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.izforge.izpack.event.SimpleInstallerListener" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.izforge.izpack.event.InstallerListener" classification="implements" />
+            <depends-on name="com.izforge.izpack.LocaleDatabase" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.AutomatedInstallData" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.SpecHelper" classification="uses" />
+            <depends-on name="com.izforge.izpack.PackFile" classification="uses" />
+            <depends-on name="com.izforge.izpack.util.AbstractUIProgressHandler" classification="uses" />
+            <depends-on name="com.izforge.izpack.Pack" classification="uses" />
+            <depends-on name="com.izforge.izpack.installer.ResourceManager" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

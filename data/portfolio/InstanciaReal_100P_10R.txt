@@ -1,0 +1,1110 @@
+E; project; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; vpl; 352230; cost; 118000
+E; project; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; vpl; 165500.027; cost; 472857.22
+E; project; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; vpl; 45955.5; cost; 306370
+E; project; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; vpl; 8017.5; cost; 160350
+E; project; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; vpl; 480925; cost; 961850
+E; project; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; vpl; 296988.2806; cost; 658510.6
+E; project; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; vpl; 89600; cost; 350000
+E; project; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; vpl; 109508.62048; cost; 977755.54
+E; project; Avaliação e mapa de risco saúde; vpl; 166666.666666667; cost; 300000
+E; project; Bateria de Lítio estacionária; vpl; 25000; cost; 400000
+E; project; Biodiesel de Etanol; vpl; 124000; cost; 900000
+E; project; Célula Combustível de Polímero Condutor Iônico; vpl; 140000; cost; 3000000
+E; project; Centro Simulação Sistemas Elétricos; vpl; 41447; cost; 362903
+E; project; Coletor solar para refrigeração e calor de processo industrial; vpl; 49500; cost; 793330.99
+E; project; Comparação eletromagnética entre painéis fotovoltáicos; vpl; 39583.3333333333; cost; 12000
+E; project; Controle plantas aquáticas PortoColômbia; vpl; 22833.3333333333; cost; 730000
+E; project; Controle qualidade p/ concreto projetado; vpl; 250000; cost; 1400000
+E; project; Corrosão salina em termelétricas; vpl; 150000; cost; 3000000
+E; project; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; vpl; 17825.283; cost; 289842
+E; project; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; vpl; 464225.952; cost; 580282.44
+E; project; Detecção Descargas Atmosféricas; vpl; 120536; cost; 233900
+E; project; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; vpl; 116686.22; cost; 833473
+E; project; Dispositivo para Medir a Curva de Magnetização de Transformadores; vpl; 29916.864; cost; 598337.28
+E; project; Educação Ambiental no Processo de Licenc; vpl; 2500000; cost; 11000000
+E; project; Escolha corredor de Linhas Transmissão; vpl; 258333.333333333; cost; 1400000
+E; project; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; vpl; 62531.1; cost; 683400
+E; project; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; vpl; 150000; cost; 1119792.44
+E; project; Gerador autom. de prog. de manobras no sist. eletroenergético; vpl; 44000; cost; 440519.44
+E; project; Gerador de cenários p/ treinamento de operadores; vpl; 123340.666666667; cost; 499489.2
+E; project; Identificação Potencial - Energia Eólica; vpl; 500000; cost; 11000000
+E; project; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; vpl; 33713.6666666667; cost; 444989.8
+E; project; Integração de dados dos sistemas de proteção; vpl; 332764.85088; cost; 720270.24
+E; project; Integração Sist. de Segurança Eletrônica para linhas de transmissão; vpl; 1000000; cost; 8300000
+E; project; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; vpl; 59610; cost; 397400
+E; project; Leitor de Telas e Sintetizador de Voz; vpl; 105740.32; cost; 944110
+E; project; Limitador de corrente de curto-circuito a base de reatores saturados; vpl; 538663.5; cost; 1197030
+E; project; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; vpl; 259623.15; cost; 305439
+E; project; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; vpl; 399344.4; cost; 1331148
+E; project; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; vpl; 593681.088; cost; 514009.6
+E; project; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; vpl; 14000000; cost; 300000
+E; project; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; vpl; 338446.5825; cost; 399347
+E; project; Perda de carga devido a mexilhão dourado; vpl; 25333.3333333333; cost; 590000
+E; project; Plataforma de auxílio à contratação de energia elétrica; vpl; 62587.23; cost; 417248.2
+E; project; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); vpl; 23166.6666666667; cost; 953000
+E; project; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; vpl; 40975.956; cost; 341040
+E; project; Recuperador de Calor para Chuveiros Elétricos; vpl; 510.26; cost; 16460
+E; project; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; vpl; 65785.25; cost; 841118
+E; project; Rede Corporativa - Hardware - Telecom; vpl; 2847.82166666667; cost; 227071.65
+E; project; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; vpl; 18585.0833333333; cost; 668328.27
+E; project; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; vpl; 14311; cost; 47946.94
+E; project; Rede Corporativa Geral - Hardware; vpl; 37064.4866666667; cost; 2416543
+E; project; REDE DADOS SEM FIO - SE'S E US'S FASE 1; vpl; 333333.333333333; cost; 8000000
+E; project; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; vpl; 18100; cost; 271914.76
+E; project; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; vpl; 333333.333333333; cost; 18000000
+E; project; Rede Digital de Telefonia; vpl; 8785.08333333333; cost; 229074
+E; project; REDE INTEGRADA DE SINCRONISMO; vpl; 1328.00916666667; cost; 277800
+E; project; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; vpl; 251704; cost; 679279.16
+E; project; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; vpl; 119408.625; cost; 379075
+E; project; Sistema de Hidrometeorologia da empresa; vpl; 17137.6558333333; cost; 2121365.84
+E; project; Simulador inteligente para treinamento; vpl; 26166.6666666667; cost; 2500000
+E; project; Sist robotiza recupera cavitação fase II; vpl; 100000; cost; 5000000
+E; project; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; vpl; 33750; cost; 1605968.66
+E; project; Sist. Comunic. Móveis-Pátios de Manobras; vpl; 316666.666666667; cost; 4100000
+E; project; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; vpl; 1857000; cost; 2458804.58
+E; project; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; vpl; 129576.672; cost; 799856
+E; project; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; vpl; 1035.13333333333; cost; 363377
+E; project; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; vpl; 750.01; cost; 1500
+E; project; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; vpl; 931.87; cost; 3413
+E; project; Sist.Geográfico de Informações; vpl; 53935.7641666667; cost; 1942566
+E; project; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; vpl; 2786230.98; cost; 3765177
+E; project; Sistema Comunicação para apoio a manutenção LTS; vpl; 5000000; cost; 3400000
+E; project; Sistema de Apoio à Decisão da Operação; vpl; 124778.475; cost; 580365
+E; project; Sistema de Controle de Acesso e de Ponto; vpl; 125000; cost; 4000000
+E; project; Sistema de Gerência Eletrônica de Docume; vpl; 79198.6516666667; cost; 2781700
+E; project; Sistema de Monitoração Preditiva para Compensadores Síncronos; vpl; 116588.4; cost; 777256
+E; project; Sistema de Monitoramento de Linhas de Transmissão; vpl; 708314.0736; cost; 843231.04
+E; project; Sistema de Rastreabilidade de Lógicas para CLPs; vpl; 22959.5887408; cost; 319273.4
+E; project; Sistema ERP - Reestrut. Organizacional; vpl; 1261012.75; cost; 27386480
+E; project; Sistema Transmissão Mascarenhas – Linhares; vpl; 46966.5375; cost; 8351313
+E; project; Sonda óptica p/ monitorar óleo isolante; vpl; 408333.333333333; cost; 8000000
+E; project; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; vpl; 1268000; cost; 1444648.84
+E; project; Supervisão e Controle - Escrit. Central - fase I; vpl; 5641; cost; 10000
+E; project; Supervisão e Controle - Escrit. Central - fase II; vpl; 78761; cost; 1863072
+E; project; Telemetria via satélite para rede de sensores; vpl; 125303.7933; cost; 397789.82
+E; project; Teleproteção via carrier em cabos de alta tensão enterrados; vpl; 133255.04; cost; 533020.16
+E; project; TRASMISSAO DE DADOS - INFORM. DO CAMPO; vpl; 62583.5; cost; 1010000
+E; project; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; vpl; 6364.54666666667; cost; 106743
+E; project; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; vpl; 14335.3916666667; cost; 135000
+E; project; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; vpl; 497.618333333333; cost; 17727.08
+E; project; UHE M.MORAES - INST SIST RESF UGS 1 A 4; vpl; 12641.3058333333; cost; 566144
+E; project; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; vpl; 2117770.08333333; cost; 756314742
+E; project; UHE Simplício - Queda Única; vpl; 1426645.7675; cost; 661034629
+E; project; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; vpl; 894564; cost; 1112416.74
+E; project; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; vpl; 95007.373; cost; 558866.9
+E; project; Us biodiesel óleo babaçu São Carlos-RO; vpl; 10333.3333333333; cost; 3000000
+E; project; UTE Campos - Obras Ambientais; vpl; 952; cost; 1833
+E; project; Sistema Inteligente de Processamento de Alarmes; vpl; 45570; cost; 462218
+E; project; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; vpl; 31003.824; cost; 206692.16
+E; project; Veículo submersível para inspeção; vpl; 305083.333333333; cost; 4523605.4
+E; project; Vetores doenças: medidas controle; vpl; 208333.333333333; cost; 3954236.12
+E; risk; Não renovação das concessões de Geração e Transmissão; probability; 35
+E; risk; Regulação do preço de venda de energia ; probability; 34
+E; risk; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; probability; 45
+E; risk; Ingerência Política ; probability; 47
+E; risk; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; probability; 37
+E; risk; Atraso na obtenção de licenças / autorizações ambientais ; probability; 36
+E; risk; Falha no acompanhamento das mudanças da legislação de interesse da empresa; probability; 52
+E; risk; Falta de renovação e recomposição da força de trabalho ; probability; 49
+E; risk; Cenários internos não alinhados com o planejamento estratégico; probability; 37
+E; risk; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; probability; 46
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -708000
+R; affects; Não renovação das concessões de Geração e Transmissão; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -2837143.32
+R; affects; Não renovação das concessões de Geração e Transmissão; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -1838220
+R; affects; Não renovação das concessões de Geração e Transmissão; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -962100
+R; affects; Não renovação das concessões de Geração e Transmissão; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -5771100
+R; affects; Não renovação das concessões de Geração e Transmissão; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -3951063.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -2100000
+R; affects; Não renovação das concessões de Geração e Transmissão; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -5866533.24
+R; affects; Não renovação das concessões de Geração e Transmissão; Avaliação e mapa de risco saúde; impact; -1800000
+R; affects; Não renovação das concessões de Geração e Transmissão; Bateria de Lítio estacionária; impact; -2400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Biodiesel de Etanol; impact; -5400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Célula Combustível de Polímero Condutor Iônico; impact; -18000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Centro Simulação Sistemas Elétricos; impact; -2177418
+R; affects; Não renovação das concessões de Geração e Transmissão; Coletor solar para refrigeração e calor de processo industrial; impact; -4759985.94
+R; affects; Não renovação das concessões de Geração e Transmissão; Comparação eletromagnética entre painéis fotovoltáicos; impact; -72000
+R; affects; Não renovação das concessões de Geração e Transmissão; Controle plantas aquáticas PortoColômbia; impact; -4380000
+R; affects; Não renovação das concessões de Geração e Transmissão; Controle qualidade p/ concreto projetado; impact; -8400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Corrosão salina em termelétricas; impact; -18000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -1739052
+R; affects; Não renovação das concessões de Geração e Transmissão; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -3481694.64
+R; affects; Não renovação das concessões de Geração e Transmissão; Detecção Descargas Atmosféricas; impact; -1403400
+R; affects; Não renovação das concessões de Geração e Transmissão; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -5000838
+R; affects; Não renovação das concessões de Geração e Transmissão; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -3590023.68
+R; affects; Não renovação das concessões de Geração e Transmissão; Educação Ambiental no Processo de Licenc; impact; -66000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Escolha corredor de Linhas Transmissão; impact; -8400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -4100400
+R; affects; Não renovação das concessões de Geração e Transmissão; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -6718754.64
+R; affects; Não renovação das concessões de Geração e Transmissão; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -2643116.64
+R; affects; Não renovação das concessões de Geração e Transmissão; Gerador de cenários p/ treinamento de operadores; impact; -2996935.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Identificação Potencial - Energia Eólica; impact; -66000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -2669938.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Integração de dados dos sistemas de proteção; impact; -4321621.44
+R; affects; Não renovação das concessões de Geração e Transmissão; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -49800000
+R; affects; Não renovação das concessões de Geração e Transmissão; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -2384400
+R; affects; Não renovação das concessões de Geração e Transmissão; Leitor de Telas e Sintetizador de Voz; impact; -5664660
+R; affects; Não renovação das concessões de Geração e Transmissão; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -7182180
+R; affects; Não renovação das concessões de Geração e Transmissão; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -1832634
+R; affects; Não renovação das concessões de Geração e Transmissão; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -7986888
+R; affects; Não renovação das concessões de Geração e Transmissão; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -3084057.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -1800000
+R; affects; Não renovação das concessões de Geração e Transmissão; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -2396082
+R; affects; Não renovação das concessões de Geração e Transmissão; Perda de carga devido a mexilhão dourado; impact; -3540000
+R; affects; Não renovação das concessões de Geração e Transmissão; Plataforma de auxílio à contratação de energia elétrica; impact; -2503489.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -5718000
+R; affects; Não renovação das concessões de Geração e Transmissão; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -2046240
+R; affects; Não renovação das concessões de Geração e Transmissão; Recuperador de Calor para Chuveiros Elétricos; impact; -98760
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -5046708
+R; affects; Não renovação das concessões de Geração e Transmissão; Rede Corporativa - Hardware - Telecom; impact; -1362429.9
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -4009969.62
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -287681.64
+R; affects; Não renovação das concessões de Geração e Transmissão; Rede Corporativa Geral - Hardware; impact; -14499258
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -48000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -1631488.56
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -108000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Rede Digital de Telefonia; impact; -1374444
+R; affects; Não renovação das concessões de Geração e Transmissão; REDE INTEGRADA DE SINCRONISMO; impact; -1666800
+R; affects; Não renovação das concessões de Geração e Transmissão; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -4075674.96
+R; affects; Não renovação das concessões de Geração e Transmissão; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -2274450
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Hidrometeorologia da empresa; impact; -12728195.04
+R; affects; Não renovação das concessões de Geração e Transmissão; Simulador inteligente para treinamento; impact; -15000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist robotiza recupera cavitação fase II; impact; -30000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -9635811.96
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist. Comunic. Móveis-Pátios de Manobras; impact; -24600000
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -14752827.48
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -4799136
+R; affects; Não renovação das concessões de Geração e Transmissão; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -2180262
+R; affects; Não renovação das concessões de Geração e Transmissão; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -9000
+R; affects; Não renovação das concessões de Geração e Transmissão; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -20478
+R; affects; Não renovação das concessões de Geração e Transmissão; Sist.Geográfico de Informações; impact; -11655396
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -22591062
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema Comunicação para apoio a manutenção LTS; impact; -20400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Apoio à Decisão da Operação; impact; -3482190
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Controle de Acesso e de Ponto; impact; -24000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Gerência Eletrônica de Docume; impact; -16690200
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -4663536
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Monitoramento de Linhas de Transmissão; impact; -5059386.24
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -1915640.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema ERP - Reestrut. Organizacional; impact; -164318880
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema Transmissão Mascarenhas – Linhares; impact; -50107878
+R; affects; Não renovação das concessões de Geração e Transmissão; Sonda óptica p/ monitorar óleo isolante; impact; -48000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -8667893.04
+R; affects; Não renovação das concessões de Geração e Transmissão; Supervisão e Controle - Escrit. Central - fase I; impact; -60000
+R; affects; Não renovação das concessões de Geração e Transmissão; Supervisão e Controle - Escrit. Central - fase II; impact; -11178432
+R; affects; Não renovação das concessões de Geração e Transmissão; Telemetria via satélite para rede de sensores; impact; -2386738.92
+R; affects; Não renovação das concessões de Geração e Transmissão; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -3198120.96
+R; affects; Não renovação das concessões de Geração e Transmissão; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -6060000
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -640458
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -810000
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -106362.48
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -3396864
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -4537888452
+R; affects; Não renovação das concessões de Geração e Transmissão; UHE Simplício - Queda Única; impact; -3966207774
+R; affects; Não renovação das concessões de Geração e Transmissão; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -6674500.44
+R; affects; Não renovação das concessões de Geração e Transmissão; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -3353201.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Us biodiesel óleo babaçu São Carlos-RO; impact; -18000000
+R; affects; Não renovação das concessões de Geração e Transmissão; UTE Campos - Obras Ambientais; impact; -10998
+R; affects; Não renovação das concessões de Geração e Transmissão; Sistema Inteligente de Processamento de Alarmes; impact; -2773308
+R; affects; Não renovação das concessões de Geração e Transmissão; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -1240152.96
+R; affects; Não renovação das concessões de Geração e Transmissão; Veículo submersível para inspeção; impact; -27141632.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Vetores doenças: medidas controle; impact; -23725416.72
+R; affects; Regulação do preço de venda de energia ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -155465.472
+R; affects; Regulação do preço de venda de energia ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -622991.27877888
+R; affects; Regulação do preço de venda de energia ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -403643.70048
+R; affects; Regulação do preço de venda de energia ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -211261.7664
+R; affects; Regulação do preço de venda de energia ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -1267241.2224
+R; affects; Regulação do preço de venda de energia ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -867590.3495424
+R; affects; Regulação do preço de venda de energia ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -461126.4
+R; affects; Regulação do preço de venda de energia ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -1288196.83497216
+R; affects; Regulação do preço de venda de energia ; Avaliação e mapa de risco saúde; impact; -395251.2
+R; affects; Regulação do preço de venda de energia ; Bateria de Lítio estacionária; impact; -527001.6
+R; affects; Regulação do preço de venda de energia ; Biodiesel de Etanol; impact; -1185753.6
+R; affects; Regulação do preço de venda de energia ; Célula Combustível de Polímero Condutor Iônico; impact; -3952512
+R; affects; Regulação do preço de venda de energia ; Centro Simulação Sistemas Elétricos; impact; -478126.154112
+R; affects; Regulação do preço de venda de energia ; Coletor solar para refrigeração e calor de processo industrial; impact; -1045216.75264896
+R; affects; Regulação do preço de venda de energia ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -15810.048
+R; affects; Regulação do preço de venda de energia ; Controle plantas aquáticas PortoColômbia; impact; -961777.92
+R; affects; Regulação do preço de venda de energia ; Controle qualidade p/ concreto projetado; impact; -1844505.6
+R; affects; Regulação do preço de venda de energia ; Corrosão salina em termelétricas; impact; -3952512
+R; affects; Regulação do preço de venda de energia ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -381867.994368
+R; affects; Regulação do preço de venda de energia ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -764524.43582976
+R; affects; Regulação do preço de venda de energia ; Detecção Descargas Atmosféricas; impact; -308164.1856
+R; affects; Regulação do preço de venda de energia ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -1098104.011392
+R; affects; Regulação do preço de venda de energia ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -788311.75974912
+R; affects; Regulação do preço de venda de energia ; Educação Ambiental no Processo de Licenc; impact; -14492544
+R; affects; Regulação do preço de venda de energia ; Escolha corredor de Linhas Transmissão; impact; -1844505.6
+R; affects; Regulação do preço de venda de energia ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -900382.2336
+R; affects; Regulação do preço de venda de energia ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -1475331.01886976
+R; affects; Regulação do preço de venda de energia ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -580386.12427776
+R; affects; Regulação do preço de venda de energia ; Gerador de cenários p/ treinamento de operadores; impact; -658079.0189568
+R; affects; Regulação do preço de venda de energia ; Identificação Potencial - Energia Eólica; impact; -14492544
+R; affects; Regulação do preço de venda de energia ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -586275.8414592
+R; affects; Regulação do preço de venda de energia ; Integração de dados dos sistemas de proteção; impact; -948958.92228096
+R; affects; Regulação do preço de venda de energia ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -10935283.2
+R; affects; Regulação do preço de venda de energia ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -523576.0896
+R; affects; Regulação do preço de venda de energia ; Leitor de Telas e Sintetizador de Voz; impact; -1243868.70144
+R; affects; Regulação do preço de venda de energia ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -1577091.81312
+R; affects; Regulação do preço de venda de energia ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -402417.104256
+R; affects; Regulação do preço de venda de energia ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -1753792.814592
+R; affects; Regulação do preço de venda de energia ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -677209.7040384
+R; affects; Regulação do preço de venda de energia ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -395251.2
+R; affects; Regulação do preço de venda de energia ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -526141.269888
+R; affects; Regulação do preço de venda de energia ; Perda de carga devido a mexilhão dourado; impact; -777327.36
+R; affects; Regulação do preço de venda de energia ; Plataforma de auxílio à contratação de energia elétrica; impact; -549726.1724928
+R; affects; Regulação do preço de venda de energia ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -1255581.312
+R; affects; Regulação do preço de venda de energia ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -449321.56416
+R; affects; Regulação do preço de venda de energia ; Recuperador de Calor para Chuveiros Elétricos; impact; -21686.11584
+R; affects; Regulação do preço de venda de energia ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -1108176.329472
+R; affects; Regulação do preço de venda de energia ; Rede Corporativa - Hardware - Telecom; impact; -299167.8071616
+R; affects; Regulação do preço de venda de energia ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -880525.16903808
+R; affects; Regulação do preço de venda de energia ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -63170.28523776
+R; affects; Regulação do preço de venda de energia ; Rede Corporativa Geral - Hardware; impact; -3183805.068672
+R; affects; Regulação do preço de venda de energia ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -10540032
+R; affects; Regulação do preço de venda de energia ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -358248.78395904
+R; affects; Regulação do preço de venda de energia ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -23715072
+R; affects; Regulação do preço de venda de energia ; Rede Digital de Telefonia; impact; -301805.911296
+R; affects; Regulação do preço de venda de energia ; REDE INTEGRADA DE SINCRONISMO; impact; -366002.6112
+R; affects; Regulação do preço de venda de energia ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -894953.01041664
+R; affects; Regulação do preço de venda de energia ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -499432.8288
+R; affects; Regulação do preço de venda de energia ; Sistema de Hidrometeorologia da empresa; impact; -2794907.97966336
+R; affects; Regulação do preço de venda de energia ; Simulador inteligente para treinamento; impact; -3293760
+R; affects; Regulação do preço de venda de energia ; Sist robotiza recupera cavitação fase II; impact; -6587520
+R; affects; Regulação do preço de venda de energia ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -2115870.13342464
+R; affects; Regulação do preço de venda de energia ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -5401766.4
+R; affects; Regulação do preço de venda de energia ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -3239484.86936832
+R; affects; Regulação do preço de venda de energia ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -1053813.479424
+R; affects; Regulação do preço de venda de energia ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -478750.651008
+R; affects; Regulação do preço de venda de energia ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -1976.256
+R; affects; Regulação do preço de venda de energia ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -4496.641152
+R; affects; Regulação do preço de venda de energia ; Sist.Geográfico de Informações; impact; -2559338.475264
+R; affects; Regulação do preço de venda de energia ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -4960635.758208
+R; affects; Regulação do preço de venda de energia ; Sistema Comunicação para apoio a manutenção LTS; impact; -4479513.6
+R; affects; Regulação do preço de venda de energia ; Sistema de Apoio à Decisão da Operação; impact; -764633.20896
+R; affects; Regulação do preço de venda de energia ; Sistema de Controle de Acesso e de Ponto; impact; -5270016
+R; affects; Regulação do preço de venda de energia ; Sistema de Gerência Eletrônica de Docume; impact; -3664900.8768
+R; affects; Regulação do preço de venda de energia ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -1024037.889024
+R; affects; Regulação do preço de venda de energia ; Sistema de Monitoramento de Linhas de Transmissão; impact; -1110960.26812416
+R; affects; Regulação do preço de venda de energia ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -420643.9815936
+R; affects; Regulação do preço de venda de energia ; Sistema ERP - Reestrut. Organizacional; impact; -36081796.94592
+R; affects; Regulação do preço de venda de energia ; Sistema Transmissão Mascarenhas – Linhares; impact; -11002888.282752
+R; affects; Regulação do preço de venda de energia ; Sonda óptica p/ monitorar óleo isolante; impact; -10540032
+R; affects; Regulação do preço de venda de energia ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -1903330.62529536
+R; affects; Regulação do preço de venda de energia ; Supervisão e Controle - Escrit. Central - fase I; impact; -13175.04
+R; affects; Regulação do preço de venda de energia ; Supervisão e Controle - Escrit. Central - fase II; impact; -2454604.812288
+R; affects; Regulação do preço de venda de energia ; Telemetria via satélite para rede de sensores; impact; -524089.67900928
+R; affects; Regulação do preço de venda de energia ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -702256.19288064
+R; affects; Regulação do preço de venda de energia ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -1330679.04
+R; affects; Regulação do preço de venda de energia ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -140634.329472
+R; affects; Regulação do preço de venda de energia ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -177863.04
+R; affects; Regulação do preço de venda de energia ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -23355.49880832
+R; affects; Regulação do preço de venda de energia ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -745896.984576
+R; affects; Regulação do preço de venda de energia ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -996447697.843968
+R; affects; Regulação do preço de venda de energia ; UHE Simplício - Queda Única; impact; -870915767.846016
+R; affects; Regulação do preço de venda de energia ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -1465613.50461696
+R; affects; Regulação do preço de venda de energia ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -736309.3762176
+R; affects; Regulação do preço de venda de energia ; Us biodiesel óleo babaçu São Carlos-RO; impact; -3952512
+R; affects; Regulação do preço de venda de energia ; UTE Campos - Obras Ambientais; impact; -2414.984832
+R; affects; Regulação do preço de venda de energia ; Sistema Inteligente de Processamento de Alarmes; impact; -608974.063872
+R; affects; Regulação do preço de venda de energia ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -272317.74756864
+R; affects; Regulação do preço de venda de energia ; Veículo submersível para inspeção; impact; -5959868.2089216
+R; affects; Regulação do preço de venda de energia ; Vetores doenças: medidas controle; impact; -5209721.90504448
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -35400.059
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -141857.40242861
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -91911.153185
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -48105.080175
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -288555.480925
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -197553.5092553
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -105000.175
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -293327.15087777
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Avaliação e mapa de risco saúde; impact; -90000.15
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Bateria de Lítio estacionária; impact; -120000.2
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Biodiesel de Etanol; impact; -270000.45
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Célula Combustível de Polímero Condutor Iônico; impact; -900001.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Centro Simulação Sistemas Elétricos; impact; -108871.0814515
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Coletor solar para refrigeração e calor de processo industrial; impact; -237999.693665495
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -3600.006
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Controle plantas aquáticas PortoColômbia; impact; -219000.365
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Controle qualidade p/ concreto projetado; impact; -420000.7
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Corrosão salina em termelétricas; impact; -900001.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -86952.744921
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -174085.02214122
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Detecção Descargas Atmosféricas; impact; -70170.11695
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -250042.3167365
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -179501.48316864
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Educação Ambiental no Processo de Licenc; impact; -3300005.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Escolha corredor de Linhas Transmissão; impact; -420000.7
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -205020.3417
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -335938.29189622
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -132156.05225972
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Gerador de cenários p/ treinamento de operadores; impact; -149847.0097446
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Identificação Potencial - Energia Eólica; impact; -3300005.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -133497.1624949
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Integração de dados dos sistemas de proteção; impact; -216081.43213512
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -2490004.15
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -119220.1987
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Leitor de Telas e Sintetizador de Voz; impact; -283233.472055
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -359109.598515
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -91631.8527195
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -399345.065574
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -154203.1370048
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -90000.15
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -119804.2996735
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Perda de carga devido a mexilhão dourado; impact; -177000.295
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Plataforma de auxílio à contratação de energia elétrica; impact; -125174.6686241
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -285900.4765
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -102312.17052
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Recuperador de Calor para Chuveiros Elétricos; impact; -4938.00823
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -252335.820559
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Rede Corporativa - Hardware - Telecom; impact; -68121.608535825
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -200498.815164135
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -14384.10597347
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Rede Corporativa Geral - Hardware; impact; -724964.1082715
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -2400004
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -81574.56395738
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -5400009
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Rede Digital de Telefonia; impact; -68722.314537
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REDE INTEGRADA DE SINCRONISMO; impact; -83340.1389
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -203784.08763958
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -113722.6895375
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Hidrometeorologia da empresa; impact; -636410.81268292
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Simulador inteligente para treinamento; impact; -750001.25
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist robotiza recupera cavitação fase II; impact; -1500002.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -481791.40098433
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -1230002.05
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -737642.60340229
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -239957.199928
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -109013.2816885
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -450.00075
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -1023.9017065
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sist.Geográfico de Informações; impact; -582770.771283
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -1129554.9825885
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema Comunicação para apoio a manutenção LTS; impact; -1020001.7
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Apoio à Decisão da Operação; impact; -174109.7901825
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Controle de Acesso e de Ponto; impact; -1200002
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Gerência Eletrônica de Docume; impact; -834511.39085
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -233177.188628
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Monitoramento de Linhas de Transmissão; impact; -252969.73361552
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -95782.1796367
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema ERP - Reestrut. Organizacional; impact; -8215957.69324
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema Transmissão Mascarenhas – Linhares; impact; -2505398.0756565
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sonda óptica p/ monitorar óleo isolante; impact; -2400004
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -433395.37432442
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Supervisão e Controle - Escrit. Central - fase I; impact; -3000.005
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Supervisão e Controle - Escrit. Central - fase II; impact; -558922.531536
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Telemetria via satélite para rede de sensores; impact; -119337.14489491
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -159906.31451008
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -303000.505
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -32022.9533715
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -40500.0675
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -5318.13286354
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -169843.483072
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -226894800.757371
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UHE Simplício - Queda Única; impact; -198310719.217315
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -333725.57820837
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -167660.34943345
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Us biodiesel óleo babaçu São Carlos-RO; impact; -900001.5
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UTE Campos - Obras Ambientais; impact; -549.9009165
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Sistema Inteligente de Processamento de Alarmes; impact; -138665.631109
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -62007.75134608
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Veículo submersível para inspeção; impact; -1357083.8818027
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Vetores doenças: medidas controle; impact; -1186272.81311806
+R; affects; Ingerência Política ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -23600
+R; affects; Ingerência Política ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -94571.444
+R; affects; Ingerência Política ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -61274
+R; affects; Ingerência Política ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -32070
+R; affects; Ingerência Política ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -192370
+R; affects; Ingerência Política ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -131702.12
+R; affects; Ingerência Política ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -70000
+R; affects; Ingerência Política ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -195551.108
+R; affects; Ingerência Política ; Avaliação e mapa de risco saúde; impact; -60000
+R; affects; Ingerência Política ; Bateria de Lítio estacionária; impact; -80000
+R; affects; Ingerência Política ; Biodiesel de Etanol; impact; -180000
+R; affects; Ingerência Política ; Célula Combustível de Polímero Condutor Iônico; impact; -600000
+R; affects; Ingerência Política ; Centro Simulação Sistemas Elétricos; impact; -72580.6
+R; affects; Ingerência Política ; Coletor solar para refrigeração e calor de processo industrial; impact; -158666.198
+R; affects; Ingerência Política ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -2400
+R; affects; Ingerência Política ; Controle plantas aquáticas PortoColômbia; impact; -146000
+R; affects; Ingerência Política ; Controle qualidade p/ concreto projetado; impact; -280000
+R; affects; Ingerência Política ; Corrosão salina em termelétricas; impact; -600000
+R; affects; Ingerência Política ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -57968.4
+R; affects; Ingerência Política ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -116056.488
+R; affects; Ingerência Política ; Detecção Descargas Atmosféricas; impact; -46780
+R; affects; Ingerência Política ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -166694.6
+R; affects; Ingerência Política ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -119667.456
+R; affects; Ingerência Política ; Educação Ambiental no Processo de Licenc; impact; -2200000
+R; affects; Ingerência Política ; Escolha corredor de Linhas Transmissão; impact; -280000
+R; affects; Ingerência Política ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -136680
+R; affects; Ingerência Política ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -223958.488
+R; affects; Ingerência Política ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -88103.888
+R; affects; Ingerência Política ; Gerador de cenários p/ treinamento de operadores; impact; -99897.84
+R; affects; Ingerência Política ; Identificação Potencial - Energia Eólica; impact; -2200000
+R; affects; Ingerência Política ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -88997.96
+R; affects; Ingerência Política ; Integração de dados dos sistemas de proteção; impact; -144054.048
+R; affects; Ingerência Política ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -1660000
+R; affects; Ingerência Política ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -79480
+R; affects; Ingerência Política ; Leitor de Telas e Sintetizador de Voz; impact; -188822
+R; affects; Ingerência Política ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -239406
+R; affects; Ingerência Política ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -61087.8
+R; affects; Ingerência Política ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -266229.6
+R; affects; Ingerência Política ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -102801.92
+R; affects; Ingerência Política ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -60000
+R; affects; Ingerência Política ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -79869.4
+R; affects; Ingerência Política ; Perda de carga devido a mexilhão dourado; impact; -118000
+R; affects; Ingerência Política ; Plataforma de auxílio à contratação de energia elétrica; impact; -83449.64
+R; affects; Ingerência Política ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -190600
+R; affects; Ingerência Política ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -68208
+R; affects; Ingerência Política ; Recuperador de Calor para Chuveiros Elétricos; impact; -3292
+R; affects; Ingerência Política ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -168223.6
+R; affects; Ingerência Política ; Rede Corporativa - Hardware - Telecom; impact; -45414.33
+R; affects; Ingerência Política ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -133665.654
+R; affects; Ingerência Política ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -9589.388
+R; affects; Ingerência Política ; Rede Corporativa Geral - Hardware; impact; -483308.6
+R; affects; Ingerência Política ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -1600000
+R; affects; Ingerência Política ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -54382.952
+R; affects; Ingerência Política ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -3600000
+R; affects; Ingerência Política ; Rede Digital de Telefonia; impact; -45814.8
+R; affects; Ingerência Política ; REDE INTEGRADA DE SINCRONISMO; impact; -55560
+R; affects; Ingerência Política ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -135855.832
+R; affects; Ingerência Política ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -75815
+R; affects; Ingerência Política ; Sistema de Hidrometeorologia da empresa; impact; -424273.168
+R; affects; Ingerência Política ; Simulador inteligente para treinamento; impact; -500000
+R; affects; Ingerência Política ; Sist robotiza recupera cavitação fase II; impact; -1000000
+R; affects; Ingerência Política ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -321193.732
+R; affects; Ingerência Política ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -820000
+R; affects; Ingerência Política ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -491760.916
+R; affects; Ingerência Política ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -159971.2
+R; affects; Ingerência Política ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -72675.4
+R; affects; Ingerência Política ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -300
+R; affects; Ingerência Política ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -682.6
+R; affects; Ingerência Política ; Sist.Geográfico de Informações; impact; -388513.2
+R; affects; Ingerência Política ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -753035.4
+R; affects; Ingerência Política ; Sistema Comunicação para apoio a manutenção LTS; impact; -680000
+R; affects; Ingerência Política ; Sistema de Apoio à Decisão da Operação; impact; -116073
+R; affects; Ingerência Política ; Sistema de Controle de Acesso e de Ponto; impact; -800000
+R; affects; Ingerência Política ; Sistema de Gerência Eletrônica de Docume; impact; -556340
+R; affects; Ingerência Política ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -155451.2
+R; affects; Ingerência Política ; Sistema de Monitoramento de Linhas de Transmissão; impact; -168646.208
+R; affects; Ingerência Política ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -63854.68
+R; affects; Ingerência Política ; Sistema ERP - Reestrut. Organizacional; impact; -5477296
+R; affects; Ingerência Política ; Sistema Transmissão Mascarenhas – Linhares; impact; -1670262.6
+R; affects; Ingerência Política ; Sonda óptica p/ monitorar óleo isolante; impact; -1600000
+R; affects; Ingerência Política ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -288929.768
+R; affects; Ingerência Política ; Supervisão e Controle - Escrit. Central - fase I; impact; -2000
+R; affects; Ingerência Política ; Supervisão e Controle - Escrit. Central - fase II; impact; -372614.4
+R; affects; Ingerência Política ; Telemetria via satélite para rede de sensores; impact; -79557.964
+R; affects; Ingerência Política ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -106604.032
+R; affects; Ingerência Política ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -202000
+R; affects; Ingerência Política ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -21348.6
+R; affects; Ingerência Política ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -27000
+R; affects; Ingerência Política ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -3545.416
+R; affects; Ingerência Política ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -113228.8
+R; affects; Ingerência Política ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -151262948.4
+R; affects; Ingerência Política ; UHE Simplício - Queda Única; impact; -132206925.8
+R; affects; Ingerência Política ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -222483.348
+R; affects; Ingerência Política ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -111773.38
+R; affects; Ingerência Política ; Us biodiesel óleo babaçu São Carlos-RO; impact; -600000
+R; affects; Ingerência Política ; UTE Campos - Obras Ambientais; impact; -366.6
+R; affects; Ingerência Política ; Sistema Inteligente de Processamento de Alarmes; impact; -92443.6
+R; affects; Ingerência Política ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -41338.432
+R; affects; Ingerência Política ; Veículo submersível para inspeção; impact; -904721.08
+R; affects; Ingerência Política ; Vetores doenças: medidas controle; impact; -790847.224
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -21476
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -86060.01404
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -55759.34
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -29183.7
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -175056.7
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -119848.9292
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -63700
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -177951.50828
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Avaliação e mapa de risco saúde; impact; -54600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Bateria de Lítio estacionária; impact; -72800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Biodiesel de Etanol; impact; -163800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Célula Combustível de Polímero Condutor Iônico; impact; -546000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Centro Simulação Sistemas Elétricos; impact; -66048.346
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Coletor solar para refrigeração e calor de processo industrial; impact; -144386.24018
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -2184
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Controle plantas aquáticas PortoColômbia; impact; -132860
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Controle qualidade p/ concreto projetado; impact; -254800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Corrosão salina em termelétricas; impact; -546000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -52751.244
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -105611.40408
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Detecção Descargas Atmosféricas; impact; -42569.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -151692.086
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -108897.38496
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Educação Ambiental no Processo de Licenc; impact; -2002000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Escolha corredor de Linhas Transmissão; impact; -254800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -124378.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -203802.22408
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -80174.53808
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Gerador de cenários p/ treinamento de operadores; impact; -90907.0344
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Identificação Potencial - Energia Eólica; impact; -2002000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -80988.1436
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Integração de dados dos sistemas de proteção; impact; -131089.18368
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -1510600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -72326.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Leitor de Telas e Sintetizador de Voz; impact; -171828.02
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -217859.46
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -55589.898
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -242268.936
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -93549.7472
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -54600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -72681.154
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Perda de carga devido a mexilhão dourado; impact; -107380
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Plataforma de auxílio à contratação de energia elétrica; impact; -75939.1724
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -173446
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -62069.28
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Recuperador de Calor para Chuveiros Elétricos; impact; -2995.72
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -153083.476
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Rede Corporativa - Hardware - Telecom; impact; -41327.0403
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -121635.74514
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -8726.34308
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Rede Corporativa Geral - Hardware; impact; -439810.826
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -1456000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -49488.48632
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -3276000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Rede Digital de Telefonia; impact; -41691.468
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REDE INTEGRADA DE SINCRONISMO; impact; -50559.6
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -123628.80712
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -68991.65
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Hidrometeorologia da empresa; impact; -386088.58288
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Simulador inteligente para treinamento; impact; -455000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist robotiza recupera cavitação fase II; impact; -910000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -292286.29612
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -746200
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -447502.43356
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -145573.792
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -66134.614
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -273
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -621.166
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sist.Geográfico de Informações; impact; -353547.012
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -685262.214
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema Comunicação para apoio a manutenção LTS; impact; -618800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Apoio à Decisão da Operação; impact; -105626.43
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Controle de Acesso e de Ponto; impact; -728000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Gerência Eletrônica de Docume; impact; -506269.4
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -141460.592
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Monitoramento de Linhas de Transmissão; impact; -153468.04928
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -58107.7588
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema ERP - Reestrut. Organizacional; impact; -4984339.36
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema Transmissão Mascarenhas – Linhares; impact; -1519938.966
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sonda óptica p/ monitorar óleo isolante; impact; -1456000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -262926.08888
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Supervisão e Controle - Escrit. Central - fase I; impact; -1820
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Supervisão e Controle - Escrit. Central - fase II; impact; -339079.104
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Telemetria via satélite para rede de sensores; impact; -72397.74724
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -97009.66912
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -183820
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -19427.226
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -24570
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -3226.32856
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -103038.208
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -137649283.044
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UHE Simplício - Queda Única; impact; -120308302.478
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -202459.84668
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -101713.7758
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Us biodiesel óleo babaçu São Carlos-RO; impact; -546000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UTE Campos - Obras Ambientais; impact; -333.606
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Sistema Inteligente de Processamento de Alarmes; impact; -84123.676
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -37617.97312
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Veículo submersível para inspeção; impact; -823296.1828
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Vetores doenças: medidas controle; impact; -719670.97384
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -18998
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -76130.01242
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -49325.57
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -25816.35
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -154857.85
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -106020.2066
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -56350
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -157418.64194
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Avaliação e mapa de risco saúde; impact; -48300
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Bateria de Lítio estacionária; impact; -64400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Biodiesel de Etanol; impact; -144900
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Célula Combustível de Polímero Condutor Iônico; impact; -483000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Centro Simulação Sistemas Elétricos; impact; -58427.383
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Coletor solar para refrigeração e calor de processo industrial; impact; -127726.28939
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -1932
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Controle plantas aquáticas PortoColômbia; impact; -117530
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Controle qualidade p/ concreto projetado; impact; -225400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Corrosão salina em termelétricas; impact; -483000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -46664.562
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -93425.47284
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Detecção Descargas Atmosféricas; impact; -37657.9
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -134189.153
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -96332.30208
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Educação Ambiental no Processo de Licenc; impact; -1771000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Escolha corredor de Linhas Transmissão; impact; -225400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -110027.4
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -180286.58284
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -70923.62984
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Gerador de cenários p/ treinamento de operadores; impact; -80417.7612
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Identificação Potencial - Energia Eólica; impact; -1771000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -71643.3578
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Integração de dados dos sistemas de proteção; impact; -115963.50864
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -1336300
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -63981.4
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Leitor de Telas e Sintetizador de Voz; impact; -152001.71
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -192721.83
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -49175.679
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -214314.828
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -82755.5456
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -48300
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -64294.867
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Perda de carga devido a mexilhão dourado; impact; -94990
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Plataforma de auxílio à contratação de energia elétrica; impact; -67176.9602
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -153433
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -54907.44
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Recuperador de Calor para Chuveiros Elétricos; impact; -2650.06
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -135419.998
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Rede Corporativa - Hardware - Telecom; impact; -36558.53565
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -107600.85147
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -7719.45734
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Rede Corporativa Geral - Hardware; impact; -389063.423
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -1288000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -43778.27636
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -2898000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Rede Digital de Telefonia; impact; -36880.914
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REDE INTEGRADA DE SINCRONISMO; impact; -44725.8
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -109363.94476
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -61031.075
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Hidrometeorologia da empresa; impact; -341539.90024
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Simulador inteligente para treinamento; impact; -402500
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist robotiza recupera cavitação fase II; impact; -805000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -258560.95426
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -660100
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -395867.53738
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -128776.816
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -58503.697
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -241.5
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -549.493
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sist.Geográfico de Informações; impact; -312753.126
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -606193.497
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema Comunicação para apoio a manutenção LTS; impact; -547400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Apoio à Decisão da Operação; impact; -93438.765
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Controle de Acesso e de Ponto; impact; -644000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Gerência Eletrônica de Docume; impact; -447853.7
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -125138.216
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Monitoramento de Linhas de Transmissão; impact; -135760.19744
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -51403.0174
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema ERP - Reestrut. Organizacional; impact; -4409223.28
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema Transmissão Mascarenhas – Linhares; impact; -1344561.393
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sonda óptica p/ monitorar óleo isolante; impact; -1288000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -232588.46324
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Supervisão e Controle - Escrit. Central - fase I; impact; -1610
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Supervisão e Controle - Escrit. Central - fase II; impact; -299954.592
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Telemetria via satélite para rede de sensores; impact; -64044.1610199999
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -85816.24576
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -162610
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -17185.623
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -21735
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -2854.05988
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -91149.184
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -121766673.462
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UHE Simplício - Queda Única; impact; -106426575.269
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -179099.09514
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -89977.5709
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Us biodiesel óleo babaçu São Carlos-RO; impact; -483000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UTE Campos - Obras Ambientais; impact; -295.113
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Sistema Inteligente de Processamento de Alarmes; impact; -74417.098
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -33277.43776
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Veículo submersível para inspeção; impact; -728300.4694
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Vetores doenças: medidas controle; impact; -636632.01532
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -5900
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -23642.861
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -15318.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -8017.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -48092.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -32925.53
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -17500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -48887.777
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Avaliação e mapa de risco saúde; impact; -15000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Bateria de Lítio estacionária; impact; -20000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Biodiesel de Etanol; impact; -45000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Célula Combustível de Polímero Condutor Iônico; impact; -150000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Centro Simulação Sistemas Elétricos; impact; -18145.15
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Coletor solar para refrigeração e calor de processo industrial; impact; -39666.5495
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Comparação eletromagnética entre painéis fotovoltáicos; impact; -600
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Controle plantas aquáticas PortoColômbia; impact; -36500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Controle qualidade p/ concreto projetado; impact; -70000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Corrosão salina em termelétricas; impact; -150000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -14492.1
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -29014.122
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Detecção Descargas Atmosféricas; impact; -11695
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -41673.65
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -29916.864
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Educação Ambiental no Processo de Licenc; impact; -550000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Escolha corredor de Linhas Transmissão; impact; -70000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -34170
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -55989.622
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -22025.972
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Gerador de cenários p/ treinamento de operadores; impact; -24974.46
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Identificação Potencial - Energia Eólica; impact; -550000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -22249.49
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Integração de dados dos sistemas de proteção; impact; -36013.512
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -415000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -19870
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Leitor de Telas e Sintetizador de Voz; impact; -47205.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -59851.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -15271.95
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -66557.4
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -25700.48
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -15000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -19967.35
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Perda de carga devido a mexilhão dourado; impact; -29500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Plataforma de auxílio à contratação de energia elétrica; impact; -20862.41
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -47650
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -17052
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Recuperador de Calor para Chuveiros Elétricos; impact; -823
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -42055.9
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Rede Corporativa - Hardware - Telecom; impact; -11353.5825
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -33416.4135
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -2397.347
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Rede Corporativa Geral - Hardware; impact; -120827.15
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -400000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -13595.738
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -900000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Rede Digital de Telefonia; impact; -11453.7
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REDE INTEGRADA DE SINCRONISMO; impact; -13890
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -33963.958
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -18953.75
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Hidrometeorologia da empresa; impact; -106068.292
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Simulador inteligente para treinamento; impact; -125000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist robotiza recupera cavitação fase II; impact; -250000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -80298.433
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist. Comunic. Móveis-Pátios de Manobras; impact; -205000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -122940.229
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -39992.8
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -18168.85
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -75
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -170.65
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sist.Geográfico de Informações; impact; -97128.3
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -188258.85
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema Comunicação para apoio a manutenção LTS; impact; -170000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Apoio à Decisão da Operação; impact; -29018.25
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Controle de Acesso e de Ponto; impact; -200000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Gerência Eletrônica de Docume; impact; -139085
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -38862.8
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Monitoramento de Linhas de Transmissão; impact; -42161.552
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -15963.67
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema ERP - Reestrut. Organizacional; impact; -1369324
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema Transmissão Mascarenhas – Linhares; impact; -417565.65
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sonda óptica p/ monitorar óleo isolante; impact; -400000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -72232.442
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Supervisão e Controle - Escrit. Central - fase I; impact; -500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Supervisão e Controle - Escrit. Central - fase II; impact; -93153.6
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Telemetria via satélite para rede de sensores; impact; -19889.491
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -26651.008
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -50500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -5337.15
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -6750
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -886.354
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -28307.2
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -37815737.1
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UHE Simplício - Queda Única; impact; -33051731.45
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -55620.837
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -27943.345
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Us biodiesel óleo babaçu São Carlos-RO; impact; -150000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UTE Campos - Obras Ambientais; impact; -91.65
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Sistema Inteligente de Processamento de Alarmes; impact; -23110.9
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -10334.608
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Veículo submersível para inspeção; impact; -226180.27
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Vetores doenças: medidas controle; impact; -197711.806
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -9440
+R; affects; Falta de renovação e recomposição da força de trabalho ; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -37828.5776
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -24509.6
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -12828
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -76948
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -52680.8479999999
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -28000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -78220.4432
+R; affects; Falta de renovação e recomposição da força de trabalho ; Avaliação e mapa de risco saúde; impact; -24000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Bateria de Lítio estacionária; impact; -32000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Biodiesel de Etanol; impact; -72000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Célula Combustível de Polímero Condutor Iônico; impact; -240000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Centro Simulação Sistemas Elétricos; impact; -29032.24
+R; affects; Falta de renovação e recomposição da força de trabalho ; Coletor solar para refrigeração e calor de processo industrial; impact; -63466.4792
+R; affects; Falta de renovação e recomposição da força de trabalho ; Comparação eletromagnética entre painéis fotovoltáicos; impact; -960
+R; affects; Falta de renovação e recomposição da força de trabalho ; Controle plantas aquáticas PortoColômbia; impact; -58400
+R; affects; Falta de renovação e recomposição da força de trabalho ; Controle qualidade p/ concreto projetado; impact; -112000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Corrosão salina em termelétricas; impact; -240000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -23187.36
+R; affects; Falta de renovação e recomposição da força de trabalho ; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -46422.5952
+R; affects; Falta de renovação e recomposição da força de trabalho ; Detecção Descargas Atmosféricas; impact; -18712
+R; affects; Falta de renovação e recomposição da força de trabalho ; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -66677.84
+R; affects; Falta de renovação e recomposição da força de trabalho ; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -47866.9824
+R; affects; Falta de renovação e recomposição da força de trabalho ; Educação Ambiental no Processo de Licenc; impact; -880000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Escolha corredor de Linhas Transmissão; impact; -112000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -54672
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -89583.3952
+R; affects; Falta de renovação e recomposição da força de trabalho ; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -35241.5552
+R; affects; Falta de renovação e recomposição da força de trabalho ; Gerador de cenários p/ treinamento de operadores; impact; -39959.136
+R; affects; Falta de renovação e recomposição da força de trabalho ; Identificação Potencial - Energia Eólica; impact; -880000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -35599.184
+R; affects; Falta de renovação e recomposição da força de trabalho ; Integração de dados dos sistemas de proteção; impact; -57621.6192
+R; affects; Falta de renovação e recomposição da força de trabalho ; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -664000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -31792
+R; affects; Falta de renovação e recomposição da força de trabalho ; Leitor de Telas e Sintetizador de Voz; impact; -75528.8
+R; affects; Falta de renovação e recomposição da força de trabalho ; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -95762.4
+R; affects; Falta de renovação e recomposição da força de trabalho ; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -24435.12
+R; affects; Falta de renovação e recomposição da força de trabalho ; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -106491.84
+R; affects; Falta de renovação e recomposição da força de trabalho ; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -41120.768
+R; affects; Falta de renovação e recomposição da força de trabalho ; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -24000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -31947.76
+R; affects; Falta de renovação e recomposição da força de trabalho ; Perda de carga devido a mexilhão dourado; impact; -47200
+R; affects; Falta de renovação e recomposição da força de trabalho ; Plataforma de auxílio à contratação de energia elétrica; impact; -33379.856
+R; affects; Falta de renovação e recomposição da força de trabalho ; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -76240
+R; affects; Falta de renovação e recomposição da força de trabalho ; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -27283.2
+R; affects; Falta de renovação e recomposição da força de trabalho ; Recuperador de Calor para Chuveiros Elétricos; impact; -1316.8
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -67289.44
+R; affects; Falta de renovação e recomposição da força de trabalho ; Rede Corporativa - Hardware - Telecom; impact; -18165.732
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -53466.2616
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -3835.7552
+R; affects; Falta de renovação e recomposição da força de trabalho ; Rede Corporativa Geral - Hardware; impact; -193323.44
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -640000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -21753.1808
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -1440000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Rede Digital de Telefonia; impact; -18325.92
+R; affects; Falta de renovação e recomposição da força de trabalho ; REDE INTEGRADA DE SINCRONISMO; impact; -22224
+R; affects; Falta de renovação e recomposição da força de trabalho ; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -54342.3328
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -30326
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Hidrometeorologia da empresa; impact; -169709.2672
+R; affects; Falta de renovação e recomposição da força de trabalho ; Simulador inteligente para treinamento; impact; -200000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist robotiza recupera cavitação fase II; impact; -400000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -128477.4928
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist. Comunic. Móveis-Pátios de Manobras; impact; -328000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -196704.3664
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -63988.48
+R; affects; Falta de renovação e recomposição da força de trabalho ; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -29070.16
+R; affects; Falta de renovação e recomposição da força de trabalho ; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -120
+R; affects; Falta de renovação e recomposição da força de trabalho ; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -273.04
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sist.Geográfico de Informações; impact; -155405.28
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -301214.16
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema Comunicação para apoio a manutenção LTS; impact; -272000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Apoio à Decisão da Operação; impact; -46429.2
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Controle de Acesso e de Ponto; impact; -320000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Gerência Eletrônica de Docume; impact; -222536
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -62180.48
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Monitoramento de Linhas de Transmissão; impact; -67458.4832
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -25541.872
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema ERP - Reestrut. Organizacional; impact; -2190918.4
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema Transmissão Mascarenhas – Linhares; impact; -668105.04
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sonda óptica p/ monitorar óleo isolante; impact; -640000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -115571.9072
+R; affects; Falta de renovação e recomposição da força de trabalho ; Supervisão e Controle - Escrit. Central - fase I; impact; -800
+R; affects; Falta de renovação e recomposição da força de trabalho ; Supervisão e Controle - Escrit. Central - fase II; impact; -149045.76
+R; affects; Falta de renovação e recomposição da força de trabalho ; Telemetria via satélite para rede de sensores; impact; -31823.1856
+R; affects; Falta de renovação e recomposição da força de trabalho ; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -42641.6128
+R; affects; Falta de renovação e recomposição da força de trabalho ; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -80800
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -8539.44
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -10800
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -1418.1664
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -45291.52
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -60505179.36
+R; affects; Falta de renovação e recomposição da força de trabalho ; UHE Simplício - Queda Única; impact; -52882770.32
+R; affects; Falta de renovação e recomposição da força de trabalho ; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -88993.3392
+R; affects; Falta de renovação e recomposição da força de trabalho ; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -44709.352
+R; affects; Falta de renovação e recomposição da força de trabalho ; Us biodiesel óleo babaçu São Carlos-RO; impact; -240000
+R; affects; Falta de renovação e recomposição da força de trabalho ; UTE Campos - Obras Ambientais; impact; -146.64
+R; affects; Falta de renovação e recomposição da força de trabalho ; Sistema Inteligente de Processamento de Alarmes; impact; -36977.44
+R; affects; Falta de renovação e recomposição da força de trabalho ; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -16535.3728
+R; affects; Falta de renovação e recomposição da força de trabalho ; Veículo submersível para inspeção; impact; -361888.432
+R; affects; Falta de renovação e recomposição da força de trabalho ; Vetores doenças: medidas controle; impact; -316338.8896
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -11800
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -47285.722
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -30637
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -16035
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -96185
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -65851.06
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -35000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -97775.554
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Avaliação e mapa de risco saúde; impact; -30000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Bateria de Lítio estacionária; impact; -40000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Biodiesel de Etanol; impact; -90000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Célula Combustível de Polímero Condutor Iônico; impact; -300000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Centro Simulação Sistemas Elétricos; impact; -36290.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Coletor solar para refrigeração e calor de processo industrial; impact; -79333.099
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Comparação eletromagnética entre painéis fotovoltáicos; impact; -1200
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Controle plantas aquáticas PortoColômbia; impact; -73000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Controle qualidade p/ concreto projetado; impact; -140000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Corrosão salina em termelétricas; impact; -300000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -28984.2
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -58028.244
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Detecção Descargas Atmosféricas; impact; -23390
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -83347.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -59833.728
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Educação Ambiental no Processo de Licenc; impact; -1100000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Escolha corredor de Linhas Transmissão; impact; -140000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -68340
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -111979.244
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -44051.944
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Gerador de cenários p/ treinamento de operadores; impact; -49948.92
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Identificação Potencial - Energia Eólica; impact; -1100000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -44498.98
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Integração de dados dos sistemas de proteção; impact; -72027.024
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -830000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -39740
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Leitor de Telas e Sintetizador de Voz; impact; -94411
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -119703
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -30543.9
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -133114.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -51400.96
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -30000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -39934.7
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Perda de carga devido a mexilhão dourado; impact; -59000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Plataforma de auxílio à contratação de energia elétrica; impact; -41724.82
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -95300
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -34104
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Recuperador de Calor para Chuveiros Elétricos; impact; -1646
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -84111.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Rede Corporativa - Hardware - Telecom; impact; -22707.165
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -66832.827
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -4794.694
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Rede Corporativa Geral - Hardware; impact; -241654.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -800000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -27191.476
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -1800000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Rede Digital de Telefonia; impact; -22907.4
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REDE INTEGRADA DE SINCRONISMO; impact; -27780
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -67927.916
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -37907.5
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Hidrometeorologia da empresa; impact; -212136.584
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Simulador inteligente para treinamento; impact; -250000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist robotiza recupera cavitação fase II; impact; -500000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -160596.866
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist. Comunic. Móveis-Pátios de Manobras; impact; -410000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -245880.458
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -79985.6
+R; affects; Cenários internos não alinhados com o planejamento estratégico; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -36337.7
+R; affects; Cenários internos não alinhados com o planejamento estratégico; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -150
+R; affects; Cenários internos não alinhados com o planejamento estratégico; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -341.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sist.Geográfico de Informações; impact; -194256.6
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -376517.7
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema Comunicação para apoio a manutenção LTS; impact; -340000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Apoio à Decisão da Operação; impact; -58036.5
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Controle de Acesso e de Ponto; impact; -400000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Gerência Eletrônica de Docume; impact; -278170
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -77725.6
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Monitoramento de Linhas de Transmissão; impact; -84323.104
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -31927.34
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema ERP - Reestrut. Organizacional; impact; -2738648
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema Transmissão Mascarenhas – Linhares; impact; -835131.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sonda óptica p/ monitorar óleo isolante; impact; -800000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -144464.884
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Supervisão e Controle - Escrit. Central - fase I; impact; -1000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Supervisão e Controle - Escrit. Central - fase II; impact; -186307.2
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Telemetria via satélite para rede de sensores; impact; -39778.982
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -53302.016
+R; affects; Cenários internos não alinhados com o planejamento estratégico; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -101000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -10674.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -13500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -1772.708
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -56614.4
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -75631474.2
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UHE Simplício - Queda Única; impact; -66103462.9
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -111241.674
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -55886.69
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Us biodiesel óleo babaçu São Carlos-RO; impact; -300000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UTE Campos - Obras Ambientais; impact; -183.3
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Sistema Inteligente de Processamento de Alarmes; impact; -46221.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -20669.216
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Veículo submersível para inspeção; impact; -452360.54
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Vetores doenças: medidas controle; impact; -395423.612
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo de viab. Prot. Redes Distrib. de Baixa Tensão contra descargas atmosféricas; impact; -8260
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Anatomia dos Incêndios em Subestações: Análise de Desemp. em Profundidade; impact; -33100.0054
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aplicativo de Detecção de Fuga a Terra em Potenciais DC; impact; -21445.9
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aproveit. Energia Térmica de Geladeiras e Freezers no Aquec. Água; impact; -11224.5
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aval. de desemp. fluidos isolantes ecológicos p/ repotencialização de transformadores; impact; -67329.5
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aval. Efeitos de UHE sobre o Desenv. Socioeconômico dos Munic. Diret. Afetados; impact; -46095.742
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aval. Exper. de Microturbinas a Gás e Motores Stirling p/ Ger. de energia solar; impact; -24500
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aval. Exper. de Microturbinas a Gás e Motores Stirling para Geração de Eletricidade; impact; -68442.8878
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Avaliação e mapa de risco saúde; impact; -21000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Bateria de Lítio estacionária; impact; -28000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Biodiesel de Etanol; impact; -63000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Célula Combustível de Polímero Condutor Iônico; impact; -210000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Centro Simulação Sistemas Elétricos; impact; -25403.21
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Coletor solar para refrigeração e calor de processo industrial; impact; -55533.1693
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Comparação eletromagnética entre painéis fotovoltáicos; impact; -840
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Controle plantas aquáticas PortoColômbia; impact; -51100
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Controle qualidade p/ concreto projetado; impact; -98000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Corrosão salina em termelétricas; impact; -210000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Ctrl Adaptativo Robusto de Freq -Tensão em Sist. de Energia Elétrica Interligados; impact; -20288.94
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Def. de parâm. edafoclimáticos para prev. e ctrl incêndios florestais sob LT; impact; -40619.7708
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Detecção Descargas Atmosféricas; impact; -16373
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Detecção e diagnóstico p/ aval. da reação álcali-agregado em concreto, c/ fibra ótica ; impact; -58343.11
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Dispositivo para Medir a Curva de Magnetização de Transformadores; impact; -41883.6096
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Educação Ambiental no Processo de Licenc; impact; -770000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Escolha corredor de Linhas Transmissão; impact; -98000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estresse Eletromec. em Transform. causado p/ curtos-circuitos e altas correntes; impact; -47838
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estrut. Circ. Modulada, em concreto leve, p/ LT alta tensão; impact; -78385.4708
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Gerador autom. de prog. de manobras no sist. eletroenergético; impact; -30836.3608
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Gerador de cenários p/ treinamento de operadores; impact; -34964.244
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Identificação Potencial - Energia Eólica; impact; -770000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Influência das Grandes UHE na Convivência e Fixação das comunid. circuncidantes; impact; -31149.286
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Integração de dados dos sistemas de proteção; impact; -50418.9168
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Integração Sist. de Segurança Eletrônica para linhas de transmissão; impact; -581000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Isolantes Térmicos para Fachadas e Cobertas de solo Semi-Árido; impact; -27818
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Leitor de Telas e Sintetizador de Voz; impact; -66087.7
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Limitador de corrente de curto-circuito a base de reatores saturados; impact; -83792.1
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Localiz. de Defeitos em LT com o Uso de 2 Terminais da Linha; impact; -21380.73
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Map. ambiental p/ determinação do grau de corrosividade e degradação de materiais; impact; -93180.36
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Monit. de Estrut. de Barragens e Ecossistemas de UHEs c/ Veículo Submergível; impact; -35980.672
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Obtenção de Parâm. Descargas Atmosf. e Aferição do Sist. Loc. Tempestade; impact; -21000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Pára-Raios a ZnO: Monit. remoto e ferramenta de apoio ao diagnóstico de falhas; impact; -27954.29
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Perda de carga devido a mexilhão dourado; impact; -41300
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Plataforma de auxílio à contratação de energia elétrica; impact; -29207.374
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Realidade Virtual aplic. manut. (Câmeras alta reso. e resist. p/ cenários insalubres); impact; -66710
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Reconhec. da Qualidade da água de ecossistemas por redes neurais artificiais; impact; -23872.8
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Recuperador de Calor para Chuveiros Elétricos; impact; -1152.2
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE CORPORATIVA - AMPLIACAO/ATUALIZ.TEC; impact; -58878.26
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Rede Corporativa - Hardware - Telecom; impact; -15895.0155
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE CORPORATIVA - REDE WI-FI  E.CENTRAL; impact; -46782.9789
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE CORPORATIVA - SEGURANÇA INFORMAÇÃO; impact; -3356.2858
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Rede Corporativa Geral - Hardware; impact; -169158.01
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE DADOS SEM FIO - SE'S E US'S FASE 1; impact; -560000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Rede de Pesquisa Sobre a Qualidade da Energia Elétrica; impact; -19034.0332
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE DE TRANS.DADOS P/INFORMAT.DO CAMPO; impact; -1260000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Rede Digital de Telefonia; impact; -16035.18
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REDE INTEGRADA DE SINCRONISMO; impact; -19446
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Redução de Sobretensões de Manobra em LT Utiliz. Chaveamento Controlado; impact; -47549.5412
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sensoriamento Remoto de LT: detecção, Process. e Anál. Multiespectral; impact; -26535.25
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Hidrometeorologia da empresa; impact; -148495.6088
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Simulador inteligente para treinamento; impact; -175000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist robotiza recupera cavitação fase II; impact; -350000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist. Autom. de Análise Limnológica das Águas de Reservatórios de UHE; impact; -112417.8062
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist. Comunic. Móveis-Pátios de Manobras; impact; -287000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist. geometrológico: detecção, anál. e monit. em estruturas de HE; impact; -172116.3206
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist. p/ Aval. Desemp. da Proteção do Sist. de Energia via Dados de Pós-Operação; impact; -55989.92
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; SIST. RADIO APOIO MANUT.LT IBIUNA-BATEIA; impact; -25436.39
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; SIST. UHF - COMUNICACAO MOVEL UHE FUNIL; impact; -105
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; SIST. VHF MODERN.ROTA ITAIPU E IB.BATEIA; impact; -238.91
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sist.Geográfico de Informações; impact; -135979.62
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema Aéreo Autônomo Avançado para Múltiplas Aplicações; impact; -263562.39
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema Comunicação para apoio a manutenção LTS; impact; -238000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Apoio à Decisão da Operação; impact; -40625.55
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Controle de Acesso e de Ponto; impact; -280000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Gerência Eletrônica de Docume; impact; -194719
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Monitoração Preditiva para Compensadores Síncronos; impact; -54407.92
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Monitoramento de Linhas de Transmissão; impact; -59026.1728
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema de Rastreabilidade de Lógicas para CLPs; impact; -22349.138
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema ERP - Reestrut. Organizacional; impact; -1917053.6
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema Transmissão Mascarenhas – Linhares; impact; -584591.91
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sonda óptica p/ monitorar óleo isolante; impact; -560000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Superv. Tempo Real de deformações Mec nos Enrolamentos  de Transformadores; impact; -101125.4188
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Supervisão e Controle - Escrit. Central - fase I; impact; -700
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Supervisão e Controle - Escrit. Central - fase II; impact; -130415.04
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Telemetria via satélite para rede de sensores; impact; -27845.2874
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Teleproteção via carrier em cabos de alta tensão enterrados; impact; -37311.4112
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; TRASMISSAO DE DADOS - INFORM. DO CAMPO; impact; -70700
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE FUNIL INST EQUIP SIST RESF U.G.1/2/3; impact; -7472.01
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE FUNIL-SIST DE PROT CONTRA INCENDIO; impact; -9450
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE ITUMBIARA - REDE DE AGUA BRUTA VERT; impact; -1240.8956
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE M.MORAES - INST SIST RESF UGS 1 A 4; impact; -39630.08
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE MANSO-CONST PREDIO ADM,S.CONT,ABRIGO; impact; -52942031.94
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UHE Simplício - Queda Única; impact; -46272424.03
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Um localizador de falhas em linhas de transmissão baseado em ondas viajantes.; impact; -77869.1718
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Unidades Experimentais e Demonstrativas de Manejo de Caatinga sob LT; impact; -39120.683
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Us biodiesel óleo babaçu São Carlos-RO; impact; -210000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UTE Campos - Obras Ambientais; impact; -128.31
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Sistema Inteligente de Processamento de Alarmes; impact; -32355.26
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Utiliz. de Redes Neurais para otimiz. e coleta de info. Qualid. água em reservatórios; impact; -14468.4512
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Veículo submersível para inspeção; impact; -316652.378
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Vetores doenças: medidas controle; impact; -276796.5284

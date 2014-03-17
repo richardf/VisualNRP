@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jdendogram">
+    <description>Java dendogram chart</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/TreeView-1.1.6r2-win/Dendrogram.jar" classification="jar">
+      <namespace name="edu.stanford.genetics.treeview.plugin.dendroview">
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ATRView" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ATRZoomView" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.AlignmentFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharDendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="implements" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeColorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.AtrAligner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.AtrAnalysisNode" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroException" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeAnalysisNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.AtrAnalysisNode" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeAnalysisNode" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapColorBarExportPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapColorBarExportPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapColorBarExportPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel$DendroPngWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel$DendroPngWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharArrayDrawer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharColorExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharColorSet" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharDendroView$1" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharDendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharDendroView" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharDendroView$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GlobalView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharHeaderInfo" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.CharHeaderInfo" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$FilePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$FilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$FilePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$FilePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel$DrawingPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel$DrawingPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$BboxRow$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$BboxRow" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$SizeRow" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$BboxRow$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$SizeRow" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$SizeRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$FilePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$SettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TestColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SimpleDataMatrix" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorIcon" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorIcon" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor$ColorIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor$ColorPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor$ColorPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor$ColorPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSetEditor$ColorPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector$WindowCloser" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector$WindowCloser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$10" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$11" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$12" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$13" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$14" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$15" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$16" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$17" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$18$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$18" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$18" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$18$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$4" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$5" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$6" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$7" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$8" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$9" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="class" visibility="public">
+          <dependencies count="41">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GlobalView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.BitmapExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroException" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$6" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$7" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$8" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$9" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$10" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$11" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$12" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$13" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$14" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$15" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$16" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$17" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView$18" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroviewArgs" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.AtrAligner" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeColorer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DendroviewArgs" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$FilePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$FilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$FilePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$FilePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$BboxRow$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$BboxRow" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$SizeRow" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$BboxRow$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$SizeRow" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$SizeRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel$DrawingPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel$DrawingPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="14">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$FilePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$HeaderSelectionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TestExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeColorer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$ButtonPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$EnablePanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$EnablePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$EnablePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$EnablePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$FontPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$FontPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$FontPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$FontPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$HeaderChoice" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$TemplateField" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$HeaderChoice" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$UrlPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$EnablePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FUOptionsPanel$FontPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FillMap" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FixedMap" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$ButtonPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSettingsPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GifColorBarExportPanel$ColorBarGifWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GifColorBarExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GifColorBarExportPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GifColorBarExportPanel$ColorBarGifWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GifExportPanel$DendroGifWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GifExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GifExportPanel" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GifExportPanel$DendroGifWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.GlobalView" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FixedMap" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FillMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer$NodeDrawer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer$NodeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.KnnArrayDrawer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DoubleArrayDrawer" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendroView" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.KnnArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GlobalView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayNameView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.GTRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ATRZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ZoomView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendrogramFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendrogramFactory$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendrogramFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendrogramFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.KnnDendrogramFactory$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer$NodeDrawer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer$NodeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FixedMap" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FillMap" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.NullMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.MapSelector$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.MapSelector" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapSelector$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.NullMap" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorSelector" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.IntegerMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ContrastSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$LogScaleSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractorEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$CEEButtons" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PixelSettingsSelector$ColorSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptColorBarExportPanel$ColorBarPostscriptWriter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptColorBarExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptColorBarExportPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptColorBarExportPanel$ColorBarPostscriptWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel$DendroPSWriter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.PostscriptExportPanel$DendroPSWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.SimpleDataMatrix" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel$LineReader" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel$LineReader" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.SummaryViewWizard$GeneListPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TestColorBarExportPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorBarExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ColorExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TestExportPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.InvertedTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.LeftTreeDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TextView$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelector" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="implements" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeColorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TextViewManager" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.FontSelectable" classification="implements" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TextView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TreeAnalysisNode" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TreeColorer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer$IterativeClosestFinder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.DendroException" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.TreeDrawer$IterativeClosestFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.dendroview.ZoomView" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.ArrayDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.MapContainer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.dendroview.CharArrayDrawer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

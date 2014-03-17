@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jconsole">
+    <description>Java Console. Part of the JAVA JDK. v1.7.0</description>
+    <container name="C:/Program Files/Java/jdk1.7.0_03/lib/jconsole.jar" classification="jar">
+      <namespace name="sun.tools.jconsole">
+        <type name="sun.tools.jconsole.AboutDialog$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.AboutDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.AboutDialog$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.AboutDialog$TPanel" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.AboutDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.AboutDialog" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="sun.tools.jconsole.InternalDialog" classification="extends" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.InternalDialog$MastheadIcon" classification="uses" />
+            <depends-on name="sun.tools.jconsole.AboutDialog$TPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.AboutDialog$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.AboutDialog$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Version" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.BorderedComponent$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.BorderedComponent$ArrowIcon" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.BorderedComponent$FocusBorder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.BorderedComponent$LabeledBorder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.BorderedComponent" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.BorderedComponent$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.BorderedComponent$LabeledBorder" classification="uses" />
+            <depends-on name="sun.tools.jconsole.BorderedComponent$ArrowIcon" classification="uses" />
+            <depends-on name="sun.tools.jconsole.BorderedComponent$FocusBorder" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VariableGridLayout" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ClassTab$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ClassTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ClassTab$2" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab$ClassOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Formatter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ClassTab$ClassOverviewPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ClassTab" classification="class" visibility="default">
+          <dependencies count="15">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab$ClassOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$LocalTabJTable$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$LocalTabJTable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$LocalTabJTable$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.ConnectDialog$LocalTabJTable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$LocalTabJTable" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$LocalTabJTable$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$LocalTabJTable$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog$Padder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ConnectDialog" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="sun.tools.jconsole.InternalDialog" classification="extends" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$ManagedVmTableModel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.InternalDialog$MastheadIcon" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$LocalTabJTable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$Padder" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.CreateMBeanDialog$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.CreateMBeanDialog$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.CreateMBeanDialog$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.CreateMBeanDialog" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="sun.tools.jconsole.InternalDialog" classification="extends" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VariableGridLayout" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Formatter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.HTMLPane$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.HTMLPane" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.HTMLPane$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.InternalDialog$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.InternalDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.InternalDialog$MastheadIcon" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.InternalDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.InternalDialog" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.InternalDialog$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.InternalDialog$MastheadIcon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$3$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.JConsole$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$3$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$4$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.JConsole$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$4" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$4$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$6" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$FixedJRootPane" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.JConsole$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole$WindowMenu" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.JConsole" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="sun.tools.jconsole.JConsole$WindowMenu" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ConnectDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.CreateMBeanDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsolePlugin" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$FixedJRootPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$5" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole$6" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.AboutDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OutputViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Version" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.LabeledComponent" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.LocalVirtualMachine" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MaximizableInternalFrame$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MaximizableInternalFrame$FixedMenuBarLayout" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MaximizableInternalFrame$MDIButtonIcon" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MaximizableInternalFrame" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame$FixedMenuBarLayout" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame$MDIButtonIcon" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MBeansTab$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MBeansTab$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MBeansTab$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MBeansTab" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XDataViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTreeRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryPoolProxy" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryPoolStat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryPoolStat" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$4" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolPlotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolChart" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$MemoryOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$MemoryOverviewPanel" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Formatter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$PoolChart$AccessiblePoolChart" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolChart" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolPlotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$PoolChart" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolPlotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolChart$AccessiblePoolChart" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab$PoolPlotter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.MemoryTab" classification="class" visibility="default">
+          <dependencies count="20">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolChart" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$MemoryOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$PoolPlotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Formatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OutputViewer$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.OutputViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OutputViewer$PipeListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.OutputViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OutputViewer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.OutputViewer$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OutputViewer$PipeListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewPanel" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewTab$1$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.OverviewTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewTab$1" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="sun.tools.jconsole.OverviewTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Tab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewTab$1$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewTab$AutoGridLayout" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.OverviewTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.OverviewTab" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewTab$AutoGridLayout" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$AccessiblePlotter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Sequence" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$SaveDataFileChooser" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$Sequence" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$TimeStamps" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.Plotter$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter$Unit" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Plotter" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="sun.tools.jconsole.Plotter$TimeStamps" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Sequence" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$SaveDataFileChooser" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$AccessiblePlotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Formatter" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.PlotterPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.PlotterPanel$AccessiblePlotterPanel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.PlotterPanel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.BorderedComponent" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel$AccessiblePlotterPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$Snapshot" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler$NameValueMap" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ProxyClient$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler$NameValueMap" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient$WeakPCL" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ProxyClient" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="implements" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LocalVirtualMachine" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryPoolProxy" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$WeakPCL" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotInvocationHandler" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$Snapshot" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Resources" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.resources.JConsoleResources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.SheetDialog$SheetOptionPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$2" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$SheetOptionPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$3" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$SheetOptionPane" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.SheetDialog$SheetOptionPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SheetDialog" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$SlideAndFadeGlassPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$SheetOptionPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SummaryTab$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.SummaryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$Result" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$CPUOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SummaryTab$CPUOverviewPanel" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$Result" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SummaryTab$Result" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.SummaryTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.SummaryTab" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$CPUOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.HTMLPane" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$Result" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Formatter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Tab" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.Worker" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$2$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ThreadTab$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$2$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$4$1$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$4$1$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$4$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.ThreadTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$1$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$1$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$4$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.ThreadTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadJList" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$4" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$PromptingTextField" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$ThreadJList$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadJList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$ThreadJList" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadJList$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab$ThreadOverviewPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.ThreadTab" classification="class" visibility="default">
+          <dependencies count="19">
+            <depends-on name="sun.tools.jconsole.Tab" classification="extends" />
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.TimeComboBox" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadOverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VariableGridLayout" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.LabeledComponent" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$ThreadJList" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$PromptingTextField" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.TimeComboBox" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Utilities$TableScrollPane" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Utilities" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities$TableScrollPane" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VariableGridLayout" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Version" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMInternalFrame" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.MaximizableInternalFrame" classification="extends" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$10" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$3$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.VMPanel$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$3$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$9" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel$TabInfo" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.Tab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.VMPanel" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMInternalFrame" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$TabInfo" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsolePlugin" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Tab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$2" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$5" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$6" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$7" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$8" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$9" classification="uses" />
+            <depends-on name="sun.tools.jconsole.OverviewTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MemoryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ThreadTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ClassTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SummaryTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.VMPanel$10" classification="uses" />
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.SheetDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.Worker" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="sun.tools.jconsole.inspector">
+        <type name="sun.tools.jconsole.inspector.IconManager" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.OperationEntry" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XTextField" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOperations" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.TableSorter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.ThreadDialog" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.Utils$EditFocusAdapter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.Utils$EditFocusAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.Utils" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XTextField" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XObject" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$EditFocusAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XArrayDataViewer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XDataViewer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XArrayDataViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBean" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.IconManager" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesListener$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesListener" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesListener$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.ThreadDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesMouseListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$ZoomedCell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$MaximizedCellRenderer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$ValueCellEditor" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XTextFieldEditor" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$ZoomedCell" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$MaximizedCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes$ZoomedCell" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$MaximizedCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XDataViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="sun.tools.jconsole.inspector.XTable" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$ZoomedCell" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesMouseListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$ValueCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$AttributesListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes$MaximizedCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XDataViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo$MBeanInfoTableCellEditor" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$TableRowDivider" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo$MBeanInfoTableCellRenderer" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$TableRowDivider" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Utilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo$ReadOnlyDefaultTableModel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo$TableRowDivider" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanInfo" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$MBeanInfoTableCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$ReadOnlyDefaultTableModel" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$TableRowDivider" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$MBeanInfoTableCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$NotifMouseListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCell" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellEditor" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XTextFieldEditor" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCell" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellRenderer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCell" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XDataViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$NotifMouseListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$NotifMouseListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCell" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.TableSorter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications$UserDataCellRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XMBeanOperations" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XOperations" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XNodeInfo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XObject" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.IconManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$Navigatable" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$TabularDataComparator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XArrayData" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XCompositeData" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedArrayData" classification="implements" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XTabularData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XCompositeData" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XArrayData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XTabularData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$Navigatable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XCompositeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$CopyKeyAdapter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeDataListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XTabularData" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XCompositeData" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedTabularData" classification="implements" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$TabularDataComparator" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedArrayData" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$Navigatable" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedTabularData" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$Navigatable" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOpenTypeViewer" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeDataListener" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XCompositeData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XTabularData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XArrayData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedTabularData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$XViewedArrayData" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils$ReadOnlyTableCellEditor" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$TabularDataComparator" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOpenTypeViewer$Navigatable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOperations$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.inspector.OperationEntry" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOperations" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.ThreadDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XOperations" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.OperationEntry" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOperations$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XPlotter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.Plotter" classification="extends" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XPlottingViewer$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XPlotter" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XPlottingViewer$2$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient$SnapshotMBeanServerConnection" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.ProxyClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XPlottingViewer$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer$2$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XPlottingViewer" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="sun.tools.jconsole.PlotterPanel" classification="extends" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XPlottingViewer$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Plotter$Unit" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$2" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$4" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanOperations" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$5" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$6" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet$7" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XSheet" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XSheet" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanAttributes" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanOperations" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanNotifications" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBeanInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.ThreadDialog" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$2" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$3" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$4" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$5" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$6" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XSheet$7" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XDataViewer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTable" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.TableSorter" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTextField" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XObject" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XOperations" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTextFieldEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XTextFieldEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTextFieldEditor" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="sun.tools.jconsole.inspector.XTextField" classification="extends" />
+            <depends-on name="sun.tools.jconsole.inspector.XTextFieldEditor$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XObject" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTable" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree$ComparableDefaultMutableTreeNode" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XTree$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree$Dn" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="sun.tools.jconsole.inspector.XTree$Token" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree$MBeanInfoNodesSwingWorker" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.Utils" classification="uses" />
+            <depends-on name="sun.tools.jconsole.JConsole" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+            <depends-on name="sun.tools.jconsole.Resources" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree$Token" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.inspector.XTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTree" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="sun.tools.jconsole.MBeansTab" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree$Dn" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree$Token" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree$ComparableDefaultMutableTreeNode" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree$MBeanInfoNodesSwingWorker" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTree$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTreeRenderer$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="sun.tools.jconsole.inspector.XTreeRenderer" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.inspector.XTreeRenderer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XMBean" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XTreeRenderer$1" classification="uses" />
+            <depends-on name="sun.tools.jconsole.inspector.XNodeInfo$Type" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="sun.tools.jconsole.resources">
+        <type name="sun.tools.jconsole.resources.JConsoleResources" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.resources.JConsoleResources_ja" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.resources.JConsoleResources" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="sun.tools.jconsole.resources.JConsoleResources_zh_CN" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="sun.tools.jconsole.resources.JConsoleResources" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.sun.tools.jconsole">
+        <type name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.tools.jconsole.JConsoleContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext$ConnectionState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.sun.tools.jconsole.JConsolePlugin" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.sun.tools.jconsole.JConsoleContext" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

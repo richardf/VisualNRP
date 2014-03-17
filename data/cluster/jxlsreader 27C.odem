@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jxlsreader">
+  	<description>JXLS Reader Package v1.0</description>
+    <container name="C:/Users/Marcio Barros/Desktop/jxls-reader-1.0-RC-2.jar" classification="jar">
+      <namespace name="net.sf.jxls.reader">
+        <type name="net.sf.jxls.reader.BaseBlockReader" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.BeanCellMapping" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.ReaderConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.DateConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.ExpressionCollectionParser$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.ExpressionCollectionParser" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.ExpressionCollectionParser$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.OffsetCellCheck" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.OffsetCellCheckImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.OffsetCellCheck" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.OffsetRowCheck" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetCellCheck" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.OffsetRowCheckImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.reader.OffsetRowCheck" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.OffsetCellCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.ReaderBuilder" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="net.sf.jxls.reader.XLSReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSSheetReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.SimpleBlockReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSLoopBlockReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.SectionCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetRowCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.BeanCellMapping" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetCellCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReaderImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSSheetReaderImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.SimpleBlockReaderImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSForEachBlockReaderImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.SimpleSectionCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetRowCheckImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetCellCheckImpl" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.ReaderConfig" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.DateConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.SectionCheck" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetRowCheck" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.SimpleBlockReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="extends" />
+            <depends-on name="net.sf.jxls.reader.BeanCellMapping" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.SimpleBlockReaderImpl" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="net.sf.jxls.reader.BaseBlockReader" classification="extends" />
+            <depends-on name="net.sf.jxls.reader.SimpleBlockReader" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.SectionCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.BeanCellMapping" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReadMessage" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSDataReadException" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.ReaderConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.SimpleSectionCheck" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.reader.SectionCheck" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.OffsetRowCheck" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSBlockReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSDataReadException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSForEachBlockReaderImpl" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="net.sf.jxls.reader.BaseBlockReader" classification="extends" />
+            <depends-on name="net.sf.jxls.reader.XLSLoopBlockReader" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.SectionCheck" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.ExpressionCollectionParser" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSReadMessage" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSDataReadException" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.ReaderConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSLoopBlockReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="extends" />
+            <depends-on name="net.sf.jxls.reader.SectionCheck" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSSheetReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSReaderImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sf.jxls.reader.XLSReader" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSSheetReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSReadMessage" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSReadStatus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.XLSReadMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSRowCursor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSRowCursorImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSSheetReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sf.jxls.reader.XLSSheetReaderImpl" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sf.jxls.reader.XLSSheetReader" classification="implements" />
+            <depends-on name="net.sf.jxls.reader.XLSReadStatus" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSBlockReader" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursor" classification="uses" />
+            <depends-on name="net.sf.jxls.reader.XLSRowCursorImpl" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

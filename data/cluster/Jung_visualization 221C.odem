@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jung_visualization">
+  	<description>Jung Graph Visualization Package v2.0.1</description>
+    <container name="C:/Users/Marcio Barros/Desktop/jung-visualization-2.0.1.jar" classification="jar">
+      <namespace name="edu.uci.ics.jung.visualization.annotations">
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin$LensPaintable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationManager" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin$LensPaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationPaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$ModeKeyAdapter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$ModeKeyAdapter" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingModalGraphMouse$3" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationControls" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$3" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$4" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationControls$5" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationManager" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationPaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AffineTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation$Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationPaintable" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.Annotation" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotationRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AffineTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.annotations.AnnotationRenderer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization">
+        <type name="edu.uci.ics.jung.visualization.BasicTransformer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.BasicVisualizationServer$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.BasicVisualizationServer$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.BasicVisualizationServer$VisualizationListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="class" visibility="public">
+          <dependencies count="25">
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.DefaultVisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.PluggableRenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer$VisualizationListener" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.MultiPickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.PickableEdgePaintTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.PickableVertexPaintTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.Caching" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.DefaultVisualizationModel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.DefaultVisualizationModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.DefaultVisualizationModel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.DefaultVisualizationModel$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.ObservableCachingLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.FourPassImageShaper" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$HorizontalAdjustmentListenerImpl" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$ResizeListener" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$VerticalAdjustmentListenerImpl" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.GraphZoomScrollPane" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.Intersector" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$ResizeListener" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$VerticalAdjustmentListenerImpl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$HorizontalAdjustmentListenerImpl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.GraphZoomScrollPane$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.Layer" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.LayeredIcon" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.PivotingImageShaper" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.FourPassImageShaper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.PluggableRenderContext" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.DirectionalEdgeArrowTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext$DirectedEdgeArrowPredicate" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.ConstantDirectionalEdgeValueTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$QuadCurve" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.BasicTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.DefaultVertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.DefaultEdgeLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Orthogonal" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.RenderContext$DirectedEdgeArrowPredicate" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.RenderContext$UndirectedEdgeArrowPredicate" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.RenderContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext$UndirectedEdgeArrowPredicate" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext$DirectedEdgeArrowPredicate" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationImageServer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationModel" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationServer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationViewer$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.BasicVisualizationServer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMouseListener" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.DefaultVisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.MouseListenerTranslator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.control">
+        <type name="edu.uci.ics.jung.visualization.control.AbsoluteCrossoverScalingControl" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$ModeListener" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="edu.uci.ics.jung.visualization.control.PluggableGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$ModeListener" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AbstractPopupGraphMousePlugin" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse$ModeKeyAdapter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse$ModeKeyAdapter" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin$ArrowPaintable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin$EdgePaintable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin$EdgePaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin$ArrowPaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ArrowFactory" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$4" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$ModeKeyAdapter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.LabelEditingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.annotations.AnnotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$ModeKeyAdapter" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$3" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingModalGraphMouse$4" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$4" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractPopupGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$2" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$3" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$4" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.EditingPopupGraphMousePlugin$5" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.GraphMouseAdapter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.GraphMouseListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.LabelEditingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.LayoutScalingControl" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.LensMagnificationGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.LensTranslatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse$ModeKeyAdapter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractModalGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.LensMagnificationGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse$ModeKeyAdapter" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.LensTranslatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ModalSatelliteGraphMouse" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteAnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteTranslatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteScalingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.CrossoverScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteRotatingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteShearingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse$Mode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.MouseListenerTranslator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMouseListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin$LensPaintable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.PickingGraphMousePlugin$LensPaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.PluggableGraphMouse" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.GraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteAnimatedPickingGraphMousePlugin$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteAnimatedPickingGraphMousePlugin" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteAnimatedPickingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AnimatedPickingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteAnimatedPickingGraphMousePlugin$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteRotatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.RotatingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteScalingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteShearingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteTranslatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer$ViewLens" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationModel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalSatelliteGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.SatelliteVisualizationViewer$ViewLens" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ScalingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ShearingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.TranslatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ViewScalingControl" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.ScalingControl" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.control.ViewTranslatingGraphMousePlugin" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.control.AbstractGraphMousePlugin" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.decorators">
+        <type name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.AbstractVertexShapeTransformer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.SettableVertexShapeTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.VertexShapeFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.ConstantDirectionalEdgeValueTransformer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.DefaultVertexIconTransformer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.DirectionalEdgeArrowTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.util.ArrowFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$BentLine" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Box" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$CubicCurve" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Line" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Orthogonal" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Box" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$QuadCurve" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$SimpleLoop" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Wedge" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractEdgeShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ArrowFactory" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Loop" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$SimpleLoop" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Box" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Orthogonal" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Wedge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$CubicCurve" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$QuadCurve" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$BentLine" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Line" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.EllipseVertexShapeTransformer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.AbstractVertexShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.VertexShapeFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.GradientEdgePaintTransformer" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.InterpolatingVertexSizeTransformer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.NumberFormattingTransformer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.PickableEdgePaintTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.PickableVertexIconTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.PickableVertexPaintTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.SettableVertexShapeTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.ToStringLabeller" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.decorators.VertexIconShapeTransformer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.FourPassImageShaper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.layout">
+        <type name="edu.uci.ics.jung.visualization.layout.BoundingRectangleCollector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.BoundingRectanglePaintable$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.layout.BoundingRectangleCollector" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.BoundingRectanglePaintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.BoundingRectanglePaintable" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.BoundingRectangleCollector" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.BoundingRectanglePaintable$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.CachingLayout" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.util.Caching" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.LayoutTransition" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.ObservableCachingLayout" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.Caching" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.PersistentLayout$Point" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.PersistentLayout" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout$Point" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.PersistentLayoutImpl$RandomPointFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout$Point" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayoutImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.layout.PersistentLayoutImpl" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.layout.ObservableCachingLayout" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.Caching" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayout$Point" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.layout.PersistentLayoutImpl$RandomPointFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.picking">
+        <type name="edu.uci.ics.jung.visualization.picking.AbstractPickedState" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.ClassicPickSupport" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.RadiusPickSupport" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.ClosestShapePickSupport" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.LayoutLensShapePickSupport" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport$Style" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.MultiPickedState" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.AbstractPickedState" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.PickedState" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedInfo" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.RadiusPickSupport" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.ShapePickSupport$Style" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.ShapePickSupport" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport$Style" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.picking.ViewLensShapePickSupport" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformerDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ShapePickSupport$Style" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.renderers">
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicEdgeArrowRenderingSupport" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicEdgeLabelRenderer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicEdgeRenderer" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicEdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$Orthogonal" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape$IndexedRendering" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.decorators.EdgeShape" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicRenderer" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicEdgeRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicEdgeLabelRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$InsidePositioner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$OutsidePositioner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$OutsidePositioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.TransformingGraphics" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicVertexLabelRenderer$InsidePositioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.BasicVertexRenderer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformerDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.CenterEdgeArrowRenderingSupport" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Checkmark" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.DefaultEdgeLabelRenderer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.DefaultVertexLabelRenderer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.GradientVertexRenderer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge$NOOP" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge$NOOP" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel$NOOP" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel$NOOP" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex$NOOP" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex$NOOP" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$NOOP$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$NOOP" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$NOOP" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$NOOP$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$NOOP" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Vertex" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$EdgeLabel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.ReshapingEdgeRenderer" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicEdgeRenderer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.TransformingGraphics" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.VertexLabelAsShapeRenderer$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelAsShapeRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.VertexLabelAsShapeRenderer" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Position" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$VertexLabel$Positioner" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.VertexLabelAsShapeRenderer$1" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.PickedState" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.renderers.VertexLabelRenderer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.subLayout">
+        <type name="edu.uci.ics.jung.visualization.subLayout.GraphCollapser" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.subLayout.TreeCollapser" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.transform">
+        <type name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$Lens" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$LensControls" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$Lens" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$LensControls" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.AffineTransformer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.HyperbolicTransformer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.LayoutLensSupport" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.HyperbolicTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$Lens" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$LensControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.LayoutLensShapePickSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.LensSupport" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.LensTransformer$ComponentListenerImpl" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformerDecorator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer$ComponentListenerImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.MagnifyTransformer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AffineTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.MutableTransformerDecorator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableAffineTransformer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.transform.shape">
+        <type name="edu.uci.ics.jung.visualization.transform.shape.Graphics2DWrapper" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.Graphics2DWrapper" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.HyperbolicShapeTransformer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.HyperbolicTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeFlatnessTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.Intersector" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.MagnifyIconGraphics" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.TransformingFlatnessGraphics" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.MagnifyShapeTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.MagnifyImageLensSupport" classification="class" visibility="public">
+          <dependencies count="24">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.MagnifyShapeTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalLensGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.BasicRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.ReshapingEdgeRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.MagnifyIconGraphics" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$Lens" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$LensControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ViewLensShapePickSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.MagnifyShapeTransformer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MagnifyTransformer" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeFlatnessTransformer" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.ShapeFlatnessTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.TransformingFlatnessGraphics" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.TransformingGraphics" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeFlatnessTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.HyperbolicTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.HyperbolicShapeTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.TransformingGraphics" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.ShapeFlatnessTransformer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.transform.shape.ViewLensSupport" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport" classification="extends" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensSupport" classification="implements" />
+            <depends-on name="edu.uci.ics.jung.visualization.RenderContext" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.GraphicsDecorator" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer$Edge" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.LensTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.control.ModalGraphMouse" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.shape.TransformingFlatnessGraphics" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.ReshapingEdgeRenderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$Lens" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.AbstractLensSupport$LensControls" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.picking.ViewLensShapePickSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.BidirectionalTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.Renderer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.renderers.EdgeArrowRenderingSupport" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.MultiLayerTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.Layer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.transform.MutableTransformer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationServer$Paintable" classification="uses" />
+            <depends-on name="edu.uci.ics.jung.visualization.VisualizationViewer$GraphMouse" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="edu.uci.ics.jung.visualization.util">
+        <type name="edu.uci.ics.jung.visualization.util.Animator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.ArrowFactory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.Caching" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.DefaultChangeEventSupport" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.uci.ics.jung.visualization.util.ChangeEventSupport" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.GeneralPathAsString" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.LabelWrapper" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.PredicatedParallelEdgeIndexFunction" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.uci.ics.jung.visualization.util.VertexShapeFactory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

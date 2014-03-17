@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jkaryoscope">
+    <description>Java Karyoscope chart</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/TreeView-1.1.6r2-win/Karyoscope.jar" classification="jar">
+      <namespace name="edu.stanford.genetics.treeview.plugin.karyoview">
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.Averager" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.BitmapKaryoViewExportPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.BitmapKaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.BitmapKaryoViewExportPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.BitmapKaryoViewExportPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLoci" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CircularChromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.LinearChromosome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CircularChromosome" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$5" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.FileSetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$3" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorConfigPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPresetsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$DrawPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$SelectedPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel$ColorPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.FileSetEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.FileSetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.FileSetEditor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.FileSetEditor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoParseException" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CircularChromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.LinearChromosome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.GifKaryoViewExportPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.GroupAverager" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Averager" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.IntervalAverager" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.GroupAverager" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel$5" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$PresetEditPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.LinearChromosome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$FilePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$FilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$FilePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$FilePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$BboxRow$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$BboxRow" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$SizeRow" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$BboxRow$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$SizeRow" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$BboxRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$SizeRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel$DrawingPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel$DrawingPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$FilePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.BitmapKaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask$ActualTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask$ActualTask" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask$ActualTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$TimerListener" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$CoordinatesTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$TimerListener" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.DisplaySettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel$5" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoParseException" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$3" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel$4" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.NearestAverager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.NeighborAverager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.IntervalAverager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask$ActualTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask$ActualTask" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Averager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask$ActualTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$MouseTracker" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorSet" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Averager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$TimerListener" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerSettingsPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Averager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.NeighborAverager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.NearestAverager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.IntervalAverager" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$AveragerTask" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$MouseTracker" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView$TimerListener" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$FilePanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$FilePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$FilePanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$FilePanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$SizeRow" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$ScaleRow" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$SizeRow" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$SizeRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$ScaleRow" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel$DrawingPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel$DrawingPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$FilePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$InclusionPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$PreviewPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewExportPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Genome" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel$2" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoView" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SizePanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ExperimentPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$PopupPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ButtonPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$SelectedPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoViewParameterPanel$ScalePanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresets" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoColorPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.CoordinatesPresetEditor" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoPanel" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory$1" classification="uses" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoscopeFactory$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.LinearChromosome" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.Chromosome" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.NearestAverager" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.GroupAverager" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.NeighborAverager" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.GroupAverager" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.ChromosomeLocus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="edu.stanford.genetics.treeview.plugin.karyoview.TestExportPanel" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoExportPanel" classification="extends" />
+            <depends-on name="edu.stanford.genetics.treeview.plugin.karyoview.KaryoDrawer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

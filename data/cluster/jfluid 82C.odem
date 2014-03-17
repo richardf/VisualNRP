@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jfluid">
+    <description>Java profiler. Part of the JAVA JDK. v1.7.0</description>
+    <container name="C:/Program Files/Java/jdk1.7.0_03/lib/visualvm/profiler/lib/jfluid-server.jar" classification="jar">
+      <namespace name="org.netbeans.lib.profiler.global">
+        <type name="org.netbeans.lib.profiler.global.CalibrationDataFileIO" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.CommonConstants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.InstrumentationFilter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.Platform" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InternalStatsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.netbeans.lib.profiler.server">
+        <type name="org.netbeans.lib.profiler.server.ClassBytesLoader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ClassLoaderManager$1NotifyThread" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager$1NotifyThread" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.EventBufferManager" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.Monitors$LongList" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.Monitors$SurvGenAndThreadsMonitor" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors$LongList" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors$ThreadDataTable" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.Monitors$ThreadDataTable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.Monitors" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors$SurvGenAndThreadsMonitor" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors$ThreadDataTable" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors$LongList" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerAPI" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerCalibrator" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InternalStatsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.CalibrationDataFileIO" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUCodeRegion" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUFullInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerInterface$1" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.EventBufferManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerInterface$HFIRIThread" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.RootClassLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerInterface$InitiateInstThread" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InitiateInstrumentationCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="class" visibility="public">
+          <dependencies count="43">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.EventBufferManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.CodeRegionCPUResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ThreadLivenessStatusResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodNamesResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ObjectAllocationResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InitiateInstrumentationCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupData" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface$1" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface$InitiateInstThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.AsyncMessageCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ClassLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodInvokedFirstTimeCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetClassIdCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetClassIdResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface$HFIRIThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.RootClassLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUCodeRegion" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Stacks" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUFullInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjAlloc" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassBytesLoader" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerCalibrator" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUCodeRegion" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUCodeRegion" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUFullInstr" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr$SamplingThread" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr$SamplingThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Stacks" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime$ExternalActionsHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjAlloc" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjAlloc" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$ProfilerRuntimeObjLivenessWeakRef" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$ReferenceManagerThread" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$ProfilerRuntimeObjLivenessWeakRef" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$WeakRefSet" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$WeakRefSet" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$ReferenceManagerThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness$ProfilerRuntimeObjLivenessWeakRef" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$1InstrumentMethodGroupThread" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$1MyThread" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$AttachDynamicThread" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$LocaleIterator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$SeparateCmdExecutionThread" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.DumpResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.TransactionalSupport" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer$ShutdownWaitThread" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ProfilerServer" classification="class" visibility="public">
+          <dependencies count="43">
+            <depends-on name="org.netbeans.lib.profiler.global.CommonConstants" classification="implements" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$SeparateCmdExecutionThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$ShutdownWaitThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.WireIO" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$AttachDynamicThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.EventBufferDumpedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$LocaleIterator" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$1MyThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InitiateInstrumentationCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer$1InstrumentMethodGroupThread" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.SetChangeableInstrParamsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.SetUnchangeableInstrParamsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetMethodNamesForJMethodIdsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetDefiningClassLoaderCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.DefiningLoaderResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.VMPropertiesResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.CalibrationDataResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.TakeHeapDumpCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.Threads" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassBytesLoader" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerCalibrator" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.Monitors" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUSampledInstr" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeMemory" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeObjLiveness" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPUCodeRegion" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.CodeRegionCPUResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ObjectAllocationResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodNamesResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ThreadLivenessStatusResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ClassLoaderManager" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.CalibrationDataFileIO" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InternalStatsResponse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ResetResultsProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.StartProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.StopProfilingPointHandler$RevertInstrumentation" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.StopProfilingPointHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.StopProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.server.StopProfilingPointHandler$RevertInstrumentation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.TakeHeapdumpProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingSessionStatus" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.global.Platform" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.TakeSnapshotProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerInterface" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ThreadInfo" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.system.GC" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntime" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.TakeSnapshotWithResetProfilingPointHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.netbeans.lib.profiler.server.TakeSnapshotProfilingPointHandler" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.global.ProfilingPointServerHandler" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.ThreadInfo" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerServer" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.server.ProfilerRuntimeCPU" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.netbeans.lib.profiler.server.system">
+        <type name="org.netbeans.lib.profiler.server.system.GC" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.system.Stacks" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.server.system.Threads" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.netbeans.lib.profiler.wireprotocol">
+        <type name="org.netbeans.lib.profiler.wireprotocol.AsyncMessageCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.CalibrationDataResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.ClassLoadedCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.CodeRegionCPUResultsResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.Command" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.DefiningLoaderResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.DumpResultsResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.EventBufferDumpedCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.GetClassIdCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.GetClassIdResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.GetDefiningClassLoaderCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.GetMethodNamesForJMethodIdsCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.InitiateInstrumentationCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupCommand" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupResponse" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.InternalStatsResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.MethodInvokedFirstTimeCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.MethodLoadedCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.MethodNamesResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.ObjectAllocationResultsResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.Response" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.RootClassLoadedCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.SetChangeableInstrParamsCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.SetUnchangeableInstrParamsCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.TakeHeapDumpCommand" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.ThreadLivenessStatusResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.VMPropertiesResponse" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.netbeans.lib.profiler.wireprotocol.WireIO" classification="class" visibility="public">
+          <dependencies count="28">
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Command" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.Response" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodInvokedFirstTimeCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ClassLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.AsyncMessageCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.RootClassLoadedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InitiateInstrumentationCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.SetChangeableInstrParamsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.SetUnchangeableInstrParamsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.EventBufferDumpedCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetMethodNamesForJMethodIdsCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetDefiningClassLoaderCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.TakeHeapDumpCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetClassIdCommand" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.CodeRegionCPUResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InstrumentMethodGroupResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.InternalStatsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.VMPropertiesResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.DumpResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ObjectAllocationResultsResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MethodNamesResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.ThreadLivenessStatusResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.MonitoredNumbersResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.DefiningLoaderResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.CalibrationDataResponse" classification="uses" />
+            <depends-on name="org.netbeans.lib.profiler.wireprotocol.GetClassIdResponse" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

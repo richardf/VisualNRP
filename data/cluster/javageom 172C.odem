@@ -1,0 +1,2189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="javageom">
+    <description>Java geometry library</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/javaGeom-0.11.0" classification="dir">
+      <namespace name="com.seisw.util.geom">
+        <type name="com.seisw.util.geom.Clip$AetTree" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$BundleState" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$EdgeNode" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$BundleState" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$PolygonNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$EdgeTable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$HState" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$ItNode" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$ItNodeTable" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.seisw.util.geom.Clip$ItNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$AetTree" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$StNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$BundleState" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$LmtNode" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$LmtTable" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.seisw.util.geom.Clip$LmtNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$OperationType" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$PolygonNode" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.seisw.util.geom.Clip$VertexNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$ScanBeamTree" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$ScanBeamTreeEntries" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.seisw.util.geom.Clip$ScanBeamTree" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$StNode" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$TopPolygonNode" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.seisw.util.geom.Clip$PolygonNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$VertexNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Poly" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$VertexNode" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip$VertexType" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Clip" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="com.seisw.util.geom.Poly" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$OperationType" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$LmtTable" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$ScanBeamTreeEntries" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$LmtNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$TopPolygonNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$AetTree" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$EdgeNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$PolygonNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$ItNodeTable" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$ItNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Rectangle2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$ScanBeamTree" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$EdgeTable" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$StNode" classification="uses" />
+            <depends-on name="com.seisw.util.geom.PolyDefault" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$BundleState" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$HState" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$VertexType" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip$VertexNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Point2D" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Poly" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Rectangle2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.PolyDefault" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.seisw.util.geom.Poly" classification="implements" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Rectangle2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.PolySimple" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.PolySimple" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.seisw.util.geom.Poly" classification="implements" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Rectangle2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Clip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.seisw.util.geom.Rectangle2D" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d">
+        <type name="math.geom2d.AffineTransform2D" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="math.geom2d.transform.Bijection2D" classification="implements" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="implements" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.NonInvertibleTransform2DException" classification="uses" />
+            <depends-on name="math.geom2d.transform.Transform2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.Angle2D" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.Box2D" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="math.geom2d.GeometricObject2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineArc2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.BoundaryPolyCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedBox2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.ColinearPoints2DException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.GeometricObject2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="math.geom2d.NonInvertibleTransform2DException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.transform.Transform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.Point2D" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="math.geom2d.GeometricObject2D" classification="implements" />
+            <depends-on name="math.geom2d.point.PointShape2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="implements" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSet2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointArray2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.Shape2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.GeometricObject2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.ShapeArray2D" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.ShapeSet2D" classification="implements" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.ShapeSet2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Shape2D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.UnboundedBox2DException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.UnboundedShape2DException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.Vector2D" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.GeometricObject2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.circulinear">
+        <type name="math.geom2d.circulinear.BoundaryPolyCirculinearCurve2D" classification="class" visibility="public">
+          <dependencies count="30">
+            <depends-on name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.PolyOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.BoundaryPolyCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CircleLine2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="extends" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearBoundary2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearContour2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.domain.Contour2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="extends" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearContourArray2D" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="extends" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="extends" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearCurves2D" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.NonCirculinearClassException" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircularShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.BoundaryPolyCirculinearCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearDomain2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearDomains2D" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.BoundaryPolyCirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearElement2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearRing2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.CirculinearShape2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.Shape2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.GenericCirculinearRing2D" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearRing2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.BoundaryPolyCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.PolyOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.NonCirculinearClassException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.circulinear.NonCirculinearShape2DException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.NonCirculinearShape2DException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="math.geom2d.domain.PolyOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.circulinear.buffer">
+        <type name="math.geom2d.circulinear.buffer.BevelJoinFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.buffer.JoinFactory" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.BufferCalculator" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="math.geom2d.circulinear.buffer.JoinFactory" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.CapFactory" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSet2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.RoundJoinFactory" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.RoundCapFactory" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.BoundaryPolyCirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurves2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearRing2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.ButtCapFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.buffer.CapFactory" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.CapFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.CircularCapFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.circulinear.buffer.RoundCapFactory" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.CircularJoinFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.circulinear.buffer.RoundJoinFactory" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.JoinFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.MiterJoinFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.circulinear.buffer.JoinFactory" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.RoundCapFactory" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.circulinear.buffer.CapFactory" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircleArc2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.RoundJoinFactory" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="math.geom2d.circulinear.buffer.JoinFactory" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D$JunctionType" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircleArc2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.SquareCapFactory" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.circulinear.buffer.CapFactory" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.circulinear.buffer.TriangleCapFactory" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.circulinear.buffer.CapFactory" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.conic">
+        <type name="math.geom2d.conic.Circle2D" classification="class" visibility="public">
+          <dependencies count="40">
+            <depends-on name="math.geom2d.conic.Ellipse2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearRing2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.CircularShape2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CircleLine2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircleArc2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.EllipseArc2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="uses" />
+            <depends-on name="math.geom2d.ColinearPoints2DException" classification="uses" />
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.CircleArc2D" classification="class" visibility="public">
+          <dependencies count="33">
+            <depends-on name="math.geom2d.conic.EllipseArc2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.CircularShape2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Ellipse2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CircleLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.line.Ray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.CircularShape2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Conic2D$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.conic.Conic2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Conic2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Conics2D$ConicStraightLine2D" classification="class" visibility="default">
+          <dependencies count="23">
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CircleLine2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Conics2D$ConicTwoLines2D" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Conics2D" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="math.geom2d.conic.Conic2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D$ConicStraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D$ConicTwoLines2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Parabola2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Ellipse2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Hyperbola2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Ellipse2D" classification="class" visibility="public">
+          <dependencies count="31">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.EllipseArc2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.EllipseArc2D" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Ellipse2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.Ray2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Hyperbola2D" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="extends" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.HyperbolaBranch2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conics2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.HyperbolaBranch2D" classification="class" visibility="public">
+          <dependencies count="25">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Hyperbola2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.HyperbolaBranchArc2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.HyperbolaBranchArc2D" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.HyperbolaBranch2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Hyperbola2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.Parabola2D" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Conic2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Conic2D$Type" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.ParabolaArc2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.conic.ParabolaArc2D" classification="class" visibility="public">
+          <dependencies count="24">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.conic.Parabola2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.curve">
+        <type name="math.geom2d.curve.AbstractContinuousCurve2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.AbstractSmoothCurve2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.curve.AbstractContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.ContinuousCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.curve.Curve2D" classification="extends" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.Curve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.Shape2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.CurveArray2D" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="implements" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.Curves2D$JunctionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.Curves2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D$JunctionType" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.CurveSet2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.curve.Curve2D" classification="extends" />
+            <depends-on name="math.geom2d.ShapeSet2D" classification="extends" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.GeneralPath2D" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.PolyCurve2D" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="extends" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.curve.SmoothCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.domain">
+        <type name="math.geom2d.domain.Boundaries2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="16">
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.BoundaryPolyCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedBox2DException" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.Boundary2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.BoundaryPolyCurve2D" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="math.geom2d.domain.PolyOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.Contour2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.ContourArray2D" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.GenericDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.Domain2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.Shape2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.DomainArray2D" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="math.geom2d.ShapeArray2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.DomainSet2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.ShapeSet2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.MultiPolygon2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.DomainSet2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.ShapeSet2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.GenericDomain2D" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="math.geom2d.domain.Domain2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.MultiPolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundaries2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.OrientedCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.curve.Curve2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.PolyOrientedCurve2D" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="math.geom2d.curve.PolyCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.SmoothContour2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="extends" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.domain.SmoothOrientedCurve2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.grid">
+        <type name="math.geom2d.grid.Grid2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSet2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.grid.SquareGrid2D" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="math.geom2d.grid.Grid2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSet2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointArray2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.grid.TriangleGrid2D" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="math.geom2d.grid.Grid2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointArray2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.line">
+        <type name="math.geom2d.line.AbstractLine2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="32">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.DegeneratedLine2DException" classification="uses" />
+            <depends-on name="math.geom2d.line.InvertedRay2D" classification="uses" />
+            <depends-on name="math.geom2d.line.Ray2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircleArc2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.DegeneratedLine2DException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.InvertedRay2D" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.Ray2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.Line2D" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.CircleArc2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.LineArc2D" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.LinearElement2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="extends" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="extends" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.LinearShape2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.LineSegment2D" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.line.DegeneratedLine2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.Ray2D" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.InvertedRay2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.line.StraightLine2D" classification="class" visibility="public">
+          <dependencies count="35">
+            <depends-on name="math.geom2d.line.AbstractLine2D" classification="extends" />
+            <depends-on name="math.geom2d.domain.SmoothContour2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CircleLine2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.SmoothOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.line.DegeneratedLine2DException" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.UnboundedShape2DException" classification="uses" />
+            <depends-on name="math.utils.EqualUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.point">
+        <type name="math.geom2d.point.KDTree2D$Node" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.point.KDTree2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.KDTree2D$XComparator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.point.KDTree2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.KDTree2D$YComparator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.point.KDTree2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.KDTree2D" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.point.KDTree2D$Node" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.point.KDTree2D$XComparator" classification="uses" />
+            <depends-on name="math.geom2d.point.KDTree2D$YComparator" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.PointArray2D" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="math.geom2d.point.PointSet2D" classification="implements" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointShape2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.PointSet2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.point.PointShape2D" classification="extends" />
+            <depends-on name="math.geom2d.ShapeSet2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.PointSets2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.point.PointShape2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.polygon">
+        <type name="math.geom2d.polygon.HRectangle2D" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.LinearCurve2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="18">
+            <depends-on name="math.geom2d.curve.AbstractContinuousCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSets2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.LinearRing2D" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearRing2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polyline2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.MultiPolygon2D" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="math.geom2d.domain.Domain2D" classification="implements" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="implements" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.Polygon2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.Polygons2D" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="19">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Contour2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Poly" classification="uses" />
+            <depends-on name="com.seisw.util.geom.PolyDefault" classification="uses" />
+            <depends-on name="com.seisw.util.geom.PolySimple" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundaries2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.MultiPolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSets2D" classification="uses" />
+            <depends-on name="com.seisw.util.geom.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.Polyline2D" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContinuousCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearElement2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.PolyCirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.Polylines2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSets2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.Rectangle2D" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.buffer.BufferCalculator" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.SimplePolygon2D" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearRing2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LineSegment2D" classification="uses" />
+            <depends-on name="math.geom2d.transform.CircleInversion2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearBoundary2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContourArray2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Domain2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.Boundary2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygons2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.GenericCirculinearDomain2D" classification="uses" />
+            <depends-on name="math.geom2d.point.PointSets2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearDomains2D" classification="uses" />
+            <depends-on name="math.geom2d.circulinear.CirculinearContour2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.polygon.convhull">
+        <type name="math.geom2d.polygon.convhull.ConvexHull2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.convhull.GrahamScan2D$CompareByPseudoAngle" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.convhull.GrahamScan2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.convhull.GrahamScan2D" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.polygon.convhull.ConvexHull2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.convhull.GrahamScan2D$CompareByPseudoAngle" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.polygon.convhull.JarvisMarch2D" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="math.geom2d.polygon.convhull.ConvexHull2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.Polygon2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.SimplePolygon2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.spline">
+        <type name="math.geom2d.spline.CubicBezierCurve2D" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.spline.PolyCubicBezierCurve2D" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="math.geom2d.curve.PolyCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.spline.CubicBezierCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.spline.QuadBezierCurve2D" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="math.geom2d.curve.AbstractSmoothCurve2D" classification="extends" />
+            <depends-on name="math.geom2d.curve.SmoothCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.domain.ContinuousOrientedCurve2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.Vector2D" classification="uses" />
+            <depends-on name="math.geom2d.line.LinearShape2D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom2d.Box2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveSet2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.CurveArray2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curve2D" classification="uses" />
+            <depends-on name="math.geom2d.AffineTransform2D" classification="uses" />
+            <depends-on name="math.geom2d.GeometricObject2D" classification="uses" />
+            <depends-on name="math.geom2d.domain.OrientedCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.ContinuousCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.Shape2D" classification="uses" />
+            <depends-on name="math.geom2d.polygon.LinearCurve2D" classification="uses" />
+            <depends-on name="math.geom2d.curve.Curves2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2d.transform">
+        <type name="math.geom2d.transform.Bijection2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.transform.Transform2D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.transform.CircleInversion2D" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="math.geom2d.transform.Bijection2D" classification="implements" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom2d.conic.Circle2D" classification="uses" />
+            <depends-on name="math.geom2d.Angle2D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.transform.CircleProjection2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.transform.Projection2D" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.transform.LineProjection2D" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.transform.Projection2D" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.transform.Projection2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.transform.Transform2D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2d.transform.Transform2D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom2s">
+        <type name="math.geom2s.Curve2S" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom2s.Shape2S" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2s.GreatCircle2S" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2s.SmallCircle2S" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom2s.Point2S" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2s.Shape2S" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="math.geom2s.Shape2S" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="math.geom2s.SmallCircle2S" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom2s.Curve2S" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom3d">
+        <type name="math.geom3d.Box3D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.Point3D" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="math.geom3d.Shape3D" classification="implements" />
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.PointSet3D" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="math.geom3d.Shape3D" classification="implements" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.Shape3D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.Vector3D" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom3d.curve">
+        <type name="math.geom3d.curve.ContinuousCurve3D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom3d.curve.Curve3D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.curve.Curve3D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="math.geom3d.Shape3D" classification="extends" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.curve.ContinuousCurve3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom3d.line">
+        <type name="math.geom3d.line.LineSegment3D" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="math.geom3d.curve.ContinuousCurve3D" classification="implements" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.line.StraightLine3D" classification="uses" />
+            <depends-on name="math.geom3d.curve.Curve3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.Shape3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.line.StraightLine3D" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="math.geom3d.curve.ContinuousCurve3D" classification="implements" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.Vector3D" classification="uses" />
+            <depends-on name="math.geom3d.plane.Plane3D" classification="uses" />
+            <depends-on name="math.geom2d.line.StraightLine2D" classification="uses" />
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.Shape3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+            <depends-on name="math.geom3d.curve.Curve3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom3d.plane">
+        <type name="math.geom3d.plane.Plane3D" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="math.geom3d.Shape3D" classification="implements" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+            <depends-on name="math.geom3d.Vector3D" classification="uses" />
+            <depends-on name="math.geom3d.line.StraightLine3D" classification="uses" />
+            <depends-on name="math.geom2d.Point2D" classification="uses" />
+            <depends-on name="math.geom3d.Box3D" classification="uses" />
+            <depends-on name="math.geom3d.transform.AffineTransform3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.geom3d.transform">
+        <type name="math.geom3d.transform.AffineTransform3D" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="math.geom3d.transform.Bijection3D" classification="implements" />
+            <depends-on name="math.geom3d.Vector3D" classification="uses" />
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.transform.Bijection3D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom3d.transform.Transform3D" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="math.geom3d.transform.Transform3D" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="math.geom3d.Point3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="math.utils">
+        <type name="math.utils.EqualUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="math.utils.Matrix" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

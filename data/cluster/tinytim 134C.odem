@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="tinytim">
+	<description>Tinytim v2.0.0</description>
+    <container name="C:/Users/Marcio Barros/Desktop/tinytim-2.0.0.jar" classification="jar">
+      <namespace name="org.tinytim">
+        <type name="org.tinytim.Version" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.core">
+        <type name="org.tinytim.core.AbstractTopicMap" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.core.ConstructImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.AbstractTopicMapSystem" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.core.MemoryTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicMapSystemFactoryImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.AssociationImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="org.tinytim.core.ScopedImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.core.RoleImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.AbstractTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.ConstructImpl" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.DatatypeAwareConstruct" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.tinytim.core.ScopedImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdGenerator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$AddItemIdentifierHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$AddSubjectIdentifierHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$AddSubjectLocatorHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$ReifierConstraintHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$RemoveItemIdentifierHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$RemoveSubjectIdentifierHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$RemoveSubjectLocatorHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$TopicMapsConstructAddHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager$TopicMapsConstructRemoveHandler" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.IdentityManager" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="19">
+            <depends-on name="org.tinytim.internal.api.IEventPublisherAware" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$TopicMapsConstructAddHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$TopicMapsConstructRemoveHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$AddItemIdentifierHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$RemoveItemIdentifierHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$AddSubjectIdentifierHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$RemoveSubjectIdentifierHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$AddSubjectLocatorHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$RemoveSubjectLocatorHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$ReifierConstraintHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.ConstructImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.IdentityManager$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.IdGenerator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.MemoryTopicMap$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.core.MemoryTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.MemoryTopicMap$EventMultiplier" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.AssociationImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.NameImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.MemoryTopicMap" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="24">
+            <depends-on name="org.tinytim.core.AbstractTopicMap" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="implements" />
+            <depends-on name="org.tinytim.core.IdentityManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+            <depends-on name="org.tinytim.core.AbstractTopicMapSystem" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap$EventMultiplier" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.IndexManager" classification="uses" />
+            <depends-on name="org.tinytim.core.AssociationImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="uses" />
+            <depends-on name="org.tinytim.core.IdGenerator" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.core.Scope" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.MergeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.MemoryTopicMapSystem" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.core.AbstractTopicMapSystem" classification="extends" />
+            <depends-on name="org.tinytim.core.MemoryTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.NameImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="12">
+            <depends-on name="org.tinytim.core.ScopedImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="uses" />
+            <depends-on name="org.tinytim.core.VariantImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.OccurrenceImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.core.DatatypeAwareConstruct" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.RoleImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.tinytim.core.TypedImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IRole" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.AssociationImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.Scope" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.IScope" classification="implements" />
+            <depends-on name="org.tinytim.internal.utils.WeakObjectRegistry" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.ScopedImpl" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.core.TypedImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.TopicImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="17">
+            <depends-on name="org.tinytim.core.ConstructImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="uses" />
+            <depends-on name="org.tinytim.core.OccurrenceImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+            <depends-on name="org.tinytim.core.NameImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.AbstractTopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.MergeUtils" classification="uses" />
+            <depends-on name="org.tinytim.utils.TopicUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.TopicMapSystemFactoryImpl$FeatureInfo" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.core.TopicMapSystemFactoryImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.TopicMapSystemFactoryImpl$TMSystemInfo" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.core.TopicMapSystemFactoryImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.TopicMapSystemFactoryImpl" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.core.TopicMapSystemFactoryImpl$FeatureInfo" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicMapSystemFactoryImpl$TMSystemInfo" classification="uses" />
+            <depends-on name="org.tinytim.core.MemoryTopicMapSystem" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.TypedImpl" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.core.ConstructImpl" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.core.TopicImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.Check" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.VariantImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="org.tinytim.core.DatatypeAwareConstruct" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+            <depends-on name="org.tinytim.core.NameImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.core.Scope" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.core.value">
+        <type name="org.tinytim.core.value.BooleanLiteral" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="implements" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.value.DecimalLiteral" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="implements" />
+            <depends-on name="org.tinytim.core.value.LiteralNormalizer" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.value.IntegerLiteral" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="implements" />
+            <depends-on name="org.tinytim.core.value.LiteralNormalizer" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.value.Literal" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="implements" />
+            <depends-on name="org.tinytim.internal.utils.WeakObjectRegistry" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="uses" />
+            <depends-on name="org.tinytim.core.value.DecimalLiteral" classification="uses" />
+            <depends-on name="org.tinytim.core.value.IntegerLiteral" classification="uses" />
+            <depends-on name="org.tinytim.core.value.LiteralNormalizer" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+            <depends-on name="org.tinytim.core.value.LocatorImpl" classification="uses" />
+            <depends-on name="org.tinytim.core.value.BooleanLiteral" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.value.LiteralNormalizer" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.core.value.LocatorImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="implements" />
+            <depends-on name="org.tinytim.internal.utils.WeakObjectRegistry" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.index">
+        <type name="org.tinytim.index.AbstractIndex" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.IEventPublisherAware" classification="implements" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.IndexManager" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="implements" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl$AddLiteralAwareHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl$LiteralHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl$RemoveLiteralAwareHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl$_EvtHandler" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.LiteralIndexImpl" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.tinytim.index.AbstractIndex" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$LiteralHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$AddLiteralAwareHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$RemoveLiteralAwareHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.index.LiteralIndexImpl$_EvtHandler" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl$AddScopedHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl$RemoveScopedHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl$SetScopeHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl$_EvtHandler" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.ScopedIndexImpl" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.tinytim.index.AbstractIndex" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$SetScopeHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$AddScopedHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$RemoveScopedHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.index.ScopedIndexImpl$_EvtHandler" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$AddTopicHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$AddTypedHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$RemoveTopicHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$RemoveTypedHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$TopicTypeHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$TypeHandler" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$_EvtHandler" classification="extends" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl$_EvtHandler" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="implements" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.index.TypeInstanceIndexImpl" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.tinytim.index.AbstractIndex" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$TopicTypeHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$AddTopicHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$RemoveTopicHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$TypeHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$AddTypedHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$RemoveTypedHandler" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$1" classification="uses" />
+            <depends-on name="org.tinytim.index.TypeInstanceIndexImpl$_EvtHandler" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.internal.api">
+        <type name="org.tinytim.internal.api.Event" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IAssociation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IConstant" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IConstruct" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IEventHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IEventPublisher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.Event" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IEventPublisherAware" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IIndexManager" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.IEventPublisherAware" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IIndexManagerAware" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.ILiteral" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.ILiteralAware" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.ILocator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IMovable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IName" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IMovable" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IOccurrence" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IMovable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IRole" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.api.IMovable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IScope" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IScoped" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.ITopic" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.ITopicMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IEventHandler" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IEventPublisher" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.api.IVariant" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IMovable" classification="extends" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.internal.utils">
+        <type name="org.tinytim.internal.utils.Check" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.CollectionFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.utils.ICollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.OntopiaCollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.CompactHashSet$CompactHashIterator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.utils.CompactHashSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.CompactHashSet" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.utils.CompactHashSet$CompactHashIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.CompactIdentityHashSet" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.utils.CompactHashSet" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.CopyUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="13">
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.SignatureGenerator" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.MergeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.DefaultIntObjectMap" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.ICollectionFactory" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.IIntObjectMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.MergeUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="12">
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IRole" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CopyUtils" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.SignatureGenerator" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.OntopiaCollectionFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.utils.ICollectionFactory" classification="implements" />
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.DefaultIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CompactHashSet" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CompactIdentityHashSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.SignatureGenerator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteralAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScoped" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.internal.utils.WeakObjectRegistry" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.mio">
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$AbstractDatatypeAwareComparator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$AbstractSetComparator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$AssociationComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleSetComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$LocatorComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$LocatorSetComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractSetComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$NameComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$OccurrenceComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractDatatypeAwareComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$RoleComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleIgnoreParentComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$RoleIgnoreParentComparator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$RoleSetComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractSetComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleIgnoreParentComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$ScopeComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractSetComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TopicComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceAssociation" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRole" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRole" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet$TypeInstanceRoleSetIterator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet$TypeInstanceRoleSetIterator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceTopic" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter$VariantComparator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractDatatypeAwareComparator" classification="extends" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.CXTMTopicMapWriter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="26">
+            <depends-on name="org.tinytim.mio.XMLC14NWriter" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TopicComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AssociationComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$OccurrenceComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$NameComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$VariantComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$LocatorSetComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$LocatorComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$ScopeComparator" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceTopic" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceAssociation" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$1" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRoleSet" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$TypeInstanceRole" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleSetComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractSetComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$RoleIgnoreParentComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractDatatypeAwareComparator" classification="uses" />
+            <depends-on name="org.tinytim.mio.CXTMTopicMapWriter$AbstractComparator" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.utils.DuplicateRemovalUtils" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+            <depends-on name="org.tinytim.voc.XSD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.TinyTimMapInputHandler$DelayedRoleEvents" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.mio.TinyTimMapInputHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.TinyTimMapInputHandler" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="org.tinytim.internal.api.ITopicMap" classification="uses" />
+            <depends-on name="org.tinytim.mio.TinyTimMapInputHandler$DelayedRoleEvents" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IConstruct" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILiteral" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ITopic" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IName" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IVariant" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IOccurrence" classification="uses" />
+            <depends-on name="org.tinytim.utils.TypeInstanceConverter" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.SignatureGenerator" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.MergeUtils" classification="uses" />
+            <depends-on name="org.tinytim.core.Scope" classification="uses" />
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.mio.XMLC14NWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.utils">
+        <type name="org.tinytim.utils.DuplicateRemovalUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.tinytim.internal.utils.IIntObjectMap" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.CollectionFactory" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.SignatureGenerator" classification="uses" />
+            <depends-on name="org.tinytim.internal.utils.MergeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.Feature" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.Property" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.TopicUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.TypeInstanceConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.tinytim.internal.api.IIndexManagerAware" classification="uses" />
+            <depends-on name="org.tinytim.voc.XTM10" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IIndexManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.TypeInstanceUtils$RolePlayerWalker" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.tinytim.internal.api.IAssociation" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.IScope" classification="uses" />
+            <depends-on name="org.tinytim.utils.TypeInstanceUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.TypeInstanceUtils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.utils.TypeInstanceUtils$RolePlayerWalker" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.utils.XTM10Utils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.voc.XTM10" classification="uses" />
+            <depends-on name="org.tinytim.voc.TMDM" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.tinytim.voc">
+        <type name="org.tinytim.voc.Namespace" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.tinytim.voc.TMCL" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.voc.Vocabulary" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.voc.TMDM" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.voc.Vocabulary" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.voc.Vocabulary" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.tinytim.core.value.Literal" classification="uses" />
+            <depends-on name="org.tinytim.internal.api.ILocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.voc.XSD" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.voc.Vocabulary" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.tinytim.voc.XTM10" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.tinytim.voc.Vocabulary" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

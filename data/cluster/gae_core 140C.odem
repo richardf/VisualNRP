@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="gae_core">
+    <description>Google App Engine Eclipse plug-in core classes. v2012-01-12-00-43-r37</description>
+    <container name="C:/temp/eclipse/plugins/com.google.appengine.eclipse.core_2.5.1.v201201120043-rel-r37.jar" classification="jar">
+      <namespace name="com.google.appengine.eclipse.core">
+        <type name="com.google.appengine.eclipse.core.AppEngineCorePlugin$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateWebInfFolderCommand" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeImages" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.actions">
+        <type name="com.google.appengine.eclipse.core.actions.ProjectPropertiesAction" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.datatools">
+        <type name="com.google.appengine.eclipse.core.datatools.GaeSqlToolsExtension" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator$ConnectionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator$ConnectionType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.GaeSqlToolsExtension" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties$Vendor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties$Vendor" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionProperties$Vendor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.deploy">
+        <type name="com.google.appengine.eclipse.core.deploy.DeployProjectJob$NullOutputStream" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.DeployProjectJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.DeployProjectJob" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge$DeployOptions" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.DeployProjectJob$NullOutputStream" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.deploy.ui">
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectAction" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$FieldListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$DeployTree" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$FieldListener" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeImages" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectHandler$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectDialog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.DeployProjectJob" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.deploy.ui.DeployProjectHandler$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.editor">
+        <type name="com.google.appengine.eclipse.core.editor.GetConnectionCallChecker" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.editor.GetConnectionCompletionRequestor" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.editor.GetConnectionCompletionRequestor" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.editor.SqlJdbcUrlCompletionComputer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.editor.StringCompletionProposer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.editor.GetConnectionCallChecker" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.editor.StringCompletionProposer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.launch">
+        <type name="com.google.appengine.eclipse.core.launch.AppEngineLaunchAttributes" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.launch.AppEngineLaunchConfiguration" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.launch.AppEngineLaunchAttributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.launch.AppEngineLaunchConfigurationWorkingCopy" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.launch.AppEngineLaunchConfiguration" classification="extends" />
+            <depends-on name="com.google.appengine.eclipse.core.launch.AppEngineLaunchAttributes" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.launch.processors">
+        <type name="com.google.appengine.eclipse.core.launch.processors.GoogleCloudSqlArgumentProcessor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.launch.processors.HrdArgumentProcessor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.launch.AppEngineLaunchConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.launch.processors.JavaAgentArgumentProcessor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.launch.processors.XBootclasspathArgumentProcessor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.markers">
+        <type name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.markers.quickfixes">
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.AppEngineJavaProblemMarkerResolutionGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.quickfixes.ExcludeFromValidationProposal" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.quickfixes.UrlCorrectionProposal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.ChooseProjectJDKMarkerResolution" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.ChooseProjectJreSystemLibraryMarkerResolution" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.ChooseWorkspaceJreMarkerResolution" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.ExcludeFromValidationProposal" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.markers.quickfixes.UrlCorrectionProposal" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.nature">
+        <type name="com.google.appengine.eclipse.core.nature.GaeNature" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.orm.enhancement">
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.EnhancerJob" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.AutoEnhancer$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.EnhancerJob$IEnhancerJobCpFinder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.EnhancerJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.EnhancerJob" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.EnhancerJob$IEnhancerJobCpFinder" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.orm.enhancement.LaunchUtilities" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.orm.enhancement.LaunchUtilities" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.preferences">
+        <type name="com.google.appengine.eclipse.core.preferences.GaePreferenceConstants" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.preferences.GaePreferenceInitializer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferenceConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.preferences.GaePreferences$1" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkCapability" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateProjectSdkCommand" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateWebInfFolderCommand" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferenceConstants" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.preferences.ui">
+        <type name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.projects">
+        <type name="com.google.appengine.eclipse.core.projects.GaeEnablingProjectCreationParticipant" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.properties">
+        <type name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.properties.ui">
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog$PatternFieldAdapter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog$PatternFieldAdapter" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock$PatternsListLabelProvider" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock$PatternsListSelectionAdapter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternDialog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock$PatternsListSelectionAdapter" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock$PatternsListLabelProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeOrmProjectPropertyPage" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$10" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$11" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$12" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$13" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$14" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$15" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$16" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$17" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$9" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$GaeProjectWithoutNature" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="extends" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$GaeSdkSelectionEnablementFinder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage" classification="class" visibility="public">
+          <dependencies count="31">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProjectResources" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$4" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$5" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$6" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$7" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$8" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$9" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$10" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$11" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$12" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$13" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateProjectSdkCommand" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$14" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$15" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$16" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$17" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$GaeProjectWithoutNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GaeProjectPropertyPage$GaeSdkSelectionEnablementFinder" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateWebInfFolderCommand" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkCapability" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GaeValidationProjectPropertyPage" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.FileFilterPatternsBlock" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator$ConnectionType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.GoogleCloudSqlConfigure$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$5" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$6" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$7" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator$ConnectionType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.datatools.SqlConnectionExtensionPopulator" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$2" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$3" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$4" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$5" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$6" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$7" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.ui.MySqlConfigure$8" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.resources">
+        <type name="com.google.appengine.eclipse.core.resources.GaeImages" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProject$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProject$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProject$ReadAppEngineXmlOperation" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProject$ReadBackendsXmlOperation" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProject" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject$ReadAppEngineXmlOperation" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject$ReadBackendsXmlOperation" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.resources.GaeProjectResources" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.sdk">
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineBridge$DeployOptions" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge$DeployOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory$BridgeCacheEntry" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory$BridgeCacheEntry" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateProjectSdkCommand" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateWebInfFolderCommand" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineUpdateProjectSdkCommand" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GAESdkRegistrant" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdk$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdk$ISdkPath" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdk$ProjectBoundSdk" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="extends" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkCapability" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk$ProjectBoundSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridge" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk$ISdkPath" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.AppEngineBridgeFactory" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdkCapability" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdkClasspathContainerPage" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeImages" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.ui.GaePreferencePage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdkContainerInitializer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdkContainer" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.sdk.GaeSdkTestUtilities" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.preferences.GaePreferences" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.sql">
+        <type name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.validators">
+        <type name="com.google.appengine.eclipse.core.validators.GaeProjectValidator$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator$JSPResourceVisitor" classification="implements" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.GaeProjectValidator$JSPResourceVisitor" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.GaeProjectValidator" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator$JSPResourceVisitor" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePlugin" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineProblemType" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.GaeProjectValidator$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.appengine.eclipse.core.validators.java">
+        <type name="com.google.appengine.eclipse.core.validators.java.GaeChecker$GaeValidationVisitor" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GaeChecker" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.java.GaeChecker" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.resources.GaeProject" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.sdk.GaeSdk" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GaeChecker$GaeValidationVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.java.GoogleCloudSqlChecker$UrlValidationVisitor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.appengine.eclipse.core.sql.SqlUtilities" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GoogleCloudSqlChecker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.java.GoogleCloudSqlChecker" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GoogleCloudSqlChecker$UrlValidationVisitor" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GoogleCloudSqlProperties" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.appengine.eclipse.core.markers.AppEngineJavaProblem" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.AppEngineCorePluginLog" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.properties.GaeProjectProperties" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GoogleCloudSqlChecker" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.GaeChecker" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.validators.java.JavaCompilationParticipant$1" classification="uses" />
+            <depends-on name="com.google.appengine.eclipse.core.nature.GaeNature" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

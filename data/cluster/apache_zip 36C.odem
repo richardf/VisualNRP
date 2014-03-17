@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="apache_zip">
+    <description>Apache ZIP Tool</description>
+    <container name="C:/temp/eclipse/plugins/org.apache.ant_1.8.2.v20110505-1300/lib/ant.jar" classification="jar">
+      <namespace name="org.apache.tools.bzip2">
+        <type name="org.apache.tools.bzip2.BZip2Constants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.bzip2.CBZip2InputStream$Data" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.bzip2.CBZip2InputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.bzip2.CBZip2InputStream" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.bzip2.BZip2Constants" classification="implements" />
+            <depends-on name="org.apache.tools.bzip2.CRC" classification="uses" />
+            <depends-on name="org.apache.tools.bzip2.CBZip2InputStream$Data" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.bzip2.CBZip2OutputStream$Data" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.bzip2.CBZip2OutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.bzip2.CBZip2OutputStream" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.bzip2.BZip2Constants" classification="implements" />
+            <depends-on name="org.apache.tools.bzip2.CRC" classification="uses" />
+            <depends-on name="org.apache.tools.bzip2.CBZip2OutputStream$Data" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.bzip2.CRC" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.tools.zip">
+        <type name="org.apache.tools.zip.AbstractUnicodeExtraField" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipLong" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.AsiExtraField" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="implements" />
+            <depends-on name="org.apache.tools.zip.UnixStat" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipLong" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.CentralDirectoryParsingZipExtraField" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ExtraFieldUtils$UnparseableExtraField" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ExtraFieldUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ExtraFieldUtils" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnrecognizedExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ExtraFieldUtils$UnparseableExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnparseableExtraFieldData" classification="uses" />
+            <depends-on name="org.apache.tools.zip.CentralDirectoryParsingZipExtraField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.FallbackZipEncoding" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.JarMarker" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.NioZipEncoding" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.Simple8BitZipEncoding$Simple8BitChar" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.Simple8BitZipEncoding" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.Simple8BitZipEncoding" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="implements" />
+            <depends-on name="org.apache.tools.zip.Simple8BitZipEncoding$Simple8BitChar" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.UnicodeCommentExtraField" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.AbstractUnicodeExtraField" classification="extends" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.UnicodePathExtraField" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.AbstractUnicodeExtraField" classification="extends" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.UnixStat" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.UnparseableExtraFieldData" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.zip.CentralDirectoryParsingZipExtraField" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.UnrecognizedExtraField" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.tools.zip.CentralDirectoryParsingZipExtraField" classification="implements" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipEncoding" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipEncodingHelper$SimpleEncodingHolder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.Simple8BitZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipEncodingHelper" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper$SimpleEncodingHolder" classification="uses" />
+            <depends-on name="org.apache.tools.zip.FallbackZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.NioZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.Simple8BitZipEncoding" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipEntry" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.tools.zip.UnparseableExtraFieldData" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.CentralDirectoryParsingZipExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ExtraFieldUtils" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ExtraFieldUtils$UnparseableExtraField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipExtraField" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipFile$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipFile$BoundedInputStream" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipFile$NameAndComment" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.ZipFile$1" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipFile$OffsetEntry" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.tools.zip.ZipFile$1" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipFile" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEntry" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile$OffsetEntry" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile$BoundedInputStream" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipLong" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile$NameAndComment" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnicodeCommentExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnicodePathExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.AbstractUnicodeExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipFile$1" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipOutputStream" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipLong" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipOutputStream$UnicodeExtraFieldPolicy" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.tools.zip.ZipOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipOutputStream" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.tools.zip.ZipEntry" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncoding" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipOutputStream$UnicodeExtraFieldPolicy" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipLong" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnicodeCommentExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.UnicodePathExtraField" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipEncodingHelper" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipShort" classification="uses" />
+            <depends-on name="org.apache.tools.zip.ZipExtraField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipShort" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.tools.zip.ZipUtil" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

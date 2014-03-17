@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="pfcda_base">
+    <container name="C:/Users/marcio.barros/Desktop/PF-CDA/lib/pf-cda-base.jar" classification="jar">
+      <namespace name="org.pf.tools.cda.base">
+        <type name="org.pf.tools.cda.base.Module" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.workset.Variables" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.global">
+        <type name="org.pf.tools.cda.global.Functions" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.util.StringFilterCollection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.global.Preferences" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.model">
+        <type name="org.pf.tools.cda.model.AAnalyzableElement" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.AModelObject" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.AModelObject" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.AnalyzableElementDependency" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.ClassInformationDependency" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassContainer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.util.ContainerSpecificationElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassContainerDependency" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.pf.tools.cda.model.AnalyzableElementDependency" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformationDependency" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassFileVersion" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassInformation" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.pf.tools.cda.model.AAnalyzableElement" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassFileVersion" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IClassInitializer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformationDependency" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.AModelObject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassInformationDependency" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.AnalyzableElementDependency" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassPackage$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassInformationProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassPackage" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.pf.tools.cda.model.AAnalyzableElement" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.IClassContainingElement" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.IStringRepresentation" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassFileVersion" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.AModelObject" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IClassInformationFactory" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassPackageDependency" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.model.AnalyzableElementDependency" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformationDependency" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ClassSpace" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.pf.tools.cda.model.IClassSpace" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.IClassInformationFactory" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.NotFoundClassContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ComponentModel$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassPackageProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ComponentModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ComponentModel$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.ASoftwareComponentProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.ComponentModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.ComponentModel" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.pf.tools.cda.model.IComponentHolder" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.ISoftwareComponentProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.AClassPackageProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ComponentModel$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ComponentModel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.GenericClassContainer$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassPackageProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.GenericClassContainer" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="11">
+            <depends-on name="org.pf.tools.cda.model.AAnalyzableElement" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.IClassContainingElement" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassFileVersion" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.AModelObject" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IAnalyzableElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IClassContainingElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.ClassFileVersion" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IClassInformationFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IClassInitializer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IClassSpace" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IComponentHolder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.IStringRepresentation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.NotFoundClassContainer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.SoftwareComponent" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.IComponentHolder" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.workset.ContainerInfo" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.ISoftwareComponentProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.SoftwareComponentDependency" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.AnalyzableElementDependency" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassInformationProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassContainerProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassContainerProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.pf.tools.cda.model.processing.AClassInformationProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset$InitState" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.Workset" classification="class" visibility="public">
+          <dependencies count="34">
+            <depends-on name="org.pf.tools.cda.model.AAnalyzableElement" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.IClassContainingElement" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.workset.IWorksetInitializationListener" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.ClassSpace" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.util.StringFilterCollection" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.ClasspathMetadata" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.StructuredCache" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.VariablePool" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ComponentModel" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset$InitState" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassFileVersion" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IClassSpace" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.util.StringFilter" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.ClasspathPartDefinition" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.AClassInformationProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassContainerProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.Variables" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.ISoftwareComponentProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.IWorksetInitializationListener$EventType" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.processing.AClassContainerProcessor" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.AModelObject" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.workset.ContainerInfo" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IClassInformationFactory" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset$1" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset$2" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset$3" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset$4" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.model.processing">
+        <type name="org.pf.tools.cda.model.processing.AClassContainerProcessor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassContainerProcessor" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.GenericClassContainer" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.AClassInformationProcessor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.ClassInformation" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.AClassPackageProcessor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.ClassPackage" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.ASoftwareComponentProcessor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.pf.tools.cda.model.processing.ISoftwareComponentProcessor" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.SoftwareComponent" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.IAnalyzableElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IClassContainerProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IMutableAnalyzableElementProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IMutableClassContainerProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassContainerProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.processing.IMutableAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IMutableClassInformationProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassInformationProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.processing.IMutableAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.IMutableClassPackageProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.processing.IClassPackageProcessor" classification="extends" />
+            <depends-on name="org.pf.tools.cda.model.processing.IMutableAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.processing.ISoftwareComponentProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.processing.IAnalyzableElementProcessor" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.model.util">
+        <type name="org.pf.tools.cda.model.util.ContainerSpecificationElement" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.util.IStoppableRunnable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.util.SearchSpecification" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.util.StringFilter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.util.StringFilterCollection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.util.StringFilter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.model.workset">
+        <type name="org.pf.tools.cda.model.workset.ClasspathMetadata" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.workset.ContainerInfo" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.ClassContainer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.ClasspathPartDefinition" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.IStringRepresentation" classification="implements" />
+            <depends-on name="org.pf.tools.cda.model.workset.ClasspathPartDefinitionType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.ClasspathPartDefinitionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.ContainerInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.IWorksetInitializationListener$EventType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.workset.IWorksetInitializationListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.IWorksetInitializationListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.pf.tools.cda.model.workset.IWorksetInitializationListener$EventType" classification="uses" />
+            <depends-on name="org.pf.tools.cda.model.Workset" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.StructuredCache" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.VariablePool" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.pf.tools.cda.model.workset.Variables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.model.workset.Variables" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.odem.xml">
+        <type name="org.pf.tools.cda.odem.xml.XMLNames" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.pf.tools.cda.util">
+        <type name="org.pf.tools.cda.util.CollectionUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.util.FileUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.pf.tools.cda.util.StringUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

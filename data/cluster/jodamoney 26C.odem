@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jodamoney">
+	<description>JODA Money</description>
+    <container name="C:/Users/Marcio Barros/Desktop/joda-money-0.6.jar" classification="jar">
+      <namespace name="org.joda.money">
+        <type name="org.joda.money.BigMoney" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.joda.money.BigMoneyProvider" classification="implements" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.Money" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyMismatchException" classification="uses" />
+            <depends-on name="org.joda.money.Ser" classification="uses" />
+            <depends-on name="org.joda.money.MoneyUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.BigMoneyProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.CurrencyMismatchException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.CurrencyUnit" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.joda.money.IllegalCurrencyException" classification="uses" />
+            <depends-on name="org.joda.money.Ser" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnitDataProvider" classification="uses" />
+            <depends-on name="org.joda.money.DefaultCurrencyUnitDataProvider" classification="uses" />
+            <depends-on name="org.joda.money.MoneyUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.CurrencyUnitDataProvider" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.DefaultCurrencyUnitDataProvider" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.CurrencyUnitDataProvider" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.IllegalCurrencyException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.joda.money.Money" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.joda.money.BigMoneyProvider" classification="implements" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyMismatchException" classification="uses" />
+            <depends-on name="org.joda.money.Ser" classification="uses" />
+            <depends-on name="org.joda.money.MoneyUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.MoneyUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.joda.money.BigMoneyProvider" classification="uses" />
+            <depends-on name="org.joda.money.Money" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.Ser" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.Money" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.joda.money.format">
+        <type name="org.joda.money.format.AmountPrinterParser" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="implements" />
+            <depends-on name="org.joda.money.format.MoneyParser" classification="implements" />
+            <depends-on name="org.joda.money.format.MoneyAmountStyle" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.LiteralPrinterParser" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="implements" />
+            <depends-on name="org.joda.money.format.MoneyParser" classification="implements" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyAmountStyle" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.format.MoneyFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParser" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+            <depends-on name="org.joda.money.BigMoneyProvider" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+            <depends-on name="org.joda.money.Money" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$SingletonPrinters" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$Singletons$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons" classification="extends" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+            <depends-on name="org.joda.money.IllegalCurrencyException" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$1" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$Singletons$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons" classification="extends" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+            <depends-on name="org.joda.money.IllegalCurrencyException" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$1" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$Singletons$3" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons" classification="extends" />
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+            <depends-on name="org.joda.money.IllegalCurrencyException" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$1" classification="uses" />
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder$Singletons" classification="enum" visibility="default" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParser" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$1" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons$1" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons$2" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons$3" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyFormatterBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.joda.money.format.MoneyPrinter" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyParser" classification="uses" />
+            <depends-on name="org.joda.money.format.AmountPrinterParser" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyAmountStyle" classification="uses" />
+            <depends-on name="org.joda.money.format.LiteralPrinterParser" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatter" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$1" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$SingletonPrinters" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatterBuilder$Singletons" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyParseContext" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.joda.money.CurrencyUnit" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatException" classification="uses" />
+            <depends-on name="org.joda.money.format.MoneyFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyParser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.format.MoneyParseContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyPrintContext" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.joda.money.format.MoneyFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.joda.money.format.MoneyPrinter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.joda.money.format.MoneyPrintContext" classification="uses" />
+            <depends-on name="org.joda.money.BigMoney" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,835 @@
+E; project; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; vpl; 37261.233; cost; 248408.22
+E; project; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; vpl; 77604.952; cost; 1552099.04
+E; project; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; vpl; 3090526.374; cost; 3214276
+E; project; Analise de carga dos vento nos sistemas de transmissão; vpl; 1200000; cost; 7500000
+E; project; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; vpl; 41855.94; cost; 516740
+E; project; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; vpl; 165695.639; cost; 399266.6
+E; project; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; vpl; 17000; cost; 2290702.36
+E; project; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; vpl; 114982.0308; cost; 365022.32
+E; project; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; vpl; 1517155.63; cost; 786091
+E; project; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; vpl; 12958774.4; cost; 23561408
+E; project; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; vpl; 265728.9; cost; 885763
+E; project; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; vpl; 1188802.74205; cost; 1403545.15
+E; project; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; vpl; 64428; cost; 118000
+E; project; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; vpl; 9402225.58; cost; 1755850
+E; project; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; vpl; 73386.6552; cost; 341333.28
+E; project; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; vpl; 694058.938; cost; 977547.8
+E; project; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; vpl; 3930287.9; cost; 3990140
+E; project; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; vpl; 3654.16666666667; cost; 398294.64
+E; project; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; vpl; 67000; cost; 415930.18
+E; project; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; vpl; 1565747.19; cost; 7455939
+E; project; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; vpl; 28990; cost; 727885.5
+E; project; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; vpl; 74165.024; cost; 344953.6
+E; project; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; vpl; 127600.8; cost; 850672
+E; project; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; vpl; 145850.469; cost; 972336.46
+E; project; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; vpl; 125000; cost; 2244910.92
+E; project; Desenv. Sist. Monit. cavitação grand geradores; vpl; 258333.333333333; cost; 4000000
+E; project; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; vpl; 3733.33333333333; cost; 430321.74
+E; project; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; vpl; 4492; cost; 763594.96
+E; project; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; vpl; 16750; cost; 1247426.48
+E; project; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; vpl; 944768.4; cost; 1015880
+E; project; Desenvolvimento de modelos de tráfego; vpl; 416666.666666667; cost; 950000
+E; project; Efeitos das Tempestades e o sistema elétrico; vpl; 1500000; cost; 13400000
+E; project; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; vpl; 34004.6666666667; cost; 1218981.76
+E; project; Estudo da Bombeabilidade do Concreto; vpl; 125000; cost; 1100000
+E; project; Estudo da infiltração do concreto massa; vpl; 333333.333333333; cost; 6000000
+E; project; Estudo da poluição em isoladores de LTs; vpl; 65000; cost; 4300000
+E; project; Estudo do arco eletromagnético no religamento monofásico; vpl; 83333.3333333333; cost; 10000000
+E; project; Estudos de Viabilidade de Transmissão; vpl; 100000; cost; 475000
+E; project; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; vpl; 59667; cost; 397780
+E; project; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; vpl; 47504.8; cost; 279440
+E; project; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; vpl; 49970.352; cost; 333135.68
+E; project; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; vpl; 116789.0766; cost; 526314
+E; project; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; vpl; 82137.6; cost; 547584
+E; project; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; vpl; 153478; cost; 236120
+E; project; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; vpl; 715408.88738; cost; 802477.72
+E; project; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; vpl; 44577.125; cost; 356617
+E; project; Metodologia para uma WAN ótima à empresa; vpl; 124713.717; cost; 580063.8
+E; project; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; vpl; 84463.2864; cost; 469240.48
+E; project; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; vpl; 226849.01056; cost; 474579.52
+E; project; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; vpl; 54886.275; cost; 599850
+E; project; Modelo de Simulação de Risco para os Negócios da Transmissão; vpl; 157104.5; cost; 448870
+E; project; Modelos 3D da resistividade do solo; vpl; 83333.3333333333; cost; 1500000
+E; project; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; vpl; 289347.79986; cost; 739074.84
+E; project; Novas Concepções de Linhas de Transmissão em 500 kV; vpl; 134839.674; cost; 1498218.6
+E; project; O efeito do cloro na oxidação de cianotoxinas; vpl; 75000; cost; 2000000
+E; project; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; vpl; 378702.25; cost; 1893511.25
+E; project; Otimização de LT 500 kV alta capacidade; vpl; 266666.666666667; cost; 1900000
+E; project; P&D - Durabilidade Concreto para Geração Eólica; vpl; 500000; cost; 4000000
+E; project; P&D - Reação Alcalina na Agregação Barragens; vpl; 333333.333333333; cost; 6000000
+E; project; P&D - Sistema Treinamento Operadores; vpl; 916666.666666667; cost; 9000000
+E; project; P&D.Aumento Eficiente Geração Energia Elétrica; vpl; 333333.333333333; cost; 12000000
+E; project; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; vpl; 16666.6666666667; cost; 4300000
+E; project; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; vpl; 333333.333333333; cost; 16000000
+E; project; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; vpl; 75000; cost; 465000
+E; project; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; vpl; 500000; cost; 3000000
+E; project; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; vpl; 166666.666666667; cost; 564000
+E; project; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; vpl; 9166.66666666667; cost; 467000
+E; project; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; vpl; 100000; cost; 800000
+E; project; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; vpl; 91666.6666666667; cost; 2300000
+E; project; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; vpl; 416666.666666667; cost; 4200000
+E; project; Pesquisa para Aumento de Eficiência Energética em Alimentadores; vpl; 9748; cost; 151000
+E; project; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; vpl; 513475.2; cost; 1141056
+E; project; Projeto Piloto para recuperação energética do biogás em Aterros; vpl; 370657.416; cost; 893150.4
+E; project; Veículo Não-Tripulado para Insp de LT; vpl; 2478000; cost; 4178318.58
+E; project; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; vpl; 12623.5; cost; 169620
+E; risk; Não renovação das concessões de Geração e Transmissão; probability; 35
+E; risk; Regulação do preço de venda de energia ; probability; 34
+E; risk; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; probability; 45
+E; risk; Ingerência Política ; probability; 47
+E; risk; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; probability; 37
+E; risk; Atraso na obtenção de licenças / autorizações ambientais ; probability; 36
+E; risk; Falha no acompanhamento das mudanças da legislação de interesse da empresa; probability; 52
+E; risk; Falta de renovação e recomposição da força de trabalho ; probability; 49
+E; risk; Cenários internos não alinhados com o planejamento estratégico; probability; 37
+E; risk; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; probability; 46
+R; affects; Não renovação das concessões de Geração e Transmissão; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -298089.864
+R; affects; Não renovação das concessões de Geração e Transmissão; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -1862518.848
+R; affects; Não renovação das concessões de Geração e Transmissão; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -3857131.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Analise de carga dos vento nos sistemas de transmissão; impact; -9000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -620088
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -479119.92
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -2748842.832
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -438026.784
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -943309.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -28273689.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -1062915.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -1684254.18
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -141600
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -2107020
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -409599.936
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -1173057.36
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -4788168
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -477953.568
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -499116.216
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -8947126.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -873462.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -413944.32
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -1020806.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -1166803.752
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -2693893.104
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Sist. Monit. cavitação grand geradores; impact; -4800000
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -516386.088
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -916313.952
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -1496911.776
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -1219056
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenvolvimento de modelos de tráfego; impact; -1140000
+R; affects; Não renovação das concessões de Geração e Transmissão; Efeitos das Tempestades e o sistema elétrico; impact; -16080000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -1462778.112
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo da Bombeabilidade do Concreto; impact; -1320000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo da infiltração do concreto massa; impact; -7200000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo da poluição em isoladores de LTs; impact; -5160000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudo do arco eletromagnético no religamento monofásico; impact; -12000000
+R; affects; Não renovação das concessões de Geração e Transmissão; Estudos de Viabilidade de Transmissão; impact; -570000
+R; affects; Não renovação das concessões de Geração e Transmissão; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -477336
+R; affects; Não renovação das concessões de Geração e Transmissão; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -335328
+R; affects; Não renovação das concessões de Geração e Transmissão; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -399762.816
+R; affects; Não renovação das concessões de Geração e Transmissão; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -631576.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -657100.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -283344
+R; affects; Não renovação das concessões de Geração e Transmissão; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -962973.264
+R; affects; Não renovação das concessões de Geração e Transmissão; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -427940.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Metodologia para uma WAN ótima à empresa; impact; -696076.56
+R; affects; Não renovação das concessões de Geração e Transmissão; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -563088.576
+R; affects; Não renovação das concessões de Geração e Transmissão; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -569495.424
+R; affects; Não renovação das concessões de Geração e Transmissão; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -719820
+R; affects; Não renovação das concessões de Geração e Transmissão; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -538644
+R; affects; Não renovação das concessões de Geração e Transmissão; Modelos 3D da resistividade do solo; impact; -1800000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -886889.808
+R; affects; Não renovação das concessões de Geração e Transmissão; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -1797862.32
+R; affects; Não renovação das concessões de Geração e Transmissão; O efeito do cloro na oxidação de cianotoxinas; impact; -2400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -2272213.5
+R; affects; Não renovação das concessões de Geração e Transmissão; Otimização de LT 500 kV alta capacidade; impact; -2280000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D - Durabilidade Concreto para Geração Eólica; impact; -4800000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D - Reação Alcalina na Agregação Barragens; impact; -7200000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D - Sistema Treinamento Operadores; impact; -10800000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -14400000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -5160000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -19200000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -558000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -3600000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -676800
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -560400
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -960000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -2760000
+R; affects; Não renovação das concessões de Geração e Transmissão; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -5040000
+R; affects; Não renovação das concessões de Geração e Transmissão; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -181200
+R; affects; Não renovação das concessões de Geração e Transmissão; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -1369267.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -1071780.48
+R; affects; Não renovação das concessões de Geração e Transmissão; Veículo Não-Tripulado para Insp de LT; impact; -5013982.296
+R; affects; Não renovação das concessões de Geração e Transmissão; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -203544
+R; affects; Regulação do preço de venda de energia ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -65455.764696576
+R; affects; Regulação do preço de venda de energia ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -408979.338719232
+R; affects; Regulação do preço de venda de energia ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -846964.2974208
+R; affects; Regulação do preço de venda de energia ; Analise de carga dos vento nos sistemas de transmissão; impact; -1976256
+R; affects; Regulação do preço de venda de energia ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -136161.403392
+R; affects; Regulação do preço de venda de energia ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -105207.06851328
+R; affects; Regulação do preço de venda de energia ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -603601.904421888
+R; affects; Regulação do preço de venda de energia ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -96183.673337856
+R; affects; Regulação do preço de venda de energia ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -207135.6073728
+R; affects; Regulação do preço de venda de energia ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -6208449.8571264
+R; affects; Regulação do preço de venda de energia ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -233399.2591104
+R; affects; Regulação do preço de venda de energia ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -369835.26986112
+R; affects; Regulação do preço de venda de energia ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -31093.0944
+R; affects; Regulação do preço de venda de energia ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -462667.87968
+R; affects; Regulação do preço de venda de energia ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -89941.592346624
+R; affects; Regulação do preço de venda de energia ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -257584.62733824
+R; affects; Regulação do preço de venda de energia ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -1051405.082112
+R; affects; Regulação do preço de venda de energia ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -104950.956275712
+R; affects; Regulação do preço de venda de energia ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -109597.935174144
+R; affects; Regulação do preço de venda de energia ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -1964645.8912512
+R; affects; Regulação do preço de venda de energia ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -191798.4115584
+R; affects; Regulação do preço de venda de energia ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -90895.54956288
+R; affects; Regulação do preço de venda de energia ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -224152.7525376
+R; affects; Regulação do preço de venda de energia ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -256211.435079168
+R; affects; Regulação do preço de venda de energia ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -591535.823348736
+R; affects; Regulação do preço de venda de energia ; Desenv. Sist. Monit. cavitação grand geradores; impact; -1054003.2
+R; affects; Regulação do preço de venda de energia ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -113390.122747392
+R; affects; Regulação do preço de venda de energia ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -201207.882835968
+R; affects; Regulação do preço de venda de energia ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -328697.875421184
+R; affects; Regulação do preço de venda de energia ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -267685.192704
+R; affects; Regulação do preço de venda de energia ; Desenvolvimento de modelos de tráfego; impact; -250325.76
+R; affects; Regulação do preço de venda de energia ; Efeitos das Tempestades e o sistema elétrico; impact; -3530910.72
+R; affects; Regulação do preço de venda de energia ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -321202.668945408
+R; affects; Regulação do preço de venda de energia ; Estudo da Bombeabilidade do Concreto; impact; -289850.88
+R; affects; Regulação do preço de venda de energia ; Estudo da infiltração do concreto massa; impact; -1581004.8
+R; affects; Regulação do preço de venda de energia ; Estudo da poluição em isoladores de LTs; impact; -1133053.44
+R; affects; Regulação do preço de venda de energia ; Estudo do arco eletromagnético no religamento monofásico; impact; -2635008
+R; affects; Regulação do preço de venda de energia ; Estudos de Viabilidade de Transmissão; impact; -125162.88
+R; affects; Regulação do preço de venda de energia ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -104815.348224
+R; affects; Regulação do preço de venda de energia ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -73632.663552
+R; affects; Regulação do preço de venda de energia ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -87781.518188544
+R; affects; Regulação do preço de venda de energia ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -138684.1600512
+R; affects; Regulação do preço de venda de energia ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -144288.8220672
+R; affects; Regulação do preço de venda de energia ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -62217.808896
+R; affects; Regulação do preço de venda de energia ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -211453.521202176
+R; affects; Regulação do preço de venda de energia ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -93968.8647936
+R; affects; Regulação do preço de venda de energia ; Metodologia para uma WAN ótima à empresa; impact; -152847.27535104
+R; affects; Regulação do preço de venda de energia ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -123645.241872384
+R; affects; Regulação do preço de venda de energia ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -125052.083183616
+R; affects; Regulação do preço de venda de energia ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -158060.95488
+R; affects; Regulação do preço de venda de energia ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -118277.604096
+R; affects; Regulação do preço de venda de energia ; Modelos 3D da resistividade do solo; impact; -395251.2
+R; affects; Regulação do preço de venda de energia ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -194746.811599872
+R; affects; Regulação do preço de venda de energia ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -394781.79967488
+R; affects; Regulação do preço de venda de energia ; O efeito do cloro na oxidação de cianotoxinas; impact; -527001.6
+R; affects; Regulação do preço de venda de energia ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -498941.729184
+R; affects; Regulação do preço de venda de energia ; Otimização de LT 500 kV alta capacidade; impact; -500651.52
+R; affects; Regulação do preço de venda de energia ; P&D - Durabilidade Concreto para Geração Eólica; impact; -1054003.2
+R; affects; Regulação do preço de venda de energia ; P&D - Reação Alcalina na Agregação Barragens; impact; -1581004.8
+R; affects; Regulação do preço de venda de energia ; P&D - Sistema Treinamento Operadores; impact; -2371507.2
+R; affects; Regulação do preço de venda de energia ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -3162009.6
+R; affects; Regulação do preço de venda de energia ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -1133053.44
+R; affects; Regulação do preço de venda de energia ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -4216012.8
+R; affects; Regulação do preço de venda de energia ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -122527.872
+R; affects; Regulação do preço de venda de energia ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -790502.4
+R; affects; Regulação do preço de venda de energia ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -148614.4512
+R; affects; Regulação do preço de venda de energia ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -123054.8736
+R; affects; Regulação do preço de venda de energia ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -210800.64
+R; affects; Regulação do preço de venda de energia ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -606051.84
+R; affects; Regulação do preço de venda de energia ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -1106703.36
+R; affects; Regulação do preço de venda de energia ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -39788.6208
+R; affects; Regulação do preço de venda de energia ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -300669.1688448
+R; affects; Regulação do preço de venda de energia ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -235345.84492032
+R; affects; Regulação do preço de venda de energia ; Veículo Não-Tripulado para Insp de LT; impact; -1100990.28848486
+R; affects; Regulação do preço de venda de energia ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -44695.005696
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -14904.518040822
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -93126.097609904
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -192856.8814276
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Analise de carga dos vento nos sistemas de transmissão; impact; -450000.75
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -31004.451674
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -23956.03592666
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -137442.370670236
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -21901.375702232
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -47165.5386091
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -1413686.8361408
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -53145.8685763
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -84212.849354515
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -7080.0118
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -105351.175585
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -20480.030933328
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -58652.96575478
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -239408.799014
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -23897.718229464
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -24955.852393018
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -447357.0855939
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -43673.20278855
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -20697.25049536
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -51040.4050672
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -58340.284833646
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -134694.879691092
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Sist. Monit. cavitação grand geradores; impact; -240000.4
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -25819.347432174
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -45815.773959496
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -74845.713542648
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -60952.901588
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenvolvimento de modelos de tráfego; impact; -57000.095
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Efeitos das Tempestades e o sistema elétrico; impact; -804001.34
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -73139.027498176
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo da Bombeabilidade do Concreto; impact; -66000.11
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo da infiltração do concreto massa; impact; -360000.6
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo da poluição em isoladores de LTs; impact; -258000.43
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudo do arco eletromagnético no religamento monofásico; impact; -600001
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Estudos de Viabilidade de Transmissão; impact; -28500.0475
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -23866.839778
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -16766.427944
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -19988.174113568
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -31578.8926314
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -32855.0947584
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -14167.223612
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -48148.743447772
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -21397.0556617
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Metodologia para uma WAN ótima à empresa; impact; -34803.88600638
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -28154.475724048
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -28474.818657952
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -35991.059985
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -26932.244887
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modelos 3D da resistividade do solo; impact; -90000.15
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -44344.564307484
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -89893.26582186
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; O efeito do cloro na oxidação de cianotoxinas; impact; -120000.2
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -113610.864351125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Otimização de LT 500 kV alta capacidade; impact; -114000.19
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D - Durabilidade Concreto para Geração Eólica; impact; -240000.4
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D - Reação Alcalina na Agregação Barragens; impact; -360000.6
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D - Sistema Treinamento Operadores; impact; -540000.9
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -720001.2
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -258000.43
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -960001.6
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -27900.0465
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -180000.3
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -33840.0564
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -28020.0467
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -48000.08
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -138000.23
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -252000.42
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -9060.0151
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -68463.4741056
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -53589.11331504
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Veículo Não-Tripulado para Insp de LT; impact; -250699.532631858
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -10177.216962
+R; affects; Ingerência Política ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -9936.3288
+R; affects; Ingerência Política ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -62083.9616
+R; affects; Ingerência Política ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -128571.04
+R; affects; Ingerência Política ; Analise de carga dos vento nos sistemas de transmissão; impact; -300000
+R; affects; Ingerência Política ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -20669.6
+R; affects; Ingerência Política ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -15970.664
+R; affects; Ingerência Política ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -91628.0944
+R; affects; Ingerência Política ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -14600.8928
+R; affects; Ingerência Política ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -31443.64
+R; affects; Ingerência Política ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -942456.32
+R; affects; Ingerência Política ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -35430.52
+R; affects; Ingerência Política ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -56141.806
+R; affects; Ingerência Política ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -4720
+R; affects; Ingerência Política ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -70234
+R; affects; Ingerência Política ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -13653.3312
+R; affects; Ingerência Política ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -39101.912
+R; affects; Ingerência Política ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -159605.6
+R; affects; Ingerência Política ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -15931.7856
+R; affects; Ingerência Política ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -16637.2072
+R; affects; Ingerência Política ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -298237.56
+R; affects; Ingerência Política ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -29115.42
+R; affects; Ingerência Política ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -13798.144
+R; affects; Ingerência Política ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -34026.88
+R; affects; Ingerência Política ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -38893.4584
+R; affects; Ingerência Política ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -89796.4368
+R; affects; Ingerência Política ; Desenv. Sist. Monit. cavitação grand geradores; impact; -160000
+R; affects; Ingerência Política ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -17212.8696
+R; affects; Ingerência Política ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -30543.7984
+R; affects; Ingerência Política ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -49897.0592
+R; affects; Ingerência Política ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -40635.2
+R; affects; Ingerência Política ; Desenvolvimento de modelos de tráfego; impact; -38000
+R; affects; Ingerência Política ; Efeitos das Tempestades e o sistema elétrico; impact; -536000
+R; affects; Ingerência Política ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -48759.2704
+R; affects; Ingerência Política ; Estudo da Bombeabilidade do Concreto; impact; -44000
+R; affects; Ingerência Política ; Estudo da infiltração do concreto massa; impact; -240000
+R; affects; Ingerência Política ; Estudo da poluição em isoladores de LTs; impact; -172000
+R; affects; Ingerência Política ; Estudo do arco eletromagnético no religamento monofásico; impact; -400000
+R; affects; Ingerência Política ; Estudos de Viabilidade de Transmissão; impact; -19000
+R; affects; Ingerência Política ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -15911.2
+R; affects; Ingerência Política ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -11177.6
+R; affects; Ingerência Política ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -13325.4272
+R; affects; Ingerência Política ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -21052.56
+R; affects; Ingerência Política ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -21903.36
+R; affects; Ingerência Política ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -9444.8
+R; affects; Ingerência Política ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -32099.1088
+R; affects; Ingerência Política ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -14264.68
+R; affects; Ingerência Política ; Metodologia para uma WAN ótima à empresa; impact; -23202.552
+R; affects; Ingerência Política ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -18769.6192
+R; affects; Ingerência Política ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -18983.1808
+R; affects; Ingerência Política ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -23994
+R; affects; Ingerência Política ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -17954.8
+R; affects; Ingerência Política ; Modelos 3D da resistividade do solo; impact; -60000
+R; affects; Ingerência Política ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -29562.9936
+R; affects; Ingerência Política ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -59928.744
+R; affects; Ingerência Política ; O efeito do cloro na oxidação de cianotoxinas; impact; -80000
+R; affects; Ingerência Política ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -75740.45
+R; affects; Ingerência Política ; Otimização de LT 500 kV alta capacidade; impact; -76000
+R; affects; Ingerência Política ; P&D - Durabilidade Concreto para Geração Eólica; impact; -160000
+R; affects; Ingerência Política ; P&D - Reação Alcalina na Agregação Barragens; impact; -240000
+R; affects; Ingerência Política ; P&D - Sistema Treinamento Operadores; impact; -360000
+R; affects; Ingerência Política ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -480000
+R; affects; Ingerência Política ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -172000
+R; affects; Ingerência Política ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -640000
+R; affects; Ingerência Política ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -18600
+R; affects; Ingerência Política ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -120000
+R; affects; Ingerência Política ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -22560
+R; affects; Ingerência Política ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -18680
+R; affects; Ingerência Política ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -32000
+R; affects; Ingerência Política ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -92000
+R; affects; Ingerência Política ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -168000
+R; affects; Ingerência Política ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -6040
+R; affects; Ingerência Política ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -45642.24
+R; affects; Ingerência Política ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -35726.016
+R; affects; Ingerência Política ; Veículo Não-Tripulado para Insp de LT; impact; -167132.7432
+R; affects; Ingerência Política ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -6784.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -9042.059208
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -56496.405056
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -116999.6464
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Analise de carga dos vento nos sistemas de transmissão; impact; -273000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -18809.336
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -14533.30424
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -83381.565904
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -13286.812448
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -28613.7124
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -857635.2512
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -32241.7732
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -51089.04346
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -4295.2
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -63912.94
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -12424.531392
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -35582.73992
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -145241.096
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -14497.924896
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -15139.858552
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -271396.1796
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -26495.0322
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -12556.31104
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -30964.4608
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -35393.047144
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -81714.757488
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Sist. Monit. cavitação grand geradores; impact; -145600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -15663.711336
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -27794.856544
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -45406.323872
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -36978.032
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenvolvimento de modelos de tráfego; impact; -34580
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Efeitos das Tempestades e o sistema elétrico; impact; -487760
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -44370.936064
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo da Bombeabilidade do Concreto; impact; -40040
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo da infiltração do concreto massa; impact; -218400
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo da poluição em isoladores de LTs; impact; -156520
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudo do arco eletromagnético no religamento monofásico; impact; -364000
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Estudos de Viabilidade de Transmissão; impact; -17290
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -14479.192
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -10171.616
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -12126.138752
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -19157.8296
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -19932.0576
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -8594.768
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -29210.189008
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -12980.8588
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Metodologia para uma WAN ótima à empresa; impact; -21114.32232
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -17080.353472
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -17274.694528
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -21834.54
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -16338.868
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modelos 3D da resistividade do solo; impact; -54600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -26902.324176
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -54535.15704
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; O efeito do cloro na oxidação de cianotoxinas; impact; -72800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -68923.8095
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Otimização de LT 500 kV alta capacidade; impact; -69160
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D - Durabilidade Concreto para Geração Eólica; impact; -145600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D - Reação Alcalina na Agregação Barragens; impact; -218400
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D - Sistema Treinamento Operadores; impact; -327600
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -436800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -156520
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -582400
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -16926
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -109200
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -20529.6
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -16998.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -29120
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -83720
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -152880
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -5496.4
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -41534.4384
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -32510.67456
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Veículo Não-Tripulado para Insp de LT; impact; -152090.796312
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -6174.168
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -7998.744684
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -49977.589088
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -103499.6872
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Analise de carga dos vento nos sistemas de transmissão; impact; -241500
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -16639.028
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -12856.38452
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -73760.615992
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -11753.718704
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -25312.1302
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -758677.3376
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -28521.5686
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -45194.15383
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -3799.6
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -56538.37
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -10990.931616
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -31477.03916
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -128482.508
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -12825.087408
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -13392.951796
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -240081.2358
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -23437.9131
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -11107.50592
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -27391.6384
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -31309.234012
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -72286.131624
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Sist. Monit. cavitação grand geradores; impact; -128800
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -13856.360028
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -24587.757712
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -40167.132656
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -32711.336
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenvolvimento de modelos de tráfego; impact; -30590
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Efeitos das Tempestades e o sistema elétrico; impact; -431480
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -39251.212672
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo da Bombeabilidade do Concreto; impact; -35420
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo da infiltração do concreto massa; impact; -193200
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo da poluição em isoladores de LTs; impact; -138460
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudo do arco eletromagnético no religamento monofásico; impact; -322000
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Estudos de Viabilidade de Transmissão; impact; -15295
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -12808.516
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -8997.968
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -10726.968896
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -16947.3108
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -17632.2048
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -7603.064
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -25839.782584
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -11483.0674
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Metodologia para uma WAN ótima à empresa; impact; -18678.05436
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -15109.543456
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -15281.460544
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -19315.17
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -14453.614
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modelos 3D da resistividade do solo; impact; -48300
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -23798.209848
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -48242.63892
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; O efeito do cloro na oxidação de cianotoxinas; impact; -64400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -60971.06225
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Otimização de LT 500 kV alta capacidade; impact; -61180
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D - Durabilidade Concreto para Geração Eólica; impact; -128800
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D - Reação Alcalina na Agregação Barragens; impact; -193200
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D - Sistema Treinamento Operadores; impact; -289800
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -386400
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -138460
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -515200
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -14973
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -96600
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -18160.8
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -15037.4
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -25760
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -74060
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -135240
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -4862.2
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -36742.0032
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -28759.44288
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Veículo Não-Tripulado para Insp de LT; impact; -134541.858276
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -5461.764
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -2484.0822
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -15520.9904
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -32142.76
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Analise de carga dos vento nos sistemas de transmissão; impact; -75000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -5167.4
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -3992.666
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -22907.0236
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -3650.2232
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -7860.91
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -235614.08
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -8857.63
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -14035.4515
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -1180
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -17558.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -3413.3328
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -9775.478
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -39901.4
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -3982.9464
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -4159.3018
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -74559.39
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -7278.855
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -3449.536
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -8506.72
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -9723.3646
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -22449.1092
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Sist. Monit. cavitação grand geradores; impact; -40000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -4303.2174
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -7635.9496
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -12474.2648
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -10158.8
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenvolvimento de modelos de tráfego; impact; -9500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Efeitos das Tempestades e o sistema elétrico; impact; -134000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -12189.8176
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo da Bombeabilidade do Concreto; impact; -11000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo da infiltração do concreto massa; impact; -60000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo da poluição em isoladores de LTs; impact; -43000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudo do arco eletromagnético no religamento monofásico; impact; -100000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Estudos de Viabilidade de Transmissão; impact; -4750
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -3977.8
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -2794.4
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -3331.3568
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -5263.14
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -5475.84
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -2361.2
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -8024.7772
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -3566.17
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Metodologia para uma WAN ótima à empresa; impact; -5800.638
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -4692.4048
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -4745.7952
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -5998.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -4488.7
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modelos 3D da resistividade do solo; impact; -15000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -7390.7484
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -14982.186
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; O efeito do cloro na oxidação de cianotoxinas; impact; -20000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -18935.1125
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Otimização de LT 500 kV alta capacidade; impact; -19000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D - Durabilidade Concreto para Geração Eólica; impact; -40000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D - Reação Alcalina na Agregação Barragens; impact; -60000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D - Sistema Treinamento Operadores; impact; -90000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -120000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -43000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -160000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -4650
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -30000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -5640
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -4670
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -8000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -23000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -42000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -1510
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -11410.56
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -8931.504
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Veículo Não-Tripulado para Insp de LT; impact; -41783.1858
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -1696.2
+R; affects; Falta de renovação e recomposição da força de trabalho ; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -3974.53152
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -24833.58464
+R; affects; Falta de renovação e recomposição da força de trabalho ; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -51428.416
+R; affects; Falta de renovação e recomposição da força de trabalho ; Analise de carga dos vento nos sistemas de transmissão; impact; -120000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -8267.84
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -6388.2656
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -36651.23776
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -5840.35712
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -12577.456
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -376982.528
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -14172.208
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -22456.7224
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -1888
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -28093.6
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -5461.33248
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -15640.7648
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -63842.24
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -6372.71424
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -6654.88288
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -119295.024
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -11646.168
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -5519.2576
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -13610.752
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -15557.38336
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -35918.57472
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Sist. Monit. cavitação grand geradores; impact; -64000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -6885.14784
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -12217.51936
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -19958.82368
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -16254.08
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenvolvimento de modelos de tráfego; impact; -15200
+R; affects; Falta de renovação e recomposição da força de trabalho ; Efeitos das Tempestades e o sistema elétrico; impact; -214400
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -19503.70816
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo da Bombeabilidade do Concreto; impact; -17600
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo da infiltração do concreto massa; impact; -96000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo da poluição em isoladores de LTs; impact; -68800
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudo do arco eletromagnético no religamento monofásico; impact; -160000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Estudos de Viabilidade de Transmissão; impact; -7600
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -6364.48
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -4471.04
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -5330.17088
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -8421.024
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -8761.344
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -3777.92
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -12839.64352
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -5705.872
+R; affects; Falta de renovação e recomposição da força de trabalho ; Metodologia para uma WAN ótima à empresa; impact; -9281.0208
+R; affects; Falta de renovação e recomposição da força de trabalho ; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -7507.84768
+R; affects; Falta de renovação e recomposição da força de trabalho ; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -7593.27232
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -9597.6
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -7181.92
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modelos 3D da resistividade do solo; impact; -24000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -11825.19744
+R; affects; Falta de renovação e recomposição da força de trabalho ; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -23971.4976
+R; affects; Falta de renovação e recomposição da força de trabalho ; O efeito do cloro na oxidação de cianotoxinas; impact; -32000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -30296.18
+R; affects; Falta de renovação e recomposição da força de trabalho ; Otimização de LT 500 kV alta capacidade; impact; -30400
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D - Durabilidade Concreto para Geração Eólica; impact; -64000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D - Reação Alcalina na Agregação Barragens; impact; -96000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D - Sistema Treinamento Operadores; impact; -144000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -192000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -68800
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -256000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -7440
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -48000
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -9024
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -7472
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -12800
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -36800
+R; affects; Falta de renovação e recomposição da força de trabalho ; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -67200
+R; affects; Falta de renovação e recomposição da força de trabalho ; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -2416
+R; affects; Falta de renovação e recomposição da força de trabalho ; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -18256.896
+R; affects; Falta de renovação e recomposição da força de trabalho ; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -14290.4064
+R; affects; Falta de renovação e recomposição da força de trabalho ; Veículo Não-Tripulado para Insp de LT; impact; -66853.09728
+R; affects; Falta de renovação e recomposição da força de trabalho ; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -2713.92
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -4968.1644
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -31041.9808
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -64285.52
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Analise de carga dos vento nos sistemas de transmissão; impact; -150000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -10334.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -7985.332
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -45814.0472
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -7300.4464
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -15721.82
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -471228.16
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -17715.26
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -28070.903
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -2360
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -35117
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -6826.6656
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -19550.956
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -79802.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -7965.8928
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -8318.6036
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -149118.78
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -14557.71
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -6899.072
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -17013.44
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -19446.7292
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -44898.2184
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Sist. Monit. cavitação grand geradores; impact; -80000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -8606.4348
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -15271.8992
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -24948.5296
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -20317.6
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenvolvimento de modelos de tráfego; impact; -19000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Efeitos das Tempestades e o sistema elétrico; impact; -268000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -24379.6352
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo da Bombeabilidade do Concreto; impact; -22000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo da infiltração do concreto massa; impact; -120000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo da poluição em isoladores de LTs; impact; -86000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudo do arco eletromagnético no religamento monofásico; impact; -200000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Estudos de Viabilidade de Transmissão; impact; -9500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -7955.6
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -5588.8
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -6662.7136
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -10526.28
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -10951.68
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -4722.4
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -16049.5544
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -7132.34
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Metodologia para uma WAN ótima à empresa; impact; -11601.276
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -9384.8096
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -9491.5904
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -11997
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -8977.4
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modelos 3D da resistividade do solo; impact; -30000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -14781.4968
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -29964.372
+R; affects; Cenários internos não alinhados com o planejamento estratégico; O efeito do cloro na oxidação de cianotoxinas; impact; -40000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -37870.225
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Otimização de LT 500 kV alta capacidade; impact; -38000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D - Durabilidade Concreto para Geração Eólica; impact; -80000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D - Reação Alcalina na Agregação Barragens; impact; -120000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D - Sistema Treinamento Operadores; impact; -180000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -240000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -86000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -320000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -9300
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -60000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -11280
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -9340
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -16000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -46000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -84000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -3020
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -22821.12
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -17863.008
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Veículo Não-Tripulado para Insp de LT; impact; -83566.3716
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -3392.4
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Adaptação de Sistemas CFTV para Aplicações de Monitoramento Inteligente; impact; -3477.71508
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aerogerador Brasileiro Classe Megawatt - Fase I - Projeto Conceitual; impact; -21729.38656
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Aeronave Não-Tripulada Autônoma para Inspeção de Linhas de Transmissão; impact; -44999.864
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Analise de carga dos vento nos sistemas de transmissão; impact; -105000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Condutores Compactos Homogêneos p/ Aplic. em LT reduzindo perdas; impact; -7234.36
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Indicadores Pró-ativos para Prev. de Acidentes Trab. no Setor Elétrico; impact; -5589.7324
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Metod. p/ Planej. Integrado Eletro-energético; impact; -32069.83304
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Metodologias para Mitigar Interferências Eletromagnéticas em LT's; impact; -5110.31248
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Mod. e Ferram. de apoio à Tomada de Decisão na Gestão Estratégica; impact; -11005.274
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Modelo Smart Grid c/ integr. sistêmicas p/ automação da rede de distrib.; impact; -329859.712
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de protótipo p/ craqueamento térmico p/ conversão de resíd. poliméricos; impact; -12400.682
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Tec. Preditiva p/ Ctrl Fissuras em Concreto por Imagens de Radiografia; impact; -19649.6321
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Experim. de Tecnologia para a Prod. de Cél. Solares de Baixo Custo; impact; -1652
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Ferram. Multicrit. p/ Loc. de Novas SE. consid. a Projeção Espacial da Carga; impact; -24581.9
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Metod. Anál. Sist. de Aterram. em SE frente a Fenôm. de Alta Freqüência; impact; -4778.66592
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Metod. de Verif. e Constr. nos Proced. de Mnt de Transformadores; impact; -13685.6692
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Metod. e Sist. p/ suporte à tomada de decisão otimiz. na Oper. de distrib.; impact; -55861.96
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Metod. Verif. Conform. Ergonômica de Softwares baseada na Subjetiv.; impact; -5576.12496
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Mod. Dinâm. Aval. Desemp. fazenda eólica frente a distúrbios na rede; impact; -5823.02252
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Plataf. Testes de Conformidade e oper. de dispositivos e Com. WMAN-WiMAX; impact; -104383.146
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Rede, Portátil ou Fixa, p/ Acesso sem-fio pelas Eqp de Mnt; impact; -10190.397
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Simulação Digital para Testes Dinâmicos de Esquemas de Proteção de LT; impact; -4829.3504
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Sist. Aproveit. de fontes de calor para uso em aquecimento de fluidos; impact; -11909.408
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Sist. Eletrônico de Controle p/ Eficientização da iluminação pública; impact; -13612.71044
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Sist. eólico-fotov. c/ armazen. energética e reconversão C/ Cél. Comb.; impact; -31428.75288
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Sist. Monit. cavitação grand geradores; impact; -56000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Sist. Otimiz. Period. de Inspeções em Sist. de Transm. de Energia; impact; -6024.50436
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Téc. de RF e ultra-som p/ Insp. Oper. de pára-raios a carboneto de silício; impact; -10690.32944
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Téc. p/aval. Integr. hastes de âncoras nas torres LT por resson. Ultras.; impact; -17463.97072
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. Tecnol. p/ subst. de óleo isolante mineral p/ vegetal em transformadores; impact; -14222.32
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenvolvimento de modelos de tráfego; impact; -13300
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Efeitos das Tempestades e o sistema elétrico; impact; -187600
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo da biocorrosão em troc. de calor de unid. geradoras de energia elétrica; impact; -17065.74464
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo da Bombeabilidade do Concreto; impact; -15400
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo da infiltração do concreto massa; impact; -84000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo da poluição em isoladores de LTs; impact; -60200
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudo do arco eletromagnético no religamento monofásico; impact; -140000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Estudos de Viabilidade de Transmissão; impact; -6650
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metod. p/ mapeam. e determ. do potencial de emissões evitadas de gases estufa; impact; -5568.92
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metod. P/ o cálculo do Volume Dinâmico de Espera de um Reservatório; impact; -3912.16
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metod. p/ obtenção Parâm. de LT através da medição da energia entre seus terminais; impact; -4663.89952
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metod. p/aval. da Redução da Capac. Interrupção de Disj., considerando tempo de uso; impact; -7368.396
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metodol. Anál.de Custos e Definição de Indicadores de Desemp. p/ Manut. e Oper.; impact; -7666.176
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metodol. p/gestão de ativos: abordagem via Teoria de Opções Reais; impact; -3305.68
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metodologia de Avaliação de Projetos de P&D do Setor Elétrico; impact; -11234.68808
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metodologia para a Reconfiguração Ótima de Sistemas de Distribuição; impact; -4992.638
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Metodologia para uma WAN ótima à empresa; impact; -8120.8932
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Mod. Otimiz. Simul. Energética da Integr. de Energia Eólica e Outras Fontes no NE; impact; -6569.36672
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Mod. p/ Aval. Econ. e Financ. de Proj. de geração, prevendo preços c/ IA; impact; -6644.11328
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modelagem 3D de Instalações Elétricas a Partir de Imagens 2D; impact; -8397.9
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modelo de Simulação de Risco para os Negócios da Transmissão; impact; -6284.18
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modelos 3D da resistividade do solo; impact; -21000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modelos Computacionais de Apoio ao Diagnóstico de Falhas; impact; -10347.04776
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Novas Concepções de Linhas de Transmissão em 500 kV; impact; -20975.0604
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; O efeito do cloro na oxidação de cianotoxinas; impact; -28000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Otimiz. Proces. Retratamento e Ctrl Postes de Madeira utilizados em Redes de Energia; impact; -26509.1575
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Otimização de LT 500 kV alta capacidade; impact; -26600
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D - Durabilidade Concreto para Geração Eólica; impact; -56000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D - Reação Alcalina na Agregação Barragens; impact; -84000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D - Sistema Treinamento Operadores; impact; -126000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.Aumento Eficiente Geração Energia Elétrica; impact; -168000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.AVAL.MONIT.QUAL.Água Através de Bioindicadores; impact; -60200
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.DESENV.EQUIP.P/MEDIC.EXPERIM. REACAO; impact; -224000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.Desenvolvimento Métodos Avaliação Taxa Retorno Investimento; impact; -6510
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.EMENDAS DE CABOS CONDUTORES EM LINHA; impact; -42000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.ESTUDO DE SIST.IMPED.ENTRADA PEIXES; impact; -7896
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.MODELOS MATEMATICOS DE TURB.A GAS HE; impact; -6538
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D.OTIMIZACAO DE PROCESSOS DE AQUISICAO; impact; -11200
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D-AUTOMACAO DA RECUP.CAVITACAO EM TURB I; impact; -32200
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; P&D-SIST.DETEC.FALHAS MON.SECC.ALTA TEN.; impact; -58800
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Pesquisa para Aumento de Eficiência Energética em Alimentadores; impact; -2114
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Projeto e Desenvolvimento de um Restaurador Dinâmico de Tensão; impact; -15974.784
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Projeto Piloto para recuperação energética do biogás em Aterros; impact; -12504.1056
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Veículo Não-Tripulado para Insp de LT; impact; -58496.46012
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Desenv. de Sist.Ger.Integ. de Empr.e Projeto; impact; -2374.68

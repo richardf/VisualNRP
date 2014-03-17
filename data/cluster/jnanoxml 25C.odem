@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jnanoxml">
+    <description>Java small XML implementation v2.2.2</description>
+    <container name="C:/Users/marcio.barros/Desktop/Java Programs/TreeView-1.1.6r2-win/nanoxml-2.2.2.jar" classification="jar">
+      <namespace name="net.n3.nanoxml">
+        <type name="net.n3.nanoxml.CDATAReader" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.ContentReader" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLParseException" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLElement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLEntityResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLParser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLBuilder" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLValidator" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLReader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.IXMLValidator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.NonValidator" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="net.n3.nanoxml.IXMLValidator" classification="implements" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.CDATAReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.PIReader" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.StdXMLBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.n3.nanoxml.IXMLBuilder" classification="implements" />
+            <depends-on name="net.n3.nanoxml.IXMLElement" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLElement" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.StdXMLParser" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="net.n3.nanoxml.IXMLParser" classification="implements" />
+            <depends-on name="net.n3.nanoxml.IXMLBuilder" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLValidator" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLException" classification="uses" />
+            <depends-on name="net.n3.nanoxml.PIReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.CDATAReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.ContentReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.StdXMLReader$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.StdXMLReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.StdXMLReader$StackedReader" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="net.n3.nanoxml.StdXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.StdXMLReader$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.StdXMLReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="implements" />
+            <depends-on name="net.n3.nanoxml.StdXMLReader$StackedReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.StdXMLReader$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.ValidatorPlugin" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.n3.nanoxml.IXMLValidator" classification="implements" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLValidationException" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLAttribute" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLElement" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.n3.nanoxml.IXMLElement" classification="implements" />
+            <depends-on name="net.n3.nanoxml.XMLAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLEntityResolver" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="implements" />
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.XMLException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLParserFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.n3.nanoxml.IXMLParser" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLBuilder" classification="uses" />
+            <depends-on name="net.n3.nanoxml.StdXMLBuilder" classification="uses" />
+            <depends-on name="net.n3.nanoxml.NonValidator" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLValidator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLUtil" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="net.n3.nanoxml.IXMLReader" classification="uses" />
+            <depends-on name="net.n3.nanoxml.IXMLEntityResolver" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLParseException" classification="uses" />
+            <depends-on name="net.n3.nanoxml.XMLValidationException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLValidationException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.XMLException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.n3.nanoxml.XMLWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.n3.nanoxml.IXMLElement" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

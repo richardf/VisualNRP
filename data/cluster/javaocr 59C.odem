@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ODEM PUBLIC "-//PFSW//DTD ODEM 1.1" "http://pfsw.org/ODEM/schema/dtd/odem-1.1.dtd">
+
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="javaocr">
+	<description>JavaOCR</description>
+    <container name="C:/Users/Marcio Barros/Desktop/JavaOCR.jar" classification="jar">
+      <namespace name="net.sourceforge.javaocr">
+        <type name="net.sourceforge.javaocr.Constants" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.main" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui">
+        <type name="net.sourceforge.javaocr.gui.GUIController$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.GUIController" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="net.sourceforge.javaocr.gui.MainFrame" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ConfigPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.CharacterExtractor" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSpec" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.OCRScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.HandWritingFormProcessor" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.LineExtractor" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.handWriting.HandwritingOCR" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.CharacterTracer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.TracerFrame" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImageLoader" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.MainFrame" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRMenuBar" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRTabPane" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.OCRDisplay" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.OCRMenuBar$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.OCRMenuBar" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.OCRMenuBar$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.OCRMenuBar" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.OCRMenuBar" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRMenuBar$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRMenuBar$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.OCRTabPane" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.HandwritingRecognizer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui.characterExtractor">
+        <type name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$2" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterExtractor.CharExtractionPanel$3" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui.characterTracer">
+        <type name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.CharacterTracerPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterTracer.ImagePanel" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.characterTracer.TracerFrame" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.characterTracer.ImagePanel" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui.handwritingRecognizer">
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.ConfigPanel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.HandWritingFormProcessor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ConfigPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.HandwritingRecognizer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ConfigPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRDisplay" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.HandWritingFormProcessor" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.ProcessPanel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.handwritingRecognizer.TrainingPanel$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui.lineExtractor">
+        <type name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$2" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.lineExtractor.LineExtractionPanel$3" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.gui.meanSquareOCR">
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.OCRDisplay" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="net.sourceforge.javaocr.gui.GUIController" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$2" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.MeanSquareAnalyzer$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSpec" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector$1" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSelector$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.gui.meanSquareOCR.TrainingImageSpec" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.ocrPlugins">
+        <type name="net.sourceforge.javaocr.ocrPlugins.CharacterExtractor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.CharacterTracer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.LineExtractor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.ocrPlugins.aspectRatio">
+        <type name="net.sourceforge.javaocr.ocrPlugins.aspectRatio.AspectRatioOCR" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyProvider" classification="implements" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyListener" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.aspectRatio.CharacterRatio" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRComp" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.aspectRatio.CharacterRatio" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.ocrPlugins.handWriting">
+        <type name="net.sourceforge.javaocr.ocrPlugins.handWriting.CandidateOCRChoice" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.handWriting.HandwritingOCR" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyListener" classification="implements" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.handWriting.ResultAnalyzer" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.OCRScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.aspectRatio.AspectRatioOCR" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRComp" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.handWriting.ResultAnalyzer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.handWriting.CandidateOCRChoice" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.ocrPlugins.mseOCR">
+        <type name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.mseOCR.OCRScanner" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyProvider" classification="implements" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyListener" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRComp" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImageLoader" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="extends" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.TrainingImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.ocrPlugins.mseOCR.CharacterRange" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.scanner">
+        <type name="net.sourceforge.javaocr.scanner.DocumentScanner" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.DocumentScannerListenerAdaptor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="net.sourceforge.javaocr.scanner.DocumentScannerListener" classification="implements" />
+            <depends-on name="net.sourceforge.javaocr.scanner.PixelImage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.PixelImage" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="net.sourceforge.javaocr.scanner.accuracy">
+        <type name="net.sourceforge.javaocr.scanner.accuracy.AccuracyListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.accuracy.AccuracyProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.AccuracyListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.accuracy.OCRComp" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="net.sourceforge.javaocr.scanner.accuracy.OCRIdentification" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="net.sourceforge.javaocr.scanner.accuracy.OCRComp" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,2003 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.1.1">org.pf.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jmetal">
+	<description>JMetal</description>
+    <container name="C:/Users/Marcio Barros/Desktop/Codigos/JMetal/bin" classification="dir">
+      <namespace name="jmetal.base">
+        <type name="jmetal.base.Algorithm" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.Operator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.Problem" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.Solution" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.base.variable.BinaryReal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.SolutionSet" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.SolutionType" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.Variable" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.operator.comparator">
+        <type name="jmetal.base.operator.comparator.AggregativeComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.BinaryTournamentComparator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.CrowdingComparator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.RankComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.DistanceToPopulationComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.DominanceComparator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.OverallConstraintViolationComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.EpsilonDominanceComparator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.OverallConstraintViolationComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.EpsilonObjectiveComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.EqualSolutions" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.FitnessAndCrowdingDistanceComparator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FitnessComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.FitnessComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.FPGAFitnessComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.ObjectiveComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.OverallConstraintViolationComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.RankComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.SolutionComparator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.comparator.ViolatedConstraintComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.operator.crossover">
+        <type name="jmetal.base.operator.crossover.Crossover" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Operator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.CrossoverFactory" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.SBXCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.SinglePointCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.PMXCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.TwoPointsCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.HUXCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.DifferentialEvolutionCrossover" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.util.PropUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.DifferentialEvolutionCrossover" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.Gradient" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.HUXCrossover" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.PMXCrossover" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.PermutationSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.Permutation" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.SBXCrossover" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.SBXSinglePointCrossover" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.SinglePointCrossover" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.TwoPointsCrossover" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.PermutationSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Permutation" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.crossover.UniformCrossover" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.operator.localSearch">
+        <type name="jmetal.base.operator.localSearch.LocalSearch" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Operator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.localSearch.MutationLocalSearch" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.operator.localSearch.LocalSearch" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.OverallConstraintViolationComparator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.operator.mutation">
+        <type name="jmetal.base.operator.mutation.BitFlipMutation" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.IntUniformMutation" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayIntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XInt" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.Mutation" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Operator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.MutationFactory" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.PolynomialMutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.BitFlipMutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.SwapMutation" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.util.PropUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.NonUniformMutation" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.PolynomialBitFlipMutation" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.PolynomialMutation" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.SwapMutation" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Permutation" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.mutation.UniformMutation" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="extends" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.operator.selection">
+        <type name="jmetal.base.operator.selection.BestSolutionSelection" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.BinaryTournament" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.BinaryTournamentComparator" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.BinaryTournament2" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.util.PermutationUtility" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.DifferentialEvolutionSelection" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.PESA2Selection" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.util.archive.AdaptiveGridArchive" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.AdaptiveGrid" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.RandomSelection" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.RankingAndCrowdingSelection" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.Selection" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Operator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.SelectionFactory" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BinaryTournament" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BinaryTournament2" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.PESA2Selection" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.RandomSelection" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.RankingAndCrowdingSelection" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.DifferentialEvolutionSelection" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.operator.selection.WorstSolutionSelection" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.solutionType">
+        <type name="jmetal.base.solutionType.ArrayIntSolutionType" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayInt" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.ArrayRealAndBinarySolutionType" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.ArrayRealSolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.BinaryRealSolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.BinaryReal" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.BinarySolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.IntRealSolutionType" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.Int" classification="uses" />
+            <depends-on name="jmetal.base.variable.Real" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.IntSolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.Int" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.PermutationSolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.Permutation" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.solutionType.RealSolutionType" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionType" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.variable.Real" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.base.variable">
+        <type name="jmetal.base.variable.ArrayInt" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.ArrayReal" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.Binary" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.BinaryReal" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.variable.Binary" classification="extends" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.Int" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.Permutation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.Real" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.Variable" classification="extends" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.base.variable.VariableFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.experiments">
+        <type name="jmetal.experiments.ConstrainedProblemsStudy" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.experiments.Experiment" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.NSGAII_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.SPEA2_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.MOCell_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.AbYSS_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.Experiment" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.util.runExperiment" classification="uses" />
+            <depends-on name="jmetal.experiments.util.Statistics" classification="uses" />
+            <depends-on name="jmetal.experiments.util.RBoxplot" classification="uses" />
+            <depends-on name="jmetal.experiments.util.RWilcoxon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.GUIBasedStudy" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.experiments.Experiment" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.SettingsFactory" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.StandardStudy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.Main" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.SettingsFactory" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.NSGAIIStudy" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.experiments.Experiment" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.NSGAII_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.Settings" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.SettingsFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.StandardStudy" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.experiments.Experiment" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.NSGAII_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.SPEA2_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.MOCell_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.SMPSO_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.settings.GDE3_Settings" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.experiments.settings">
+        <type name="jmetal.experiments.settings.AbYSS_Settings" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.abyss.AbYSS" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.localSearch.MutationLocalSearch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.CellDE_Settings" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.cellde.CellDE" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.GDE3_Settings" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.gde3.GDE3" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.IBEA_Settings" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.ibea.IBEA" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BinaryTournament" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FitnessComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.MOCell_Settings" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.mocell.MOCell" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.MOEAD_Settings" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.moead.MOEAD" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.moead.pMOEAD" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.NSGAIIBinary_Settings" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.nsgaII.NSGAII" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.NSGAII_Settings" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.Selection" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.nsgaII.NSGAII" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.OMOPSO_Settings" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.omopso.OMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.PAES_Settings" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.paes.PAES" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.RandomSearch_Settings" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.randomSearch.RandomSearch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.SMPSO_Settings" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.smpso.SMPSO" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.SPEA2_Settings" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.spea2.SPEA2" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.experiments.settings.gui">
+        <type name="jmetal.experiments.settings.gui.NSGAII_Settings_gui" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.experiments.settings.gui.Settings_gui" classification="extends" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.nsgaII.NSGAII" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.settings.gui.Settings_gui" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="jmetal.experiments.Settings" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.experiments.util">
+        <type name="jmetal.experiments.util.RBoxplot" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.experiments.Experiment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.util.runExperiment" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.experiments.Experiment" classification="uses" />
+            <depends-on name="jmetal.experiments.Settings" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.util.RWilcoxon" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.experiments.Experiment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.experiments.util.Statistics" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.abyss">
+        <type name="jmetal.metaheuristics.abyss.AbYSS" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.operator.localSearch.LocalSearch" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.EqualSolutions" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FitnessComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.Spea2Fitness" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.cellde">
+        <type name="jmetal.metaheuristics.cellde.CellDE" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+            <depends-on name="jmetal.util.archive.StrengthRawFitnessArchive" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.densea">
+        <type name="jmetal.metaheuristics.densea.DENSEA" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.EqualSolutions" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.fastPGA">
+        <type name="jmetal.metaheuristics.fastPGA.FastPGA" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.FPGAFitness" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FPGAFitnessComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.gde3">
+        <type name="jmetal.metaheuristics.gde3.GDE3" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.ibea">
+        <type name="jmetal.metaheuristics.ibea.IBEA" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.mocell">
+        <type name="jmetal.metaheuristics.mocell.aMOCell1" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.mocell.aMOCell2" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.mocell.aMOCell3" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.mocell.MOCell" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.mocell.sMOCell1" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.mocell.sMOCell2" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.mochc">
+        <type name="jmetal.metaheuristics.mochc.MOCHC" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.moead">
+        <type name="jmetal.metaheuristics.moead.MOEAD" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.moead.Utils" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.moead.MOEAD_DRA" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.moead.Utils" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.moead.pMOEAD" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.moead.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.moead.Utils" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.nsgaII">
+        <type name="jmetal.metaheuristics.nsgaII.NSGAII" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.nsgaII.ssNSGAII" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.omopso">
+        <type name="jmetal.metaheuristics.omopso.OMOPSO" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.NonDominatedSolutionList" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.EpsilonDominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.UniformMutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.NonUniformMutation" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.paes">
+        <type name="jmetal.metaheuristics.paes.PAES" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.archive.AdaptiveGridArchive" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.AdaptiveGrid" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.pesa2">
+        <type name="jmetal.metaheuristics.pesa2.PESA2" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.archive.AdaptiveGridArchive" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.PESA2Selection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.randomSearch">
+        <type name="jmetal.metaheuristics.randomSearch.RandomSearch" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.NonDominatedSolutionList" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.singleObjective.differentialEvolution">
+        <type name="jmetal.metaheuristics.singleObjective.differentialEvolution.DE" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.singleObjective.evolutionStrategy">
+        <type name="jmetal.metaheuristics.singleObjective.evolutionStrategy.ElitistES" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.singleObjective.evolutionStrategy.NonElitistES" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.singleObjective.geneticAlgorithm">
+        <type name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.acGA" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BestSolutionSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.gGA" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.scGA" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.ssGA" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.WorstSolutionSelection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.smpso">
+        <type name="jmetal.metaheuristics.smpso.SMPSO" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.archive.CrowdingArchive" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.Hypervolume" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+            <depends-on name="jmetal.util.wrapper.XReal" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.smsemoa">
+        <type name="jmetal.metaheuristics.smsemoa.SMSEMOA" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.Hypervolume" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.QualityIndicator" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.metaheuristics.spea2">
+        <type name="jmetal.metaheuristics.spea2.SPEA2" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Algorithm" classification="extends" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Spea2Fitness" classification="uses" />
+            <depends-on name="jmetal.util.Ranking" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.qualityIndicator">
+        <type name="jmetal.qualityIndicator.Epsilon" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.GeneralizedSpread" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.ValueComparator" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.LexicoGraphicalComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.GenerationalDistance" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.Hypervolume" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.InvertedGenerationalDistance" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.QualityIndicator" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.Hypervolume" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.InvertedGenerationalDistance" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.GenerationalDistance" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.Spread" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.Epsilon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.Spread" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="jmetal.qualityIndicator.util.MetricsUtil" classification="uses" />
+            <depends-on name="jmetal.qualityIndicator.util.LexicoGraphicalComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.qualityIndicator.util">
+        <type name="jmetal.qualityIndicator.util.LexicoGraphicalComparator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.util.MetricsUtil" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.NonDominatedSolutionList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.qualityIndicator.util.ValueComparator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.util">
+        <type name="jmetal.util.AdaptiveGrid" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Configuration" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Distance" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.ObjectiveComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.DistanceNode" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.util.DistanceNodeComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.DistanceNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.FPGAFitness" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.JMException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Neighborhood$Row" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.Neighborhood" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Neighborhood" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.Neighborhood$Row" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.NonDominatedSolutionList" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.base.SolutionSet" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.SolutionComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Permutation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.PermutationUtility" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.PseudoRandom" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.PropUtils" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.util.PseudoRandom" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.util.RandomGenerator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.RandomGenerator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Ranking" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.OverallConstraintViolationComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.Spea2Fitness" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.util.DistanceNode" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.DistanceNodeComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FitnessComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.util.archive">
+        <type name="jmetal.util.archive.AdaptiveGridArchive" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="jmetal.util.archive.Archive" classification="extends" />
+            <depends-on name="jmetal.util.AdaptiveGrid" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.archive.Archive" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="jmetal.base.SolutionSet" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.archive.CrowdingArchive" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.util.archive.Archive" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.Distance" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.EqualSolutions" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.CrowdingDistanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.archive.StrengthRawFitnessArchive" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.util.archive.Archive" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.DominanceComparator" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.EqualSolutions" classification="uses" />
+            <depends-on name="jmetal.base.operator.comparator.FitnessComparator" classification="uses" />
+            <depends-on name="jmetal.util.Spea2Fitness" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="jmetal.util.wrapper">
+        <type name="jmetal.util.wrapper.XInt" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayIntSolutionType" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayInt" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="jmetal.util.wrapper.XReal" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.RealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinaryRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealAndBinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.bpm">
+        <type name="unirio.bpm.GANotificator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="implements" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="unirio.bpm.MainProgram" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.bpm.GenericBPM" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="unirio.bpm.projects.ModelingProject" classification="uses" />
+            <depends-on name="unirio.bpm.equations.FittingEquation" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.bpm.MainProgram" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="unirio.bpm.equations.FittingEquation" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.gGA" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="unirio.bpm.equations.FittingEquationPolinomial" classification="uses" />
+            <depends-on name="unirio.bpm.projects.ModelingProjectBuilder" classification="uses" />
+            <depends-on name="unirio.bpm.GenericBPM" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+            <depends-on name="unirio.bpm.GANotificator" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.bpm.equations">
+        <type name="unirio.bpm.equations.FittingEquation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="unirio.bpm.projects.ModelingProject" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.bpm.equations.FittingEquationPolinomial" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="unirio.bpm.equations.FittingEquation" classification="implements" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="unirio.bpm.projects.ModelingProject" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.bpm.projects">
+        <type name="unirio.bpm.projects.ModelingProject" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="unirio.bpm.projects.ModelingProjectBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="unirio.bpm.projects.ModelingProject" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.linear">
+        <type name="unirio.linear.GA_LP_main" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="unirio.linear.LinearParameters" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.ssGA" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.linear.LinearParameters" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.pixelated">
+        <type name="unirio.pixelated.GANotificator" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="implements" />
+            <depends-on name="unirio.pixelated.PlayerProblem" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.pixelated.MainProgram" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="unirio.pixelated.PixelatedBoard" classification="uses" />
+            <depends-on name="unirio.pixelated.PlayerProblem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.gGA" classification="uses" />
+            <depends-on name="unirio.utils.SeparatedFile" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.UniformCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.IntUniformMutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BinaryTournament" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="unirio.pixelated.GANotificator" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.pixelated.PixelatedBoard" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="unirio.pixelated.PlayerProblem" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="unirio.pixelated.PixelatedBoard" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.IntSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.pixelated.TestPixelatedBoard" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="unirio.pixelated.PixelatedBoard" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.TestAllocation">
+        <type name="unirio.TestAllocation.MainProgram" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="unirio.TestAllocation.TestAllocationProblem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.SinglePointCrossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.BitFlipMutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.BinaryTournament" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.gGA" classification="uses" />
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="unirio.TestAllocation.TestCase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.TestAllocation.TestAllocationProblem" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="unirio.TestAllocation.TestCase" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.TestAllocation.TestCase" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.TestPriorization">
+        <type name="unirio.TestPriorization.GA_TestPriorizationProblem_Main" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="jmetal.base.Algorithm" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.util.Configuration" classification="uses" />
+            <depends-on name="unirio.TestPriorization.TestPriorizationProblem" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.ssGA" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.TestPriorization.TestPriorizationProblem" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.Binary" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.BinarySolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.utils">
+        <type name="unirio.utils.SeparatedFile" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="unirio.zedutra">
+        <type name="unirio.zedutra.GANotificator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="implements" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="unirio.zedutra.MainProgram" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.zedutra.HumanFactorsProblem" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="jmetal.base.Problem" classification="extends" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.solutionType.ArrayRealSolutionType" classification="uses" />
+            <depends-on name="jmetal.base.SolutionType" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="unirio.zedutra.MainProgram" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="jmetal.base.Problem" classification="uses" />
+            <depends-on name="jmetal.base.Operator" classification="uses" />
+            <depends-on name="unirio.utils.SeparatedFile" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.gGA" classification="uses" />
+            <depends-on name="jmetal.base.SolutionSet" classification="uses" />
+            <depends-on name="jmetal.base.Solution" classification="uses" />
+            <depends-on name="jmetal.base.variable.ArrayReal" classification="uses" />
+            <depends-on name="jmetal.util.JMException" classification="uses" />
+            <depends-on name="unirio.zedutra.HumanFactorsProblem" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.CrossoverFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.crossover.Crossover" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.MutationFactory" classification="uses" />
+            <depends-on name="jmetal.base.operator.mutation.Mutation" classification="uses" />
+            <depends-on name="jmetal.base.operator.selection.SelectionFactory" classification="uses" />
+            <depends-on name="unirio.zedutra.GANotificator" classification="uses" />
+            <depends-on name="jmetal.metaheuristics.singleObjective.geneticAlgorithm.GANotifier" classification="uses" />
+            <depends-on name="jmetal.base.Variable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

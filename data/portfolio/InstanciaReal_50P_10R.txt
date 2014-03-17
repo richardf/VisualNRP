@@ -1,0 +1,560 @@
+E; project; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; vpl; 5274.58; cost; 10450
+E; project; Manutenção Caixa separadora de Água e Óleo; vpl; 1333.33333333333; cost; 20000
+E; project; Manutenção de Sistemas de Esgoto; vpl; 2333.33333333333; cost; 40000
+E; project; Manutenção Sistema de Drenagem; vpl; 2000; cost; 38000
+E; project; Melhoria Blindagem Descargas Atmosferica; vpl; 91666.6666666667; cost; 1800000
+E; project; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; vpl; 101007.9675; cost; 7300805
+E; project; Melhorias nas Redes de Transmissão de dados da sede; vpl; 1333333.33333333; cost; 14000000
+E; project; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; vpl; 76073.65; cost; 661510
+E; project; Melhorias Sist de Ar Condicionado em UHE; vpl; 1666.66666666667; cost; 80000
+E; project; Modern. Serv. Auxiliares de uma SE; vpl; 806.8175; cost; 21150
+E; project; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; vpl; 93.225; cost; 10000
+E; project; Modern. Sistema de Ar Condicionado nos postos de trabalho; vpl; 18000; cost; 804000
+E; project; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; vpl; 3165.08333333333; cost; 51200
+E; project; MODERN.SINCRONO-SE VITORIA; vpl; 8060.98166666667; cost; 170343
+E; project; Moderniz. do Sistema Óptico Norte-Sul; vpl; 1250000; cost; 11000000
+E; project; Modernização das Proteções de uma SE; vpl; 8177.66666666667; cost; 111220
+E; project; Modernização das Proteções de uma SE em Itaberá; vpl; 10466.2366666667; cost; 313500
+E; project; Modernização das Proteções de uma SE em Poços de Caldas; vpl; 13444.875; cost; 220780
+E; project; MODERNIZACAO de UHE em BH; vpl; 166785.3625; cost; 22504233
+E; project; MODERNIZACAO de UHE em FUNIL; vpl; 4307.9725; cost; 71575
+E; project; Modernização do SINDAC  de uma SE em Ibiuna; vpl; 70518.0141666667; cost; 2500000
+E; project; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; vpl; 81364.5466666667; cost; 2525000
+E; project; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; vpl; 6513.57416666667; cost; 495921
+E; project; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; vpl; 3546.91666666667; cost; 94929
+E; project; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; vpl; 18596.1666666667; cost; 448034
+E; project; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; vpl; 1979.06916666667; cost; 10000
+E; project; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; vpl; 5179.25; cost; 51130
+E; project; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; vpl; 4899.58333333333; cost; 83604.09
+E; project; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; vpl; 8438.58333333333; cost; 172932
+E; project; Modernização do sistema de observabilidade e controlabilidade; vpl; 2244.72583333333; cost; 249752
+E; project; MODERNIZACAO SISTEMA TELECOMUNICACOES; vpl; 500000; cost; 8100000
+E; project; Reforço LT 500 kV Itaberá-Tijuco Preto I; vpl; 36547; cost; 12364789
+E; project; Reforço LT 500kV Itaberá-Tijuco Preto II; vpl; 1126; cost; 2569845
+E; project; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); vpl; 100; cost; 102
+E; project; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); vpl; 578; cost; 866
+E; project; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; vpl; 243463.099; cost; 4869261.98
+E; project; Retific Canal Externo de SE; vpl; 8673.81666666667; cost; 200000
+E; project; REVITALIZACAO TRAFOS de uma SE em Barreiro; vpl; 18129.72; cost; 67347
+E; project; Subs Disjunt. obsoletos em uma SE de Porto Colombia; vpl; 125431.361666667; cost; 1998480
+E; project; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; vpl; 34383.4708333333; cost; 982198
+E; project; Subst. de Trafo de Corrente Alternada para CC; vpl; 1200000; cost; 4300000
+E; project; Subst. de Transformadores; vpl; 11000000; cost; 18000000
+E; project; Subst. do Grupo Gerador de uma SE; vpl; 13769.1666666667; cost; 260000
+E; project; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; vpl; 1175; cost; 6734
+E; project; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; vpl; 8060.98166666667; cost; 306734
+E; project; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; vpl; 1003.5; cost; 56734
+E; project; Substituição de Disjuntores Alta Tensão; vpl; 3500000; cost; 9000000
+E; project; UTE Campos - Melhorias; vpl; 8538.75; cost; 161000.08
+E; project; UTE Campos - Repotencialização; vpl; 54373.4166666667; cost; 119749.21
+E; project; UTE São Gonçalo - Revitalização; vpl; 79706; cost; 145314.54
+E; risk; Não renovação das concessões de Geração e Transmissão; probability; 35
+E; risk; Regulação do preço de venda de energia ; probability; 34
+E; risk; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; probability; 45
+E; risk; Ingerência Política ; probability; 47
+E; risk; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; probability; 37
+E; risk; Atraso na obtenção de licenças / autorizações ambientais ; probability; 36
+E; risk; Falha no acompanhamento das mudanças da legislação de interesse da empresa; probability; 52
+E; risk; Falta de renovação e recomposição da força de trabalho ; probability; 49
+E; risk; Cenários internos não alinhados com o planejamento estratégico; probability; 37
+E; risk; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; probability; 46
+R; affects; Não renovação das concessões de Geração e Transmissão; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -3135
+R; affects; Não renovação das concessões de Geração e Transmissão; Manutenção Caixa separadora de Água e Óleo; impact; -6000
+R; affects; Não renovação das concessões de Geração e Transmissão; Manutenção de Sistemas de Esgoto; impact; -12000
+R; affects; Não renovação das concessões de Geração e Transmissão; Manutenção Sistema de Drenagem; impact; -11400
+R; affects; Não renovação das concessões de Geração e Transmissão; Melhoria Blindagem Descargas Atmosferica; impact; -540000
+R; affects; Não renovação das concessões de Geração e Transmissão; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -2190241.5
+R; affects; Não renovação das concessões de Geração e Transmissão; Melhorias nas Redes de Transmissão de dados da sede; impact; -4200000
+R; affects; Não renovação das concessões de Geração e Transmissão; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -198453
+R; affects; Não renovação das concessões de Geração e Transmissão; Melhorias Sist de Ar Condicionado em UHE; impact; -24000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modern. Serv. Auxiliares de uma SE; impact; -6345
+R; affects; Não renovação das concessões de Geração e Transmissão; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -3000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -241200
+R; affects; Não renovação das concessões de Geração e Transmissão; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -15360
+R; affects; Não renovação das concessões de Geração e Transmissão; MODERN.SINCRONO-SE VITORIA; impact; -51102.9
+R; affects; Não renovação das concessões de Geração e Transmissão; Moderniz. do Sistema Óptico Norte-Sul; impact; -3300000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização das Proteções de uma SE; impact; -33366
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização das Proteções de uma SE em Itaberá; impact; -94050
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização das Proteções de uma SE em Poços de Caldas; impact; -66234
+R; affects; Não renovação das concessões de Geração e Transmissão; MODERNIZACAO de UHE em BH; impact; -6751269.9
+R; affects; Não renovação das concessões de Geração e Transmissão; MODERNIZACAO de UHE em FUNIL; impact; -21472.5
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SINDAC  de uma SE em Ibiuna; impact; -750000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -757500
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -148776.3
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -28478.7
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -134410.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -3000
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -15339
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -25081.227
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -51879.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Modernização do sistema de observabilidade e controlabilidade; impact; -74925.6
+R; affects; Não renovação das concessões de Geração e Transmissão; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -2430000
+R; affects; Não renovação das concessões de Geração e Transmissão; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -3709436.7
+R; affects; Não renovação das concessões de Geração e Transmissão; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -770953.5
+R; affects; Não renovação das concessões de Geração e Transmissão; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -30.6
+R; affects; Não renovação das concessões de Geração e Transmissão; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -259.8
+R; affects; Não renovação das concessões de Geração e Transmissão; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -1460778.594
+R; affects; Não renovação das concessões de Geração e Transmissão; Retific Canal Externo de SE; impact; -60000
+R; affects; Não renovação das concessões de Geração e Transmissão; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -20204.1
+R; affects; Não renovação das concessões de Geração e Transmissão; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -599544
+R; affects; Não renovação das concessões de Geração e Transmissão; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -294659.4
+R; affects; Não renovação das concessões de Geração e Transmissão; Subst. de Trafo de Corrente Alternada para CC; impact; -1290000
+R; affects; Não renovação das concessões de Geração e Transmissão; Subst. de Transformadores; impact; -5400000
+R; affects; Não renovação das concessões de Geração e Transmissão; Subst. do Grupo Gerador de uma SE; impact; -78000
+R; affects; Não renovação das concessões de Geração e Transmissão; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -2020.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -92020.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -17020.2
+R; affects; Não renovação das concessões de Geração e Transmissão; Substituição de Disjuntores Alta Tensão; impact; -2700000
+R; affects; Não renovação das concessões de Geração e Transmissão; UTE Campos - Melhorias; impact; -48300.024
+R; affects; Não renovação das concessões de Geração e Transmissão; UTE Campos - Repotencialização; impact; -35924.763
+R; affects; Não renovação das concessões de Geração e Transmissão; UTE São Gonçalo - Revitalização; impact; -43594.362
+R; affects; Regulação do preço de venda de energia ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -688.39584
+R; affects; Regulação do preço de venda de energia ; Manutenção Caixa separadora de Água e Óleo; impact; -1317.504
+R; affects; Regulação do preço de venda de energia ; Manutenção de Sistemas de Esgoto; impact; -2635.008
+R; affects; Regulação do preço de venda de energia ; Manutenção Sistema de Drenagem; impact; -2503.2576
+R; affects; Regulação do preço de venda de energia ; Melhoria Blindagem Descargas Atmosferica; impact; -118575.36
+R; affects; Regulação do preço de venda de energia ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -480941.989536
+R; affects; Regulação do preço de venda de energia ; Melhorias nas Redes de Transmissão de dados da sede; impact; -922252.8
+R; affects; Regulação do preço de venda de energia ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -43577.103552
+R; affects; Regulação do preço de venda de energia ; Melhorias Sist de Ar Condicionado em UHE; impact; -5270.016
+R; affects; Regulação do preço de venda de energia ; Modern. Serv. Auxiliares de uma SE; impact; -1393.26048
+R; affects; Regulação do preço de venda de energia ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -658.752
+R; affects; Regulação do preço de venda de energia ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -52963.6608
+R; affects; Regulação do preço de venda de energia ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -3372.81024
+R; affects; Regulação do preço de venda de energia ; MODERN.SINCRONO-SE VITORIA; impact; -11221.3791936
+R; affects; Regulação do preço de venda de energia ; Moderniz. do Sistema Óptico Norte-Sul; impact; -724627.2
+R; affects; Regulação do preço de venda de energia ; Modernização das Proteções de uma SE; impact; -7326.639744
+R; affects; Regulação do preço de venda de energia ; Modernização das Proteções de uma SE em Itaberá; impact; -20651.8752
+R; affects; Regulação do preço de venda de energia ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -14543.926656
+R; affects; Regulação do preço de venda de energia ; MODERNIZACAO de UHE em BH; impact; -1482470.8497216
+R; affects; Regulação do preço de venda de energia ; MODERNIZACAO de UHE em FUNIL; impact; -4715.01744
+R; affects; Regulação do preço de venda de energia ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -164688
+R; affects; Regulação do preço de venda de energia ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -166334.88
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -32668.8950592
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -6253.4668608
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -29514.3293568
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -658.752
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -3368.198976
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -5507.436149568
+R; affects; Regulação do preço de venda de energia ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -11391.9300864
+R; affects; Regulação do preço de venda de energia ; Modernização do sistema de observabilidade e controlabilidade; impact; -16452.4629504
+R; affects; Regulação do preço de venda de energia ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -533589.12
+R; affects; Regulação do preço de venda de energia ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -814532.9483328
+R; affects; Regulação do preço de venda de energia ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -169289.053344
+R; affects; Regulação do preço de venda de energia ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -6.7192704
+R; affects; Regulação do preço de venda de energia ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -57.0479232
+R; affects; Regulação do preço de venda de energia ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -320763.606784896
+R; affects; Regulação do preço de venda de energia ; Retific Canal Externo de SE; impact; -13175.04
+R; affects; Regulação do preço de venda de energia ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -4436.4970944
+R; affects; Regulação do preço de venda de energia ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -131650.269696
+R; affects; Regulação do preço de venda de energia ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -64702.4896896
+R; affects; Regulação do preço de venda de energia ; Subst. de Trafo de Corrente Alternada para CC; impact; -283263.36
+R; affects; Regulação do preço de venda de energia ; Subst. de Transformadores; impact; -1185753.6
+R; affects; Regulação do preço de venda de energia ; Subst. do Grupo Gerador de uma SE; impact; -17127.552
+R; affects; Regulação do preço de venda de energia ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -443.6035968
+R; affects; Regulação do preço de venda de energia ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -20206.1635968
+R; affects; Regulação do preço de venda de energia ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -3737.3635968
+R; affects; Regulação do preço de venda de energia ; Substituição de Disjuntores Alta Tensão; impact; -592876.8
+R; affects; Regulação do preço de venda de energia ; UTE Campos - Melhorias; impact; -10605.912470016
+R; affects; Regulação do preço de venda de energia ; UTE Campos - Repotencialização; impact; -7888.503158592
+R; affects; Regulação do preço de venda de energia ; UTE São Gonçalo - Revitalização; impact; -9572.624385408
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -156.75026125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Manutenção Caixa separadora de Água e Óleo; impact; -300.0005
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Manutenção de Sistemas de Esgoto; impact; -600.001
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Manutenção Sistema de Drenagem; impact; -570.00095
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Melhoria Blindagem Descargas Atmosferica; impact; -27000.045
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -109512.257520125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Melhorias nas Redes de Transmissão de dados da sede; impact; -210000.35
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -9922.66653775
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Melhorias Sist de Ar Condicionado em UHE; impact; -1200.002
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modern. Serv. Auxiliares de uma SE; impact; -317.25052875
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -150.00025
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -12060.0201
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -768.00128
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; MODERN.SINCRONO-SE VITORIA; impact; -2555.149258575
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Moderniz. do Sistema Óptico Norte-Sul; impact; -165000.275
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização das Proteções de uma SE; impact; -1668.3027805
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização das Proteções de uma SE em Itaberá; impact; -4702.5078375
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -3311.7055195
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; MODERNIZACAO de UHE em BH; impact; -337564.057605825
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; MODERNIZACAO de UHE em FUNIL; impact; -1073.626789375
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -37500.0625
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -37875.063125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -7438.827398025
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -1423.937373225
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -6720.52120085
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -150.00025
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -766.95127825
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -1254.06344010225
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -2593.9843233
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Modernização do sistema de observabilidade e controlabilidade; impact; -3746.2862438
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -121500.2025
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -185472.144119725
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -38547.739246125
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -1.53000255
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -12.99002165
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -73039.0514315495
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Retific Canal Externo de SE; impact; -3000.005
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -1010.206683675
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -29977.249962
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -14732.99455495
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Subst. de Trafo de Corrente Alternada para CC; impact; -64500.1075
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Subst. de Transformadores; impact; -270000.45
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Subst. do Grupo Gerador de uma SE; impact; -3900.0065
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -101.01016835
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -4601.01766835
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -851.01141835
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; Substituição de Disjuntores Alta Tensão; impact; -135000.225
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UTE Campos - Melhorias; impact; -2415.005225002
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UTE Campos - Repotencialização; impact; -1796.24114373025
+R; affects; Orç. estrutural e de Invest. aprovados com valores subdimensionados ; UTE São Gonçalo - Revitalização; impact; -2179.7217328635
+R; affects; Ingerência Política ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -104.5
+R; affects; Ingerência Política ; Manutenção Caixa separadora de Água e Óleo; impact; -200
+R; affects; Ingerência Política ; Manutenção de Sistemas de Esgoto; impact; -400
+R; affects; Ingerência Política ; Manutenção Sistema de Drenagem; impact; -380
+R; affects; Ingerência Política ; Melhoria Blindagem Descargas Atmosferica; impact; -18000
+R; affects; Ingerência Política ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -73008.05
+R; affects; Ingerência Política ; Melhorias nas Redes de Transmissão de dados da sede; impact; -140000
+R; affects; Ingerência Política ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -6615.1
+R; affects; Ingerência Política ; Melhorias Sist de Ar Condicionado em UHE; impact; -800
+R; affects; Ingerência Política ; Modern. Serv. Auxiliares de uma SE; impact; -211.5
+R; affects; Ingerência Política ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -100
+R; affects; Ingerência Política ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -8040
+R; affects; Ingerência Política ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -512
+R; affects; Ingerência Política ; MODERN.SINCRONO-SE VITORIA; impact; -1703.43
+R; affects; Ingerência Política ; Moderniz. do Sistema Óptico Norte-Sul; impact; -110000
+R; affects; Ingerência Política ; Modernização das Proteções de uma SE; impact; -1112.2
+R; affects; Ingerência Política ; Modernização das Proteções de uma SE em Itaberá; impact; -3135
+R; affects; Ingerência Política ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -2207.8
+R; affects; Ingerência Política ; MODERNIZACAO de UHE em BH; impact; -225042.33
+R; affects; Ingerência Política ; MODERNIZACAO de UHE em FUNIL; impact; -715.75
+R; affects; Ingerência Política ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -25000
+R; affects; Ingerência Política ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -25250
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -4959.21
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -949.29
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -4480.34
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -100
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -511.3
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -836.0409
+R; affects; Ingerência Política ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -1729.32
+R; affects; Ingerência Política ; Modernização do sistema de observabilidade e controlabilidade; impact; -2497.52
+R; affects; Ingerência Política ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -81000
+R; affects; Ingerência Política ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -123647.89
+R; affects; Ingerência Política ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -25698.45
+R; affects; Ingerência Política ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -1.02
+R; affects; Ingerência Política ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -8.66
+R; affects; Ingerência Política ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -48692.6198
+R; affects; Ingerência Política ; Retific Canal Externo de SE; impact; -2000
+R; affects; Ingerência Política ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -673.47
+R; affects; Ingerência Política ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -19984.8
+R; affects; Ingerência Política ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -9821.98
+R; affects; Ingerência Política ; Subst. de Trafo de Corrente Alternada para CC; impact; -43000
+R; affects; Ingerência Política ; Subst. de Transformadores; impact; -180000
+R; affects; Ingerência Política ; Subst. do Grupo Gerador de uma SE; impact; -2600
+R; affects; Ingerência Política ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -67.34
+R; affects; Ingerência Política ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -3067.34
+R; affects; Ingerência Política ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -567.34
+R; affects; Ingerência Política ; Substituição de Disjuntores Alta Tensão; impact; -90000
+R; affects; Ingerência Política ; UTE Campos - Melhorias; impact; -1610.0008
+R; affects; Ingerência Política ; UTE Campos - Repotencialização; impact; -1197.4921
+R; affects; Ingerência Política ; UTE São Gonçalo - Revitalização; impact; -1453.1454
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -95.095
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Manutenção Caixa separadora de Água e Óleo; impact; -182
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Manutenção de Sistemas de Esgoto; impact; -364
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Manutenção Sistema de Drenagem; impact; -345.8
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Melhoria Blindagem Descargas Atmosferica; impact; -16380
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -66437.3255
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Melhorias nas Redes de Transmissão de dados da sede; impact; -127400
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -6019.741
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Melhorias Sist de Ar Condicionado em UHE; impact; -728
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modern. Serv. Auxiliares de uma SE; impact; -192.465
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -91
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -7316.4
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -465.92
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; MODERN.SINCRONO-SE VITORIA; impact; -1550.1213
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Moderniz. do Sistema Óptico Norte-Sul; impact; -100100
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização das Proteções de uma SE; impact; -1012.102
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização das Proteções de uma SE em Itaberá; impact; -2852.85
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -2009.098
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; MODERNIZACAO de UHE em BH; impact; -204788.5203
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; MODERNIZACAO de UHE em FUNIL; impact; -651.3325
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -22750
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -22977.5
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -4512.8811
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -863.8539
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -4077.1094
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -91
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -465.283
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -760.797219
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -1573.6812
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Modernização do sistema de observabilidade e controlabilidade; impact; -2272.7432
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -73710
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -112519.5799
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -23385.5895
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.9282
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -7.8806
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -44310.284018
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Retific Canal Externo de SE; impact; -1820
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -612.8577
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -18186.168
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -8938.0018
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Subst. de Trafo de Corrente Alternada para CC; impact; -39130
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Subst. de Transformadores; impact; -163800
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Subst. do Grupo Gerador de uma SE; impact; -2366
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -61.2794
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -2791.2794
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -516.2794
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; Substituição de Disjuntores Alta Tensão; impact; -81900
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UTE Campos - Melhorias; impact; -1465.100728
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UTE Campos - Repotencialização; impact; -1089.717811
+R; affects; Não atendimento de exigências de órgãos regulamentadores e fiscalizadores ; UTE São Gonçalo - Revitalização; impact; -1322.362314
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -84.1225
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Manutenção Caixa separadora de Água e Óleo; impact; -161
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Manutenção de Sistemas de Esgoto; impact; -322
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Manutenção Sistema de Drenagem; impact; -305.9
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Melhoria Blindagem Descargas Atmosferica; impact; -14490
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -58771.48025
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Melhorias nas Redes de Transmissão de dados da sede; impact; -112700
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -5325.1555
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Melhorias Sist de Ar Condicionado em UHE; impact; -644
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modern. Serv. Auxiliares de uma SE; impact; -170.2575
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -80.5
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -6472.2
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -412.16
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; MODERN.SINCRONO-SE VITORIA; impact; -1371.26115
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Moderniz. do Sistema Óptico Norte-Sul; impact; -88550
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização das Proteções de uma SE; impact; -895.321
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização das Proteções de uma SE em Itaberá; impact; -2523.675
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -1777.279
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; MODERNIZACAO de UHE em BH; impact; -181159.07565
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; MODERNIZACAO de UHE em FUNIL; impact; -576.17875
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -20125
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -20326.25
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -3992.16405
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -764.17845
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -3606.6737
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -80.5
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -411.5965
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -673.0129245
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -1392.1026
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Modernização do sistema de observabilidade e controlabilidade; impact; -2010.5036
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -65205
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -99536.55145
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -20687.25225
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.8211
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -6.9713
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -39197.558939
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Retific Canal Externo de SE; impact; -1610
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -542.14335
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -16087.764
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -7906.6939
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Subst. de Trafo de Corrente Alternada para CC; impact; -34615
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Subst. de Transformadores; impact; -144900
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Subst. do Grupo Gerador de uma SE; impact; -2093
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -54.2087
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -2469.2087
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -456.7087
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; Substituição de Disjuntores Alta Tensão; impact; -72450
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UTE Campos - Melhorias; impact; -1296.050644
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UTE Campos - Repotencialização; impact; -963.9811405
+R; affects; Atraso na obtenção de licenças / autorizações ambientais ; UTE São Gonçalo - Revitalização; impact; -1169.782047
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -26.125
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Manutenção Caixa separadora de Água e Óleo; impact; -50
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Manutenção de Sistemas de Esgoto; impact; -100
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Manutenção Sistema de Drenagem; impact; -95
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Melhoria Blindagem Descargas Atmosferica; impact; -4500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -18252.0125
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Melhorias nas Redes de Transmissão de dados da sede; impact; -35000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -1653.775
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Melhorias Sist de Ar Condicionado em UHE; impact; -200
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modern. Serv. Auxiliares de uma SE; impact; -52.875
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -25
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -2010
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -128
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; MODERN.SINCRONO-SE VITORIA; impact; -425.8575
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Moderniz. do Sistema Óptico Norte-Sul; impact; -27500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização das Proteções de uma SE; impact; -278.05
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização das Proteções de uma SE em Itaberá; impact; -783.75
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização das Proteções de uma SE em Poços de Caldas; impact; -551.95
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; MODERNIZACAO de UHE em BH; impact; -56260.5825
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; MODERNIZACAO de UHE em FUNIL; impact; -178.9375
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SINDAC  de uma SE em Ibiuna; impact; -6250
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -6312.5
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -1239.8025
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -237.3225
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -1120.085
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -25
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -127.825
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -209.010225
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -432.33
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Modernização do sistema de observabilidade e controlabilidade; impact; -624.38
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -20250
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -30911.9725
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -6424.6125
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.255
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -2.165
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -12173.15495
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Retific Canal Externo de SE; impact; -500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -168.3675
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -4996.2
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -2455.495
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Subst. de Trafo de Corrente Alternada para CC; impact; -10750
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Subst. de Transformadores; impact; -45000
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Subst. do Grupo Gerador de uma SE; impact; -650
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -16.835
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -766.835
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -141.835
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; Substituição de Disjuntores Alta Tensão; impact; -22500
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UTE Campos - Melhorias; impact; -402.5002
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UTE Campos - Repotencialização; impact; -299.373025
+R; affects; Falha no acompanhamento das mudanças da legislação de interesse da empresa; UTE São Gonçalo - Revitalização; impact; -363.28635
+R; affects; Falta de renovação e recomposição da força de trabalho ; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -41.8
+R; affects; Falta de renovação e recomposição da força de trabalho ; Manutenção Caixa separadora de Água e Óleo; impact; -80
+R; affects; Falta de renovação e recomposição da força de trabalho ; Manutenção de Sistemas de Esgoto; impact; -160
+R; affects; Falta de renovação e recomposição da força de trabalho ; Manutenção Sistema de Drenagem; impact; -152
+R; affects; Falta de renovação e recomposição da força de trabalho ; Melhoria Blindagem Descargas Atmosferica; impact; -7200
+R; affects; Falta de renovação e recomposição da força de trabalho ; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -29203.22
+R; affects; Falta de renovação e recomposição da força de trabalho ; Melhorias nas Redes de Transmissão de dados da sede; impact; -56000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -2646.04
+R; affects; Falta de renovação e recomposição da força de trabalho ; Melhorias Sist de Ar Condicionado em UHE; impact; -320
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modern. Serv. Auxiliares de uma SE; impact; -84.6
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -40
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -3216
+R; affects; Falta de renovação e recomposição da força de trabalho ; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -204.8
+R; affects; Falta de renovação e recomposição da força de trabalho ; MODERN.SINCRONO-SE VITORIA; impact; -681.372
+R; affects; Falta de renovação e recomposição da força de trabalho ; Moderniz. do Sistema Óptico Norte-Sul; impact; -44000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização das Proteções de uma SE; impact; -444.88
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização das Proteções de uma SE em Itaberá; impact; -1254
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização das Proteções de uma SE em Poços de Caldas; impact; -883.12
+R; affects; Falta de renovação e recomposição da força de trabalho ; MODERNIZACAO de UHE em BH; impact; -90016.932
+R; affects; Falta de renovação e recomposição da força de trabalho ; MODERNIZACAO de UHE em FUNIL; impact; -286.3
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SINDAC  de uma SE em Ibiuna; impact; -10000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -10100
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -1983.684
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -379.716
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -1792.136
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -40
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -204.52
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -334.41636
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -691.728
+R; affects; Falta de renovação e recomposição da força de trabalho ; Modernização do sistema de observabilidade e controlabilidade; impact; -999.008
+R; affects; Falta de renovação e recomposição da força de trabalho ; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -32400
+R; affects; Falta de renovação e recomposição da força de trabalho ; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -49459.156
+R; affects; Falta de renovação e recomposição da força de trabalho ; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -10279.38
+R; affects; Falta de renovação e recomposição da força de trabalho ; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.408
+R; affects; Falta de renovação e recomposição da força de trabalho ; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -3.464
+R; affects; Falta de renovação e recomposição da força de trabalho ; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -19477.04792
+R; affects; Falta de renovação e recomposição da força de trabalho ; Retific Canal Externo de SE; impact; -800
+R; affects; Falta de renovação e recomposição da força de trabalho ; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -269.388
+R; affects; Falta de renovação e recomposição da força de trabalho ; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -7993.92
+R; affects; Falta de renovação e recomposição da força de trabalho ; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -3928.792
+R; affects; Falta de renovação e recomposição da força de trabalho ; Subst. de Trafo de Corrente Alternada para CC; impact; -17200
+R; affects; Falta de renovação e recomposição da força de trabalho ; Subst. de Transformadores; impact; -72000
+R; affects; Falta de renovação e recomposição da força de trabalho ; Subst. do Grupo Gerador de uma SE; impact; -1040
+R; affects; Falta de renovação e recomposição da força de trabalho ; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -26.936
+R; affects; Falta de renovação e recomposição da força de trabalho ; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -1226.936
+R; affects; Falta de renovação e recomposição da força de trabalho ; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -226.936
+R; affects; Falta de renovação e recomposição da força de trabalho ; Substituição de Disjuntores Alta Tensão; impact; -36000
+R; affects; Falta de renovação e recomposição da força de trabalho ; UTE Campos - Melhorias; impact; -644.00032
+R; affects; Falta de renovação e recomposição da força de trabalho ; UTE Campos - Repotencialização; impact; -478.99684
+R; affects; Falta de renovação e recomposição da força de trabalho ; UTE São Gonçalo - Revitalização; impact; -581.25816
+R; affects; Cenários internos não alinhados com o planejamento estratégico; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -52.25
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Manutenção Caixa separadora de Água e Óleo; impact; -100
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Manutenção de Sistemas de Esgoto; impact; -200
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Manutenção Sistema de Drenagem; impact; -190
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Melhoria Blindagem Descargas Atmosferica; impact; -9000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -36504.025
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Melhorias nas Redes de Transmissão de dados da sede; impact; -70000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -3307.55
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Melhorias Sist de Ar Condicionado em UHE; impact; -400
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modern. Serv. Auxiliares de uma SE; impact; -105.75
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -50
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -4020
+R; affects; Cenários internos não alinhados com o planejamento estratégico; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -256
+R; affects; Cenários internos não alinhados com o planejamento estratégico; MODERN.SINCRONO-SE VITORIA; impact; -851.715
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Moderniz. do Sistema Óptico Norte-Sul; impact; -55000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização das Proteções de uma SE; impact; -556.1
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização das Proteções de uma SE em Itaberá; impact; -1567.5
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização das Proteções de uma SE em Poços de Caldas; impact; -1103.9
+R; affects; Cenários internos não alinhados com o planejamento estratégico; MODERNIZACAO de UHE em BH; impact; -112521.165
+R; affects; Cenários internos não alinhados com o planejamento estratégico; MODERNIZACAO de UHE em FUNIL; impact; -357.875
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SINDAC  de uma SE em Ibiuna; impact; -12500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -12625
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -2479.605
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -474.645
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -2240.17
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -50
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -255.65
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -418.02045
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -864.66
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Modernização do sistema de observabilidade e controlabilidade; impact; -1248.76
+R; affects; Cenários internos não alinhados com o planejamento estratégico; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -40500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -61823.945
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -12849.225
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.51
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -4.33
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -24346.3099
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Retific Canal Externo de SE; impact; -1000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -336.735
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -9992.4
+R; affects; Cenários internos não alinhados com o planejamento estratégico; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -4910.99
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Subst. de Trafo de Corrente Alternada para CC; impact; -21500
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Subst. de Transformadores; impact; -90000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Subst. do Grupo Gerador de uma SE; impact; -1300
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -33.67
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -1533.67
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -283.67
+R; affects; Cenários internos não alinhados com o planejamento estratégico; Substituição de Disjuntores Alta Tensão; impact; -45000
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UTE Campos - Melhorias; impact; -805.0004
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UTE Campos - Repotencialização; impact; -598.74605
+R; affects; Cenários internos não alinhados com o planejamento estratégico; UTE São Gonçalo - Revitalização; impact; -726.5727
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; 2ª ETAPA DE MELHORIAS NO SIST. OPTICO DE UMA SE; impact; -36.575
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Manutenção Caixa separadora de Água e Óleo; impact; -70
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Manutenção de Sistemas de Esgoto; impact; -140
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Manutenção Sistema de Drenagem; impact; -133
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Melhoria Blindagem Descargas Atmosferica; impact; -6300
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Melhorias à Proteção contra Descargas Atmosf.  em uma SE; impact; -25552.8175
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Melhorias nas Redes de Transmissão de dados da sede; impact; -49000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Melhorias no Sistema de tratamento de Alarmes em Centros de Controle da empresa; impact; -2315.285
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Melhorias Sist de Ar Condicionado em UHE; impact; -280
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modern. Serv. Auxiliares de uma SE; impact; -74.025
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modern. Serv. Auxiliares de uma SE em Jacarepaguá; impact; -35
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modern. Sistema de Ar Condicionado nos postos de trabalho; impact; -2814
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; MODERN.REDE OPTICA-US.ST.CRUZ/SE VITORIA; impact; -179.2
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; MODERN.SINCRONO-SE VITORIA; impact; -596.2005
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Moderniz. do Sistema Óptico Norte-Sul; impact; -38500
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização das Proteções de uma SE; impact; -389.27
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização das Proteções de uma SE em Itaberá; impact; -1097.25
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização das Proteções de uma SE em Poços de Caldas; impact; -772.73
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; MODERNIZACAO de UHE em BH; impact; -78764.8155
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; MODERNIZACAO de UHE em FUNIL; impact; -250.5125
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SINDAC  de uma SE em Ibiuna; impact; -8750
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do Sist. Ctrl. do elo de CC entre duas SE´s; impact; -8837.5
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO - SUPERV. INFRAESTRUTURA; impact; -1735.7235
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO DE EQUIP. ROTA RIO/VITORIA; impact; -332.2515
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO DE LT R VERDE-B.PEIXE/CORUMB; impact; -1568.119
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO DE LT. CAMPOS/VITORIA 345 KV; impact; -35
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO DE P.CALDAS-BANCO DE BATERIA; impact; -178.955
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO DE SIST. INTEGRADO DE GERENCIA; impact; -292.614315
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do SIST. OPTICO EM SE DE ARARAQUARA; impact; -605.262
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Modernização do sistema de observabilidade e controlabilidade; impact; -874.132
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; MODERNIZACAO SISTEMA TELECOMUNICACOES; impact; -28350
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Reforço LT 500 kV Itaberá-Tijuco Preto I; impact; -43276.7615
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Reforço LT 500kV Itaberá-Tijuco Preto II; impact; -8994.4575
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Repotencialização da LT S.Cruz/Jacarepaguá (Parte I); impact; -0.357
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Repotencialização da LT Santa Cruz/Jacarepaguá (Parte II); impact; -3.031
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Reprod,. Larvicultura e Caract. Genética de Surubim Pseudoplatystoma Coruscans; impact; -17042.41693
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Retific Canal Externo de SE; impact; -700
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; REVITALIZACAO TRAFOS de uma SE em Barreiro; impact; -235.7145
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Subs Disjunt. obsoletos em uma SE de Porto Colombia; impact; -6994.68
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; SUBST. 3 DIJUNTORES 345KV de uma SE em Itutinga; impact; -3437.693
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Subst. de Trafo de Corrente Alternada para CC; impact; -15050
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Subst. de Transformadores; impact; -63000
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Subst. do Grupo Gerador de uma SE; impact; -910
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Bandeirantes; impact; -23.569
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Brasilia; impact; -1073.569
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Substituição de DISJ. 230KV obsoletos de uma SE em Cachoeira Dourada; impact; -198.569
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; Substituição de Disjuntores Alta Tensão; impact; -31500
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UTE Campos - Melhorias; impact; -563.50028
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UTE Campos - Repotencialização; impact; -419.122235
+R; affects; Dificuld. na liberação fundiária de áreas atingidas pelos empreendimentos da empresa; UTE São Gonçalo - Revitalização; impact; -508.60089
