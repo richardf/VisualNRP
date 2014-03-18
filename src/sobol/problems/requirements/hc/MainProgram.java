@@ -180,7 +180,7 @@ public class MainProgram
 		details.close();
 	}
         
-        private static int countCustomersInSolution(boolean[] solution) {
+        public static int countCustomersInSolution(boolean[] solution) {
             int count = 0;
             for(int i=0; i < solution.length; i++) {
                 if(solution[i] == true) {
