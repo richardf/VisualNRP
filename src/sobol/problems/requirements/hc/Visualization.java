@@ -1,8 +1,12 @@
 package sobol.problems.requirements.hc;
 
+import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 import sobol.base.random.RandomGeneratorFactory;
@@ -214,31 +218,97 @@ public class Visualization
     {
         int customerCount = project.getCustomerCount();
         AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+        DecimalFormat df = new DecimalFormat("#####.##");
 
+//        FileWriter outFile = new FileWriter(project.getName() + "_avg.txt");
+//        PrintWriter out = new PrintWriter(outFile);
+
+        FileWriter outFile2 = new FileWriter(project.getName() + "_best.txt", true);
+        PrintWriter out2 = new PrintWriter(outFile2);
+
+        this.bestSolution = new boolean[customerCount];
+
+        
         //numero de elementos da solucao
         for(int numElemens = 1; numElemens <= project.getCustomerCount(); numElemens++) {
 
-            //System.out.print(numElemens);
+            System.out.print(numElemens + "\t");
+            
+//            out.print(numElemens + "\t");
+            out2.print(numElemens + "\t");
+            
+            List<Double> listSol = new LinkedList<Double>();
 
             for(int deriv = 0; deriv < this.numberOfDerivedSolutions; deriv++) {
 
-                this.bestSolution = createRandomSolutionWithNElements(numElemens, random);
+                boolean[] solution = createRandomSolutionWithNElements(numElemens, random);
+                //this.bestSolution = createRandomSolutionWithNElements(numElemens, random);
                 Solution hcrs = new Solution(project);
-                hcrs.setAllCustomers(bestSolution);
-                this.fitness = evaluate(hcrs);
+                hcrs.setAllCustomers(solution);
+//                this.fitness = evaluate(hcrs);
+                double currFitness = evaluate(hcrs);
 
-                //System.out.println(printSolution(this.bestSolution));
+                listSol.add(currFitness);
+                if(deriv > 0 && deriv % 99 == 0) {
+                    double best = Collections.max(listSol);
+//                    out.print(df.format(getAverage(listSol)) + "\t"); //+ df.format(getAverage(listSol)) + "\t" + df.format(getStandardDeviation(listSol)) + "\t");
+                    out2.print(df.format(best) + "\t");
+                }
+                
+                if(currFitness > this.fitness) {
+                    this.fitness = currFitness;
+                    copySolution(solution, this.bestSolution);
+                }
+//                System.out.println(printSolution(this.bestSolution));
 
-                System.out.print(this.fitness + ";");
+//                System.out.print(this.fitness + ";");
             }
             //detailsFile.write("\n");
             //detailsFile.flush();
-            System.out.println();
+//            out.println();
+            out2.println();
+            out2.flush();
+            //System.out.println();
         }
 
+//        out.close();
+        out2.println("R\t" + MainProgram.countCustomersInSolution(bestSolution) + "\t" + this.fitness);
+        out2.close();
+        
         return bestSolution;
     }
 
+    
+    protected void copySolution(boolean[] source, boolean[] target) {
+        int len = source.length;
+
+        for (int i = 0; i < len; i++) {
+            target[i] = source[i];
+        }
+    }
+
+    private double getAverage(List<Double> list) {
+        double avg = 0;
+        for (Double d : list) {
+            avg += d;
+        }
+        
+        return avg / list.size();
+    }
+    
+   private double getStandardDeviation(List<Double> values) {
+        double deviation = 0.0;
+        if ((values != null) && (values.size() > 1)) {
+            double mean = getAverage(values);
+            for (double value : values) {
+                double delta = value-mean;
+                deviation += delta*delta;
+            }
+            deviation = Math.sqrt(deviation/values.size());
+        }
+        return deviation;
+    }
+    
     private List<Integer> getElementsOfSolutionWithValue(boolean inSolution, boolean[] sol) {
         List<Integer> list = new ArrayList<Integer>();
 
@@ -277,5 +347,15 @@ public class Visualization
         }
 
         return dist;
+    }
+}
+
+class Sol {
+    public double fitness;
+    public int size;
+
+    public Sol(double fitness, int size) {
+        this.fitness = fitness;
+        this.size = size;
     }
 }
