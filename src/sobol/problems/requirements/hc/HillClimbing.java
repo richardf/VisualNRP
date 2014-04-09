@@ -62,6 +62,11 @@ public class HillClimbing
 	 * Number of fitness evaluations executed
 	 */
 	protected int evaluations;
+        
+        /**
+         * Represents a solution of the problem. Utilized during the local search
+         */
+        protected Solution tmpSolution;
 
 	/**
 	 * Initializes the Hill Climbing search process
@@ -75,7 +80,7 @@ public class HillClimbing
 		this.evaluations = 0;
 		this.randomRestartCount = 0;
 		this.restartBestFound = 0;
-		
+		this.tmpSolution = new Solution(project);
 		//createDefaultSelectionOrder(project);
 		createRandomSelectionOrder(project);
 	}
@@ -240,16 +245,15 @@ public class HillClimbing
 	protected boolean localSearch(boolean[] solution)
 	{
 		NeighborhoodVisitorResult result;
-		Solution hcrs = new Solution(project);
-		hcrs.setAllCustomers(solution);
+		tmpSolution.setAllCustomers(solution);
 		
 		do
 		{
-			result = visitNeighbors(hcrs);
+			result = visitNeighbors(tmpSolution);
 			
 			if (result.getStatus() == NeighborhoodVisitorStatus.FOUND_BETTER_NEIGHBOR && result.getNeighborFitness() > fitness)
 			{
-				copySolution(hcrs.getSolution(), bestSolution);
+				copySolution(tmpSolution.getSolution(), bestSolution);
 				this.fitness = result.getNeighborFitness();
 				this.restartBestFound = randomRestartCount;
 			}

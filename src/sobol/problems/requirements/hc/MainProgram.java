@@ -3,15 +3,10 @@ package sobol.problems.requirements.hc;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 import sobol.base.random.RandomGeneratorFactory;
-import sobol.base.random.faure.FaureRandomGeneratorFactory;
-import sobol.base.random.halton.HaltonRandomGeneratorFactory;
 import sobol.base.random.pseudo.PseudoRandomGeneratorFactory;
-import sobol.base.random.sobol.SobolRandomGeneratorFactory;
 import sobol.problems.requirements.model.Project;
 import sobol.problems.requirements.reader.RequirementReader;
 
@@ -46,30 +41,6 @@ public class MainProgram
 		""
 	};
         
-        private static List<MinMaxCust> limits = new LinkedList<MinMaxCust>() {
-            {//30 - 5% antes 20% depois
-//                add(new MinMaxCust(17, 100)); //17
-//                add(new MinMaxCust(53, 500)); //53
-//                add(new MinMaxCust(124, 500)); //124
-//                add(new MinMaxCust(146, 750)); //146
-//                add(new MinMaxCust(232, 1000)); //232
-                //50
-//                add(new MinMaxCust(34, 100)); //34
-//                add(new MinMaxCust(109, 500)); //109
-//                add(new MinMaxCust(252, 500)); //252
-//                add(new MinMaxCust(308, 750)); //308
-//                add(new MinMaxCust(494, 1000)); //494
-                //70
-                add(new MinMaxCust(58, 98)); //58
-                add(new MinMaxCust(209, 409)); //209
-                add(new MinMaxCust(439, 500)); //439
-                add(new MinMaxCust(608, 750)); //608
-                add(new MinMaxCust(944, 1000)); //944
-            };
-        };
-        
-        private static List<SolCust> customersInSol = new LinkedList<SolCust>();
-        
         
 	private List<Project> readInstances(String[] filenames) throws Exception
 	{
@@ -90,7 +61,6 @@ public class MainProgram
 	
 	private void runInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor) throws Exception
 	{
-                customersInSol.clear();
 		for (int i = 0; i < cycles; i++)
 		{
 			int budget = (int)(budgetFactor * instance.getTotalCost());
@@ -102,21 +72,18 @@ public class MainProgram
 			details.println();
 			long executionTime = (System.currentTimeMillis() - initTime);
 			
-                        customersInSol.add(new SolCust(countCustomersInSolution(solution), hcr.getFitness()));
-//			String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
-//                        System.out.println(countCustomersInSolution(solution));
-//                        System.out.println(s);
-//			out.println(s);
+			String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
+                        System.out.println(s);
+			out.println(s);
 		}
 	}
 	
-	private void runVisualInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor) throws Exception
+	private void runVisualInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor, float intervalSize) throws Exception
 	{
-                MinMaxCust limit = limits.remove(0);
 		for (int i = 0; i < cycles; i++)
 		{
 			int budget = (int)(budgetFactor * instance.getTotalCost());
-			VisHillClimbing hcr = new VisHillClimbing(details, instance, budget, 10000000, limit.min, limit.max);
+			VisHillClimbing hcr = new VisHillClimbing(details, instance, budget, 10000000, 100, intervalSize);
 			
 			long initTime = System.currentTimeMillis();
 			details.println(tipo + " " + instance.getName() + " #" + cycles);
@@ -126,13 +93,11 @@ public class MainProgram
 			
 			String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
                         System.out.println(s);
-                        System.out.println(countCustomersInSolution(solution));
-
 			out.println(s);
 		}
 	}        
         
-	public static final void main(String[] args) throws Exception
+	public static void main(String[] args) throws Exception
 	{
 		MainProgram mp = new MainProgram();
 
@@ -149,31 +114,8 @@ public class MainProgram
 		for (Project instance : instances)
 		{
 			RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
-			mp.runVisualInstance(out, details, "VISUAL", instance, CICLOS, 0.3);
-//			mp.runVisualInstance(out, details, "VISUAL", instance, CICLOS, 0.5);
-//			mp.runVisualInstance(out, details, "VISUAL", instance, CICLOS, 0.7);
-                        
-//			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.3);
-//			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.5);
-//			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.7);
-
-//                        Collections.sort(customersInSol);
-//                        System.out.println(instance.getName() + ";" + customersInSol.get(customersInSol.size()-1).nOfCustomers + ";" + customersInSol.toString());
-                        
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new SobolRandomGeneratorFactory());
-//			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.3);
-//			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.5);
-//			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.7);
-			
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new HaltonRandomGeneratorFactory());
-//			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.3);
-//			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.5);
-//			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.7);
-
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new FaureRandomGeneratorFactory());
-//			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.3);
-//			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.5);
-//			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.7);
+			mp.runVisualInstance(out, details, "VISHC", instance, CICLOS, 0.3, 0.4f);
+//			mp.runInstance(out, details, "HC", instance, CICLOS, 0.3);
 		}
 		
 		out.close();
@@ -189,34 +131,4 @@ public class MainProgram
             }
             return count;
         }
-}
-
-class MinMaxCust {
-    public int min;
-    public int max;
-    
-    MinMaxCust(int min, int max) {
-        this.min = min;
-        this.max = max;
-    }
-}
-
-class SolCust implements Comparable<SolCust> {
-    public Integer nOfCustomers;
-    public Double fitness;
-
-    public SolCust(Integer nOfCustomers, Double fitness) {
-        this.nOfCustomers = nOfCustomers;
-        this.fitness = fitness;
-    }
-
-    @Override
-    public int compareTo(SolCust o) {
-        return this.fitness.compareTo(o.fitness);
-    }
-
-    @Override
-    public String toString() {
-        return nOfCustomers + "";
-    }
 }

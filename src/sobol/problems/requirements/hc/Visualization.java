@@ -1,5 +1,6 @@
 package sobol.problems.requirements.hc;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.text.DecimalFormat;
@@ -220,11 +221,11 @@ public class Visualization
         AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
         DecimalFormat df = new DecimalFormat("#####.##");
 
-//        FileWriter outFile = new FileWriter(project.getName() + "_avg.txt");
-//        PrintWriter out = new PrintWriter(outFile);
+        FileWriter outFile = new FileWriter(new File(project.getName()).getName().replace(".txt", "") + "_70.txt");
+        PrintWriter out = new PrintWriter(outFile);
 
-        FileWriter outFile2 = new FileWriter(project.getName() + "_best.txt", true);
-        PrintWriter out2 = new PrintWriter(outFile2);
+//        FileWriter outFile2 = new FileWriter(project.getName() + "_best.txt", true);
+//        PrintWriter out2 = new PrintWriter(outFile2);
 
         this.bestSolution = new boolean[customerCount];
 
@@ -232,10 +233,8 @@ public class Visualization
         //numero de elementos da solucao
         for(int numElemens = 1; numElemens <= project.getCustomerCount(); numElemens++) {
 
-            System.out.print(numElemens + "\t");
-            
 //            out.print(numElemens + "\t");
-            out2.print(numElemens + "\t");
+//            out2.print(numElemens + "\t");
             
             List<Double> listSol = new LinkedList<Double>();
 
@@ -247,33 +246,35 @@ public class Visualization
                 hcrs.setAllCustomers(solution);
 //                this.fitness = evaluate(hcrs);
                 double currFitness = evaluate(hcrs);
-
-                listSol.add(currFitness);
-                if(deriv > 0 && deriv % 99 == 0) {
-                    double best = Collections.max(listSol);
+                System.out.print(currFitness+";");
+                out.print(currFitness+";");
+//                listSol.add(currFitness);
+//                if(deriv > 0 && deriv % 99 == 0) {
+//                    double best = Collections.max(listSol);
 //                    out.print(df.format(getAverage(listSol)) + "\t"); //+ df.format(getAverage(listSol)) + "\t" + df.format(getStandardDeviation(listSol)) + "\t");
-                    out2.print(df.format(best) + "\t");
-                }
+//                    out2.print(df.format(best) + "\t");
+//                }
                 
-                if(currFitness > this.fitness) {
-                    this.fitness = currFitness;
-                    copySolution(solution, this.bestSolution);
-                }
+//                if(currFitness > this.fitness) {
+//                    this.fitness = currFitness;
+//                    copySolution(solution, this.bestSolution);
+//                }
 //                System.out.println(printSolution(this.bestSolution));
 
 //                System.out.print(this.fitness + ";");
             }
+            System.out.println("");
             //detailsFile.write("\n");
             //detailsFile.flush();
-//            out.println();
-            out2.println();
-            out2.flush();
+            out.println();
+//            out2.println();
+//            out2.flush();
             //System.out.println();
         }
 
-//        out.close();
-        out2.println("R\t" + MainProgram.countCustomersInSolution(bestSolution) + "\t" + this.fitness);
-        out2.close();
+        out.close();
+//        out2.println("R\t" + MainProgram.countCustomersInSolution(bestSolution) + "\t" + this.fitness);
+//        out2.close();
         
         return bestSolution;
     }

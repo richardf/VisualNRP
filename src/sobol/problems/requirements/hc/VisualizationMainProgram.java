@@ -17,15 +17,24 @@ import java.util.Vector;
 
 public class VisualizationMainProgram
 {
-	private static int CICLOS = 100;
+	private static int CICLOS = 1;
 	
 	private static String[] instanceFilenamesClassic =
 	{
-		"data/requirements/classic/nrp1.txt",
-		"data/requirements/classic/nrp2.txt",
-		"data/requirements/classic/nrp3.txt",
-		"data/requirements/classic/nrp4.txt",
-		"data/requirements/classic/nrp5.txt",
+                "data/requirements/padilha_1req_30cust.txt",
+                "data/requirements/padilha_3req_30cust.txt",
+                "data/requirements/padilha_5req_30cust.txt",
+                "data/requirements/padilha_1req_50cust.txt",
+                "data/requirements/padilha_3req_50cust.txt",
+                "data/requirements/padilha_5req_50cust.txt",
+                "data/requirements/padilha_1req_100cust.txt",
+                "data/requirements/padilha_3req_100cust.txt",
+                "data/requirements/padilha_5req_100cust.txt",
+//		"data/requirements/classic/nrp1.txt",
+//		"data/requirements/classic/nrp2.txt",
+//		"data/requirements/classic/nrp3.txt",
+//		"data/requirements/classic/nrp4.txt",
+//		"data/requirements/classic/nrp5.txt",
 		""
 	};
 	
@@ -66,7 +75,7 @@ public class VisualizationMainProgram
 		for (int i = 0; i < cycles; i++)
 		{
 			int budget = (int)(budgetFactor * instance.getTotalCost());
-			Visualization hcr = new Visualization(details, instance, budget, 1000);
+			Visualization hcr = new Visualization(details, instance, budget, 100);
 			
 			details.println(tipo + " " + instance.getName() + " #" + cycles);
 			boolean[] solution = hcr.execute();
@@ -91,16 +100,7 @@ public class VisualizationMainProgram
 		for (Project instance : instances)
 		{
 			RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
-			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.3);
-
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new SobolRandomGeneratorFactory());
-//			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.7);
-			
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new HaltonRandomGeneratorFactory());
-//			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.7);
-
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new FaureRandomGeneratorFactory());
-//			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.7);
+			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.7);
 		}
 		
 		out.close();
