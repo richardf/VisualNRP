@@ -8,7 +8,7 @@ public class TestRequirementReader extends TestCase
 {
 	public void testProblem1() throws Exception
 	{
-		Project project = new RequirementReader("data\\requirements\\classic\\nrp1.txt").execute();
+		Project project = new RequirementReader("data/requirements/classic/nrp1.txt").execute();
 		
 		assertEquals(140, project.getRequirementCount());
 		assertEquals(4, project.getRequirementCost(0));
@@ -43,7 +43,7 @@ public class TestRequirementReader extends TestCase
 
 	public void testProblem2() throws Exception
 	{
-		Project project = new RequirementReader("data\\requirements\\realistic\\nrp-e1.txt").execute();
+		Project project = new RequirementReader("data/requirements/realistic/nrp-e1.txt").execute();
 		
 		assertEquals(3502, project.getRequirementCount());
 		assertEquals(4, project.getRequirementCost(0));

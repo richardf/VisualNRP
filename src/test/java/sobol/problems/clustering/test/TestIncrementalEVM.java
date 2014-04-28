@@ -34,7 +34,7 @@ public class TestIncrementalEVM extends TestCase
 	public void testJodamoney() throws XMLParseException
 	{
 		CDAReader reader = new CDAReader();
-		Project project = reader.execute("data\\cluster\\jodamoney 26C.odem");
+		Project project = reader.execute("data/cluster/jodamoney 26C.odem");
 		
 		CalculadorIncrementalEVM cc = new CalculadorIncrementalEVM(project, project.getClassCount());
 		cc.moveAll(new int[] {2, 2, 2, 2, 1, 1, 7, 2, 2, 2, 3, 5, 3, 4, 4, 0, 5, 7, 0, 0, 0, 0, 4, 4, 5, 5});
@@ -45,7 +45,7 @@ public class TestIncrementalEVM extends TestCase
 	public void testTinytim() throws XMLParseException
 	{
 		CDAReader reader = new CDAReader();
-		Project project = reader.execute("data\\cluster\\tinytim 134C.odem");
+		Project project = reader.execute("data/cluster/tinytim 134C.odem");
 		
 		CalculadorIncrementalEVM cc = new CalculadorIncrementalEVM(project, project.getClassCount());
 		cc.moveAll(new int[] {52, 6, 4, 6, 6, 16, 38, 1, 47, 36, 26, 27, 1, 1, 1, 1, 1, 1, 19, 19, 6, 4, 3, 5, 6, 13, 16, 6, 44, 45, 4, 6, 3, 42, 7, 7, 7, 7, 23, 11, 50, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 28, 10, 30, 10, 32, 10, 10, 10, 1, 29, 40, 1, 1, 11, 11, 22, 22, 8, 8, 23, 12, 3, 5, 12, 16, 29, 16, 6, 3, 6, 2, 34, 31, 31, 2, 33, 35, 2, 2, 31, 2, 13, 14, 41, 14, 15, 37, 39, 15, 41, 14, 17, 17, 37, 15, 43, 18, 18, 20, 20, 46, 14, 14, 21, 21, 48, 2, 49, 51, 22, 22, 24, 24, 53, 54, 25, 53, 0, 7, 0});
