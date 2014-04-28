@@ -1,14 +1,10 @@
 package sobol.problems.requirements.hc;
 
 import sobol.base.random.RandomGeneratorFactory;
-import sobol.base.random.faure.FaureRandomGeneratorFactory;
-import sobol.base.random.halton.HaltonRandomGeneratorFactory;
 import sobol.base.random.pseudo.PseudoRandomGeneratorFactory;
-import sobol.base.random.sobol.SobolRandomGeneratorFactory;
 import sobol.problems.requirements.model.Project;
 import sobol.problems.requirements.reader.RequirementReader;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -21,11 +17,20 @@ public class VisualizationMainProgram
 	
 	private static String[] instanceFilenamesClassic =
 	{
+//                "data/requirements/padilha_1req_30cust.txt",
+//                "data/requirements/padilha_3req_30cust.txt",
+//                "data/requirements/padilha_5req_30cust.txt",
+//                "data/requirements/padilha_1req_50cust.txt",
+//                "data/requirements/padilha_3req_50cust.txt",
+//                "data/requirements/padilha_5req_50cust.txt",
+//                "data/requirements/padilha_1req_100cust.txt",
+//                "data/requirements/padilha_3req_100cust.txt",
+//                "data/requirements/padilha_5req_100cust.txt",
 		"data/requirements/classic/nrp1.txt",
-//		"data/requirements/classic/nrp2.txt",
-//		"data/requirements/classic/nrp3.txt",
-//		"data/requirements/classic/nrp4.txt",
-//		"data/requirements/classic/nrp5.txt",
+		"data/requirements/classic/nrp2.txt",
+		"data/requirements/classic/nrp3.txt",
+		"data/requirements/classic/nrp4.txt",
+		"data/requirements/classic/nrp5.txt",
 		""
 	};
 	
@@ -92,15 +97,6 @@ public class VisualizationMainProgram
 		{
 			RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
 			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.7);
-
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new SobolRandomGeneratorFactory());
-//			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.7);
-			
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new HaltonRandomGeneratorFactory());
-//			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.7);
-
-//			RandomGeneratorFactory.setRandomFactoryForPopulation(new FaureRandomGeneratorFactory());
-//			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.7);
 		}
 		
 		out.close();

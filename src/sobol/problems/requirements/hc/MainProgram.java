@@ -6,24 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 import sobol.base.random.RandomGeneratorFactory;
-import sobol.base.random.faure.FaureRandomGeneratorFactory;
-import sobol.base.random.halton.HaltonRandomGeneratorFactory;
 import sobol.base.random.pseudo.PseudoRandomGeneratorFactory;
-import sobol.base.random.sobol.SobolRandomGeneratorFactory;
 import sobol.problems.requirements.model.Project;
 import sobol.problems.requirements.reader.RequirementReader;
 
 public class MainProgram
 {
-	private static int CICLOS = 1;
+	private static int CICLOS = 30;
 	
 	private static String[] instanceFilenamesClassic =
 	{
-		"data\\requirements\\classic\\nrp1.txt",
-		"data\\requirements\\classic\\nrp2.txt",
-		"data\\requirements\\classic\\nrp3.txt",
-		"data\\requirements\\classic\\nrp4.txt",
-		"data\\requirements\\classic\\nrp5.txt",
+		"data/requirements/classic/nrp1.txt",
+		"data/requirements/classic/nrp2.txt",
+		"data/requirements/classic/nrp3.txt",
+		"data/requirements/classic/nrp4.txt",
+		"data/requirements/classic/nrp5.txt",
 		""
 	};
 	
@@ -43,7 +40,8 @@ public class MainProgram
 		"data\\requirements\\realistic\\nrp-m4.txt",*/
 		""
 	};
-	
+        
+        
 	private List<Project> readInstances(String[] filenames) throws Exception
 	{
 		List<Project> instances = new ArrayList<Project>();
@@ -75,12 +73,31 @@ public class MainProgram
 			long executionTime = (System.currentTimeMillis() - initTime);
 			
 			String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
-			System.out.println(s);
+                        System.out.println(s);
 			out.println(s);
 		}
 	}
 	
-	public static final void main(String[] args) throws Exception
+	private void runVisualInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor, float intervalSize) throws Exception
+	{
+		for (int i = 0; i < cycles; i++)
+		{
+			int budget = (int)(budgetFactor * instance.getTotalCost());
+			VisHillClimbing hcr = new VisHillClimbing(details, instance, budget, 10000000, 100, intervalSize);
+			
+			long initTime = System.currentTimeMillis();
+			details.println(tipo + " " + instance.getName() + " #" + cycles);
+			boolean[] solution = hcr.execute();
+			details.println();
+			long executionTime = (System.currentTimeMillis() - initTime);
+			
+			String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
+                        System.out.println(s);
+			out.println(s);
+		}
+	}        
+        
+	public static void main(String[] args) throws Exception
 	{
 		MainProgram mp = new MainProgram();
 
@@ -97,27 +114,21 @@ public class MainProgram
 		for (Project instance : instances)
 		{
 			RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
-			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.3);
-			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.5);
-			mp.runInstance(out, details, "PSEUDO", instance, CICLOS, 0.7);
-
-			RandomGeneratorFactory.setRandomFactoryForPopulation(new SobolRandomGeneratorFactory());
-			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.3);
-			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.5);
-			mp.runInstance(out, details, "SOBOL", instance, CICLOS, 0.7);
-			
-			RandomGeneratorFactory.setRandomFactoryForPopulation(new HaltonRandomGeneratorFactory());
-			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.3);
-			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.5);
-			mp.runInstance(out, details, "HALTON", instance, CICLOS, 0.7);
-
-			RandomGeneratorFactory.setRandomFactoryForPopulation(new FaureRandomGeneratorFactory());
-			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.3);
-			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.5);
-			mp.runInstance(out, details, "FAURE", instance, CICLOS, 0.7);
+			mp.runVisualInstance(out, details, "VISHC", instance, CICLOS, 0.3, 0.4f);
+//			mp.runInstance(out, details, "HC", instance, CICLOS, 0.3);
 		}
 		
 		out.close();
 		details.close();
 	}
+        
+        public static int countCustomersInSolution(boolean[] solution) {
+            int count = 0;
+            for(int i=0; i < solution.length; i++) {
+                if(solution[i] == true) {
+                    count++;
+                }
+            }
+            return count;
+        }
 }

@@ -16,52 +16,57 @@ public class HillClimbing
 	/**
 	 * Order under which requirements will be accessed
 	 */
-	private int[] selectionOrder;	
+	protected int[] selectionOrder;	
 	
 	/**
 	 * Best solution found by the Hill Climbing search
 	 */
-	private boolean[] bestSolution;
+	protected boolean[] bestSolution;
 
 	/**
 	 * Fitness of the best solution found
 	 */
-	private double fitness;
+	protected double fitness;
 
 	/**
 	 * Number of random restart executed
 	 */
-	private int randomRestartCount;
+	protected int randomRestartCount;
 
 	/**
 	 * Number of the random restart where the best solution was found
 	 */
-	private int restartBestFound;
+	protected int restartBestFound;
 
 	/**
 	 * File where details of the search process will be printed
 	 */
-	private PrintWriter detailsFile;
+	protected PrintWriter detailsFile;
 
 	/**
 	 * Set of requirements to be optimized
 	 */
-	private Project project;
+	protected Project project;
 
 	/**
 	 * Available budget to select requirements
 	 */
-	private int availableBudget;
+	protected int availableBudget;
 
 	/**
 	 * Number of fitness evaluations available in the budget
 	 */
-	private int maxEvaluations;
+	protected int maxEvaluations;
 
 	/**
 	 * Number of fitness evaluations executed
 	 */
-	private int evaluations;
+	protected int evaluations;
+        
+        /**
+         * Represents a solution of the problem. Utilized during the local search
+         */
+        protected Solution tmpSolution;
 
 	/**
 	 * Initializes the Hill Climbing search process
@@ -75,7 +80,7 @@ public class HillClimbing
 		this.evaluations = 0;
 		this.randomRestartCount = 0;
 		this.restartBestFound = 0;
-		
+		this.tmpSolution = new Solution(project);
 		//createDefaultSelectionOrder(project);
 		createRandomSelectionOrder(project);
 	}
@@ -178,7 +183,7 @@ public class HillClimbing
 	/**
 	 * Copies a source solution to a target one
 	 */
-	private void copySolution(boolean[] source, boolean[] target)
+	protected void copySolution(boolean[] source, boolean[] target)
 	{
 		int len = source.length;
 		
@@ -189,7 +194,7 @@ public class HillClimbing
 	/**
 	 * Evaluates the fitness of a solution, saving detail information
 	 */
-	private double evaluate(Solution solution)
+	protected double evaluate(Solution solution)
 	{
 		if (++evaluations % 10000 == 0 && detailsFile != null)
 			detailsFile.println(evaluations + "; " + fitness);
@@ -201,7 +206,7 @@ public class HillClimbing
 	/**
 	 * Runs a neighborhood visit starting from a given solution
 	 */
-	private NeighborhoodVisitorResult visitNeighbors(Solution solution)
+	protected NeighborhoodVisitorResult visitNeighbors(Solution solution)
 	{
 		double startingFitness = evaluate(solution);
 
@@ -237,19 +242,18 @@ public class HillClimbing
 	/**
 	 * Performs the local search starting from a given solution
 	 */
-	private boolean localSearch(boolean[] solution)
+	protected boolean localSearch(boolean[] solution)
 	{
 		NeighborhoodVisitorResult result;
-		Solution hcrs = new Solution(project);
-		hcrs.setAllCustomers(solution);
+		tmpSolution.setAllCustomers(solution);
 		
 		do
 		{
-			result = visitNeighbors(hcrs);
+			result = visitNeighbors(tmpSolution);
 			
 			if (result.getStatus() == NeighborhoodVisitorStatus.FOUND_BETTER_NEIGHBOR && result.getNeighborFitness() > fitness)
 			{
-				copySolution(hcrs.getSolution(), bestSolution);
+				copySolution(tmpSolution.getSolution(), bestSolution);
 				this.fitness = result.getNeighborFitness();
 				this.restartBestFound = randomRestartCount;
 			}
@@ -262,7 +266,7 @@ public class HillClimbing
 	/**
 	 * Creates a random solution
 	 */
-	private boolean[] createRandomSolution(AbstractRandomGenerator random)
+	protected boolean[] createRandomSolution(AbstractRandomGenerator random)
 	{
 		int customerCount = project.getCustomerCount();
 		boolean[] solution = new boolean[customerCount];
