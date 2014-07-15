@@ -1,9 +1,6 @@
 package sobol.problems.requirements.hc;
 
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.generic.AbstractRandomGenerator;
 import sobol.problems.requirements.model.Project;
@@ -22,8 +19,9 @@ public class VisHillClimbing extends HillClimbing {
     /**
      * Initializes the Hill Climbing search process
      */
-    public VisHillClimbing(PrintWriter detailsFile, Project project, int budget, int maxEvaluations, int numberSamplingIter, float intervalSize) throws Exception {
-        super(detailsFile, project, budget, maxEvaluations);
+    public VisHillClimbing(PrintWriter detailsFile, Project project, int budget, 
+            int maxEvaluations, int numberSamplingIter, float intervalSize, Constructor constructor) throws Exception {
+        super(detailsFile, project, budget, maxEvaluations, constructor);
         this.numberSamplingIter = numberSamplingIter;
         this.intervalSize = intervalSize;
     }
@@ -81,12 +79,13 @@ public class VisHillClimbing extends HillClimbing {
     public boolean[] execute() throws Exception {
         int customerCount = project.getCustomerCount();
         AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+        constructor.setRandomGenerator(random);
         this.bestSolution = new boolean[customerCount];
         
         this.minCustomers = executeRandomSampling(numberSamplingIter, project, random);
         this.maxCustomers = calculateIntervalMax(minCustomers, intervalSize, customerCount);
         
-        boolean[] solution = createRandomSolutionInInterval(minCustomers, maxCustomers, random);
+        boolean[] solution = constructor.generateSolutionInInterval(minCustomers, maxCustomers);
         Solution hcrs = new Solution(project);
         hcrs.setAllCustomers(bestSolution);
         double currFitness = evaluate(hcrs);
@@ -98,13 +97,13 @@ public class VisHillClimbing extends HillClimbing {
 
         while (localSearch(solution)) {
             this.randomRestartCount++;
-            solution = createRandomSolutionInInterval(minCustomers, maxCustomers, random);
+            solution = constructor.generateSolutionInInterval(minCustomers, maxCustomers);
         }
 
         return bestSolution;
     }
 
-    private int numberOfCustomersServedBySolution(boolean[] solution) {
+        private int numberOfCustomersServedBySolution(boolean[] solution) {
         int count = 0;
         for (int i = 0; i < solution.length; i++) {
             if (solution[i] == true) {
@@ -114,37 +113,6 @@ public class VisHillClimbing extends HillClimbing {
         return count;
     }
     
-    private boolean[] createRandomSolutionInInterval(int minCustomers, int maxCustomers, AbstractRandomGenerator random) {
-        int numberOfCustomers = random.singleInt(minCustomers, maxCustomers+1);
-        return createRandomSolutionWithNCustomers(numberOfCustomers, random);
-    }
-    
-    private boolean[] createRandomSolutionWithNCustomers(int numberOfCustomers, AbstractRandomGenerator random) {
-        int customerCount = project.getCustomerCount();
-        boolean[] solution = new boolean[customerCount];
-        Arrays.fill(solution, false);
-        List<Integer> listOfPossibilities = generateListOfSize(customerCount);
-
-        for (int i = 1; i <= numberOfCustomers; i++) {
-            int rand = random.singleInt(0, listOfPossibilities.size());
-            int position = listOfPossibilities.remove(rand);
-
-            solution[position] = true;
-        }
-
-        return solution;
-    }    
-    
-    private List<Integer> generateListOfSize(int size) {
-        List<Integer> list = new ArrayList<Integer>();
-
-        for (int i=0; i < size; i++) {
-            list.add(i);
-        }
-
-        return list;
-    }
-
     private int executeRandomSampling(int numberSamplingIter, Project project, AbstractRandomGenerator random) {
         int numberOfCustomersBest = 0;
         Solution hcrs = new Solution(project);
@@ -153,7 +121,7 @@ public class VisHillClimbing extends HillClimbing {
 
             for (int deriv = 0; deriv < numberSamplingIter; deriv++) {
                 
-                boolean[] solution = createRandomSolutionWithNCustomers(numElemens, random);
+                boolean[] solution = constructor.generateSolutionWith(numElemens);
                 hcrs.setAllCustomers(solution);
                 double solFitness = evaluate(hcrs);
                 

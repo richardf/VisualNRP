@@ -67,11 +67,16 @@ public class HillClimbing
          * Represents a solution of the problem. Utilized during the local search
          */
         protected Solution tmpSolution;
+        
+        /**
+         * A constructor algorithm for initial solutions generation.
+         */
+        protected Constructor constructor;
 
 	/**
 	 * Initializes the Hill Climbing search process
 	 */
-	public HillClimbing(PrintWriter detailsFile, Project project, int budget, int maxEvaluations) throws Exception
+	public HillClimbing(PrintWriter detailsFile, Project project, int budget, int maxEvaluations, Constructor constructor) throws Exception
 	{
 		this.project = project;
 		this.availableBudget = budget; 
@@ -81,12 +86,13 @@ public class HillClimbing
 		this.randomRestartCount = 0;
 		this.restartBestFound = 0;
 		this.tmpSolution = new Solution(project);
+                this.constructor = constructor;
 		//createDefaultSelectionOrder(project);
 		createRandomSelectionOrder(project);
 	}
 
 	/**
-	 * Gera a ordem default de seleção dos requisitos
+	 * Gera a ordem default de seleï¿½ï¿½o dos requisitos
 	 */
 	protected void createDefaultSelectionOrder(Project project)
 	{
@@ -98,7 +104,7 @@ public class HillClimbing
 	}	
 
 	/**
-	 * Gera uma ordem aleatória de seleção dos requisitos
+	 * Gera uma ordem aleatï¿½ria de seleï¿½ï¿½o dos requisitos
 	 */
 	protected void createRandomSelectionOrder(Project project)
 	{
