@@ -9,21 +9,20 @@ public class WeightedSelector {
     private int totalWeight;
     private AbstractRandomGenerator random;
 
-    WeightedSelector(int[] weights, AbstractRandomGenerator random) {
+    public WeightedSelector(int[] weights, AbstractRandomGenerator random) {
         this.random = random;
         this.lookup = computeLookup(weights);
     }
 
     private int[] computeLookup(int[] weights) {
         int[] lookup = new int[weights.length];
-        int totalWeight = 0;
+        totalWeight = 0;
 
         for (int i = 0; i < weights.length; i++) {
             totalWeight += weights[i];
             lookup[i] = totalWeight;
         }
 
-        this.totalWeight = totalWeight;
         return lookup;
     }
 
