@@ -6,7 +6,6 @@ package sobol.problems.requirements.hc;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,14 +42,19 @@ public class GreedyConstructor implements Constructor {
     }
     
     public boolean[] generateSolution() {
+        
+        int customerCount = project.getCustomerCount();
+        int numberOfCustomers = random.singleInt(1, customerCount + 1);
+        return generateSolutionWith(numberOfCustomers);
+    }
+
+    public boolean[] generateSolutionWith(int numberOfCustomers) {
         checkRandomGenerator();
         
         int customerCount = project.getCustomerCount();
         boolean[] solution = new boolean[customerCount];
         Arrays.fill(solution, false);
-        int numberOfCustomers = random.singleInt(1, customerCount + 1);
         List<Integer> customers = new ArrayList<Integer>(profitLossRatios.keySet());
-        Collections.sort(customers);
 
         for (int i = 0; i < numberOfCustomers; i++) {
             
@@ -65,13 +69,7 @@ public class GreedyConstructor implements Constructor {
         return solution;
     }
 
-    public boolean[] generateSolutionWith(int numberOfCustomers) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public boolean[] generateSolutionInInterval(int minCustomers, int maxCustomers) {
-        checkRandomGenerator();
-        
         int numberOfCustomers = random.singleInt(minCustomers, maxCustomers + 1);
         return generateSolutionWith(numberOfCustomers);
     }
@@ -96,4 +94,14 @@ public class GreedyConstructor implements Constructor {
         }
         return weights;
     }
+    
+    private List<Integer> generateListOfSize(int size) {
+        List<Integer> list = new ArrayList<Integer>(size);
+
+        for (int i = 0; i < size; i++) {
+            list.add(i);
+        }
+
+        return list;
+    }     
 }

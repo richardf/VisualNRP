@@ -85,4 +85,73 @@ public class GreedyConstructorTest {
         assertTrue(map.get(0) > map.get(1));
         assertTrue(map.get(0) > map.get(2));
     }
+    
+    @Test
+    public void generateSolutionWith1ShouldReturnSolutionWith1Customer() {
+        RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
+        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(4);
+        Project project = mock(Project.class);
+        when(project.getCustomerCount()).thenReturn(4);
+        when(project.getCustomerProfit(anyInt())).thenReturn(100, 1, 10, 10);
+        when(project.calculateCost(any(boolean[].class))).thenReturn(1, 10, 10, 1);
+
+        Constructor constr = new GreedyConstructor(project);
+        constr.setRandomGenerator(random);
+        
+        boolean[] sol = constr.generateSolutionWith(1);
+        int count = 0;
+        for (int j = 0; j < sol.length; j++) {
+            if (sol[j] == true) {
+                count++;
+            }
+        }
+        
+        assertEquals(1, count);
+    }
+    
+    @Test
+    public void generateSolutionWith3ShouldReturnSolutionWith3Customers() {
+        RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
+        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(4);
+        Project project = mock(Project.class);
+        when(project.getCustomerCount()).thenReturn(4);
+        when(project.getCustomerProfit(anyInt())).thenReturn(100, 1, 10, 10);
+        when(project.calculateCost(any(boolean[].class))).thenReturn(1, 10, 10, 1);
+
+        Constructor constr = new GreedyConstructor(project);
+        constr.setRandomGenerator(random);
+        
+        boolean[] sol = constr.generateSolutionWith(3);
+        int count = 0;
+        for (int j = 0; j < sol.length; j++) {
+            if (sol[j] == true) {
+                count++;
+            }
+        }
+        
+        assertEquals(3, count);
+    }
+    
+    @Test
+    public void generateSolutionInInterval2_3ShouldReturnSolutionWith2or3Customers() {
+        RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
+        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(4);
+        Project project = mock(Project.class);
+        when(project.getCustomerCount()).thenReturn(4);
+        when(project.getCustomerProfit(anyInt())).thenReturn(100, 1, 10, 10);
+        when(project.calculateCost(any(boolean[].class))).thenReturn(1, 10, 10, 1);
+
+        Constructor constr = new GreedyConstructor(project);
+        constr.setRandomGenerator(random);
+        
+        boolean[] sol = constr.generateSolutionInInterval(2, 3);
+        int count = 0;
+        for (int j = 0; j < sol.length; j++) {
+            if (sol[j] == true) {
+                count++;
+            }
+        }
+        
+        assertTrue(count >= 2 && count <= 3);
+    }
 }
