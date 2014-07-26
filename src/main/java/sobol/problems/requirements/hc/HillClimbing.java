@@ -268,21 +268,6 @@ public class HillClimbing
 		
 		return (result.getStatus() == NeighborhoodVisitorStatus.NO_BETTER_NEIGHBOR);
 	}
-
-	/**
-	 * Creates a random solution
-	 */
-	protected boolean[] createRandomSolution(AbstractRandomGenerator random)
-	{
-		int customerCount = project.getCustomerCount();
-		boolean[] solution = new boolean[customerCount];
-		double[] sample = random.randDouble();
-		
-		for (int i = 0; i < customerCount; i++)
-			solution[i] = (sample[i] >= 0.5);
-		
-		return solution;
-	}
 	
 	/**
 	 * Executes the Hill Climbing search with random restarts
@@ -291,8 +276,9 @@ public class HillClimbing
 	{
 		int customerCount = project.getCustomerCount();
 		AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
-
-		this.bestSolution = createRandomSolution(random);
+                constructor.setRandomGenerator(random);
+                
+		this.bestSolution = constructor.generateSolution();
 		Solution hcrs = new Solution(project);
 		hcrs.setAllCustomers(bestSolution);
 		this.fitness = evaluate(hcrs);
@@ -303,7 +289,7 @@ public class HillClimbing
 		while (localSearch(solution))
 		{			
 			this.randomRestartCount++;		
-			solution = createRandomSolution(random);
+			solution = constructor.generateSolution();
 		}
 
 		return bestSolution;
