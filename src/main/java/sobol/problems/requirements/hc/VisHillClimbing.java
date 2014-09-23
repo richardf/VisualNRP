@@ -3,6 +3,8 @@ package sobol.problems.requirements.hc;
 import java.io.PrintWriter;
 import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.generic.AbstractRandomGenerator;
+import sobol.problems.requirements.NeighborhoodVisitorResult;
+import sobol.problems.requirements.NeighborhoodVisitorStatus;
 import sobol.problems.requirements.model.Project;
 
 /**

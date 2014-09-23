@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.generic.AbstractRandomGenerator;
 import sobol.base.random.pseudo.PseudoRandomGeneratorFactory;
+import sobol.problems.requirements.NeighborhoodVisitorResult;
+import sobol.problems.requirements.NeighborhoodVisitorStatus;
 import sobol.problems.requirements.model.Project;
 
 /**
@@ -229,7 +231,6 @@ public class HillClimbing
 			int customerI = selectionOrder[i];
 
 			solution.flipCustomer(customerI);
-			//solution[moduloI] = !solution[moduloI];
 			double neighborFitness = evaluate(solution);
 
 			if (evaluations > maxEvaluations)
@@ -239,7 +240,6 @@ public class HillClimbing
 				return new NeighborhoodVisitorResult(NeighborhoodVisitorStatus.FOUND_BETTER_NEIGHBOR, neighborFitness);
 
 			solution.flipCustomer(customerI);
-			//solution[moduloI] = !solution[moduloI];
 		}
 
 		return new NeighborhoodVisitorResult(NeighborhoodVisitorStatus.NO_BETTER_NEIGHBOR);
@@ -293,69 +293,5 @@ public class HillClimbing
 		}
 
 		return bestSolution;
-	}
-}
-
-/**
- * Possible results of the local search phase
- */
-enum NeighborhoodVisitorStatus
-{
-	FOUND_BETTER_NEIGHBOR, NO_BETTER_NEIGHBOR, SEARCH_EXHAUSTED
-}
-
-/**
- * Class that represents the results of the local search phase
- */
-class NeighborhoodVisitorResult
-{
-	/**
-	 * Status in the end of the local search
-	 */
-	private NeighborhoodVisitorStatus status;
-
-	/**
-	 * Fitness of the best neighbor, in case one has been found
-	 */
-	private double neighborFitness;
-
-	/**
-	 * Initializes a successful local search status
-	 * 
-	 * @param status Status of the search, quite certainly a successful one
-	 * @param fitness Fitness of the best neighbor found
-	 */
-	public NeighborhoodVisitorResult(NeighborhoodVisitorStatus status, double fitness)
-	{
-		this.status = status;
-		this.neighborFitness = fitness;
-	}
-
-	/**
-	 * Initializes an unsuccessful local search
-	 * 
-	 * @param status Status of the search: failure to find a better neighbor or
-	 *            exhaustion
-	 */
-	public NeighborhoodVisitorResult(NeighborhoodVisitorStatus status)
-	{
-		this.status = status;
-		this.neighborFitness = 0.0;
-	}
-
-	/**
-	 * Returns the status of the local search
-	 */
-	public NeighborhoodVisitorStatus getStatus()
-	{
-		return status;
-	}
-
-	/**
-	 * Return the fitness of the best neighbor found, if any
-	 */
-	public double getNeighborFitness()
-	{
-		return neighborFitness;
 	}
 }
