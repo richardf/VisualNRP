@@ -268,7 +268,7 @@ public class IteratedLocalSearch {
         return bestSol;
     }
 
-    private boolean[] perturbSolution(boolean[] solution, AbstractRandomGenerator random, int customerCount) {
+    protected boolean[] perturbSolution(boolean[] solution, AbstractRandomGenerator random, int customerCount) {
         boolean[] newSolution = Arrays.copyOf(solution, customerCount);
         int amount = Math.round(0.05f * customerCount);
         
@@ -280,7 +280,7 @@ public class IteratedLocalSearch {
         return newSolution;
     }
 
-    private boolean shouldAccept(double currFitness, double bestFitness) {
+    protected boolean shouldAccept(double currFitness, double bestFitness) {
         return currFitness > bestFitness;
     }
 }

@@ -5,6 +5,7 @@ import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.generic.AbstractRandomGenerator;
 import sobol.problems.requirements.NeighborhoodVisitorResult;
 import sobol.problems.requirements.NeighborhoodVisitorStatus;
+import sobol.problems.requirements.VisualHeuristics;
 import sobol.problems.requirements.model.Project;
 
 /**
@@ -51,7 +52,7 @@ public class VisHillClimbing extends HillClimbing {
             int customerI = selectionOrder[i];
 
             solutionAsArray[customerI] = (solutionAsArray[customerI] == true) ? false : true;
-            int numberOfCustomers = numberOfCustomersServedBySolution(solutionAsArray);
+            int numberOfCustomers = VisualHeuristics.numberOfCustomersServedBySolution(solutionAsArray);
 
             if(numberOfCustomers >= minCustomers && numberOfCustomers <= maxCustomers) {
 
@@ -84,8 +85,8 @@ public class VisHillClimbing extends HillClimbing {
         constructor.setRandomGenerator(random);
         this.bestSolution = new boolean[customerCount];
         
-        this.minCustomers = executeRandomSampling(numberSamplingIter, project, random);
-        this.maxCustomers = calculateIntervalMax(minCustomers, intervalSize, customerCount);
+        this.minCustomers = executeRandomSampling(numberSamplingIter, project);
+        this.maxCustomers = VisualHeuristics.calculateIntervalMax(minCustomers, intervalSize, customerCount);
         
         boolean[] solution = constructor.generateSolutionInInterval(minCustomers, maxCustomers);
         Solution hcrs = new Solution(project);
@@ -105,17 +106,7 @@ public class VisHillClimbing extends HillClimbing {
         return bestSolution;
     }
 
-        private int numberOfCustomersServedBySolution(boolean[] solution) {
-        int count = 0;
-        for (int i = 0; i < solution.length; i++) {
-            if (solution[i] == true) {
-                count++;
-            }
-        }
-        return count;
-    }
-    
-    private int executeRandomSampling(int numberSamplingIter, Project project, AbstractRandomGenerator random) {
+    private int executeRandomSampling(int numberSamplingIter, Project project) {
         int numberOfCustomersBest = 0;
         Solution hcrs = new Solution(project);
                 
@@ -136,15 +127,5 @@ public class VisHillClimbing extends HillClimbing {
         }
 
         return numberOfCustomersBest;
-    }
-
-    private int calculateIntervalMax(int numberCustomersBest, float intervalSize, int customerCount) {
-        int size = Math.round(customerCount * intervalSize);
-        int maxNCustomers = numberCustomersBest + size;
-        
-        if(maxNCustomers > customerCount) {
-            maxNCustomers = customerCount;
-        }
-        return maxNCustomers;
     }
 }
