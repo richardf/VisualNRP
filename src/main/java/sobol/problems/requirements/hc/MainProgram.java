@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Vector;
 import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.pseudo.PseudoRandomGeneratorFactory;
+import sobol.problems.requirements.IteratedLocalSearch;
+import sobol.problems.requirements.VisIteratedLocalSearch;
 import sobol.problems.requirements.model.Project;
 import sobol.problems.requirements.reader.RequirementReader;
 
@@ -53,31 +55,13 @@ public class MainProgram {
         return instances;
     }
 
-    private void runInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor) throws Exception {
+    private void runInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor, float intervalSize) throws Exception {
         Constructor constructor = new RandomConstructor(instance);
         int budget = (int) (budgetFactor * instance.getTotalCost());
 
         for (int i = 0; i < cycles; i++) {
-            HillClimbing hcr = new HillClimbing(details, instance, budget, 10000000, constructor);
-
-            long initTime = System.currentTimeMillis();
-            details.println(tipo + " " + instance.getName() + " #" + cycles);
-            boolean[] solution = hcr.execute();
-            details.println();
-            long executionTime = (System.currentTimeMillis() - initTime);
-
-            String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
-            System.out.println(s);
-            out.println(s);
-        }
-    }
-
-    private void runVisualInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor, float intervalSize) throws Exception {
-        Constructor constructor = new RandomConstructor(instance);
-        int budget = (int) (budgetFactor * instance.getTotalCost());
-
-        for (int i = 0; i < cycles; i++) {
-            VisHillClimbing hcr = new VisHillClimbing(details, instance, budget, 10000000, 100, intervalSize, constructor);
+            VisIteratedLocalSearch hcr = new VisIteratedLocalSearch(details, instance, budget, 10000000, 100, intervalSize, constructor);
+//            IteratedLocalSearch hcr = new IteratedLocalSearch(details, instance, budget, 10000000, constructor);
 
             long initTime = System.currentTimeMillis();
             details.println(tipo + " " + instance.getName() + " #" + cycles);
@@ -106,8 +90,7 @@ public class MainProgram {
 
         for (Project instance : instances) {
             RandomGeneratorFactory.setRandomFactoryForPopulation(new PseudoRandomGeneratorFactory());
-            mp.runVisualInstance(out, details, "VISHC", instance, CICLOS, 0.3, 0.4f);
-//          mp.runInstance(out, details, "HC", instance, CICLOS, 0.3);
+            mp.runInstance(out, details, "VISILS", instance, CICLOS, 0.3, 1.0f);
         }
 
         out.close();
