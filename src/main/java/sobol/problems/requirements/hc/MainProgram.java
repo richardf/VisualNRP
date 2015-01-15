@@ -56,12 +56,13 @@ public class MainProgram {
     }
 
     private void runInstance(PrintWriter out, PrintWriter details, String tipo, Project instance, int cycles, double budgetFactor, float intervalSize) throws Exception {
-        Constructor constructor = new RandomConstructor(instance);
+        Constructor constructor = new GreedyConstructor(instance);
         int budget = (int) (budgetFactor * instance.getTotalCost());
 
         for (int i = 0; i < cycles; i++) {
             VisIteratedLocalSearch hcr = new VisIteratedLocalSearch(details, instance, budget, 10000000, 100, intervalSize, constructor);
 //            IteratedLocalSearch hcr = new IteratedLocalSearch(details, instance, budget, 10000000, constructor);
+//            HillClimbing hcr = new HillClimbing(details, instance, budget, 10000000, constructor);
 
             long initTime = System.currentTimeMillis();
             details.println(tipo + " " + instance.getName() + " #" + cycles);
