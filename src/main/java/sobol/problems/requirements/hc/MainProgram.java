@@ -3,6 +3,7 @@ package sobol.problems.requirements.hc;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 import sobol.base.random.RandomGeneratorFactory;
@@ -60,7 +61,7 @@ public class MainProgram {
         int budget = (int) (budgetFactor * instance.getTotalCost());
 
         for (int i = 0; i < cycles; i++) {
-            VisIteratedLocalSearch hcr = new VisIteratedLocalSearch(details, instance, budget, 10000000, 100, intervalSize, constructor);
+            VisIteratedLocalSearch hcr = new VisIteratedLocalSearch(details, instance, budget, 10000000, 10, intervalSize, constructor);
 //            IteratedLocalSearch hcr = new IteratedLocalSearch(details, instance, budget, 10000000, constructor);
 //            HillClimbing hcr = new HillClimbing(details, instance, budget, 10000000, constructor);
 

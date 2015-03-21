@@ -61,6 +61,9 @@ public class IteratedLocalSearch {
      * A constructor algorithm for initial solutions generation.
      */
     protected Constructor constructor;
+    
+    protected AbstractRandomGenerator random;
+
 
     /**
      * Initializes the Hill Climbing search process
@@ -241,7 +244,7 @@ public class IteratedLocalSearch {
 
     public boolean[] execute() throws Exception {
         int customerCount = project.getCustomerCount();
-        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+        random = RandomGeneratorFactory.createForPopulation(customerCount);
         constructor.setRandomGenerator(random);
 
         this.currSolution = constructor.generateSolution();
@@ -270,7 +273,7 @@ public class IteratedLocalSearch {
 
     protected boolean[] perturbSolution(boolean[] solution, AbstractRandomGenerator random, int customerCount) {
         boolean[] newSolution = Arrays.copyOf(solution, customerCount);
-        int amount = Math.round(0.05f * customerCount);
+        int amount = 2;
         
         for(int i = 0; i < amount; i++) {
             int customer = random.singleInt(0, customerCount);

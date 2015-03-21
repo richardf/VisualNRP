@@ -81,7 +81,7 @@ public class VisHillClimbing extends HillClimbing {
     @Override
     public boolean[] execute() throws Exception {
         int customerCount = project.getCustomerCount();
-        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+        random = RandomGeneratorFactory.createForPopulation(customerCount);
         constructor.setRandomGenerator(random);
         this.bestSolution = new boolean[customerCount];
         
@@ -109,12 +109,14 @@ public class VisHillClimbing extends HillClimbing {
     private int executeRandomSampling(int numberSamplingIter, Project project) {
         int numberOfCustomersBest = 0;
         Solution hcrs = new Solution(project);
-                
+        Constructor sampConstructor = new RandomConstructor(project);
+        sampConstructor.setRandomGenerator(random);                
+        
         for (int numElemens = 1; numElemens <= project.getCustomerCount(); numElemens++) {
 
             for (int deriv = 0; deriv < numberSamplingIter; deriv++) {
                 
-                boolean[] solution = constructor.generateSolutionWith(numElemens);
+                boolean[] solution = sampConstructor.generateSolutionWith(numElemens);
                 hcrs.setAllCustomers(solution);
                 double solFitness = evaluate(hcrs);
                 

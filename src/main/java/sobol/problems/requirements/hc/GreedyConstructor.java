@@ -16,8 +16,8 @@ import sobol.problems.requirements.model.Project;
 public class GreedyConstructor implements Constructor {
 
     private AbstractRandomGenerator random;
-    private Project project;
-    private Map<Integer, Integer> profitLossRatios;
+    private final Project project;
+    private final Map<Integer, Integer> profitLossRatios;
     
     public GreedyConstructor(Project project) {
         this.project = project;

@@ -7,6 +7,7 @@ import java.util.List;
 import sobol.base.random.RandomGeneratorFactory;
 import sobol.base.random.generic.AbstractRandomGenerator;
 import sobol.problems.requirements.hc.Constructor;
+import sobol.problems.requirements.hc.RandomConstructor;
 import sobol.problems.requirements.hc.Solution;
 import sobol.problems.requirements.model.Project;
 
@@ -18,7 +19,7 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
     private int maxCustomers;
     private int numberSamplingIter;
     private float intervalSize;    
-    
+            
     public VisIteratedLocalSearch(PrintWriter detailsFile, Project project, int budget, int maxEvaluations, int numberSamplingIter, float intervalSize, Constructor constructor) throws Exception {
         super(detailsFile, project, budget, maxEvaluations, constructor);
         this.numberSamplingIter = numberSamplingIter;
@@ -28,7 +29,7 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
     @Override
     public boolean[] execute() throws Exception {
         int customerCount = project.getCustomerCount();
-        AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+        random = RandomGeneratorFactory.createForPopulation(customerCount);
         constructor.setRandomGenerator(random);
         bestSol = new boolean[customerCount];
 
@@ -61,7 +62,7 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
     @Override
     protected boolean[] perturbSolution(boolean[] solution, AbstractRandomGenerator random, int customerCount) {
         boolean[] newSolution = Arrays.copyOf(solution, customerCount);
-        int amount = Math.round(0.05f * customerCount);
+        int amount = 2;
         
         List<Integer> satisfied = new ArrayList<Integer>();
         List<Integer> notSatisfied = new ArrayList<Integer>();
@@ -77,7 +78,7 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
             boolean isAddOperation = false;
             
             if(canAddAndRemoveCustomer(satisfied)) {
-                isAddOperation = random.singleDouble() <= 0.5 ? true : false;
+                isAddOperation = random.singleDouble() <= 0.5;
             } else if (canAddCustomer(satisfied)) {
                 isAddOperation = true;
             }
@@ -102,12 +103,14 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
     private int executeRandomSampling(int numberSamplingIter, Project project) {
         int numberOfCustomersBest = 0;
         Solution hcrs = new Solution(project);
+        Constructor sampConstructor = new RandomConstructor(project);
+        sampConstructor.setRandomGenerator(random);
                 
         for (int numElemens = 1; numElemens <= project.getCustomerCount(); numElemens++) {
 
             for (int deriv = 0; deriv < numberSamplingIter; deriv++) {
                 
-                boolean[] solution = constructor.generateSolutionWith(numElemens);
+                boolean[] solution = sampConstructor.generateSolutionWith(numElemens);
                 hcrs.setAllCustomers(solution);
                 double solFitness = evaluate(hcrs);
                 

@@ -74,6 +74,9 @@ public class HillClimbing
          * A constructor algorithm for initial solutions generation.
          */
         protected Constructor constructor;
+        
+        protected AbstractRandomGenerator random;
+
 
 	/**
 	 * Initializes the Hill Climbing search process
@@ -275,7 +278,7 @@ public class HillClimbing
 	public boolean[] execute() throws Exception
 	{
 		int customerCount = project.getCustomerCount();
-		AbstractRandomGenerator random = RandomGeneratorFactory.createForPopulation(customerCount);
+		random = RandomGeneratorFactory.createForPopulation(customerCount);
                 constructor.setRandomGenerator(random);
                 
 		this.bestSolution = constructor.generateSolution();
