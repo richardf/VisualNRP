@@ -26,13 +26,9 @@ public class IteratedLocalSearch {
      */
     protected double currFitness;
     /**
-     * Number of random restart executed
-     */
-    protected int randomRestartCount;
-    /**
      * Number of the random restart where the best solution was found
      */
-    protected int restartBestFound;
+    protected int iterationBestFound;
     /**
      * File where details of the search process will be printed
      */
@@ -74,8 +70,7 @@ public class IteratedLocalSearch {
         this.maxEvaluations = maxEvaluations;
         this.detailsFile = detailsFile;
         this.evaluations = 0;
-        this.randomRestartCount = 0;
-        this.restartBestFound = 0;
+        this.iterationBestFound = 0;
         this.tmpSolution = new Solution(project);
         this.constructor = constructor;
         createRandomSelectionOrder(project);
@@ -124,15 +119,15 @@ public class IteratedLocalSearch {
     /**
      * Returns the number of random restarts executed during the search process
      */
-    public int getRandomRestarts() {
-        return randomRestartCount;
+    public int getIterations() {
+        return evaluations;
     }
 
     /**
      * Returns the number of the restart in which the best solution was found
      */
-    public int getRandomRestartBestFound() {
-        return restartBestFound;
+    public int getIterationBestFound() {
+        return iterationBestFound;
     }
 
     /**
@@ -234,7 +229,7 @@ public class IteratedLocalSearch {
             if (result.getStatus() == NeighborhoodVisitorStatus.FOUND_BETTER_NEIGHBOR && result.getNeighborFitness() > currFitness) {
                 copySolution(tmpSolution.getSolution(), currSolution);
                 this.currFitness = result.getNeighborFitness();
-                this.restartBestFound = randomRestartCount;
+                this.iterationBestFound = evaluations;
             }
 
         } while (result.getStatus() == NeighborhoodVisitorStatus.FOUND_BETTER_NEIGHBOR);
@@ -258,7 +253,6 @@ public class IteratedLocalSearch {
         double bestFitness = this.currFitness;
         
         while (evaluations < maxEvaluations) {
-            this.randomRestartCount++;
             boolean[] perturbedSolution = perturbSolution(bestSol, random, customerCount);
             localSearch(perturbedSolution);
             

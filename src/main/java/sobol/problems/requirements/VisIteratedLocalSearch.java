@@ -17,8 +17,8 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
     private boolean[] bestSol;
     private int minCustomers;
     private int maxCustomers;
-    private int numberSamplingIter;
-    private float intervalSize;    
+    private final int numberSamplingIter;
+    private final float intervalSize;    
             
     public VisIteratedLocalSearch(PrintWriter detailsFile, Project project, int budget, int maxEvaluations, int numberSamplingIter, float intervalSize, Constructor constructor) throws Exception {
         super(detailsFile, project, budget, maxEvaluations, constructor);
@@ -46,7 +46,6 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
         bestFitness = this.currFitness;
         
         while (evaluations < maxEvaluations) {
-            this.randomRestartCount++;
             boolean[] perturbedSolution = perturbSolution(bestSol, random, customerCount);
             localSearch(perturbedSolution);
             
@@ -117,6 +116,7 @@ public class VisIteratedLocalSearch extends IteratedLocalSearch {
                 if(solFitness > this.bestFitness) {
                     copySolution(solution, this.bestSol);
                     this.bestFitness = solFitness;
+                    this.iterationBestFound = evaluations;
                     numberOfCustomersBest = numElemens;
                 }
             }

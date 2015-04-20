@@ -71,7 +71,7 @@ public class MainProgram {
             details.println();
             long executionTime = (System.currentTimeMillis() - initTime);
 
-            String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getRandomRestarts() + "; " + hcr.getRandomRestartBestFound() + "; " + hcr.printSolution(solution);
+            String s = tipo + "; " + instance.getName() + " #" + i + "; " + executionTime + "; " + hcr.getFitness() + "; " + hcr.getIterations() + "; " + hcr.getIterationBestFound() + "; " + hcr.printSolution(solution);
             System.out.println(s);
             out.println(s);
         }
